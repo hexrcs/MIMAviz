@@ -29,11 +29,11 @@ const modeControl = new PIXI.Container();
 right.addChild(modeControl);
 
 // create and add all those mode selection buttons
-const addButton = modeButton("ADD", true);
-const ldcButton = modeButton("LDC", true);
-const ldvButton = modeButton("LDV", true);
-const notButton = modeButton("NOT", true);
-const stvButton = modeButton("STV", true);
+const addButton = createModeButton("ADD");
+const ldcButton = createModeButton("LDC");
+const ldvButton = createModeButton("LDV");
+const notButton = createModeButton("NOT");
+const stvButton = createModeButton("STV");
 for (let thatButton of [addButton, ldcButton, ldvButton, notButton, stvButton]) {
     modeControl.addChild(thatButton);
 }
@@ -47,6 +47,13 @@ inside.drawRoundedRect(540, 70, 240, 360, 8);
 // lower bottons for step control
 const stepControl = new PIXI.Container();
 right.addChild(stepControl);
+
+// create all step control buttons but don't add them all yet
+const backButton = createBackButton();
+const startButton = createStartButton();
+const nextButton = createNextButton();
+const skipButton = createSkipButton();
+stepControl.addChild(startButton); // only adding start button at start up
 
 // ======== END RIGHT SECTION ========
 
