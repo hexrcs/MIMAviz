@@ -1,15 +1,14 @@
 // Startup house keeping
 const log = console.log;
-const stage = new PIXI.Container();
-const renderer = PIXI.autoDetectRenderer({antialias: true, transparent: true});
-document.body.appendChild(renderer.view);
+const app = new PIXI.Application({antialias: true, transparent: true});
+document.body.appendChild(app.view);
 
 // ======== INITIAL STATE ========
 // Create light grey background
 const backgound = new PIXI.Graphics();
-stage.addChild(backgound);
+app.stage.addChild(backgound);
 backgound.beginFill(0xD8D8D8);
-backgound.drawRoundedRect(0, 0, renderer.width, renderer.height, 8);
+backgound.drawRoundedRect(0, 0, app.renderer.width, app.renderer.height, 8);
 
 // ======== INSIDE SECTION ========
 const inside = new PIXI.Graphics();
@@ -65,5 +64,5 @@ inside.drawRoundedRect(20, 490, 760, 100, 8);
 
 // ======== END DESCRIPTION SECTION ========
 
-renderer.render(stage);
 // ======== END INITIAL STATE ========
+
