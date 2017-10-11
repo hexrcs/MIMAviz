@@ -16,6 +16,21 @@ backgound.addChild(inside);
 inside.beginFill(0xFFFFFF);
 inside.drawRoundedRect(20, 20, 500, 460, 8);
 
+// add register cells and R/W bits - they all have same format
+const akku = createCell("Akku", 30, 40, 6);
+const eins = createCell("Eins", 30, 120, 6);
+const sar = createCell("SAR", 40, 410, 5);
+const iar = createCell("IAR", 310, 40, 5);
+const ir = createCell("Eins", 310, 120, 6);
+const z = createCell("Z", 310, 200, 6);
+const x = createCell("X", 240, 330, 6);
+const y = createCell("Y", 380, 360, 6);
+const sdr = createCell("SDR", 250, 410, 6);
+const r = createCell("R", 420, 420, 1);
+const w = createCell("W", 460, 420, 1);
+for (let thatCell of [akku, eins, sar, iar, ir, z, x, y, sdr, r, w]) {
+    inside.addChild(thatCell);
+}
 
 // ======== END INSIDE SECTION ========
 

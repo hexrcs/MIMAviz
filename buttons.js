@@ -14,15 +14,6 @@ function createModeButton(name="") {
     text.x = 540 + 20 + 50 * upperCount;
     text.y = 30 + 10;
     me.addChild(text);
-
-    // // mouseover animation
-    // me.mouseover = event => {
-    //     me.beginFill(0xA0C5E7, 0.5);
-    // }
-    // me.mouseout = event => {
-    //     me.beginFill
-    // }
-
     ++upperCount;
     return me;
 }
