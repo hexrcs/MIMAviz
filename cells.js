@@ -6,7 +6,21 @@ function createCell(name="", x=0, y=0, size=6) {
     me.lineStyle(1, 0x979797);
     me.drawRect(x, y, size * 20, 40);
     
-    // const 
-    
+    // draw horizontal line
+    const hLine = new PIXI.Graphics();
+    hLine.lineStyle(1, 0x979797);
+    hLine.moveTo(x, y + 20);
+    hLine.lineTo(x + size * 20, y + 20);
+    me.addChild(hLine);
+
+    // draw vertical lines
+    for (let i = 1; i < size; ++i) {
+        const vLine = new PIXI.Graphics();
+        vLine.lineStyle(1, 0x979797);
+        vLine.moveTo(x + i * 20, y + 20);
+        vLine.lineTo(x + i * 20, y + 40);
+        me.addChild(vLine);
+    }
+
     return me;
 }
