@@ -28,6 +28,10 @@ backgound.addChild(right);
 const modeControl = new PIXI.Container();
 right.addChild(modeControl);
 
+// testing button
+const btn1= new Button("ADD", modeControl, true);
+
+
 // CU instruction list module
 const viewCU = new PIXI.Graphics();
 right.addChild(viewCU);
