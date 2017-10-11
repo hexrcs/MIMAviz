@@ -32,6 +32,9 @@ for (let thatCell of [akku, eins, sar, iar, ir, z, x, y, sdr, r, w]) {
     inside.addChild(thatCell);
 }
 
+// TODO create the ALU cell
+// TODO draw the init bus
+
 // ======== END INSIDE SECTION ========
 
 // ======== RIGHT SECTION ========
