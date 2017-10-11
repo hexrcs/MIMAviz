@@ -22,5 +22,12 @@ function createCell(name="", x=0, y=0, size=6) {
         me.addChild(vLine);
     }
 
+    // add names to cell
+    const text = new PIXI.Text(name, {fontFamily: "Courier", fontSize: '12pt'});
+    text.anchor.set(0.5, 0.5);
+    text.x = x + size * 20 / 2;
+    text.y = y + 20 / 2;
+    me.addChild(text);
+
     return me;
 }
