@@ -18,12 +18,12 @@ function Button(name="", isUpper=false) {
         me.addChild(text);
         ++upperCount;
     } else {
-        me.drawRoundedRect(540 + 90 * upper, 30, 60, 20, 8);
-        me.hitArea = new PIXI.RoundedRectangle(540 + 90 * lowerCount, 30, 60, 20, 8)
+        me.drawRoundedRect(540 + 90 * upper, 450, 60, 20, 8);
+        me.hitArea = new PIXI.RoundedRectangle(540 + 90 * lowerCount, 450, 60, 20, 8)
         const text = new PIXI.Text(name, {fontFamily: "Courier", fontSize: '12pt'});
         text.anchor.set(0.5, 0.5);
         text.x = 540 + 30 + 90 * lowerCount;
-        text.y = 40;
+        text.y = 450;
         me.addChild(text);
         ++lowerCount;
     }
