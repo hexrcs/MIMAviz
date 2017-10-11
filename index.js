@@ -28,8 +28,15 @@ backgound.addChild(right);
 const modeControl = new PIXI.Container();
 right.addChild(modeControl);
 
-// testing button
-// const btn1= new Button("ADD", modeControl, true);
+// create and add all those mode selection buttons
+const addButton = modeButton("ADD", true);
+const ldcButton = modeButton("LDC", true);
+const ldvButton = modeButton("LDV", true);
+const notButton = modeButton("NOT", true);
+const stvButton = modeButton("STV", true);
+for (let thatButton of [addButton, ldcButton, ldvButton, notButton, stvButton]) {
+    modeControl.addChild(thatButton);
+}
 
 // CU instruction list module
 const viewCU = new PIXI.Graphics();
