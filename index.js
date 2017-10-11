@@ -32,8 +32,12 @@ for (let thatCell of [akku, eins, sar, iar, ir, z, x, y, sdr, r, w]) {
     inside.addChild(thatCell);
 }
 
-// TODO create the ALU cell
+// ALU cell
+const alu = createALU();
+inside.addChild(alu);
+
 // TODO draw the init bus
+// TODO create number cells inside register cells, might wanna make a function somewhere
 
 // ======== END INSIDE SECTION ========
 

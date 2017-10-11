@@ -29,3 +29,19 @@ function createCell(name="", x=0, y=0, size=6) {
 
     return me;
 }
+
+function createALU() {
+    const me = new PIXI.Graphics();
+    me.beginFill(0xD8D8D8);
+    me.lineStyle(1, 0x979797);
+    // draw an ALU cell using the path points
+    me.drawPolygon([340,260, 300,300, 360,300, 370,290, 380,300, 440,300, 400,260, 340,260]);
+
+    const text = new PIXI.Text("ALU", {fontFamily: "Courier", fontSize: '12pt'});
+    text.anchor.set(0.5, 0.5);
+    text.x = 370;
+    text.y = 275;
+    me.addChild(text);
+    
+    return me;
+}
