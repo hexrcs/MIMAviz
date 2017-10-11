@@ -23,7 +23,7 @@ function Button(name="", isUpper=false) {
         const text = new PIXI.Text(name, {fontFamily: "Courier", fontSize: '12pt'});
         text.anchor.set(0.5, 0.5);
         text.x = 540 + 30 + 90 * lowerCount;
-        text.y = 450;
+        text.y = 460;
         me.addChild(text);
         ++lowerCount;
     }
