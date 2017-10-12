@@ -1,5 +1,8 @@
+const PIXI = require('pixi.js');
+module.exports = {newLR, newUD};
+
 // always left to right
-function createLRArrow(name="", x=0, y=0, dx=0, dy=0, l=true, r=true) {
+function newLR(name="", x=0, y=0, dx=0, dy=0, l=true, r=true) {
     const me = new PIXI.Container();
 
     // the basic line
@@ -34,7 +37,7 @@ function createLRArrow(name="", x=0, y=0, dx=0, dy=0, l=true, r=true) {
 }
 
 // always up to down
-function createUDArrow(name="", x=0, y=0, dx=0, dy=0, u=true, d=true) {
+function newUD(name="", x=0, y=0, dx=0, dy=0, u=true, d=true) {
     const me = new PIXI.Container();
 
     // the basic line

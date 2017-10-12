@@ -1,4 +1,7 @@
-function createCell(name="", x=0, y=0, size=6) {
+const PIXI = require('pixi.js');
+module.exports = {newALU, newCell};
+
+function newCell(name="", x=0, y=0, size=6) {
     const me = new PIXI.Graphics();
     me.beginFill(0xD8D8D8);
     me.lineStyle(1, 0x979797);
@@ -30,7 +33,7 @@ function createCell(name="", x=0, y=0, size=6) {
     return me;
 }
 
-function createALU() {
+function newALU() {
     const me = new PIXI.Graphics();
     me.beginFill(0xD8D8D8);
     me.lineStyle(1, 0x979797);
