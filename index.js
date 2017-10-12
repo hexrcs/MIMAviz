@@ -36,10 +36,27 @@ for (let thatCell of [akku, eins, sar, iar, ir, z, x, y, sdr, r, w]) {
 const alu = createALU();
 inside.addChild(alu);
 
-// make buses container
+// make IO arrows/buses container
 const insideIOs = new PIXI.Container();
 inside.addChild(insideIOs);
 
+// draw init arrows
+const mainBus = createUDArrow("Main", 200,30, 200,460);
+const akkuIO = createLRArrow("Akku", 150,60, 198,60);
+const einsIO = createLRArrow("Eins", 150,140, 198,140, false);
+const sarIO = createLRArrow("SAR", 140,430, 198,430, true, false);
+const iarIO = createLRArrow("IAR", 202,60, 310,60);
+const irIO = createLRArrow("IR", 202,140, 310,140);
+const zIO = createLRArrow("Z", 202,220, 310,220, true, false);
+const xIO = createLRArrow("X", 202,350, 240,350, false);
+const yIO = createLRArrow("Y", 202,380, 380,380, false);
+const sdrIO = createLRArrow("SDR", 202,430, 250,430);
+const aluX = createUDArrow("ALU-X", 340,300, 340,330, true, false);
+const aluY = createUDArrow("ALU-Y", 400,300, 400,360, true, false);
+const aluZ = createUDArrow("ALU-Z", 370,240, 370,260, true, false);
+for (let thatArrow of [mainBus, akkuIO, einsIO, sarIO, iarIO, irIO, zIO, xIO, yIO, sdrIO, aluX, aluY, aluZ]) {
+    inside.addChild(thatArrow);
+} // TODO break down the mainBus into smaller pieces for better animation
 
 // TODO create number cells inside register cells, might wanna make a function somewhere
 
