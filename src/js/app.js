@@ -88,8 +88,8 @@ for (let thatButton of [addButton, ldcButton, ldvButton, notButton, stvButton]) 
 // CU instruction list module
 const viewCU = new PIXI.Graphics();
 right.addChild(viewCU);
-inside.beginFill(0xFFFFFF);
-inside.drawRoundedRect(540, 70, 240, 360, 8);
+viewCU.beginFill(0xFFFFFF);
+viewCU.drawRoundedRect(540, 70, 240, 360, 8);
 
 // lower buttons for step control
 const stepControl = new PIXI.Container();
