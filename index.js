@@ -36,7 +36,11 @@ for (let thatCell of [akku, eins, sar, iar, ir, z, x, y, sdr, r, w]) {
 const alu = createALU();
 inside.addChild(alu);
 
-// TODO draw the init bus
+// make buses container
+const insideIOs = new PIXI.Container();
+inside.addChild(insideIOs);
+
+
 // TODO create number cells inside register cells, might wanna make a function somewhere
 
 // ======== END INSIDE SECTION ========
