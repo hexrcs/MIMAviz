@@ -1,11 +1,10 @@
 {
-  "name": "MIMAviz",
+  "name": "mimaviz",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files '*.js' '*.html'"
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
@@ -24,6 +23,6 @@
     "redux": "3.7.2"
   },
   "devDependencies": {
-    "browser-sync": "2.18.13"
+    "webpack": "3.7.1"
   }
 }
