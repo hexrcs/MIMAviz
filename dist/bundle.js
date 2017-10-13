@@ -97,7 +97,7 @@ Object.keys(_math).forEach(function (key) {
   });
 });
 
-var _pixiGlCore = __webpack_require__(5);
+var _pixiGlCore = __webpack_require__(6);
 
 Object.defineProperty(exports, 'glCore', {
   enumerable: true,
@@ -1609,37 +1609,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var gl = {
-    createContext:          __webpack_require__(99),
-    setVertexAttribArrays:  __webpack_require__(40),
-    GLBuffer:               __webpack_require__(100),
-    GLFramebuffer:          __webpack_require__(101),
-    GLShader:               __webpack_require__(102),
-    GLTexture:              __webpack_require__(41),
-    VertexArrayObject:      __webpack_require__(103),
-    shader:                 __webpack_require__(104)
-};
-
-// Export for Node-compatible environments
-if (typeof module !== 'undefined' && module.exports)
-{
-    // Export the module
-    module.exports = gl;
-}
-
-// Add to the browser window pixi.gl
-if (typeof window !== 'undefined')
-{
-    // add the window object
-    window.PIXI = window.PIXI || {};
-    window.PIXI.glCore = gl;
-}
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
@@ -1753,6 +1722,37 @@ if (typeof _deprecation2.default === 'function') {
 global.PIXI = exports; // eslint-disable-line
 //# sourceMappingURL=index.js.map
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(21)))
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var gl = {
+    createContext:          __webpack_require__(99),
+    setVertexAttribArrays:  __webpack_require__(40),
+    GLBuffer:               __webpack_require__(100),
+    GLFramebuffer:          __webpack_require__(101),
+    GLShader:               __webpack_require__(102),
+    GLTexture:              __webpack_require__(41),
+    VertexArrayObject:      __webpack_require__(103),
+    shader:                 __webpack_require__(104)
+};
+
+// Export for Node-compatible environments
+if (typeof module !== 'undefined' && module.exports)
+{
+    // Export the module
+    module.exports = gl;
+}
+
+// Add to the browser window pixi.gl
+if (typeof window !== 'undefined')
+{
+    // add the window object
+    window.PIXI = window.PIXI || {};
+    window.PIXI.glCore = gl;
+}
+
 
 /***/ }),
 /* 7 */
@@ -4906,7 +4906,7 @@ exports.default = WebGLManager;
 
 exports.__esModule = true;
 
-var _pixiGlCore = __webpack_require__(5);
+var _pixiGlCore = __webpack_require__(6);
 
 var _settings = __webpack_require__(3);
 
@@ -5510,7 +5510,7 @@ var _validateContext2 = _interopRequireDefault(_validateContext);
 
 var _utils = __webpack_require__(2);
 
-var _pixiGlCore = __webpack_require__(5);
+var _pixiGlCore = __webpack_require__(6);
 
 var _pixiGlCore2 = _interopRequireDefault(_pixiGlCore);
 
@@ -6285,7 +6285,7 @@ var _settings = __webpack_require__(3);
 
 var _settings2 = _interopRequireDefault(_settings);
 
-var _pixiGlCore = __webpack_require__(5);
+var _pixiGlCore = __webpack_require__(6);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -16114,7 +16114,7 @@ exports.default = Filter;
 
 exports.__esModule = true;
 
-var _pixiGlCore = __webpack_require__(5);
+var _pixiGlCore = __webpack_require__(6);
 
 var _pixiGlCore2 = _interopRequireDefault(_pixiGlCore);
 
@@ -20577,7 +20577,7 @@ exports.default = CountLimiter;
 /* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const PIXI = __webpack_require__(6);
+const PIXI = __webpack_require__(5);
 module.exports = {newBack, newMode, newNext, newSkip, newStart};
 
 // Button factory
@@ -20683,10 +20683,11 @@ function newSkip() {
 /***/ (function(module, exports, __webpack_require__) {
 
 // Startup house keeping
-const PIXI = __webpack_require__(6);
+const PIXI = __webpack_require__(5);
 
 const inside = __webpack_require__(192);
 const right = __webpack_require__(197);
+const bottom = __webpack_require__(201);
 
 const log = console.log;
 const app = new PIXI.Application({antialias: true, transparent: true});
@@ -20699,21 +20700,10 @@ app.stage.addChild(backgound);
 backgound.beginFill(0xD8D8D8);
 backgound.drawRoundedRect(0, 0, app.renderer.width, app.renderer.height, 8);
 
-// ======== INSIDE SECTION ========
+// add all section containers
 backgound.addChild(inside);
-
-// ======== RIGHT SECTION ========
 backgound.addChild(right);
-
-// ======== END RIGHT SECTION ========
-
-// ======== DESCRIPTION SECTION ========
-const description = new PIXI.Graphics();
-backgound.addChild(description);
-inside.beginFill(0xFFFFFF);
-inside.drawRoundedRect(20, 490, 760, 100, 8);
-
-// ======== END DESCRIPTION SECTION ========
+backgound.addChild(bottom);
 
 // ======== END INITIAL STATE ========
 
@@ -24475,7 +24465,7 @@ var _settings2 = _interopRequireDefault(_settings);
 
 var _utils = __webpack_require__(2);
 
-var _pixiGlCore = __webpack_require__(5);
+var _pixiGlCore = __webpack_require__(6);
 
 var _pixiGlCore2 = _interopRequireDefault(_pixiGlCore);
 
@@ -25208,7 +25198,7 @@ exports.default = MaskManager;
 exports.__esModule = true;
 exports.default = extractUniformsFromSrc;
 
-var _pixiGlCore = __webpack_require__(5);
+var _pixiGlCore = __webpack_require__(6);
 
 var _pixiGlCore2 = _interopRequireDefault(_pixiGlCore);
 
@@ -26285,7 +26275,7 @@ function calculateSpriteMatrix(outputMatrix, filterArea, textureSize, sprite) {
 
 exports.__esModule = true;
 
-var _pixiGlCore = __webpack_require__(5);
+var _pixiGlCore = __webpack_require__(6);
 
 var _const = __webpack_require__(1);
 
@@ -27137,7 +27127,7 @@ function generateSampleSrc(maxTextures) {
 exports.__esModule = true;
 exports.default = checkMaxIfStatmentsInShader;
 
-var _pixiGlCore = __webpack_require__(5);
+var _pixiGlCore = __webpack_require__(6);
 
 var _pixiGlCore2 = _interopRequireDefault(_pixiGlCore);
 
@@ -29517,7 +29507,7 @@ _WebGLRenderer2.default.registerPlugin('graphics', GraphicsRenderer);
 
 exports.__esModule = true;
 
-var _pixiGlCore = __webpack_require__(5);
+var _pixiGlCore = __webpack_require__(6);
 
 var _pixiGlCore2 = _interopRequireDefault(_pixiGlCore);
 
@@ -38942,7 +38932,7 @@ var _core = __webpack_require__(0);
 
 var core = _interopRequireWildcard(_core);
 
-var _pixiGlCore = __webpack_require__(5);
+var _pixiGlCore = __webpack_require__(6);
 
 var _pixiGlCore2 = _interopRequireDefault(_pixiGlCore);
 
@@ -40956,7 +40946,7 @@ exports.default = ParticleShader;
 
 exports.__esModule = true;
 
-var _pixiGlCore = __webpack_require__(5);
+var _pixiGlCore = __webpack_require__(6);
 
 var _pixiGlCore2 = _interopRequireDefault(_pixiGlCore);
 
@@ -41571,7 +41561,7 @@ exports.default = TimeLimiter;
 /* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const PIXI = __webpack_require__(6);
+const PIXI = __webpack_require__(5);
 
 const insideIOs = __webpack_require__(193);
 const insideCells = __webpack_require__(195);
@@ -41593,7 +41583,7 @@ module.exports = inside;
 /* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const PIXI = __webpack_require__(6);
+const PIXI = __webpack_require__(5);
 
 const ioarrows = __webpack_require__(194);
 
@@ -41625,7 +41615,7 @@ module.exports = insideIOs;
 /* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const PIXI = __webpack_require__(6);
+const PIXI = __webpack_require__(5);
 module.exports = {newLR, newUD};
 
 // always left to right
@@ -41703,7 +41693,7 @@ function newUD(name="", x=0, y=0, dx=0, dy=0, u=true, d=true) {
 /* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const PIXI = __webpack_require__(6);
+const PIXI = __webpack_require__(5);
 
 const cells = __webpack_require__(196);
 
@@ -41736,7 +41726,7 @@ module.exports = insideCells;
 /* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const PIXI = __webpack_require__(6);
+const PIXI = __webpack_require__(5);
 module.exports = {newALU, newCell};
 
 function newCell(name="", x=0, y=0, size=6) {
@@ -41792,7 +41782,7 @@ function newALU() {
 /* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const PIXI = __webpack_require__(6);
+const PIXI = __webpack_require__(5);
 
 const rightUpperButtons = __webpack_require__(198);
 const rightCUDisplay = __webpack_require__(199);
@@ -41811,7 +41801,7 @@ module.exports = right;
 /* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const PIXI = __webpack_require__(6);
+const PIXI = __webpack_require__(5);
 
 const buttons = __webpack_require__(88);
 
@@ -41833,7 +41823,7 @@ module.exports = rightUpperButtons;
 /* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const PIXI = __webpack_require__(6);
+const PIXI = __webpack_require__(5);
 
 // CU instruction list module
 const rightCUDisplay = new PIXI.Graphics();
@@ -41848,7 +41838,7 @@ module.exports = rightCUDisplay;
 /* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const PIXI = __webpack_require__(6);
+const PIXI = __webpack_require__(5);
 
 const buttons = __webpack_require__(88);
 
@@ -41867,6 +41857,20 @@ skipButton.visible = false;
 rightLowerButtons.addChild(backButton, startButton, nextButton, skipButton);
 
 module.exports = rightLowerButtons;
+
+
+/***/ }),
+/* 201 */
+/***/ (function(module, exports, __webpack_require__) {
+
+const PIXI = __webpack_require__(5);
+
+const bottom = new PIXI.Graphics();
+
+bottom.beginFill(0xFFFFFF);
+bottom.drawRoundedRect(20, 490, 760, 100, 8);
+
+module.exports = bottom;
 
 
 /***/ })

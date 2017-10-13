@@ -3,6 +3,7 @@ const PIXI = require('pixi.js');
 
 const inside = require('./containers/inside');
 const right = require('./containers/right');
+const bottom = require('./containers/bottom');
 
 const log = console.log;
 const app = new PIXI.Application({antialias: true, transparent: true});
@@ -18,16 +19,7 @@ backgound.drawRoundedRect(0, 0, app.renderer.width, app.renderer.height, 8);
 // add all section containers
 backgound.addChild(inside);
 backgound.addChild(right);
-
-// ======== END RIGHT SECTION ========
-
-// ======== DESCRIPTION SECTION ========
-const description = new PIXI.Graphics();
-backgound.addChild(description);
-inside.beginFill(0xFFFFFF);
-inside.drawRoundedRect(20, 490, 760, 100, 8);
-
-// ======== END DESCRIPTION SECTION ========
+backgound.addChild(bottom);
 
 // ======== END INITIAL STATE ========
 
