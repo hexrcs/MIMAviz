@@ -83,6 +83,15 @@ function newCUExecutePhase() {
     return me;
 }
 
+function newCellValue(text="unbek.", x=0, y=0, size=6) {
+    const me = new PIXI.Text(text, {fontFamily: "Courier", fontSize: '12pt', letterSpacing: 10});
+    me.anchor.set(1, 0.5);
+    me.x = x + size * 20 - 5;
+    me.y = y + 20 + 20 / 2;
+
+    return me;
+}
+
 module.exports = {
     newDescription, 
     newCUContent, 
