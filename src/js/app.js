@@ -1,10 +1,6 @@
 // Startup house keeping
 const PIXI = require('pixi.js');
 
-const buttons = require('./factories/buttons');
-const ioarrows = require('./factories/ioarrows');
-const cells = require('./factories/cells');
-
 const inside = require('./containers/inside');
 
 const log = console.log;
@@ -21,8 +17,6 @@ backgound.drawRoundedRect(0, 0, app.renderer.width, app.renderer.height, 8);
 // ======== INSIDE SECTION ========
 backgound.addChild(inside);
 
-// TODO create number cells inside register cells, might wanna make a function somewhere
-
 // ======== END INSIDE SECTION ========
 
 // ======== RIGHT SECTION ========
@@ -34,6 +28,7 @@ const modeControl = new PIXI.Container();
 right.addChild(modeControl);
 
 // create and add all those mode selection buttons
+// fixme 'buttons' is also to-be-refactored 
 const addButton = buttons.newMode("ADD");
 const ldcButton = buttons.newMode("LDC");
 const ldvButton = buttons.newMode("LDV");
