@@ -1,23 +1,37 @@
 const PIXI = require('pixi.js');
 module.exports = {newBack, newMode, newNext, newSkip, newStart};
 
-// static variables
-let upperCount = 0;
-
 // Button factory
 function newMode(name="") {
+    let number = 0;
+    switch (name) {
+        case "ADD":
+            number = 0;
+            break;
+        case "LDC":
+            number = 1;
+            break;
+        case "LDV":
+            number = 2;
+            break;
+        case "NOT":
+            number = 3;
+            break;
+        case "STV":
+            number = 4;
+            break;
+    }
     const me = new PIXI.Graphics();
     me.interactive = true;
     me.buttonMode = true;
     me.beginFill(0xFFFFFF);
-    me.drawRoundedRect(540 + 50 * upperCount, 30, 40, 20, 8);
-    me.hitArea = new PIXI.RoundedRectangle(540 + 50 * upperCount, 30, 40, 20, 8);
+    me.drawRoundedRect(540 + 50 * number, 30, 40, 20, 8);
+    me.hitArea = new PIXI.RoundedRectangle(540 + 50 * number, 30, 40, 20, 8);
     const text = new PIXI.Text(name, {fontFamily: "Courier", fontSize: '12pt'});
     text.anchor.set(0.5, 0.5);
-    text.x = 540 + 20 + 50 * upperCount;
+    text.x = 540 + 20 + 50 * number;
     text.y = 30 + 10;
     me.addChild(text);
-    ++upperCount;
     return me;
 }
 
