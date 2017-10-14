@@ -1,5 +1,5 @@
 const PIXI = require('pixi.js');
-module.exports = {newALU, newCellBG};
+module.exports = {cellSpec, newALU, newCellBG};
 
 // return cell positions and size
 function cellSpec(name="") {

@@ -41727,7 +41727,7 @@ module.exports = insideCells;
 /***/ (function(module, exports, __webpack_require__) {
 
 const PIXI = __webpack_require__(5);
-module.exports = {newALU, newCellBG};
+module.exports = {cellSpec, newALU, newCellBG};
 
 // return cell positions and size
 function cellSpec(name="") {
