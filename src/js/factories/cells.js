@@ -1,7 +1,38 @@
 const PIXI = require('pixi.js');
-module.exports = {newALU, newCell};
+module.exports = {newALU, newCellBG};
 
-function newCell(name="", x=0, y=0, size=6) {
+// return cell positions and size
+function cellSpec(name="") {
+    switch(name) {
+        case "Akku":
+            return [30, 40, 6];
+        case "Eins":
+            return [30, 120, 6];
+        case "SAR":
+            return [40, 410, 5];
+        case "IAR":
+            return [310, 40, 5];
+        case "IR":
+            return [310, 120, 6];
+        case "Z":
+            return [310, 200, 6];
+        case "X":
+            return [240, 330, 6];
+        case "Y":
+            return [380, 360, 6];
+        case "SDR":
+            return [250, 410, 6];
+        case "R":
+            return [420, 420, 1];
+        case "W":
+            return [460, 420, 1];
+        default:
+            return [];
+    }
+}
+
+function newCellBG(name="") {
+    const [x, y, size] = cellSpec(name);
     const me = new PIXI.Graphics();
     me.beginFill(0xD8D8D8);
     me.lineStyle(1, 0x979797);

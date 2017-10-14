@@ -5,18 +5,18 @@ const cells = require('../factories/cells');
 // make cells container
 const insideCells = new PIXI.Container();
 
-// add register cells and R/W bits - they all have same format
-const akku = cells.newCell("Akku", 30, 40, 6);
-const eins = cells.newCell("Eins", 30, 120, 6);
-const sar = cells.newCell("SAR", 40, 410, 5);
-const iar = cells.newCell("IAR", 310, 40, 5);
-const ir = cells.newCell("IR", 310, 120, 6);
-const z = cells.newCell("Z", 310, 200, 6);
-const x = cells.newCell("X", 240, 330, 6);
-const y = cells.newCell("Y", 380, 360, 6);
-const sdr = cells.newCell("SDR", 250, 410, 6);
-const r = cells.newCell("R", 420, 420, 1);
-const w = cells.newCell("W", 460, 420, 1);
+// STATIC - add register cells and R/W bits 'background'
+const akku = cells.newCellBG("Akku");
+const eins = cells.newCellBG("Eins");
+const sar = cells.newCellBG("SAR");
+const iar = cells.newCellBG("IAR");
+const ir = cells.newCellBG("IR");
+const z = cells.newCellBG("Z");
+const x = cells.newCellBG("X");
+const y = cells.newCellBG("Y");
+const sdr = cells.newCellBG("SDR");
+const r = cells.newCellBG("R");
+const w = cells.newCellBG("W");
 // didn't know addChile is repeatable LOL
 insideCells.addChild(akku, eins, sar, iar, ir, z, x, y, sdr, r, w);
 
