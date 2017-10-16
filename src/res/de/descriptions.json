@@ -21,7 +21,43 @@
 
   },
   "LDV": {
-
+    "step": [
+      // 0
+      {
+        "bottomDescription": "",
+        "cuDescription": "LDV LDV"
+      },
+      // 1
+      {
+        "bottomDescription": "Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.",
+        "cuDescription": "IAR zeige auf ein LDV Befehl"
+      },
+      // 2  
+      {
+        "bottomDescription": "Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!",
+        "cuDescription": "Lade 1 nach Y für IAR++"
+      },
+      // 3
+      {
+        "bottomDescription": "Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!",
+        "cuDescription": "ALU addiert: Z:=X+Y"
+      },
+      // 4
+      {
+        "bottomDescription": "Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.",
+        "cuDescription": "IAR++ von Z ins IAR schreiben."
+      },
+      // 5
+      {
+        "bottomDescription": "Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).",
+        "cuDescription": "Befehl aus Speicher ins IR schreiben"
+      },
+      // 6
+      {
+        "bottomDescription": "D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!",
+        "cuDescription": "Starte yP für LDV Befehl"
+      }
+    ]
   },
   "NOT": {
 

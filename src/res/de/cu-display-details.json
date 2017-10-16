@@ -4,27 +4,35 @@
 // ä, ö, ü, ß, Ä, Ö, Ü, ß
 
 {
-"IDLE": {
-  "cuUpperHeader": "So funktionierts:",
-  "step": [
-    "",
-    "1. Befehl aussuchen",
-    "2. START drücken!"
-  ]
-},
-"ADD": {
+  "IDLE": {
+    "cuUpperHeader": "So funktionierts:",
+    "proc": [ // IMPORTANT!!! pro[0] == step[1]
+      "",
+      "1. Befehl aussuchen",
+      "2. START drücken!"
+    ]
+  },
+  "ADD": {
 
-},
-"LDC": {
+  },
+  "LDC": {
 
-},
-"LDV": {
+  },
+  "LDV": {
+    "cuUpperHeader": "Fetch Phase",
+    "proc": [
+      " 1: IAR->SAR; IAR->X; R=1",
+      " 2: Eins->Y;          R=1",
+      " 3: ALU auf addieren; R=1",
+      " 4: Z->IAR",
+      " 5: SDR->IR",
+      " 6: D=1"
+    ]
+  },
+  "NOT": {
 
-},
-"NOT": {
+  },
+  "STV": {
 
-},
-"STV": {
-
-}
+  }
 }

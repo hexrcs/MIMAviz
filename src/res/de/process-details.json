@@ -1,4 +1,8 @@
 // The IO path and the values inside cells
+// "values" are only deltas
+// maybe later will come up with better ways, interpret the
+// instructions automatically, removing this file
+// Priority now however is to get a working version first
 
 {
   "IDLE": {
@@ -15,7 +19,7 @@
           "Akku": "  AX  ",
           "Eins": "000001",
           "SAR" : "unbek",
-          "AIR" : "00100",
+          "IAR" : "00100",
           "IR"  : "unbek.",
           "Z"   : "unbek.",
           "X"   : "unbek.",
@@ -34,7 +38,103 @@
     
   },
   "LDV": {
-  
+    "step": [
+      // 0
+      {
+        "path": [
+        ],
+
+        "values": {
+        }
+      },
+      // 1
+      {
+        "path": [
+          {
+            "from": "IAR",
+            "to"  : "SAR"
+          },
+          {
+            "from": "IAR",
+            "to"  : "X"
+          }
+        ],
+
+        "values": {
+          "SAR" : "00100",
+          "X"   : "000100",
+          "R"   : "1"
+        }
+      },
+      // 2
+      {
+        "path": [
+          {
+            "from": "Eins",
+            "to"  : "Y"
+          }
+        ],
+
+        "values": {
+          "Eins": "000001",
+          "Y"   : "000001",
+          "R"   : "2"
+          // why in the original, value of R here is "2"?
+        }
+      },
+      // 3
+      {
+        "path": [
+          {
+            "from": "ALU",
+            "to"  : "ALU" // shouldn't Z be lighted too?
+          }
+        ],
+
+        "values": {
+          "Z"   : "000101",
+          "SDR" : "1--a--",
+          "R"   : "3"
+        }
+      },
+      // 4
+      {
+        "path": [
+          {
+            "from": "Z",
+            "to"  : "IAR"
+          }
+        ],
+
+        "values": {
+          "IAR" : "00100",
+          "R"   : "0"
+        }
+      },
+      // 5
+      {
+        "path": [
+          {
+            "from": "SDR",
+            "to"  : "IR"
+          }
+        ],
+
+        "values": {
+          "IR"  : "1--a--"
+        }
+      },
+      // 6
+      {
+        "path": [
+        ],
+
+        "values": {
+          "Eins" : "000001",
+          "Y"   : "000001"
+        }
+      }
+    ]
   },
   "NOT": {
     
@@ -43,4 +143,3 @@
     
   }
 }
-    
