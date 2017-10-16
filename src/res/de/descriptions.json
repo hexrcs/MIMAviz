@@ -165,6 +165,27 @@
       {
         "bottomDescription": "D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!",
         "cuDescription": "Starte yP für LDV Befehl"
+      },
+      // ========
+      // 7
+      {
+        "bottomDescription": "Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!",
+        "cuDescription": "Adressiere a von <a>"
+      },
+      // 8
+      {
+        "bottomDescription": "Wir müssen bei dieser MiMa Technologie 3 Takte lang auf eine Antwort vom Speicher warten!",
+        "cuDescription": "Warten auf den Speicher!"
+      },
+      // 9
+      {
+        "bottomDescription": "Wir müssen bei dieser MiMa Technologie 3 Takte lang auf eine Antwort vom Speicher warten!",
+        "cuDescription": "Warten auf den Speicher!"
+      },
+      // 10
+      {
+        "bottomDescription": "Wie man es nun von diesem Befehl erwartet, wird die Antwort aus dem Speicher an den Akkumulator (Akku) übergeben.",
+        "cuDescription": "Antwort in Akku schreiben."
       }
     ]
   },
