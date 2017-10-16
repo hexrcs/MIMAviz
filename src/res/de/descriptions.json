@@ -50,6 +50,37 @@
       {
         "bottomDescription": "D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!",
         "cuDescription": "Starte yP für ADD Befehl"
+      },
+      // ================
+      // 7
+      {
+        "bottomDescription": "Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!",
+        "cuDescription": "Adressiere a von <a>"
+      },
+      // 8
+      {
+        "bottomDescription": "Der ADD Befehl soll ja den Akku mit der Speicherzelle <a> durch eine Addition verknüpfen. Diese Addition wird vorbereitet, indem schonmal der Inhalt des Akku ins X Register transferiert wird, während wir auf den Speicher warten, der uns den Inhalt von a, also <a> geben soll.",
+        "cuDescription": "Akku + <a> vorbereiten"
+      },
+      // 9
+      {
+        "bottomDescription": "Jo, sodele, nun warten wir eben noch kurz auf den Speicher, denn dieser benötigt immer drei Takte, bis er das verlangte Datum abliefern kann.",
+        "cuDescription": "Der Speicher ist lahm!! ;-)"
+      },
+      // 10
+      {
+        "bottomDescription": "Jetzt haben wir unseren langersehnten Wert <a> am SDR (Speicherdatenregister) anliegen. Da in X schon der Inhalt des Akku steht schreiben wir in Y unseren Inhalt von Speicherzelle a hin.",
+        "cuDescription": "Speicher ist fertig mit lesen!"
+      },
+      // 11
+      {
+        "bottomDescription": "Schnell noch die beiden Werte addieren und das gewünschte Ergebnis steht im Z Register. Damit die ALU weiß, das sie eine Addition durchzuführen hat, gibt das Steuerwerk an die Eingänge der ALU C2C1C0 die Werte (001).",
+        "cuDescription": "Addition Z:=X+Y"
+      },
+      // 12
+      {
+        "bottomDescription": "Wie in der Aufgabenstellung für unseren ADD a Befehl zu entnehmen ist, soll das Ergebnis zurück in den Akku geschrieben werden.",
+        "cuDescription": "Ergebnis Z in den Akku"
       }
     ]
   },
