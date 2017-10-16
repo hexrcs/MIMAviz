@@ -1,5 +1,4 @@
 // The IO path and the values inside cells
-// "values" are only deltas
 // maybe later will come up with better ways, interpret the
 // instructions automatically, removing this file
 // Priority now however is to get a working version first
@@ -45,6 +44,17 @@
         ],
 
         "values": {
+          "Akku": "  AX  ",
+          "Eins": "000001",
+          "SAR" : "unbek",
+          "IAR" : "00100",
+          "IR"  : "unbek.",
+          "Z"   : "unbek.",
+          "X"   : "unbek.",
+          "Y"   : "unbek.",
+          "SDR" : "unbek.",
+          "R"   : "0",
+          "W"   : "0"
         }
       },
       // 1
@@ -59,11 +69,19 @@
             "to"  : "X"
           }
         ],
-
+        
         "values": {
+          "Akku": "  AX  ",
+          "Eins": "000001",
           "SAR" : "00100",
+          "IAR" : "00100",
+          "IR"  : "unbek.",
+          "Z"   : "unbek.",
           "X"   : "000100",
-          "R"   : "1"
+          "Y"   : "unbek.",
+          "SDR" : "unbek.",
+          "R"   : "1",
+          "W"   : "0"
         }
       },
       // 2
@@ -76,10 +94,17 @@
         ],
 
         "values": {
+          "Akku": "  AX  ",
           "Eins": "000001",
+          "SAR" : "00100",
+          "IAR" : "00100",
+          "IR"  : "unbek.",
+          "Z"   : "unbek.",
+          "X"   : "000100",
           "Y"   : "000001",
-          "R"   : "2"
-          // why in the original, value of R here is "2"?
+          "SDR" : "unbek.",
+          "R"   : "2",
+          "W"   : "0"
         }
       },
       // 3
@@ -92,9 +117,17 @@
         ],
 
         "values": {
+          "Akku": "  AX  ",
+          "Eins": "000001",
+          "SAR" : "00100",
+          "IAR" : "00100",
+          "IR"  : "unbek.",
           "Z"   : "000101",
+          "X"   : "000100",
+          "Y"   : "000001",
           "SDR" : "1--a--",
-          "R"   : "3"
+          "R"   : "3",
+          "W"   : "0"
         }
       },
       // 4
@@ -107,8 +140,17 @@
         ],
 
         "values": {
-          "IAR" : "00100",
-          "R"   : "0"
+          "Akku": "  AX  ",
+          "Eins": "000001",
+          "SAR" : "00100",
+          "IAR" : "00101",
+          "IR"  : "unbek.",
+          "Z"   : "000101",
+          "X"   : "000100",
+          "Y"   : "000001",
+          "SDR" : "1--a--",
+          "R"   : "0",
+          "W"   : "0"
         }
       },
       // 5
@@ -121,17 +163,36 @@
         ],
 
         "values": {
-          "IR"  : "1--a--"
+          "Akku": "  AX  ",
+          "Eins": "000001",
+          "SAR" : "00100",
+          "IAR" : "00101",
+          "IR"  : "1--a--",
+          "Z"   : "000101",
+          "X"   : "000100",
+          "Y"   : "000001",
+          "SDR" : "1--a--",
+          "R"   : "0",
+          "W"   : "0"
         }
       },
       // 6
       {
         "path": [
         ],
-
+        
         "values": {
-          "Eins" : "000001",
-          "Y"   : "000001"
+          "Akku": "  AX  ",
+          "Eins": "000001",
+          "SAR" : "00100",
+          "IAR" : "00101",
+          "IR"  : "1--a--",
+          "Z"   : "000101",
+          "X"   : "000100",
+          "Y"   : "000001",
+          "SDR" : "1--a--",
+          "R"   : "0",
+          "W"   : "0"
         }
       }
     ]
