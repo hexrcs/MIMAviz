@@ -1,3 +1,9 @@
+// The text descriptions to be displayed in both the big
+// bottom textbox and the one-liner under CU-viz.
+
+// German Umlaut aid for US keyboard guy like me ;)
+// ä, ö, ü, ß, Ä, Ö, Ü, ß
+
 {
   "IDLE": {
     "step": [

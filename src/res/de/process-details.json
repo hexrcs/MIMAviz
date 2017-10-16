@@ -1,0 +1,46 @@
+// The IO path and the values inside cells
+
+{
+  "IDLE": {
+    "step": [
+      {
+        "path": [
+          // {
+          //   "from": "",
+          //   "to": ""
+          // }
+        ],
+
+        "values": {
+          "Akku": "  AX  ",
+          "Eins": "000001",
+          "SAR" : "unbek",
+          "AIR" : "00100",
+          "IR"  : "unbek.",
+          "Z"   : "unbek.",
+          "X"   : "unbek.",
+          "Y"   : "unbek.",
+          "SDR" : "unbek.",
+          "R"   : "0",
+          "W"   : "0"
+        }
+      }
+    ]
+  },
+  "ADD": {
+  
+  },
+  "LDC": {
+    
+  },
+  "LDV": {
+  
+  },
+  "NOT": {
+    
+  },
+  "STV": {
+    
+  }
+}
+    

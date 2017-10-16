@@ -1,0 +1,30 @@
+// The instructions to be displayed in the CU step-visualizer.
+
+// German Umlaut aid for US keyboard guy like me ;)
+// ä, ö, ü, ß, Ä, Ö, Ü, ß
+
+{
+"IDLE": {
+  "cuUpperHeader": "So funktionierts:",
+  "step": [
+    "",
+    "1. Befehl aussuchen",
+    "2. START drücken!"
+  ]
+},
+"ADD": {
+
+},
+"LDC": {
+
+},
+"LDV": {
+
+},
+"NOT": {
+
+},
+"STV": {
+
+}
+}
