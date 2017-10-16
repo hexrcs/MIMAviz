@@ -120,6 +120,12 @@
       {
         "bottomDescription": "D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!",
         "cuDescription": "Starte yP für LDC Befehl"
+      },
+      // ========
+      // 7
+      {
+        "bottomDescription": "Das Praktische an dem OpCode des LDC Befehls ist, daß er Null ist. Somit brauchen wir das Instruktionsregister IR nicht mehr weiter filtern und können dieses direkt in den Akku laden.",
+        "cuDescription": "Lade Konstante in Akku"
       }
     ]
   },
