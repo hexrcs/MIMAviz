@@ -1,0 +1,26 @@
+{
+  "IDLE": {
+    "step": [
+      {
+        "bottomDescription": "Dieses Programm wurde entwickelt, um zukünftigen Generationen von Studenten das Funktionsprinzip der MIMA (Minimalautomat) anschaulich zu erklären. Ausgangsbasis für das Programm war das bereits vorhandene Programm zur Visualisierung der Festkomma-Arithmetik. Für Kritik und Verbesserungsvorschläge bin ich jederzeit offen. Der Autor.",
+
+        "cuDescription": "Willkommen bei MIMAviz!"
+      }
+    ]
+  },
+  "ADD": {
+
+  },
+  "LDC": {
+
+  },
+  "LDV": {
+
+  },
+  "NOT": {
+
+  },
+  "STV": {
+
+  }
+}
