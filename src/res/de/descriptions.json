@@ -225,6 +225,22 @@
       {
         "bottomDescription": "D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!",
         "cuDescription": "Starte yP für NOT Befehl"
+      },
+      // ========
+      // 7
+      {
+        "bottomDescription": "Der Akkumulator (Akku) wird zur Komplementbildung durch die ALU in das X Register geladen.",
+        "cuDescription": "Akku ins X register laden."
+      },
+      // 8
+      {
+        "bottomDescription": "Die ALU übernimmt für uns die Aufgabe der Komplementbildung (siehe Technische Informatik I). Dazu wird vom Steuerwerk an die ALU das Signal C2C1C0=110 angelegt.",
+        "cuDescription": "ALU berechnet Komplement."
+      },
+      // 9
+      {
+        "bottomDescription": "Das Ergebnis der Komplementberechnung wird zurück in den Akkumulator geschrieben.",
+        "cuDescription": "Ergebnis in Akku speichern."
       }
     ]
   },
