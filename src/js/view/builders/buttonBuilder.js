@@ -49,7 +49,7 @@ export default function buttonBuilder(name="", status=0) {
   }
   const buttonText = textDrawer(name, alt, type, x,y);
   sprite.hitArea = new PIXI.RoundedRectangle(x,y, width, 20, 8);
-
+  sprite.addChild(buttonBG, buttonText);
   return sprite;
 }
 
