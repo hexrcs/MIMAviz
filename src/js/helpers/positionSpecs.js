@@ -103,7 +103,7 @@ function ioMainLineSpec(id=0) {
   }
 }
 
-function ioMainDotSpec(id=0) {
+function ioCrossPointSpec(id=0) {
   switch(id) {
     case 1:
       return [198,58, 202,58, 202,62, 198,62];
