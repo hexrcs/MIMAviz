@@ -120,4 +120,4 @@ function ioCrossPointSpec(id=0) {
   }
 }
 
-export default {cellSpec, ioHArrowHeadSpec, ioHLineSpec, ioMainLineSpec, ioMainDotSpec};
+export default {cellSpec, ioHArrowHeadSpec, ioHLineSpec, ioMainLineSpec, ioCrossPointSpec};
