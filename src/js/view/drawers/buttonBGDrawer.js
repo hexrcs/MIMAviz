@@ -1,7 +1,7 @@
 import * as PIXI from "pixi.js";
 import {default as h} from "../../helpers";
 
-export default function buttonBGDrawer(type="", x=0, y=0, status=0) {
+export default function buttonBGDrawer(x=0, y=0, width=0, status=0) {
   // not strictly a sprite in PIXI though
   let sprite = new PIXI.Graphics();
 
@@ -16,12 +16,7 @@ export default function buttonBGDrawer(type="", x=0, y=0, status=0) {
     case 2:
       sprite.beginFill(h.colorCode.SELECT_ALT_BG);
   }
-
-  if(type === "upperButtonBG") {
-    sprite.drawRoundedRect(x,y, 40, 20, 8);
-  } else {
-    sprite.drawRoundedRect(x,y, 60, 20, 8);
-  }
+  sprite.drawRoundedRect(x,y, width, 20, 8);
 
   return sprite;
 }

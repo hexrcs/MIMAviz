@@ -44,7 +44,7 @@ export default function textDrawer(text="", alt=false, type="", x=0, y=0, cellSi
           {fontFamily: "Courier", fontSize: '12pt'}
         );
         sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + 20;
+        sprite.x = x + 40 / 2;
         sprite.y = y + 20 / 2;
         break;
       case "lowerButtonLabel":
@@ -52,7 +52,7 @@ export default function textDrawer(text="", alt=false, type="", x=0, y=0, cellSi
           {fontFamily: "Arial", fontSize: '11pt', fontWeight: 'bold'}
         );
         sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + 30;
+        sprite.x = x + 60 / 2;
         sprite.y = y + 20 / 2;
         break;
       case "phaseLabel":
