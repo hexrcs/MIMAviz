@@ -76,8 +76,8 @@ export default function textDrawer(text="", alt=false, type="", x=0, y=0, cellSi
           {fontFamily: "Arial", fontSize: '9pt', fontStyle: 'italic'}
         );
         sprite.anchor.set(0, 0.5);
-        sprite.x = x + 5;
-        sprite.y = y + 20 / 2;
+        sprite.x = 540 + 5;
+        sprite.y = 410 + 20 / 2;
         break;
     }
   } else {
