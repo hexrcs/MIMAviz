@@ -6,8 +6,10 @@ const right = require('./containers/right');
 const bottom = require('./containers/bottom');
 
 const log = console.log;
-const app = new PIXI.Application({antialias: true, transparent: true});
+const app = new PIXI.Application({antialias: true, transparent: true}); // for getting the renderer details
 document.body.appendChild(app.view);
+
+export const rendererSize = {width: app.renderer.width, height: app.renderer.width};
 
 // ======== INITIAL STATE ========
 // Create light grey background

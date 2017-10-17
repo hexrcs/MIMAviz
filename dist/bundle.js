@@ -20680,8 +20680,10 @@ function newSkip() {
 
 /***/ }),
 /* 89 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // Startup house keeping
 const PIXI = __webpack_require__(5);
 
@@ -20690,8 +20692,12 @@ const right = __webpack_require__(197);
 const bottom = __webpack_require__(201);
 
 const log = console.log;
-const app = new PIXI.Application({antialias: true, transparent: true});
+const app = new PIXI.Application({antialias: true, transparent: true}); // for getting the renderer details
 document.body.appendChild(app.view);
+
+const rendererSize = {width: app.renderer.width, height: app.renderer.width};
+/* harmony export (immutable) */ __webpack_exports__["rendererSize"] = rendererSize;
+
 
 // ======== INITIAL STATE ========
 // Create light grey background
