@@ -1,8 +1,6 @@
 import * as PIXI from "pixi.js";
 import {default as h} from "../../helpers";
-import {default as textDrawer} from "../drawers/textDrawer";
-import {default as cuPhaseBGDrawer} from "../drawers/cuPhaseBGDrawer"
-import {default as cuStepBGDrawer} from "../drawers/cuStepBGDrawer.js"
+import {textDrawer, cuPhaseBGDrawer, cuStepBGDrawer} from "../drawers";
 
 export default function cuExecBuilder(
   state={global: {mode: "IDLE", step: 0}}
