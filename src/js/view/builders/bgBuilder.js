@@ -12,6 +12,7 @@ export default function bgBuilder() {
   makeButtomDescriptionBG(sprite);
   makeInsideBG(sprite);
   makeArrowTipsBG(sprite);
+  makeALUioArrows(sprite);
   makeCellsBG(sprite);
 
   return sprite;
@@ -48,6 +49,13 @@ function makeArrowTipsBG(sprite=new PIXI.Graphics()) {
   sprite.drawPolygon(
     [198,432, 202,432, 202,458, 204,458, 200,466, 196,458, 198,458]
   );
+}
+
+function makeALUioArrows(sprite=new PIXI.Graphics()) {
+  sprite.beginFill(h.colorCode.BORDER);
+  sprite.drawPolygon([370,240, 366,248, 368,348, 368,260, 372,260, 372,248, 374,248]);
+  sprite.drawPolygon([340,300, 336,308, 338,308, 338,330, 342,330, 342,308, 344,308]);
+  sprite.drawPolygon([400,300, 396,308, 398,308, 398,360, 402,360, 402,308, 404,308]);
 }
 
 function makeCellsBG(sprite=new PIXI.Graphics()) {
