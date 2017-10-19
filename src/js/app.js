@@ -10,9 +10,7 @@ document.body.appendChild(app.view);
 
 export const rendererSize = {width: app.renderer.width, height: app.renderer.width};
 
-console.log(view);
-
-// app.stage.addChild(view.builders.bgBuilder);
+app.stage.addChild(view.builders.bgBuilder());
 
 // ======== END INITIAL STATE ========
 

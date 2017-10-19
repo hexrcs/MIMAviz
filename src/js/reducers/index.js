@@ -1,7 +1,7 @@
 export default function reducer(state={
   global: {mode: "IDLE", step: 0}
 }, action={type: "MODE_CHANGE", payload: name}) {
-  const newState = {  global: {mode: state.global.mode, step: state.global.step}};
+  const newState = {global: {mode: state.global.mode, step: state.global.step}};
   switch(action.type) {
     case "MODE_CHANGE":
       newState.global.mode = action.payload;

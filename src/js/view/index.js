@@ -1,3 +1,5 @@
-export {default as builders} from './builders';
-export {default as drawers} from './drawers';
-export {default as organizers} from './organizers';
+import * as builders from './builders';
+import * as drawers from './drawers';
+import * as organizers from './organizers';
+
+export {builders, drawers, organizers};
