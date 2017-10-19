@@ -5,7 +5,7 @@ import {buttonBuilder} from "../builders";
 export default function upperButtonsOrganizer(
   state={
     global: {mode: "IDLE", step: 0},
-    upperButton: {alt: "", status: 0},
+    upperButton: {alt: "", status: 0}
   }
 ) {
   const container = new PIXI.Container();
