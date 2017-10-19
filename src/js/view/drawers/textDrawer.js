@@ -10,7 +10,7 @@ export default function textDrawer(text="", alt=false, type="", x=0, y=0, cellSi
     switch(type) {
       case "bottomDescription":
         sprite = new PIXI.Text(text, 
-          {fontFamily: "Courier", fontSize: '12pt', wordWrap: true, wordWrapWidth: 100}
+          {fontFamily: "Courier", fontSize: '10pt', wordWrap: true, wordWrapWidth: 750}
         );
         sprite.x = 30;
         sprite.y = 495;
