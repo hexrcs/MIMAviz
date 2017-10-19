@@ -43254,7 +43254,7 @@ function makeALUioArrows() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
   sprite.beginFill(h.colorCode.BORDER);
-  sprite.drawPolygon([370, 240, 366, 248, 368, 348, 368, 260, 372, 260, 372, 248, 374, 248]);
+  sprite.drawPolygon([370, 240, 366, 248, 368, 248, 368, 260, 372, 260, 372, 248, 374, 248]);
   sprite.drawPolygon([340, 300, 336, 308, 338, 308, 338, 330, 342, 330, 342, 308, 344, 308]);
   sprite.drawPolygon([400, 300, 396, 308, 398, 308, 398, 360, 402, 360, 402, 308, 404, 308]);
 }
