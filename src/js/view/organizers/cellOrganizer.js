@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-import {default as h} from "../../helpers";
+import * as h from "../../helpers";
 import {cellBuilder} from "../builders";
 
 export default function cellOrganizer(
@@ -30,7 +30,7 @@ export default function cellOrganizer(
   for(let hl of cellsHighLighted) {
     let cellSprite;
     if(hl === "ALU") {
-      cellSprite = cellBuilder(hl, , true);
+      cellSprite = cellBuilder(hl, "", true);
     } else {
       cellSprite = cellBuilder(hl, cellsWithValues[hl], true);
     }

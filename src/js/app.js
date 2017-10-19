@@ -1,11 +1,10 @@
-// Startup house keeping
-const PIXI = require('pixi.js');
+import * as PIXI from "pixi.js";
+import {default as store} from "./store";
 
-const inside = require('./containers/inside');
-const right = require('./containers/right');
-const bottom = require('./containers/bottom');
+import {default as view} from "./view";
+import {default as reducers} from "./reducers";
+import {default as helpers} from "./helpers";
 
-const log = console.log;
 const app = new PIXI.Application({antialias: true, transparent: true}); // for getting the renderer details
 document.body.appendChild(app.view);
 

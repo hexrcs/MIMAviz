@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-import {default as h} from "../../helpers";
+import * as h from "../../helpers";
 
 export default function ioLineDrawer(dir="h", x=0, y=0, length=0, alt=false) {
   let sprite = new PIXI.Graphics();

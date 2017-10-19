@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-import {default as h} from "../../helpers";
+import * as h from "../../helpers";
 
 // This function handles drawing every text element on the view, 
 // the input x,y should be the upper left corner of the block

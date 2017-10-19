@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-import {default as h} from "../../helpers";
+import * as h from "../../helpers";
 import {ioCellArrowBuilder, ioBusBuilder} from "../builders";
 
 export default function ioPathOrganizer(

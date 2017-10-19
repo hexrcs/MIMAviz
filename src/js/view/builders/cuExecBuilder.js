@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-import {default as h} from "../../helpers";
+import * as h from "../../helpers";
 import {textDrawer, cuPhaseBGDrawer, cuStepBGDrawer} from "../drawers";
 
 export default function cuExecBuilder(

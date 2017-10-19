@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-import {default as h} from "../../helpers";
+import * as h from "../../helpers";
 
 export default function buttonBGDrawer(x=0, y=0, width=0, status=0) {
   // not strictly a sprite in PIXI though

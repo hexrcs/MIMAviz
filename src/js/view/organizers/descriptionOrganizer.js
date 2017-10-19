@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-import {default as h} from "../../helpers";
+import * as h from "../../helpers";
 import {default as bottomDescriptionBuilder} from "../builders/bottomDescriptionBuilder";
 import {default as cuDescriptionBuilder} from "../builders/cuDescriptionBuilder";
 
