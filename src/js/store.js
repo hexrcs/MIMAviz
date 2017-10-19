@@ -1,27 +1,29 @@
+import * as PIXI from "pixi.js";
 import { createStore } from "redux";
 import { default as reducer} from "./reducers";
+import * as view from "./view";
 
-const defaultState = 
-{
-  global: {
-    mode: "IDLE",
-    step: 0
-  }
-};
+const defaultState = {global: {mode: "IDLE", step: 0}};
 
-const exampleAction1 = {type: "NAV",  payload: "NEXT"};
-const exampleAction2 = {type: "MOUSE_OVER", payload: "STV_BTN"};
-const exampleAction3 = {type: "MOUSE_DOWN", payload: "NEXT"}; // ==> will fire exampleAction1
-// or more complex payloads?
+export const dynamicView = new PIXI.Container();
 
-const exampleAction4 = {type: "CHANGE_MODE", payload: "ADD"};
+export const store = createStore(reducer, defaultState);
 
-const store = createStore(reducer, defaultState);
+export function render() {
+  console.log("We are in render function");
+  console.log(dynamicView);
 
-// dummy render function
-function render() {
-  // do stuff with store.getState(), get all the view drawers, builders, organizers working
+  dynamicView.removeChildren();
+
+  const currentState = store.getState();
+  // const cellView = view.organizers.cellOrganizer(currentState);
+  // const cuView = view.organizers.cuOrganizer(currentState);
+  const descriptionView = view.organizers.descriptionOrganizer(currentState);
+  // const ioPathView = view.organizers.ioPathOrganizer(currentState);
+  // const lowerButtonsView = view.organizers.lowerButtonsOrganizer(currentState);
+  // const upperButtonsView = view.organizers.upperButtonsOrganizer(currentState);
+
+  // dynamicView.addChild(cellView, cuView, descriptionView, ioPathView, lowerButtonsView, upperButtonsView);
+
+  dynamicView.addChild(descriptionView);
 }
-// rerender whole canvas when state is changed
-store.subscribe(render);
-render(); // <== don't forget to render init state LOL

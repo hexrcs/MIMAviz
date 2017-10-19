@@ -7064,7 +7064,7 @@ function textDrawer() {
   if (!alt) {
     switch (type) {
       case "bottomDescription":
-        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', wordWrap: true, wordWrapWidth: 100 });
+        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '10pt', wordWrap: true, wordWrapWidth: 750 });
         sprite.x = 30;
         sprite.y = 495;
         break;
@@ -12293,7 +12293,7 @@ function ioLineDrawer() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.rendererSize = undefined;
+exports.rendererSize = exports.app = undefined;
 
 var _pixi = __webpack_require__(3);
 
@@ -12301,7 +12301,7 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _store = __webpack_require__(206);
 
-var _store2 = _interopRequireDefault(_store);
+var store = _interopRequireWildcard(_store);
 
 var _view = __webpack_require__(222);
 
@@ -12315,16 +12315,22 @@ var _helpers = __webpack_require__(4);
 
 var helpers = _interopRequireWildcard(_helpers);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-var app = new PIXI.Application({ antialias: true, transparent: true }); // for getting the renderer details
+var app = exports.app = new PIXI.Application({ antialias: true, transparent: true });
 document.body.appendChild(app.view);
 
 var rendererSize = exports.rendererSize = { width: app.renderer.width, height: app.renderer.width };
 
 app.stage.addChild(view.builders.bgBuilder());
+
+console.log("We are in app.js");
+console.log(store.dynamicView);
+
+app.stage.addChild(store.dynamicView);
+
+console.log("about to render");
+store.render();
 
 // ======== END INITIAL STATE ========
 
@@ -42520,37 +42526,54 @@ exports.default = TimeLimiter;
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.store = exports.dynamicView = undefined;
+exports.render = render;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
 var _redux = __webpack_require__(207);
 
 var _reducers = __webpack_require__(102);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
+var _view = __webpack_require__(222);
+
+var view = _interopRequireWildcard(_view);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var defaultState = {
-  global: {
-    mode: "IDLE",
-    step: 0
-  }
-};
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-var exampleAction1 = { type: "NAV", payload: "NEXT" };
-var exampleAction2 = { type: "MOUSE_OVER", payload: "STV_BTN" };
-var exampleAction3 = { type: "MOUSE_DOWN", payload: "NEXT" }; // ==> will fire exampleAction1
-// or more complex payloads?
+var defaultState = { global: { mode: "IDLE", step: 0 } };
 
-var exampleAction4 = { type: "CHANGE_MODE", payload: "ADD" };
+var dynamicView = exports.dynamicView = new PIXI.Container();
 
-var store = (0, _redux.createStore)(_reducers2.default, defaultState);
+var store = exports.store = (0, _redux.createStore)(_reducers2.default, defaultState);
 
-// dummy render function
-function render() {}
-// do stuff with store.getState(), get all the view drawers, builders, organizers working
+function render() {
+  console.log("We are in render function");
+  console.log(dynamicView);
 
-// rerender whole canvas when state is changed
-store.subscribe(render);
-render(); // <== don't forget to render init state LOL
+  dynamicView.removeChildren();
+
+  var currentState = store.getState();
+  // const cellView = view.organizers.cellOrganizer(currentState);
+  // const cuView = view.organizers.cuOrganizer(currentState);
+  var descriptionView = view.organizers.descriptionOrganizer(currentState);
+  // const ioPathView = view.organizers.ioPathOrganizer(currentState);
+  // const lowerButtonsView = view.organizers.lowerButtonsOrganizer(currentState);
+  // const upperButtonsView = view.organizers.upperButtonsOrganizer(currentState);
+
+  // dynamicView.addChild(cellView, cuView, descriptionView, ioPathView, lowerButtonsView, upperButtonsView);
+
+  dynamicView.addChild(descriptionView);
+}
 
 /***/ }),
 /* 207 */
