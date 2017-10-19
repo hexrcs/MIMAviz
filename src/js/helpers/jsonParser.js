@@ -22,4 +22,10 @@ function cuDisplayInterpreter(state={global: {mode: "", step: 0}}) {
   return cu[mode];
 }
 
-export default {processInterpreter, descriptionInterpreter, cuDisplayInterpreter};
+function totalStepCount(state={global: {mode: "", step: 0}}) {
+  const mode = state.global.mode;
+
+  return pd[mode]["step"].length;
+}
+
+export default {processInterpreter, descriptionInterpreter, cuDisplayInterpreter, totalStepCount};
