@@ -42379,12 +42379,7 @@ const defaultState =
   global: {
     mode: "IDLE",
     step: 0
-  },
-  // the pressed buttons
-  upperButton: "",
-  lowerButton: "",
-  hoverButton: "",
-  // 
+  }
 };
 
 const exampleAction1 = {type: "NAV",  payload: "NEXT"};
@@ -43331,7 +43326,7 @@ function buttonBuilder(name="", status=0, store) {
         break;
   }
 
-  const buttonBG = Object(__WEBPACK_IMPORTED_MODULE_2__drawers_buttonBGDrawer__["a" /* default */])(x,y, width, status);
+  let buttonBG = Object(__WEBPACK_IMPORTED_MODULE_2__drawers_buttonBGDrawer__["a" /* default */])(x,y, width, status);
   let alt = false;
   if(status = 2) {
     alt = true;
@@ -43344,10 +43339,16 @@ function buttonBuilder(name="", status=0, store) {
   sprite.hitArea = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["RoundedRectangle"](x,y, width, 20, 8);
   sprite.addChild(buttonBG, buttonText);
 
-  sprite.on("pointerover", pointerOver(name, store));
+  if(status !== 2) {
+    sprite.on("pointerover", () => {
+      buttonBG = Object(__WEBPACK_IMPORTED_MODULE_2__drawers_buttonBGDrawer__["a" /* default */])(x,y, width, 1);
+    });
+    sprite.on("pointerout", () => {
+      buttonBG = Object(__WEBPACK_IMPORTED_MODULE_2__drawers_buttonBGDrawer__["a" /* default */])(x,y, width, status);
+    });
+  }
+
   sprite.on("pointerdown", pointerDown(name, store));
-  sprite.on("pointerout", pointerOut(name, store));
-  
   return sprite;
 }
 
@@ -43369,14 +43370,6 @@ function pointerDown(name="", store) {
       store.dispatch({type: "NAV", payload: name});
       break;
   }
-}
-
-function pointerOver(name="", store) {
-  store.dispatch({type: "POINTER_OVER", payload: name});
-}
-
-function pointerOut(name="", store) {
-  store.dispatch({type: "POINTER_OUT", payload: name});
 }
 
 
@@ -43971,25 +43964,15 @@ function whichArrows(name="", from=false, to=false) {
 
 function lowerButtonsOrganizer(
   state={
-    global: {mode: "IDLE", step: 0},
-    lowerButton: "",
-    hoverButton: ""
+    global: {mode: "IDLE", step: 0}
   },
   store
 ) {
   const container = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Container"]();
 
   for(let b of visibleButtons(state)) {
-    if(b === state.lowerButton) {
-      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 2, store);
-      container.addChild(button);
-    } else if (b === state.hoverButton) {
-      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 1, store);
-      container.addChild(button);
-    } else {
-      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 0, store);
-      container.addChild(button);
-    }
+    const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 0, store);
+    container.addChild(button);
   }
 
   return container;
@@ -44049,20 +44032,15 @@ function visibleButtons(
 
 function upperButtonsOrganizer(
   state={
-    global: {mode: "IDLE", step: 0},
-    upperButton: "",
-    hoverButton: ""
+    global: {mode: "IDLE", step: 0}
   },
   store
 ) {
   const container = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Container"]();
 
   for(let b of ["ADD", "LDC", "LDV", "NOT", "STV"]) {
-    if(b === state.upperButton) {
+    if(b === state.global.mode) {
       const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 2, store);
-      container.addChild(button);
-    } else if (b === state.hoverButton) {
-      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 1, store);
       container.addChild(button);
     } else {
       const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 0, store);

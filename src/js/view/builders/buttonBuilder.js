@@ -38,7 +38,7 @@ export default function buttonBuilder(name="", status=0, store) {
         break;
   }
 
-  const buttonBG = buttonBGDrawer(x,y, width, status);
+  let buttonBG = buttonBGDrawer(x,y, width, status);
   let alt = false;
   if(status = 2) {
     alt = true;
@@ -51,10 +51,16 @@ export default function buttonBuilder(name="", status=0, store) {
   sprite.hitArea = new PIXI.RoundedRectangle(x,y, width, 20, 8);
   sprite.addChild(buttonBG, buttonText);
 
-  sprite.on("pointerover", pointerOver(name, store));
+  if(status !== 2) {
+    sprite.on("pointerover", () => {
+      buttonBG = buttonBGDrawer(x,y, width, 1);
+    });
+    sprite.on("pointerout", () => {
+      buttonBG = buttonBGDrawer(x,y, width, status);
+    });
+  }
+
   sprite.on("pointerdown", pointerDown(name, store));
-  sprite.on("pointerout", pointerOut(name, store));
-  
   return sprite;
 }
 
@@ -76,12 +82,4 @@ function pointerDown(name="", store) {
       store.dispatch({type: "NAV", payload: name});
       break;
   }
-}
-
-function pointerOver(name="", store) {
-  store.dispatch({type: "POINTER_OVER", payload: name});
-}
-
-function pointerOut(name="", store) {
-  store.dispatch({type: "POINTER_OUT", payload: name});
 }

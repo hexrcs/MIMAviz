@@ -6,12 +6,7 @@ const defaultState =
   global: {
     mode: "IDLE",
     step: 0
-  },
-  // the pressed buttons
-  upperButton: "",
-  lowerButton: "",
-  hoverButton: "",
-  // 
+  }
 };
 
 const exampleAction1 = {type: "NAV",  payload: "NEXT"};
