@@ -5,17 +5,22 @@ import {buttonBuilder} from "../builders";
 export default function lowerButtonsOrganizer(
   state={
     global: {mode: "IDLE", step: 0},
-    lowerButton: {alt: "", status: 0}
-  }
+    lowerButton: "",
+    hoverButton: ""
+  },
+  store
 ) {
   const container = new PIXI.Container();
 
   for(let b of visibleButtons(state)) {
-    if(b === state.lowerButton.alt) {
-      const button = buttonBuilder(b, state.lowerButton.status);
+    if(b === state.lowerButton) {
+      const button = buttonBuilder(b, 2, store);
+      container.addChild(button);
+    } else if (b === state.hoverButton) {
+      const button = buttonBuilder(b, 1, store);
       container.addChild(button);
     } else {
-      const button = buttonBuilder(b);
+      const button = buttonBuilder(b, 0, store);
       container.addChild(button);
     }
   }

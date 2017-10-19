@@ -42380,17 +42380,11 @@ const defaultState =
     mode: "IDLE",
     step: 0
   },
-  // only 1 upper button as "alt" - the "pressed" status will be indicated by state[global][mode]
-  upperButton: { 
-    alt: "",
-    // the button background rendering is managed upon global mode, not button status
-    status: 0 // 0: not touched, 1: mouse over. if click, will update mode, thus rerender BG.
-  },
-  lowerButton: {
-    alt: "",
-    // lower button responds when mouse click is released (if too hard will simplify)
-    status: 0 // 0: not touched, 1: mouse over, 2: mouse down. 
-  }
+  // the pressed buttons
+  upperButton: "",
+  lowerButton: "",
+  hoverButton: "",
+  // 
 };
 
 const exampleAction1 = {type: "NAV",  payload: "NEXT"};
@@ -43302,7 +43296,7 @@ function ioCrossPointSpec(id=0) {
 
 
 
-function buttonBuilder(name="", status=0) {
+function buttonBuilder(name="", status=0, store) {
   let sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]();
   sprite.interactive = true;
   sprite.buttonMode = true;
@@ -43349,10 +43343,41 @@ function buttonBuilder(name="", status=0) {
   const buttonText = Object(__WEBPACK_IMPORTED_MODULE_3__drawers_textDrawer__["a" /* default */])(name, alt, type, x,y);
   sprite.hitArea = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["RoundedRectangle"](x,y, width, 20, 8);
   sprite.addChild(buttonBG, buttonText);
+
+  sprite.on("pointerover", pointerOver(name, store));
+  sprite.on("pointerdown", pointerDown(name, store));
+  sprite.on("pointerout", pointerOut(name, store));
+  
   return sprite;
 }
 
 // maybe add actions here?
+function pointerDown(name="", store) {
+  switch(name) {
+    case "ADD":
+    case "LDC":
+    case "LDV":
+    case "NOT":
+    case "STV":
+      store.dispatch({type: "MODE_CHANGE", payload: name});
+      break;
+    case "BACK":
+    case "START":
+    case "NEXT":
+    case "SKIP":
+    case "END":
+      store.dispatch({type: "NAV", payload: name});
+      break;
+  }
+}
+
+function pointerOver(name="", store) {
+  store.dispatch({type: "POINTER_OVER", payload: name});
+}
+
+function pointerOut(name="", store) {
+  store.dispatch({type: "POINTER_OUT", payload: name});
+}
 
 
 /***/ }),
@@ -43947,17 +43972,22 @@ function whichArrows(name="", from=false, to=false) {
 function lowerButtonsOrganizer(
   state={
     global: {mode: "IDLE", step: 0},
-    lowerButton: {alt: "", status: 0}
-  }
+    lowerButton: "",
+    hoverButton: ""
+  },
+  store
 ) {
   const container = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Container"]();
 
   for(let b of visibleButtons(state)) {
-    if(b === state.lowerButton.alt) {
-      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, state.lowerButton.status);
+    if(b === state.lowerButton) {
+      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 2, store);
+      container.addChild(button);
+    } else if (b === state.hoverButton) {
+      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 1, store);
       container.addChild(button);
     } else {
-      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b);
+      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 0, store);
       container.addChild(button);
     }
   }
@@ -44020,17 +44050,22 @@ function visibleButtons(
 function upperButtonsOrganizer(
   state={
     global: {mode: "IDLE", step: 0},
-    upperButton: {alt: "", status: 0}
-  }
+    upperButton: "",
+    hoverButton: ""
+  },
+  store
 ) {
   const container = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Container"]();
 
   for(let b of ["ADD", "LDC", "LDV", "NOT", "STV"]) {
-    if(b === state.upperButton.alt) {
-      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, state.upperButton.status);
+    if(b === state.upperButton) {
+      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 2, store);
+      container.addChild(button);
+    } else if (b === state.hoverButton) {
+      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 1, store);
       container.addChild(button);
     } else {
-      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b);
+      const button = Object(__WEBPACK_IMPORTED_MODULE_2__builders__["a" /* buttonBuilder */])(b, 0, store);
       container.addChild(button);
     }
   }

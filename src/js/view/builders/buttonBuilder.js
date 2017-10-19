@@ -3,7 +3,7 @@ import * as h from "../../helpers";
 import {default as buttonBGDrawer} from "../drawers/buttonBGDrawer";
 import {default as textDrawer} from "../drawers/textDrawer";
 
-export default function buttonBuilder(name="", status=0) {
+export default function buttonBuilder(name="", status=0, store) {
   let sprite = new PIXI.Graphics();
   sprite.interactive = true;
   sprite.buttonMode = true;
@@ -50,7 +50,38 @@ export default function buttonBuilder(name="", status=0) {
   const buttonText = textDrawer(name, alt, type, x,y);
   sprite.hitArea = new PIXI.RoundedRectangle(x,y, width, 20, 8);
   sprite.addChild(buttonBG, buttonText);
+
+  sprite.on("pointerover", pointerOver(name, store));
+  sprite.on("pointerdown", pointerDown(name, store));
+  sprite.on("pointerout", pointerOut(name, store));
+  
   return sprite;
 }
 
 // maybe add actions here?
+function pointerDown(name="", store) {
+  switch(name) {
+    case "ADD":
+    case "LDC":
+    case "LDV":
+    case "NOT":
+    case "STV":
+      store.dispatch({type: "MODE_CHANGE", payload: name});
+      break;
+    case "BACK":
+    case "START":
+    case "NEXT":
+    case "SKIP":
+    case "END":
+      store.dispatch({type: "NAV", payload: name});
+      break;
+  }
+}
+
+function pointerOver(name="", store) {
+  store.dispatch({type: "POINTER_OVER", payload: name});
+}
+
+function pointerOut(name="", store) {
+  store.dispatch({type: "POINTER_OUT", payload: name});
+}

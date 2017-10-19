@@ -7,17 +7,11 @@ const defaultState =
     mode: "IDLE",
     step: 0
   },
-  // only 1 upper button as "alt" - the "pressed" status will be indicated by state[global][mode]
-  upperButton: { 
-    alt: "",
-    // the button background rendering is managed upon global mode, not button status
-    status: 0 // 0: not touched, 1: mouse over. if click, will update mode, thus rerender BG.
-  },
-  lowerButton: {
-    alt: "",
-    // lower button responds when mouse click is released (if too hard will simplify)
-    status: 0 // 0: not touched, 1: mouse over, 2: mouse down. 
-  }
+  // the pressed buttons
+  upperButton: "",
+  lowerButton: "",
+  hoverButton: "",
+  // 
 };
 
 const exampleAction1 = {type: "NAV",  payload: "NEXT"};
