@@ -8,7 +8,6 @@ export default function buttonBuilder(name="", status=0, store) {
   sprite.interactive = true;
   sprite.buttonMode = true;
   let [x, y, width] = [0, 0, 0];
-  let type = "";
   switch(name) {
       case "ADD":
         [x, y, width] = [540, 30, 40];
