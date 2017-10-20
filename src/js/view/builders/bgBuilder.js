@@ -34,6 +34,13 @@ function makeCUDisplayBG(sprite=new PIXI.Graphics()) {
   sprite.drawRoundedRect(540, 70, 240, 360, 8);
   sprite.beginFill(h.colorCode.DEFAULT_ALT);
   sprite.drawRect(540, 90, 240, 320);
+  const textSprite = new PIXI.Text("STEUERWERK", 
+    {fontFamily: "Courier", fontSize: '12pt', fontWeight: 'bold'}
+  );
+  textSprite.anchor.set(0.5, 0.5);
+  textSprite.x = 660;
+  textSprite.y = 80;
+  sprite.addChild(textSprite);
 }
 
 function makeInsideBG(sprite=new PIXI.Graphics()) {
