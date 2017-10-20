@@ -1,9 +1,9 @@
 import * as PIXI from 'pixi.js';
-import * as h from '../../helpers';
+import { colorCode } from '../../helpers';
 
 export default function cuPhaseBGDrawer (name = '') {
   let sprite = new PIXI.Graphics();
-  sprite.beginFill(h.colorCode.LIGHT_BG);
+  sprite.beginFill(colorCode.LIGHT_BG);
   switch (name) {
     case 'fetch':
       sprite.drawRect(540, 90, 240, 20);

@@ -1,11 +1,11 @@
 import * as PIXI from 'pixi.js';
-import * as h from '../../helpers';
+import { jsonParser } from '../../helpers';
 import { cellBuilder } from '../builders';
 
 export default function cellOrganizer (state = {global: {mode: 'IDLE', step: 0}}) {
   let container = new PIXI.Container();
-  const path = h.jsonParser.processInterpreter(state)['path'];
-  const values = h.jsonParser.processInterpreter(state)['values'];
+  const path = jsonParser.processInterpreter(state)['path'];
+  const values = jsonParser.processInterpreter(state)['values'];
   const cellsWithValues = Object.keys(values);
   const cellsHighLighted = new Set();
   const cellsNotHighLighted = new Set();

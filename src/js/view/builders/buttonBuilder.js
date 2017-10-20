@@ -1,7 +1,5 @@
 import * as PIXI from 'pixi.js';
-import * as h from '../../helpers';
-import { default as buttonBGDrawer } from '../drawers/buttonBGDrawer';
-import { default as textDrawer } from '../drawers/textDrawer';
+import { buttonBGDrawer, textDrawer } from '../drawers';
 
 export default function buttonBuilder (name = '', status = 0, store) {
   let sprite = new PIXI.Graphics();
@@ -50,17 +48,6 @@ export default function buttonBuilder (name = '', status = 0, store) {
   sprite.hitArea = new PIXI.RoundedRectangle(x, y, width, 20, 8);
   sprite.addChild(buttonBG, buttonText);
 
-  // if(status !== 2) {
-  //   console.log(name, status);  
-  //   sprite.on("pointerover", () => {
-  //     buttonBG = buttonBGDrawer(x,y, width, 1);
-  //   });
-  //   sprite.on("pointerout", () => {
-  //     buttonBG = buttonBGDrawer(x,y, width, status);
-  //   });
-  // }
-
-  // sprite.on('pointerdown', () => console.log(name));
   sprite.on('pointerdown', () => pointerDown(name, store));
   return sprite;
 }

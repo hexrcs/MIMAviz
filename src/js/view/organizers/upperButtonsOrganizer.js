@@ -1,5 +1,4 @@
 import * as PIXI from 'pixi.js';
-import * as h from '../../helpers';
 import { buttonBuilder } from '../builders';
 
 export default function upperButtonsOrganizer (state = {global: {mode: 'IDLE', step: 0}}, store) {

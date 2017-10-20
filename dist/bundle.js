@@ -87,14 +87,6 @@ var _view = __webpack_require__(103);
 
 var view = _interopRequireWildcard(_view);
 
-var _reducers = __webpack_require__(102);
-
-var reducers = _interopRequireWildcard(_reducers);
-
-var _helpers = __webpack_require__(5);
-
-var helpers = _interopRequireWildcard(_helpers);
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 var app = exports.app = new PIXI.Application({ antialias: true, transparent: true });
@@ -4015,6 +4007,15 @@ Object.defineProperty(exports, 'ioCellArrowBuilder', {
   }
 });
 
+var _cuDescriptionBuilder = __webpack_require__(243);
+
+Object.defineProperty(exports, 'cuDescriptionBuilder', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_cuDescriptionBuilder).default;
+  }
+});
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
@@ -5583,8 +5584,6 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 // This function handles drawing every text element on the view, 
@@ -5657,22 +5656,12 @@ function textDrawer() {
     }
   } else {
     switch (type) {
-      // case "bottomDescription":
-      //   sprite = new PIXI.Text(text, {
-      //     fontFamily: "Courier", 
-      //     fontSize: '12pt', 
-      //     wordWrap: true, 
-      //     wordWrapWidth: 100
-      //   });
-      //   sprite.x = 30;
-      //   sprite.y = 495;
-      //   break;
       case 'cellLabel':
         sprite = new PIXI.Text(text, {
           fontFamily: 'Courier',
           fontSize: '12pt',
           fontWeight: 'bold',
-          fill: h.colorCode.INSIDE_ALT
+          fill: _helpers.colorCode.INSIDE_ALT
         });
         sprite.anchor.set(0.5, 0.5);
         sprite.x = x + cellSize * 20 / 2;
@@ -5683,7 +5672,7 @@ function textDrawer() {
           fontFamily: 'Courier',
           fontSize: '12pt',
           fontWeight: 'bold',
-          fill: h.colorCode.INSIDE_ALT
+          fill: _helpers.colorCode.INSIDE_ALT
         });
         sprite.anchor.set(0.5, 0.5);
         sprite.x = 370;
@@ -5695,46 +5684,30 @@ function textDrawer() {
           fontSize: '12pt',
           letterSpacing: 10,
           fontWeight: 'bold',
-          fill: h.colorCode.INSIDE_ALT
+          fill: _helpers.colorCode.INSIDE_ALT
         });
         sprite.anchor.set(1, 0.5);
         sprite.x = x + cellSize * 20 - 5;
         sprite.y = y + 20 + 20 / 2;
         break;
       case 'upperButtonLabel':
-        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '12pt', fill: h.colorCode.DEFAULT_ALT });
+        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '12pt', fill: _helpers.colorCode.DEFAULT_ALT });
         sprite.anchor.set(0.5, 0.5);
         sprite.x = x + 20;
         sprite.y = y + 20 / 2;
         break;
       case 'lowerButtonLabel':
-        sprite = new PIXI.Text(text, { fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold', fill: h.colorCode.DEFAULT_ALT });
+        sprite = new PIXI.Text(text, { fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold', fill: _helpers.colorCode.DEFAULT_ALT });
         sprite.anchor.set(0.5, 0.5);
         sprite.x = x + 30;
         sprite.y = y + 20 / 2;
         break;
-      // case "phaseLabel":
-      //   sprite = new PIXI.Text(text, 
-      //     {fontFamily: "Courier", fontSize: '12pt', fontWeight: 'bold'}
-      //   );
-      //   sprite.anchor.set(0, 0.5);
-      //   sprite.x = x + 5;
-      //   sprite.y = y + 20 / 2;
-      //   break;
       case 'cuStep':
-        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '11pt', fill: h.colorCode.DEFAULT_ALT });
+        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '11pt', fill: _helpers.colorCode.DEFAULT_ALT });
         sprite.anchor.set(0, 0.5);
         sprite.x = x + 5;
         sprite.y = y + 20 / 2;
         break;
-      // case "cuDescription":
-      //   sprite = new PIXI.Text(text, 
-      //     {fontFamily: "Arial", fontSize: '9pt', fontStyle: 'italic'}
-      //   );
-      //   sprite.anchor.set(0, 0.5);
-      //   sprite.x = x + 5;
-      //   sprite.y = y + 20 / 2;
-      //   break;
     }
   }
 
@@ -12187,8 +12160,6 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function ioArrowHeadDrawer() {
@@ -12197,9 +12168,9 @@ function ioArrowHeadDrawer() {
 
   var sprite = new PIXI.Graphics();
   if (!alt) {
-    sprite.beginFill(h.colorCode.BORDER);
+    sprite.beginFill(_helpers.colorCode.BORDER);
   } else {
-    sprite.beginFill(h.colorCode.INSIDE_ALT);
+    sprite.beginFill(_helpers.colorCode.INSIDE_ALT);
   }
   sprite.drawPolygon(arrowHead);
 
@@ -12309,8 +12280,6 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function ioLineDrawer() {
@@ -12322,9 +12291,9 @@ function ioLineDrawer() {
 
   var sprite = new PIXI.Graphics();
   if (!alt) {
-    sprite.lineStyle(4, h.colorCode.BORDER);
+    sprite.lineStyle(4, _helpers.colorCode.BORDER);
   } else {
-    sprite.lineStyle(4, h.colorCode.INSIDE_ALT);
+    sprite.lineStyle(4, _helpers.colorCode.INSIDE_ALT);
   }
 
   var dx = x,
@@ -21813,8 +21782,6 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function buttonBGDrawer() {
@@ -21828,14 +21795,14 @@ function buttonBGDrawer() {
 
   switch (status) {
     case 0:
-      sprite.beginFill(h.colorCode.DEFAULT_ALT);
+      sprite.beginFill(_helpers.colorCode.DEFAULT_ALT);
       break;
     case 1:
-      sprite.lineStyle(2, h.colorCode.SELECT_ALT_BG, 0.75);
-      sprite.beginFill(h.colorCode.DEFAULT_ALT);
+      sprite.lineStyle(2, _helpers.colorCode.SELECT_ALT_BG, 0.75);
+      sprite.beginFill(_helpers.colorCode.DEFAULT_ALT);
       break;
     case 2:
-      sprite.beginFill(h.colorCode.SELECT_ALT_BG);
+      sprite.beginFill(_helpers.colorCode.SELECT_ALT_BG);
   }
   sprite.drawRoundedRect(x, y, width, 20, 8);
 
@@ -21854,26 +21821,12 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = bottomDescriptionBuilder;
 
-var _pixi = __webpack_require__(4);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-var h = _interopRequireWildcard(_helpers);
-
-var _textDrawer = __webpack_require__(21);
-
-var _textDrawer2 = _interopRequireDefault(_textDrawer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+var _drawers = __webpack_require__(44);
 
 function bottomDescriptionBuilder() {
   var text = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
 
-  var sprite = (0, _textDrawer2.default)(text, false, 'bottomDescription');
+  var sprite = (0, _drawers.textDrawer)(text, false, 'bottomDescription');
   return sprite;
 }
 
@@ -21898,8 +21851,6 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function cellLineDrawer() {
@@ -21908,19 +21859,19 @@ function cellLineDrawer() {
 
   var sprite = new PIXI.Graphics();
   if (!alt) {
-    sprite.lineStyle(1, h.colorCode.BORDER);
+    sprite.lineStyle(1, _helpers.colorCode.BORDER);
   } else {
-    sprite.lineStyle(2, h.colorCode.INSIDE_ALT);
+    sprite.lineStyle(2, _helpers.colorCode.INSIDE_ALT);
   }
 
   if (name === 'ALU') {
     sprite.drawPolygon([340, 260, 300, 300, 360, 300, 370, 290, 380, 300, 440, 300, 400, 260, 340, 260]);
   } else {
-    var _h$positionSpecs$cell = h.positionSpecs.cellSpec(name),
-        _h$positionSpecs$cell2 = _slicedToArray(_h$positionSpecs$cell, 3),
-        x = _h$positionSpecs$cell2[0],
-        y = _h$positionSpecs$cell2[1],
-        cellSize = _h$positionSpecs$cell2[2];
+    var _positionSpecs$cellSp = _helpers.positionSpecs.cellSpec(name),
+        _positionSpecs$cellSp2 = _slicedToArray(_positionSpecs$cellSp, 3),
+        x = _positionSpecs$cellSp2[0],
+        y = _positionSpecs$cellSp2[1],
+        cellSize = _positionSpecs$cellSp2[2];
 
     sprite.drawRect(x, y, cellSize * 20, 40);
     // horizontal
@@ -21954,8 +21905,6 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function ioCrossPointDrawer() {
@@ -21964,9 +21913,9 @@ function ioCrossPointDrawer() {
 
   var sprite = new PIXI.Graphics();
   if (!alt) {
-    sprite.beginFill(h.colorCode.BORDER);
+    sprite.beginFill(_helpers.colorCode.BORDER);
   } else {
-    sprite.beginFill(h.colorCode.INSIDE_ALT);
+    sprite.beginFill(_helpers.colorCode.INSIDE_ALT);
   }
   sprite.drawPolygon(points);
 
@@ -43257,15 +43206,7 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
-var _ioArrowHeadDrawer = __webpack_require__(43);
-
-var _ioArrowHeadDrawer2 = _interopRequireDefault(_ioArrowHeadDrawer);
-
 var _app = __webpack_require__(0);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -43286,24 +43227,23 @@ function bgBuilder() {
 function makeBigBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(h.colorCode.DARK_BG);
+  sprite.beginFill(_helpers.colorCode.DARK_BG);
   sprite.drawRoundedRect(0, 0, _app.rendererSize.width, _app.rendererSize.height, 8);
 }
 
 function makeButtomDescriptionBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(h.colorCode.DEFAULT_ALT);
+  sprite.beginFill(_helpers.colorCode.DEFAULT_ALT);
   sprite.drawRoundedRect(20, 490, 760, 100, 8);
 }
 
 function makeCUDisplayBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(h.colorCode.DARKER_BG);
-  // sprite.lineStyle(2, h.colorCode.BORDER, 0.5);
+  sprite.beginFill(_helpers.colorCode.DARKER_BG);
   sprite.drawRoundedRect(540, 70, 240, 360, 8);
-  sprite.beginFill(h.colorCode.DEFAULT_ALT);
+  sprite.beginFill(_helpers.colorCode.DEFAULT_ALT);
   sprite.drawRect(540, 90, 240, 320);
   var textSprite = new PIXI.Text('STEUERWERK', { fontFamily: 'Courier', fontSize: '12pt', fontWeight: 'bold' });
   textSprite.anchor.set(0.5, 0.5);
@@ -43315,14 +43255,14 @@ function makeCUDisplayBG() {
 function makeInsideBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(h.colorCode.DEFAULT_ALT);
+  sprite.beginFill(_helpers.colorCode.DEFAULT_ALT);
   sprite.drawRoundedRect(20, 20, 500, 460, 8);
 }
 
 function makeArrowTipsBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(h.colorCode.BORDER);
+  sprite.beginFill(_helpers.colorCode.BORDER);
   sprite.drawPolygon([200, 30, 196, 38, 198, 38, 198, 58, 202, 58, 202, 38, 204, 38]);
   sprite.drawPolygon([198, 432, 202, 432, 202, 458, 204, 458, 200, 466, 196, 458, 198, 458]);
 }
@@ -43330,7 +43270,7 @@ function makeArrowTipsBG() {
 function makeALUioArrows() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(h.colorCode.BORDER);
+  sprite.beginFill(_helpers.colorCode.BORDER);
   sprite.drawPolygon([370, 240, 366, 248, 368, 248, 368, 260, 372, 260, 372, 248, 374, 248]);
   sprite.drawPolygon([340, 300, 336, 308, 338, 308, 338, 330, 342, 330, 342, 308, 344, 308]);
   sprite.drawPolygon([400, 300, 396, 308, 398, 308, 398, 360, 402, 360, 402, 308, 404, 308]);
@@ -43339,15 +43279,15 @@ function makeALUioArrows() {
 function makeCellsBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(h.colorCode.LIGHT_BG);
+  sprite.beginFill(_helpers.colorCode.LIGHT_BG);
   // my first reducer in this life time LOL
   // but it's just like a foreach loop :-/
   ['Akku', 'Eins', 'SAR', 'IAR', 'IR', 'Z', 'X', 'Y', 'SDR', 'R', 'W'].reduce(function (result, item) {
-    var _h$positionSpecs$cell = h.positionSpecs.cellSpec(item),
-        _h$positionSpecs$cell2 = _slicedToArray(_h$positionSpecs$cell, 3),
-        x = _h$positionSpecs$cell2[0],
-        y = _h$positionSpecs$cell2[1],
-        cellSize = _h$positionSpecs$cell2[2];
+    var _positionSpecs$cellSp = _helpers.positionSpecs.cellSpec(item),
+        _positionSpecs$cellSp2 = _slicedToArray(_positionSpecs$cellSp, 3),
+        x = _positionSpecs$cellSp2[0],
+        y = _positionSpecs$cellSp2[1],
+        cellSize = _positionSpecs$cellSp2[2];
 
     sprite.drawRect(x, y, cellSize * 20, 40);
   }, sprite);
@@ -43635,19 +43575,7 @@ var _pixi = __webpack_require__(4);
 
 var PIXI = _interopRequireWildcard(_pixi);
 
-var _helpers = __webpack_require__(5);
-
-var h = _interopRequireWildcard(_helpers);
-
-var _buttonBGDrawer = __webpack_require__(104);
-
-var _buttonBGDrawer2 = _interopRequireDefault(_buttonBGDrawer);
-
-var _textDrawer = __webpack_require__(21);
-
-var _textDrawer2 = _interopRequireDefault(_textDrawer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _drawers = __webpack_require__(44);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -43716,7 +43644,7 @@ function buttonBuilder() {
       break;
   }
 
-  var buttonBG = (0, _buttonBGDrawer2.default)(x, y, width, status);
+  var buttonBG = (0, _drawers.buttonBGDrawer)(x, y, width, status);
   var alt = false;
   if (status === 2) {
     alt = true;
@@ -43725,21 +43653,10 @@ function buttonBuilder() {
   if (width === 60) {
     type = 'lowerButtonLabel';
   }
-  var buttonText = (0, _textDrawer2.default)(name, alt, type, x, y);
+  var buttonText = (0, _drawers.textDrawer)(name, alt, type, x, y);
   sprite.hitArea = new PIXI.RoundedRectangle(x, y, width, 20, 8);
   sprite.addChild(buttonBG, buttonText);
 
-  // if(status !== 2) {
-  //   console.log(name, status);  
-  //   sprite.on("pointerover", () => {
-  //     buttonBG = buttonBGDrawer(x,y, width, 1);
-  //   });
-  //   sprite.on("pointerout", () => {
-  //     buttonBG = buttonBGDrawer(x,y, width, status);
-  //   });
-  // }
-
-  // sprite.on('pointerdown', () => console.log(name));
   sprite.on('pointerdown', function () {
     return pointerDown(name, store);
   });
@@ -43792,17 +43709,7 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
-var _textDrawer = __webpack_require__(21);
-
-var _textDrawer2 = _interopRequireDefault(_textDrawer);
-
-var _cellLineDrawer = __webpack_require__(106);
-
-var _cellLineDrawer2 = _interopRequireDefault(_cellLineDrawer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _drawers = __webpack_require__(44);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -43813,20 +43720,19 @@ function cellBuilder() {
 
   var sprite = new PIXI.Container();
   if (name === 'ALU') {
-    var ALULabel = (0, _textDrawer2.default)(name, alt, 'ALULabel');
-    var ALULines = (0, _cellLineDrawer2.default)(name, alt);
-    console.log(ALULabel);
+    var ALULabel = (0, _drawers.textDrawer)(name, alt, 'ALULabel');
+    var ALULines = (0, _drawers.cellLineDrawer)(name, alt);
     sprite.addChild(ALULabel, ALULines);
   } else {
-    var _h$positionSpecs$cell = h.positionSpecs.cellSpec(name),
-        _h$positionSpecs$cell2 = _slicedToArray(_h$positionSpecs$cell, 3),
-        x = _h$positionSpecs$cell2[0],
-        y = _h$positionSpecs$cell2[1],
-        cellSize = _h$positionSpecs$cell2[2];
+    var _positionSpecs$cellSp = _helpers.positionSpecs.cellSpec(name),
+        _positionSpecs$cellSp2 = _slicedToArray(_positionSpecs$cellSp, 3),
+        x = _positionSpecs$cellSp2[0],
+        y = _positionSpecs$cellSp2[1],
+        cellSize = _positionSpecs$cellSp2[2];
 
-    var cellLabel = (0, _textDrawer2.default)(name, alt, 'cellLabel', x, y, cellSize);
-    var cellValue = (0, _textDrawer2.default)(value, alt, 'cellValue', x, y, cellSize);
-    var cellLines = (0, _cellLineDrawer2.default)(name, alt);
+    var cellLabel = (0, _drawers.textDrawer)(name, alt, 'cellLabel', x, y, cellSize);
+    var cellValue = (0, _drawers.textDrawer)(value, alt, 'cellValue', x, y, cellSize);
+    var cellLines = (0, _drawers.cellLineDrawer)(name, alt);
     sprite.addChild(cellLabel, cellValue, cellLines);
   }
 
@@ -43851,8 +43757,6 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 var _drawers = __webpack_require__(44);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
@@ -43865,7 +43769,7 @@ function cuExecBuilder() {
     return sprite;
   }
 
-  var allInfo = h.jsonParser.cuDisplayInterpreter(state);
+  var allInfo = _helpers.jsonParser.cuDisplayInterpreter(state);
   var phaseLabel = allInfo['cuLowerHeader'];
   var phaseBG = (0, _drawers.cuPhaseBGDrawer)('exec');
   sprite.addChild(phaseBG);
@@ -43909,15 +43813,13 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function cuPhaseBGDrawer() {
   var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
 
   var sprite = new PIXI.Graphics();
-  sprite.beginFill(h.colorCode.LIGHT_BG);
+  sprite.beginFill(_helpers.colorCode.LIGHT_BG);
   switch (name) {
     case 'fetch':
       sprite.drawRect(540, 90, 240, 20);
@@ -43948,15 +43850,13 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function cuStepBGDrawer() {
   var step = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
   var sprite = new PIXI.Graphics();
-  sprite.beginFill(h.colorCode.SELECT_ALT_BG);
+  sprite.beginFill(_helpers.colorCode.SELECT_ALT_BG);
   if (step < 7 && step > 0) {
     sprite.drawRect(540, 90 + step * 20, 240, 20);
   } else if (step > 6) {
@@ -43984,8 +43884,6 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 var _drawers = __webpack_require__(44);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
@@ -43994,7 +43892,7 @@ function cuFetchBuilder() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { global: { mode: 'IDLE', step: 0 } };
 
   var sprite = new PIXI.Container();
-  var allInfo = h.jsonParser.cuDisplayInterpreter(state);
+  var allInfo = _helpers.jsonParser.cuDisplayInterpreter(state);
   var phaseLabel = allInfo['cuUpperHeader'];
   var phaseBG = (0, _drawers.cuPhaseBGDrawer)('fetch');
   sprite.addChild(phaseBG);
@@ -44046,17 +43944,7 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
-var _ioLineDrawer = __webpack_require__(45);
-
-var _ioLineDrawer2 = _interopRequireDefault(_ioLineDrawer);
-
-var _ioCrossPointDrawer = __webpack_require__(107);
-
-var _ioCrossPointDrawer2 = _interopRequireDefault(_ioCrossPointDrawer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _drawers = __webpack_require__(44);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -44067,7 +43955,7 @@ function ioBusBuilder() {
   var sprite = new PIXI.Graphics();
 
   // background layer
-  var bgLayer = (0, _ioLineDrawer2.default)('v', 200, 60, 370);
+  var bgLayer = (0, _drawers.ioLineDrawer)('v', 200, 60, 370);
   sprite.addChild(bgLayer);
 
   // colorful highlighted top
@@ -44141,8 +44029,8 @@ function ioBusBuilder() {
     y2 = _ref[1];
   }
 
-  length = y2 - y1;
-  var hlLayer = (0, _ioLineDrawer2.default)('v', 200, y1, length, true);
+  var length = y2 - y1;
+  var hlLayer = (0, _drawers.ioLineDrawer)('v', 200, y1, length, true);
   sprite.addChild(hlLayer);
 
   if (p1 > p2) {
@@ -44153,10 +44041,10 @@ function ioBusBuilder() {
 
   for (var i = 1; i <= 6; ++i) {
     if (p1 <= i && i <= p2) {
-      var xPoint = (0, _ioCrossPointDrawer2.default)(h.positionSpecs.ioCrossPointSpec(i), true);
+      var xPoint = (0, _drawers.ioCrossPointDrawer)(_helpers.positionSpecs.ioCrossPointSpec(i), true);
       sprite.addChild(xPoint);
     } else {
-      var _xPoint = (0, _ioCrossPointDrawer2.default)(h.positionSpecs.ioCrossPointSpec(i), false);
+      var _xPoint = (0, _drawers.ioCrossPointDrawer)(_helpers.positionSpecs.ioCrossPointSpec(i), false);
       sprite.addChild(_xPoint);
     }
   }
@@ -44185,17 +44073,7 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
-var _ioLineDrawer = __webpack_require__(45);
-
-var _ioLineDrawer2 = _interopRequireDefault(_ioLineDrawer);
-
-var _ioArrowHeadDrawer = __webpack_require__(43);
-
-var _ioArrowHeadDrawer2 = _interopRequireDefault(_ioArrowHeadDrawer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _drawers = __webpack_require__(44);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -44206,27 +44084,27 @@ function ioCellArrowBuilder() {
 
   var sprite = new PIXI.Graphics();
 
-  var _h$positionSpecs$ioHL = h.positionSpecs.ioHLineSpec(name, alt_arrows),
-      _h$positionSpecs$ioHL2 = _slicedToArray(_h$positionSpecs$ioHL, 4),
-      lX = _h$positionSpecs$ioHL2[0],
-      lY = _h$positionSpecs$ioHL2[1],
-      rX = _h$positionSpecs$ioHL2[2],
-      rY = _h$positionSpecs$ioHL2[3];
+  var _positionSpecs$ioHLin = _helpers.positionSpecs.ioHLineSpec(name, alt_arrows),
+      _positionSpecs$ioHLin2 = _slicedToArray(_positionSpecs$ioHLin, 4),
+      lX = _positionSpecs$ioHLin2[0],
+      lY = _positionSpecs$ioHLin2[1],
+      rX = _positionSpecs$ioHLin2[2],
+      rY = _positionSpecs$ioHLin2[3];
 
-  var line = (0, _ioLineDrawer2.default)('h', lX, lY, rX - lX, alt_hl);
+  var line = (0, _drawers.ioLineDrawer)('h', lX, lY, rX - lX, alt_hl);
   sprite.addChild(line);
 
   var arrowHeads = [];
   switch (alt_arrows) {
     case 'lr':
-      arrowHeads.push(h.positionSpecs.ioHArrowHeadSpec([lX, lY, rX, rY], 'l'));
-      arrowHeads.push(h.positionSpecs.ioHArrowHeadSpec([lX, lY, rX, rY], 'r'));
+      arrowHeads.push(_helpers.positionSpecs.ioHArrowHeadSpec([lX, lY, rX, rY], 'l'));
+      arrowHeads.push(_helpers.positionSpecs.ioHArrowHeadSpec([lX, lY, rX, rY], 'r'));
       break;
     case 'l':
-      arrowHeads.push(h.positionSpecs.ioHArrowHeadSpec([lX, lY, rX, rY], 'l'));
+      arrowHeads.push(_helpers.positionSpecs.ioHArrowHeadSpec([lX, lY, rX, rY], 'l'));
       break;
     case 'r':
-      arrowHeads.push(h.positionSpecs.ioHArrowHeadSpec([lX, lY, rX, rY], 'r'));
+      arrowHeads.push(_helpers.positionSpecs.ioHArrowHeadSpec([lX, lY, rX, rY], 'r'));
       break;
   }
   var _iteratorNormalCompletion = true;
@@ -44237,7 +44115,7 @@ function ioCellArrowBuilder() {
     for (var _iterator = arrowHeads[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
       var e = _step.value;
 
-      var arrowHeadSprite = (0, _ioArrowHeadDrawer2.default)(e, alt_hl);
+      var arrowHeadSprite = (0, _drawers.ioArrowHeadDrawer)(e, alt_hl);
       sprite.addChild(arrowHeadSprite);
     }
   } catch (err) {
@@ -44343,8 +44221,6 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 var _builders = __webpack_require__(13);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
@@ -44353,8 +44229,8 @@ function cellOrganizer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { global: { mode: 'IDLE', step: 0 } };
 
   var container = new PIXI.Container();
-  var path = h.jsonParser.processInterpreter(state)['path'];
-  var values = h.jsonParser.processInterpreter(state)['values'];
+  var path = _helpers.jsonParser.processInterpreter(state)['path'];
+  var values = _helpers.jsonParser.processInterpreter(state)['values'];
   var cellsWithValues = Object.keys(values);
   var cellsHighLighted = new Set();
   var cellsNotHighLighted = new Set();
@@ -44487,21 +44363,17 @@ function cellOrganizer() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = cuDesplayOrganizer;
+exports.default = cuOrganizer;
 
 var _pixi = __webpack_require__(4);
 
 var PIXI = _interopRequireWildcard(_pixi);
 
-var _helpers = __webpack_require__(5);
-
-var h = _interopRequireWildcard(_helpers);
-
 var _builders = __webpack_require__(13);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-function cuDesplayOrganizer() {
+function cuOrganizer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { global: { mode: 'IDLE', step: 0 } };
 
   var container = new PIXI.Container();
@@ -44527,17 +44399,7 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
-var _bottomDescriptionBuilder = __webpack_require__(105);
-
-var _bottomDescriptionBuilder2 = _interopRequireDefault(_bottomDescriptionBuilder);
-
-var _cuDescriptionBuilder = __webpack_require__(243);
-
-var _cuDescriptionBuilder2 = _interopRequireDefault(_cuDescriptionBuilder);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _builders = __webpack_require__(13);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -44545,9 +44407,9 @@ function descriptionOrganizer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { global: { mode: 'IDLE', step: 0 } };
 
   var container = new PIXI.Container();
-  var text = h.jsonParser.descriptionInterpreter(state);
-  var bottomSprite = (0, _bottomDescriptionBuilder2.default)(text.bottomDescription);
-  var cuSprite = (0, _cuDescriptionBuilder2.default)(text.cuDescription);
+  var text = _helpers.jsonParser.descriptionInterpreter(state);
+  var bottomSprite = (0, _builders.bottomDescriptionBuilder)(text.bottomDescription);
+  var cuSprite = (0, _builders.cuDescriptionBuilder)(text.cuDescription);
 
   container.addChild(bottomSprite, cuSprite);
   return container;
@@ -44565,21 +44427,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = cuDescriptionBuilder;
 
-var _pixi = __webpack_require__(4);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-var h = _interopRequireWildcard(_helpers);
-
 var _textDrawer = __webpack_require__(21);
 
 var _textDrawer2 = _interopRequireDefault(_textDrawer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function cuDescriptionBuilder() {
   var text = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
@@ -44606,8 +44458,6 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 var _builders = __webpack_require__(13);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
@@ -44616,7 +44466,7 @@ function ioPathOrganizer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { global: { mode: 'IDLE', step: 0 } };
 
   var container = new PIXI.Container();
-  var path = h.jsonParser.processInterpreter(state)['path'];
+  var path = _helpers.jsonParser.processInterpreter(state)['path'];
   var cellsFrom = new Set();
   var cellsTo = new Set();
 
@@ -44747,8 +44597,6 @@ var PIXI = _interopRequireWildcard(_pixi);
 
 var _helpers = __webpack_require__(5);
 
-var h = _interopRequireWildcard(_helpers);
-
 var _builders = __webpack_require__(13);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
@@ -44814,11 +44662,11 @@ function visibleButtons() {
     return new Set().add('BACK').add('NEXT');
   }
 
-  if (step > 6 && step < h.jsonParser.totalStepCount(state) - 1) {
+  if (step > 6 && step < _helpers.jsonParser.totalStepCount(state) - 1) {
     return new Set().add('BACK').add('NEXT').add('END');
   }
 
-  if (step === h.jsonParser.totalStepCount(state) - 1) {
+  if (step === _helpers.jsonParser.totalStepCount(state) - 1) {
     return new Set().add('BACK').add('END');
   }
 }
@@ -44838,10 +44686,6 @@ exports.default = upperButtonsOrganizer;
 var _pixi = __webpack_require__(4);
 
 var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-var h = _interopRequireWildcard(_helpers);
 
 var _builders = __webpack_require__(13);
 

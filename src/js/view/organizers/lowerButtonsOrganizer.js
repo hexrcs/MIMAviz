@@ -1,5 +1,5 @@
 import * as PIXI from 'pixi.js';
-import * as h from '../../helpers';
+import { jsonParser } from '../../helpers';
 import { buttonBuilder } from '../builders';
 
 export default function lowerButtonsOrganizer (state = {global: {mode: 'IDLE', step: 0}}, store) {
@@ -37,11 +37,11 @@ function visibleButtons (state = {global: {mode: 'IDLE', step: 0}}) {
     return new Set().add('BACK').add('NEXT');
   }
 
-  if (step > 6 && step < h.jsonParser.totalStepCount(state) - 1) {
+  if (step > 6 && step < jsonParser.totalStepCount(state) - 1) {
     return new Set().add('BACK').add('NEXT').add('END');
   }
 
-  if (step === h.jsonParser.totalStepCount(state) - 1) {
+  if (step === jsonParser.totalStepCount(state) - 1) {
     return new Set().add('BACK').add('END');
   }
 }

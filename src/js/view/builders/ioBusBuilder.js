@@ -1,7 +1,6 @@
 import * as PIXI from 'pixi.js';
-import * as h from '../../helpers';
-import { default as ioLineDrawer } from '../drawers/ioLineDrawer';
-import { default as ioCrossPointDrawer } from '../drawers/ioCrossPointDrawer';
+import { positionSpecs } from '../../helpers';
+import { ioLineDrawer, ioCrossPointDrawer } from '../drawers';
 
 export default function ioBusBuilder (from = '', to = '') {
   let sprite = new PIXI.Graphics();
@@ -75,7 +74,7 @@ export default function ioBusBuilder (from = '', to = '') {
     [y1, y2] = [y2, y1];
   }
 
-  length = y2 - y1;
+  const length = y2 - y1;
   const hlLayer = ioLineDrawer('v', 200, y1, length, true);
   sprite.addChild(hlLayer);
 
@@ -85,10 +84,10 @@ export default function ioBusBuilder (from = '', to = '') {
 
   for (let i = 1; i <= 6; ++i) {
     if (p1 <= i && i <= p2) {
-      const xPoint = ioCrossPointDrawer(h.positionSpecs.ioCrossPointSpec(i), true);
+      const xPoint = ioCrossPointDrawer(positionSpecs.ioCrossPointSpec(i), true);
       sprite.addChild(xPoint);
     } else {
-      const xPoint = ioCrossPointDrawer(h.positionSpecs.ioCrossPointSpec(i), false);
+      const xPoint = ioCrossPointDrawer(positionSpecs.ioCrossPointSpec(i), false);
       sprite.addChild(xPoint);
     }
   }

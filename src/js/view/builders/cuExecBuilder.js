@@ -1,5 +1,5 @@
 import * as PIXI from 'pixi.js';
-import * as h from '../../helpers';
+import { jsonParser } from '../../helpers';
 import { textDrawer, cuPhaseBGDrawer, cuStepBGDrawer } from '../drawers';
 
 export default function cuExecBuilder (state = {global: {mode: 'IDLE', step: 0}}) {
@@ -8,7 +8,7 @@ export default function cuExecBuilder (state = {global: {mode: 'IDLE', step: 0}}
     return sprite;
   }
 
-  const allInfo = h.jsonParser.cuDisplayInterpreter(state);
+  const allInfo = jsonParser.cuDisplayInterpreter(state);
   const phaseLabel = allInfo['cuLowerHeader'];
   const phaseBG = cuPhaseBGDrawer('exec');
   sprite.addChild(phaseBG);

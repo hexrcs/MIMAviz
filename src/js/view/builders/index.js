@@ -6,3 +6,4 @@ export { default as cuExecBuilder } from './cuExecBuilder';
 export { default as cuFetchBuilder } from './cuFetchBuilder';
 export { default as ioBusBuilder } from './ioBusBuilder';
 export { default as ioCellArrowBuilder } from './ioCellArrowBuilder';
+export { default as cuDescriptionBuilder } from './cuDescriptionBuilder';

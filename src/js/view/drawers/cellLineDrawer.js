@@ -1,12 +1,12 @@
 import * as PIXI from 'pixi.js';
-import * as h from '../../helpers';
+import {colorCode, positionSpecs} from '../../helpers';
 
 export default function cellLineDrawer (name = '', alt = false) {
   let sprite = new PIXI.Graphics();
   if (!alt) {
-    sprite.lineStyle(1, h.colorCode.BORDER);
+    sprite.lineStyle(1, colorCode.BORDER);
   } else {
-    sprite.lineStyle(2, h.colorCode.INSIDE_ALT);
+    sprite.lineStyle(2, colorCode.INSIDE_ALT);
   }
 
   if (name === 'ALU') {
@@ -14,7 +14,7 @@ export default function cellLineDrawer (name = '', alt = false) {
       [340, 260, 300, 300, 360, 300, 370, 290, 380, 300, 440, 300, 400, 260, 340, 260]
     );
   } else {
-    const [x, y, cellSize] = h.positionSpecs.cellSpec(name);
+    const [x, y, cellSize] = positionSpecs.cellSpec(name);
     sprite.drawRect(x, y, cellSize * 20, 40);
     // horizontal
     sprite.moveTo(x, y + 20);

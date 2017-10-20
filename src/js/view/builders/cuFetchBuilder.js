@@ -1,10 +1,10 @@
 import * as PIXI from 'pixi.js';
-import * as h from '../../helpers';
+import { jsonParser } from '../../helpers';
 import { textDrawer, cuPhaseBGDrawer, cuStepBGDrawer } from '../drawers';
 
 export default function cuFetchBuilder (state = {global: {mode: 'IDLE', step: 0}}) {
   let sprite = new PIXI.Container();
-  const allInfo = h.jsonParser.cuDisplayInterpreter(state);
+  const allInfo = jsonParser.cuDisplayInterpreter(state);
   const phaseLabel = allInfo['cuUpperHeader'];
   const phaseBG = cuPhaseBGDrawer('fetch');
   sprite.addChild(phaseBG);

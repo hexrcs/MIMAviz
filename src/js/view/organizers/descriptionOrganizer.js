@@ -1,11 +1,10 @@
 import * as PIXI from 'pixi.js';
-import * as h from '../../helpers';
-import { default as bottomDescriptionBuilder } from '../builders/bottomDescriptionBuilder';
-import { default as cuDescriptionBuilder } from '../builders/cuDescriptionBuilder';
+import { jsonParser } from '../../helpers';
+import { bottomDescriptionBuilder, cuDescriptionBuilder } from '../builders';
 
 export default function descriptionOrganizer (state = {global: {mode: 'IDLE', step: 0}}) {
   let container = new PIXI.Container();
-  const text = h.jsonParser.descriptionInterpreter(state);
+  const text = jsonParser.descriptionInterpreter(state);
   const bottomSprite = bottomDescriptionBuilder(text.bottomDescription);
   const cuSprite = cuDescriptionBuilder(text.cuDescription);
 
