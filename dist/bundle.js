@@ -5661,7 +5661,7 @@ function textDrawer() {
       //   sprite.y = y + 20 / 2;
       //   break;
       case "cuStep":
-        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', fill: h.colorCode.DEFAULT_ALT });
+        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '11pt', fill: h.colorCode.DEFAULT_ALT });
         sprite.anchor.set(0, 0.5);
         sprite.x = x + 5;
         sprite.y = y + 20 / 2;
@@ -21920,7 +21920,6 @@ function cellLineDrawer() {
     sprite.lineTo(x + cellSize * 20, y + 20);
     // vertical
     for (var i = 1; i < cellSize; ++i) {
-      sprite.lineStyle(1, 0x979797);
       sprite.moveTo(x + i * 20, y + 20);
       sprite.lineTo(x + i * 20, y + 40);
     }
@@ -42627,7 +42626,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-var defaultState = { global: { mode: "STV", step: 0 } };
+var defaultState = { global: { mode: "STV", step: 4 } };
 
 var dynamicView = exports.dynamicView = new PIXI.Container();
 
