@@ -39,11 +39,11 @@ export default function buttonBuilder(name="", status=0, store) {
 
   let buttonBG = buttonBGDrawer(x,y, width, status);
   let alt = false;
-  if(status = 2) {
+  if(status === 2) {
     alt = true;
   }
   let type = "upperButtonLabel";
-  if(width = 60) {
+  if(width === 60) {
     type = "lowerButtonLabel";
   }
   const buttonText = textDrawer(name, alt, type, x,y);

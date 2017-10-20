@@ -21820,11 +21820,11 @@ function buttonBGDrawer() {
 
   switch (status) {
     case 0:
-      sprite.beginFill(h.colorCode.DEFAULT_BG);
+      sprite.beginFill(h.colorCode.DEFAULT_ALT);
       break;
     case 1:
       sprite.lineStyle(2, h.colorCode.SELECT_ALT_BG, 0.75);
-      sprite.beginFill(h.colorCode.DEFAULT_BG);
+      sprite.beginFill(h.colorCode.DEFAULT_ALT);
       break;
     case 2:
       sprite.beginFill(h.colorCode.SELECT_ALT_BG);
@@ -42644,12 +42644,12 @@ function render() {
   var cuView = view.organizers.cuOrganizer(currentState);
   var descriptionView = view.organizers.descriptionOrganizer(currentState);
   var ioPathView = view.organizers.ioPathOrganizer(currentState);
-  // const lowerButtonsView = view.organizers.lowerButtonsOrganizer(currentState);
-  // const upperButtonsView = view.organizers.upperButtonsOrganizer(currentState);
+  var lowerButtonsView = view.organizers.lowerButtonsOrganizer(currentState, store);
+  var upperButtonsView = view.organizers.upperButtonsOrganizer(currentState, store);
 
   // dynamicView.addChild(cellView, cuView, descriptionView, ioPathView, lowerButtonsView, upperButtonsView);
 
-  dynamicView.addChild(cellView, cuView, descriptionView, ioPathView);
+  dynamicView.addChild(cellView, cuView, descriptionView, ioPathView, lowerButtonsView, upperButtonsView);
 }
 
 /***/ }),
@@ -43711,11 +43711,11 @@ function buttonBuilder() {
 
   var buttonBG = (0, _buttonBGDrawer2.default)(x, y, width, status);
   var alt = false;
-  if (status = 2) {
+  if (status === 2) {
     alt = true;
   }
   var type = "upperButtonLabel";
-  if (width = 60) {
+  if (width === 60) {
     type = "lowerButtonLabel";
   }
   var buttonText = (0, _textDrawer2.default)(name, alt, type, x, y);

@@ -7,11 +7,11 @@ export default function buttonBGDrawer(x=0, y=0, width=0, status=0) {
 
   switch(status) {
     case 0:
-      sprite.beginFill(h.colorCode.DEFAULT_BG);
+      sprite.beginFill(h.colorCode.DEFAULT_ALT);
       break;
     case 1:
       sprite.lineStyle(2, h.colorCode.SELECT_ALT_BG, 0.75);
-      sprite.beginFill(h.colorCode.DEFAULT_BG);
+      sprite.beginFill(h.colorCode.DEFAULT_ALT);
       break;
     case 2:
       sprite.beginFill(h.colorCode.SELECT_ALT_BG);
