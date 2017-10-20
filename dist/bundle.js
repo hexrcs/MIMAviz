@@ -43706,7 +43706,7 @@ function buttonBuilder() {
       break;
     case "SKIP":
     case "END":
-      x = 630;
+      x = 720;
       y = 450;
       width = 60;
 

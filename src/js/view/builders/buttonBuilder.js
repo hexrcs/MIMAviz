@@ -33,7 +33,7 @@ export default function buttonBuilder(name="", status=0, store) {
         break;
       case "SKIP":
       case "END":
-        [x, y, width] = [630, 450, 60];
+        [x, y, width] = [720, 450, 60];
         break;
   }
 
