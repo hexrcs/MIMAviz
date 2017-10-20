@@ -10,7 +10,7 @@ using [Pixi.js](https://github.com/pixijs/pixi.js). The original MIMA simulation
 
 ## Features
 
-  * (WIP) Full functionality of the original [MIMA Simulation](http://ti.ira.uka.de/Visualisierungen/Mima/)
+  * Full functionality of the original [MIMA Simulation](http://ti.ira.uka.de/Visualisierungen/Mima/)
   
 ## Usage
 
@@ -20,12 +20,19 @@ forward, or use *SKIP* to fast forward to the next phase.
 ## Why Create MIMAviz?
 
 To help my fellow students at KIT like me, who are interested in seeing the MIMA simulation/visualization but 
-don't want to run a Windows VM. Also to practice my JS skills as well as to try implementing GUI (web!) for the
-first time. ;)
+don't want to run a Windows VM. Also to practice my newbie JS skills as well as to try implementing GUI (HTML5 
+Canvas!) for the first time. ;)
 
 ## Project Status
 
-WIP
+Now you can download the latest working version for a spin! At the same time I'm still doing some polishing 
+though as the code is quite ugly and convoluted right now. 
+
+A TODO list of some planned add-on features:
+
+- [ ] Additional description for what each MIMA instruction does
+- [ ] English localization (currently only in German)
+- [ ] Pointer over button animation
 
 ## License
 
