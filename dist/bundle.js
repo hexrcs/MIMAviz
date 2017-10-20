@@ -42626,7 +42626,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-var defaultState = { global: { mode: "STV", step: 4 } };
+var defaultState = { global: { mode: "ADD", step: 4 } };
 
 var dynamicView = exports.dynamicView = new PIXI.Container();
 
@@ -44131,20 +44131,23 @@ function ioBusBuilder() {
     y1 = _ref[0];
     y2 = _ref[1];
   }
+
   length = y2 - y1;
   var hlLayer = (0, _ioLineDrawer2.default)("v", 200, y1, length, true);
+  sprite.addChild(hlLayer);
 
   if (p1 > p2) {
     var _ref2 = [p2, p1];
     p1 = _ref2[0];
     p2 = _ref2[1];
   }
+
   for (var i = 1; i <= 6; ++i) {
-    if (p1 <= i <= p2) {
-      var xPoint = (0, _ioCrossPointDrawer2.default)(h.positionSpecs.ioCrossPointSpec(i, true));
+    if (p1 <= i && i <= p2) {
+      var xPoint = (0, _ioCrossPointDrawer2.default)(h.positionSpecs.ioCrossPointSpec(i), true);
       sprite.addChild(xPoint);
     } else {
-      var _xPoint = (0, _ioCrossPointDrawer2.default)(h.positionSpecs.ioCrossPointSpec(i, false));
+      var _xPoint = (0, _ioCrossPointDrawer2.default)(h.positionSpecs.ioCrossPointSpec(i), false);
       sprite.addChild(_xPoint);
     }
   }

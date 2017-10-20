@@ -3,7 +3,7 @@ import { createStore } from "redux";
 import { default as reducer} from "./reducers";
 import * as view from "./view";
 
-const defaultState = {global: {mode: "STV", step: 4}};
+const defaultState = {global: {mode: "ADD", step: 4}};
 
 export const dynamicView = new PIXI.Container();
 

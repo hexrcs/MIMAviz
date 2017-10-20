@@ -74,18 +74,21 @@ export default function ioBusBuilder(from="", to="") {
   if(y1 > y2) {
     [y1, y2] = [y2, y1];
   }
+  
   length = y2 - y1;
   const hlLayer = ioLineDrawer("v", 200,y1, length, true);
+  sprite.addChild(hlLayer);
 
   if(p1 > p2) {
     [p1, p2] = [p2, p1];
   }
+
   for(let i = 1; i <= 6; ++i) {
-    if (p1 <= i <= p2) {
-      const xPoint = ioCrossPointDrawer(h.positionSpecs.ioCrossPointSpec(i, true));
+    if (p1 <= i && i <= p2) {
+      const xPoint = ioCrossPointDrawer(h.positionSpecs.ioCrossPointSpec(i), true);
       sprite.addChild(xPoint);
     } else {
-      const xPoint = ioCrossPointDrawer(h.positionSpecs.ioCrossPointSpec(i, false));
+      const xPoint = ioCrossPointDrawer(h.positionSpecs.ioCrossPointSpec(i), false);
       sprite.addChild(xPoint);
     }
   }
