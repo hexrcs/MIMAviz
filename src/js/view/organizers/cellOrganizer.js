@@ -32,13 +32,13 @@ export default function cellOrganizer(
     if(hl === "ALU") {
       cellSprite = cellBuilder(hl, "", true);
     } else {
-      cellSprite = cellBuilder(hl, cellsWithValues[hl], true);
+      cellSprite = cellBuilder(hl, values[hl], true);
     }
     container.addChild(cellSprite);
   }
 
   for(let nhl of cellsNotHighLighted) {
-    const cellSprite = cellBuilder(nhl, cellsWithValues[nhl], false);
+    const cellSprite = cellBuilder(nhl, values[nhl], false);
     container.addChild(cellSprite);
   }
 

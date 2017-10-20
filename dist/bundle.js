@@ -44412,7 +44412,7 @@ function cellOrganizer() {
       if (hl === "ALU") {
         cellSprite = (0, _builders.cellBuilder)(hl, "", true);
       } else {
-        cellSprite = (0, _builders.cellBuilder)(hl, cellsWithValues[hl], true);
+        cellSprite = (0, _builders.cellBuilder)(hl, values[hl], true);
       }
       container.addChild(cellSprite);
     }
@@ -44439,7 +44439,7 @@ function cellOrganizer() {
     for (var _iterator4 = cellsNotHighLighted[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
       var nhl = _step4.value;
 
-      var cellSprite = (0, _builders.cellBuilder)(nhl, cellsWithValues[nhl], false);
+      var cellSprite = (0, _builders.cellBuilder)(nhl, values[nhl], false);
       container.addChild(cellSprite);
     }
   } catch (err) {
