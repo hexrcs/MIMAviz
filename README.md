@@ -6,7 +6,8 @@ MIMAviz is a rewrite of the original [MIMA Simulation](http://ti.ira.uka.de/Visu
 using [Pixi.js](https://github.com/pixijs/pixi.js). The original MIMA simulation/visualization app was a Java Applet
 (written in more than 10 years ago) which doesn't run in most modern browsers any more.
 
-**This project is currently in Alpha. However, you could grab the latest version for a spin right now.**
+**This project is currently in Alpha. However, you may visit the hosted [latest version]
+(https://hexrcs.github.io/MIMAviz/) and give it a spin right now!**
 
 ## Features
 
@@ -25,8 +26,9 @@ Canvas!) for the first time. ;)
 
 ## Project Status
 
-Now you can download the latest working version for a spin! At the same time I'm still doing some polishing 
-though as the code is quite ugly and convoluted right now. 
+You can [download](https://github.com/hexrcs/MIMAviz/releases) or visit the hosted [latest version]
+(https://hexrcs.github.io/MIMAviz/) right now! At the same time I'm still doing some polishing though as the code 
+is quite ugly and convoluted right now. 
 
 A TODO list of some planned add-on features:
 
