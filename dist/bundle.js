@@ -169,7 +169,7 @@ Object.defineProperty(exports, 'Sprite', {
   }
 });
 
-var _CanvasSpriteRenderer = __webpack_require__(135);
+var _CanvasSpriteRenderer = __webpack_require__(137);
 
 Object.defineProperty(exports, 'CanvasSpriteRenderer', {
   enumerable: true,
@@ -187,7 +187,7 @@ Object.defineProperty(exports, 'CanvasTinter', {
   }
 });
 
-var _SpriteRenderer = __webpack_require__(138);
+var _SpriteRenderer = __webpack_require__(140);
 
 Object.defineProperty(exports, 'SpriteRenderer', {
   enumerable: true,
@@ -196,7 +196,7 @@ Object.defineProperty(exports, 'SpriteRenderer', {
   }
 });
 
-var _Text = __webpack_require__(153);
+var _Text = __webpack_require__(155);
 
 Object.defineProperty(exports, 'Text', {
   enumerable: true,
@@ -223,7 +223,7 @@ Object.defineProperty(exports, 'TextMetrics', {
   }
 });
 
-var _Graphics = __webpack_require__(155);
+var _Graphics = __webpack_require__(157);
 
 Object.defineProperty(exports, 'Graphics', {
   enumerable: true,
@@ -241,7 +241,7 @@ Object.defineProperty(exports, 'GraphicsData', {
   }
 });
 
-var _GraphicsRenderer = __webpack_require__(157);
+var _GraphicsRenderer = __webpack_require__(159);
 
 Object.defineProperty(exports, 'GraphicsRenderer', {
   enumerable: true,
@@ -250,7 +250,7 @@ Object.defineProperty(exports, 'GraphicsRenderer', {
   }
 });
 
-var _CanvasGraphicsRenderer = __webpack_require__(164);
+var _CanvasGraphicsRenderer = __webpack_require__(166);
 
 Object.defineProperty(exports, 'CanvasGraphicsRenderer', {
   enumerable: true,
@@ -259,7 +259,7 @@ Object.defineProperty(exports, 'CanvasGraphicsRenderer', {
   }
 });
 
-var _Spritesheet = __webpack_require__(165);
+var _Spritesheet = __webpack_require__(167);
 
 Object.defineProperty(exports, 'Spritesheet', {
   enumerable: true,
@@ -349,7 +349,7 @@ Object.defineProperty(exports, 'WebGLManager', {
   }
 });
 
-var _ObjectRenderer = __webpack_require__(20);
+var _ObjectRenderer = __webpack_require__(21);
 
 Object.defineProperty(exports, 'ObjectRenderer', {
   enumerable: true,
@@ -358,7 +358,7 @@ Object.defineProperty(exports, 'ObjectRenderer', {
   }
 });
 
-var _RenderTarget = __webpack_require__(22);
+var _RenderTarget = __webpack_require__(23);
 
 Object.defineProperty(exports, 'RenderTarget', {
   enumerable: true,
@@ -428,7 +428,7 @@ var _CanvasRenderer = __webpack_require__(15);
 
 var _CanvasRenderer2 = _interopRequireDefault(_CanvasRenderer);
 
-var _WebGLRenderer = __webpack_require__(21);
+var _WebGLRenderer = __webpack_require__(22);
 
 var _WebGLRenderer2 = _interopRequireDefault(_WebGLRenderer);
 
@@ -831,11 +831,11 @@ var _eventemitter = __webpack_require__(9);
 
 var _eventemitter2 = _interopRequireDefault(_eventemitter);
 
-var _pluginTarget = __webpack_require__(123);
+var _pluginTarget = __webpack_require__(125);
 
 var _pluginTarget2 = _interopRequireDefault(_pluginTarget);
 
-var _mixin = __webpack_require__(124);
+var _mixin = __webpack_require__(126);
 
 var mixins = _interopRequireWildcard(_mixin);
 
@@ -843,11 +843,11 @@ var _ismobilejs = __webpack_require__(30);
 
 var isMobile = _interopRequireWildcard(_ismobilejs);
 
-var _removeArrayItems = __webpack_require__(125);
+var _removeArrayItems = __webpack_require__(127);
 
 var _removeArrayItems2 = _interopRequireDefault(_removeArrayItems);
 
-var _mapPremultipliedBlendModes = __webpack_require__(126);
+var _mapPremultipliedBlendModes = __webpack_require__(128);
 
 var _mapPremultipliedBlendModes2 = _interopRequireDefault(_mapPremultipliedBlendModes);
 
@@ -1282,7 +1282,7 @@ function premultiplyTintToRgba(tint, alpha, out, premultiply) {
 exports.__esModule = true;
 exports.loader = exports.prepare = exports.particles = exports.mesh = exports.loaders = exports.interaction = exports.filters = exports.extras = exports.extract = exports.accessibility = undefined;
 
-var _polyfill = __webpack_require__(106);
+var _polyfill = __webpack_require__(108);
 
 Object.keys(_polyfill).forEach(function (key) {
     if (key === "default" || key === "__esModule") return;
@@ -1306,15 +1306,15 @@ Object.keys(_core).forEach(function (key) {
     });
 });
 
-var _deprecation = __webpack_require__(166);
+var _deprecation = __webpack_require__(168);
 
 var _deprecation2 = _interopRequireDefault(_deprecation);
 
-var _accessibility = __webpack_require__(167);
+var _accessibility = __webpack_require__(169);
 
 var accessibility = _interopRequireWildcard(_accessibility);
 
-var _extract = __webpack_require__(169);
+var _extract = __webpack_require__(171);
 
 var extract = _interopRequireWildcard(_extract);
 
@@ -1322,27 +1322,27 @@ var _extras = __webpack_require__(78);
 
 var extras = _interopRequireWildcard(_extras);
 
-var _filters = __webpack_require__(179);
+var _filters = __webpack_require__(181);
 
 var filters = _interopRequireWildcard(_filters);
 
-var _interaction = __webpack_require__(186);
+var _interaction = __webpack_require__(188);
 
 var interaction = _interopRequireWildcard(_interaction);
 
-var _loaders = __webpack_require__(188);
+var _loaders = __webpack_require__(190);
 
 var loaders = _interopRequireWildcard(_loaders);
 
-var _mesh = __webpack_require__(192);
+var _mesh = __webpack_require__(194);
 
 var mesh = _interopRequireWildcard(_mesh);
 
-var _particles = __webpack_require__(197);
+var _particles = __webpack_require__(199);
 
 var particles = _interopRequireWildcard(_particles);
 
-var _prepare = __webpack_require__(202);
+var _prepare = __webpack_require__(204);
 
 var prepare = _interopRequireWildcard(_prepare);
 
@@ -1401,7 +1401,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _jsonParser = __webpack_require__(224);
+var _jsonParser = __webpack_require__(225);
 
 Object.defineProperty(exports, 'jsonParser', {
   enumerable: true,
@@ -1410,7 +1410,7 @@ Object.defineProperty(exports, 'jsonParser', {
   }
 });
 
-var _positionSpecs = __webpack_require__(228);
+var _positionSpecs = __webpack_require__(229);
 
 Object.defineProperty(exports, 'positionSpecs', {
   enumerable: true,
@@ -1419,7 +1419,7 @@ Object.defineProperty(exports, 'positionSpecs', {
   }
 });
 
-var _colorCode = __webpack_require__(229);
+var _colorCode = __webpack_require__(230);
 
 Object.defineProperty(exports, 'colorCode', {
   enumerable: true,
@@ -1439,11 +1439,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.__esModule = true;
 
-var _maxRecommendedTextures = __webpack_require__(121);
+var _maxRecommendedTextures = __webpack_require__(123);
 
 var _maxRecommendedTextures2 = _interopRequireDefault(_maxRecommendedTextures);
 
-var _canUploadSameBuffer = __webpack_require__(122);
+var _canUploadSameBuffer = __webpack_require__(124);
 
 var _canUploadSameBuffer2 = _interopRequireDefault(_canUploadSameBuffer);
 
@@ -1715,7 +1715,7 @@ Object.defineProperty(exports, 'GroupD8', {
   }
 });
 
-var _Circle = __webpack_require__(111);
+var _Circle = __webpack_require__(113);
 
 Object.defineProperty(exports, 'Circle', {
   enumerable: true,
@@ -1724,7 +1724,7 @@ Object.defineProperty(exports, 'Circle', {
   }
 });
 
-var _Ellipse = __webpack_require__(112);
+var _Ellipse = __webpack_require__(114);
 
 Object.defineProperty(exports, 'Ellipse', {
   enumerable: true,
@@ -1733,7 +1733,7 @@ Object.defineProperty(exports, 'Ellipse', {
   }
 });
 
-var _Polygon = __webpack_require__(113);
+var _Polygon = __webpack_require__(115);
 
 Object.defineProperty(exports, 'Polygon', {
   enumerable: true,
@@ -1751,7 +1751,7 @@ Object.defineProperty(exports, 'Rectangle', {
   }
 });
 
-var _RoundedRectangle = __webpack_require__(114);
+var _RoundedRectangle = __webpack_require__(116);
 
 Object.defineProperty(exports, 'RoundedRectangle', {
   enumerable: true,
@@ -1768,14 +1768,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /***/ (function(module, exports, __webpack_require__) {
 
 var gl = {
-    createContext:          __webpack_require__(115),
+    createContext:          __webpack_require__(117),
     setVertexAttribArrays:  __webpack_require__(48),
-    GLBuffer:               __webpack_require__(116),
-    GLFramebuffer:          __webpack_require__(117),
-    GLShader:               __webpack_require__(118),
+    GLBuffer:               __webpack_require__(118),
+    GLFramebuffer:          __webpack_require__(119),
+    GLShader:               __webpack_require__(120),
     GLTexture:              __webpack_require__(49),
-    VertexArrayObject:      __webpack_require__(119),
-    shader:                 __webpack_require__(120)
+    VertexArrayObject:      __webpack_require__(121),
+    shader:                 __webpack_require__(122)
 };
 
 // Export for Node-compatible environments
@@ -3057,7 +3057,7 @@ var _eventemitter = __webpack_require__(9);
 
 var _eventemitter2 = _interopRequireDefault(_eventemitter);
 
-var _determineCrossOrigin = __webpack_require__(127);
+var _determineCrossOrigin = __webpack_require__(129);
 
 var _determineCrossOrigin2 = _interopRequireDefault(_determineCrossOrigin);
 
@@ -3898,7 +3898,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _bgBuilder = __webpack_require__(223);
+var _bgBuilder = __webpack_require__(224);
 
 Object.defineProperty(exports, 'bgBuilder', {
   enumerable: true,
@@ -3907,7 +3907,7 @@ Object.defineProperty(exports, 'bgBuilder', {
   }
 });
 
-var _buttonBuilder = __webpack_require__(230);
+var _buttonBuilder = __webpack_require__(231);
 
 Object.defineProperty(exports, 'buttonBuilder', {
   enumerable: true,
@@ -3916,7 +3916,7 @@ Object.defineProperty(exports, 'buttonBuilder', {
   }
 });
 
-var _bottomDescriptionBuilder = __webpack_require__(103);
+var _bottomDescriptionBuilder = __webpack_require__(105);
 
 Object.defineProperty(exports, 'bottomDescriptionBuilder', {
   enumerable: true,
@@ -3925,7 +3925,7 @@ Object.defineProperty(exports, 'bottomDescriptionBuilder', {
   }
 });
 
-var _cellBuilder = __webpack_require__(231);
+var _cellBuilder = __webpack_require__(232);
 
 Object.defineProperty(exports, 'cellBuilder', {
   enumerable: true,
@@ -3934,7 +3934,7 @@ Object.defineProperty(exports, 'cellBuilder', {
   }
 });
 
-var _cuExecBuilder = __webpack_require__(232);
+var _cuExecBuilder = __webpack_require__(233);
 
 Object.defineProperty(exports, 'cuExecBuilder', {
   enumerable: true,
@@ -4635,7 +4635,7 @@ var _SystemRenderer2 = __webpack_require__(64);
 
 var _SystemRenderer3 = _interopRequireDefault(_SystemRenderer2);
 
-var _CanvasMaskManager = __webpack_require__(136);
+var _CanvasMaskManager = __webpack_require__(138);
 
 var _CanvasMaskManager2 = _interopRequireDefault(_CanvasMaskManager);
 
@@ -4643,7 +4643,7 @@ var _CanvasRenderTarget = __webpack_require__(66);
 
 var _CanvasRenderTarget2 = _interopRequireDefault(_CanvasRenderTarget);
 
-var _mapCanvasBlendModesToPixi = __webpack_require__(137);
+var _mapCanvasBlendModesToPixi = __webpack_require__(139);
 
 var _mapCanvasBlendModesToPixi2 = _interopRequireDefault(_mapCanvasBlendModesToPixi);
 
@@ -5132,7 +5132,7 @@ exports.default = Shader;
 
 /* eslint-disable no-undef */
 
-var Loader = __webpack_require__(189).default;
+var Loader = __webpack_require__(191).default;
 var Resource = __webpack_require__(40).default;
 var async = __webpack_require__(91);
 var b64 = __webpack_require__(92);
@@ -5527,6 +5527,166 @@ Mesh.DRAW_MODES = {
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = textDrawer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(4);
+
+var h = _interopRequireWildcard(_helpers);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+// This function handles drawing every text element on the view, 
+// the input x,y should be the upper left corner of the block
+function textDrawer() {
+  var text = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "";
+  var x = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
+  var y = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 0;
+  var cellSize = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
+
+  var sprite = {};
+
+  if (!alt) {
+    switch (type) {
+      case "bottomDescription":
+        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '10pt', wordWrap: true, wordWrapWidth: 750 });
+        sprite.x = 30;
+        sprite.y = 495;
+        break;
+      case "cellLabel":
+        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt' });
+        sprite.anchor.set(0.5, 0.5);
+        sprite.x = x + cellSize * 20 / 2;
+        sprite.y = y + 20 / 2;
+        break;
+      case "ALULabel":
+        sprite = new PIXI.Text("ALU", { fontFamily: "Courier", fontSize: '12pt' });
+        sprite.anchor.set(0.5, 0.5);
+        sprite.x = 370;
+        sprite.y = 275;
+        break;
+      case "cellValue":
+        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', letterSpacing: 10 });
+        sprite.anchor.set(1, 0.5);
+        sprite.x = x + cellSize * 20 - 5;
+        sprite.y = y + 20 + 20 / 2;
+        break;
+      case "upperButtonLabel":
+        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt' });
+        sprite.anchor.set(0.5, 0.5);
+        sprite.x = x + 40 / 2;
+        sprite.y = y + 20 / 2;
+        break;
+      case "lowerButtonLabel":
+        sprite = new PIXI.Text(text, { fontFamily: "Arial", fontSize: '11pt', fontWeight: 'bold' });
+        sprite.anchor.set(0.5, 0.5);
+        sprite.x = x + 60 / 2;
+        sprite.y = y + 20 / 2;
+        break;
+      case "phaseLabel":
+        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', fontWeight: 'bold' });
+        sprite.anchor.set(0, 0.5);
+        sprite.x = x + 5;
+        sprite.y = y + 20 / 2;
+        break;
+      case "cuStep":
+        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt' });
+        sprite.anchor.set(0, 0.5);
+        sprite.x = x + 5;
+        sprite.y = y + 20 / 2;
+        break;
+      case "cuDescription":
+        sprite = new PIXI.Text(text, { fontFamily: "Arial", fontSize: '9pt', fontStyle: 'italic' });
+        sprite.anchor.set(0, 0.5);
+        sprite.x = 540 + 5;
+        sprite.y = 410 + 20 / 2;
+        break;
+    }
+  } else {
+    switch (type) {
+      // case "bottomDescription":
+      //   sprite = new PIXI.Text(text, {
+      //     fontFamily: "Courier", 
+      //     fontSize: '12pt', 
+      //     wordWrap: true, 
+      //     wordWrapWidth: 100
+      //   });
+      //   sprite.x = 30;
+      //   sprite.y = 495;
+      //   break;
+      case "cellLabel":
+        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', fontWeight: 'bold', fill: h.colorCode.INSIDE_ALT });
+        sprite.anchor.set(0.5, 0.5);
+        sprite.x = x + cellSize * 20 / 2;
+        sprite.y = y + 20 / 2;
+        break;
+      case "ALULabel":
+        sprite = new PIXI.Text("ALU", { fontFamily: "Courier", fontSize: '12pt', fontWeight: 'bold', fill: h.colorCode.INSIDE_ALT });
+        sprite.anchor.set(0.5, 0.5);
+        sprite.x = 370;
+        sprite.y = 275;
+        break;
+      case "cellValue":
+        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', letterSpacing: 10, fontWeight: 'bold', fill: h.colorCode.INSIDE_ALT });
+        sprite.anchor.set(1, 0.5);
+        sprite.x = x + cellSize * 20 - 5;
+        sprite.y = y + 20 + 20 / 2;
+        break;
+      case "upperButtonLabel":
+        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', fill: h.colorCode.DEFAULT_ALT });
+        sprite.anchor.set(0.5, 0.5);
+        sprite.x = x + 20;
+        sprite.y = y + 20 / 2;
+        break;
+      case "lowerButtonLabel":
+        sprite = new PIXI.Text(text, { fontFamily: "Arial", fontSize: '11pt', fontWeight: 'bold', fill: h.colorCode.DEFAULT_ALT });
+        sprite.anchor.set(0.5, 0.5);
+        sprite.x = x + 30;
+        sprite.y = y + 20 / 2;
+        break;
+      // case "phaseLabel":
+      //   sprite = new PIXI.Text(text, 
+      //     {fontFamily: "Courier", fontSize: '12pt', fontWeight: 'bold'}
+      //   );
+      //   sprite.anchor.set(0, 0.5);
+      //   sprite.x = x + 5;
+      //   sprite.y = y + 20 / 2;
+      //   break;
+      case "cuStep":
+        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', fill: h.colorCode.DEFAULT_ALT });
+        sprite.anchor.set(0, 0.5);
+        sprite.x = x + 5;
+        sprite.y = y + 20 / 2;
+        break;
+      // case "cuDescription":
+      //   sprite = new PIXI.Text(text, 
+      //     {fontFamily: "Arial", fontSize: '9pt', fontStyle: 'italic'}
+      //   );
+      //   sprite.anchor.set(0, 0.5);
+      //   sprite.x = x + 5;
+      //   sprite.y = y + 20 / 2;
+      //   break;
+    }
+  }
+
+  return sprite;
+}
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 exports.__esModule = true;
 
 var _WebGLManager2 = __webpack_require__(16);
@@ -5604,7 +5764,7 @@ exports.default = ObjectRenderer;
 //# sourceMappingURL=ObjectRenderer.js.map
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5616,27 +5776,27 @@ var _SystemRenderer2 = __webpack_require__(64);
 
 var _SystemRenderer3 = _interopRequireDefault(_SystemRenderer2);
 
-var _MaskManager = __webpack_require__(139);
+var _MaskManager = __webpack_require__(141);
 
 var _MaskManager2 = _interopRequireDefault(_MaskManager);
 
-var _StencilManager = __webpack_require__(141);
+var _StencilManager = __webpack_require__(143);
 
 var _StencilManager2 = _interopRequireDefault(_StencilManager);
 
-var _FilterManager = __webpack_require__(142);
+var _FilterManager = __webpack_require__(144);
 
 var _FilterManager2 = _interopRequireDefault(_FilterManager);
 
-var _RenderTarget = __webpack_require__(22);
+var _RenderTarget = __webpack_require__(23);
 
 var _RenderTarget2 = _interopRequireDefault(_RenderTarget);
 
-var _ObjectRenderer = __webpack_require__(20);
+var _ObjectRenderer = __webpack_require__(21);
 
 var _ObjectRenderer2 = _interopRequireDefault(_ObjectRenderer);
 
-var _TextureManager = __webpack_require__(144);
+var _TextureManager = __webpack_require__(146);
 
 var _TextureManager2 = _interopRequireDefault(_TextureManager);
 
@@ -5644,19 +5804,19 @@ var _BaseTexture = __webpack_require__(11);
 
 var _BaseTexture2 = _interopRequireDefault(_BaseTexture);
 
-var _TextureGarbageCollector = __webpack_require__(145);
+var _TextureGarbageCollector = __webpack_require__(147);
 
 var _TextureGarbageCollector2 = _interopRequireDefault(_TextureGarbageCollector);
 
-var _WebGLState = __webpack_require__(146);
+var _WebGLState = __webpack_require__(148);
 
 var _WebGLState2 = _interopRequireDefault(_WebGLState);
 
-var _mapWebGLDrawModesToPixi = __webpack_require__(148);
+var _mapWebGLDrawModesToPixi = __webpack_require__(150);
 
 var _mapWebGLDrawModesToPixi2 = _interopRequireDefault(_mapWebGLDrawModesToPixi);
 
-var _validateContext = __webpack_require__(149);
+var _validateContext = __webpack_require__(151);
 
 var _validateContext2 = _interopRequireDefault(_validateContext);
 
@@ -6421,7 +6581,7 @@ _utils.pluginTarget.mixin(WebGLRenderer);
 //# sourceMappingURL=WebGLRenderer.js.map
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6753,7 +6913,7 @@ exports.default = RenderTarget;
 //# sourceMappingURL=RenderTarget.js.map
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7026,166 +7186,6 @@ function buildNativeLine(graphicsData, webGLData) {
     }
 }
 //# sourceMappingURL=buildLine.js.map
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = textDrawer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(4);
-
-var h = _interopRequireWildcard(_helpers);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-// This function handles drawing every text element on the view, 
-// the input x,y should be the upper left corner of the block
-function textDrawer() {
-  var text = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-  var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "";
-  var x = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
-  var y = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 0;
-  var cellSize = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
-
-  var sprite = {};
-
-  if (!alt) {
-    switch (type) {
-      case "bottomDescription":
-        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '10pt', wordWrap: true, wordWrapWidth: 750 });
-        sprite.x = 30;
-        sprite.y = 495;
-        break;
-      case "cellLabel":
-        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt' });
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + cellSize * 20 / 2;
-        sprite.y = y + 20 / 2;
-        break;
-      case "ALULabel":
-        sprite = new PIXI.Text("ALU", { fontFamily: "Courier", fontSize: '12pt' });
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = 370;
-        sprite.y = 275;
-        break;
-      case "cellValue":
-        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', letterSpacing: 10 });
-        sprite.anchor.set(1, 0.5);
-        sprite.x = x + cellSize * 20 - 5;
-        sprite.y = y + 20 + 20 / 2;
-        break;
-      case "upperButtonLabel":
-        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt' });
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + 40 / 2;
-        sprite.y = y + 20 / 2;
-        break;
-      case "lowerButtonLabel":
-        sprite = new PIXI.Text(text, { fontFamily: "Arial", fontSize: '11pt', fontWeight: 'bold' });
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + 60 / 2;
-        sprite.y = y + 20 / 2;
-        break;
-      case "phaseLabel":
-        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', fontWeight: 'bold' });
-        sprite.anchor.set(0, 0.5);
-        sprite.x = x + 5;
-        sprite.y = y + 20 / 2;
-        break;
-      case "cuStep":
-        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt' });
-        sprite.anchor.set(0, 0.5);
-        sprite.x = x + 5;
-        sprite.y = y + 20 / 2;
-        break;
-      case "cuDescription":
-        sprite = new PIXI.Text(text, { fontFamily: "Arial", fontSize: '9pt', fontStyle: 'italic' });
-        sprite.anchor.set(0, 0.5);
-        sprite.x = 540 + 5;
-        sprite.y = 410 + 20 / 2;
-        break;
-    }
-  } else {
-    switch (type) {
-      // case "bottomDescription":
-      //   sprite = new PIXI.Text(text, {
-      //     fontFamily: "Courier", 
-      //     fontSize: '12pt', 
-      //     wordWrap: true, 
-      //     wordWrapWidth: 100
-      //   });
-      //   sprite.x = 30;
-      //   sprite.y = 495;
-      //   break;
-      case "cellLabel":
-        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', fontWeight: 'bold', fill: h.colorCode.INSIDE_ALT });
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + cellSize * 20 / 2;
-        sprite.y = y + 20 / 2;
-        break;
-      case "ALULabel":
-        sprite = new PIXI.Text("ALU", { fontFamily: "Courier", fontSize: '12pt', fontWeight: 'bold', fill: h.colorCode.INSIDE_ALT });
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = 370;
-        sprite.y = 275;
-        break;
-      case "cellValue":
-        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', letterSpacing: 10, fontWeight: 'bold', fill: h.colorCode.INSIDE_ALT });
-        sprite.anchor.set(1, 0.5);
-        sprite.x = x + cellSize * 20 - 5;
-        sprite.y = y + 20 + 20 / 2;
-        break;
-      case "upperButtonLabel":
-        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', fill: h.colorCode.DEFAULT_ALT });
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + 20;
-        sprite.y = y + 20 / 2;
-        break;
-      case "lowerButtonLabel":
-        sprite = new PIXI.Text(text, { fontFamily: "Arial", fontSize: '11pt', fontWeight: 'bold', fill: h.colorCode.DEFAULT_ALT });
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + 30;
-        sprite.y = y + 20 / 2;
-        break;
-      // case "phaseLabel":
-      //   sprite = new PIXI.Text(text, 
-      //     {fontFamily: "Courier", fontSize: '12pt', fontWeight: 'bold'}
-      //   );
-      //   sprite.anchor.set(0, 0.5);
-      //   sprite.x = x + 5;
-      //   sprite.y = y + 20 / 2;
-      //   break;
-      case "cuStep":
-        sprite = new PIXI.Text(text, { fontFamily: "Courier", fontSize: '12pt', fill: h.colorCode.DEFAULT_ALT });
-        sprite.anchor.set(0, 0.5);
-        sprite.x = x + 5;
-        sprite.y = y + 20 / 2;
-        break;
-      // case "cuDescription":
-      //   sprite = new PIXI.Text(text, 
-      //     {fontFamily: "Arial", fontSize: '9pt', fontStyle: 'italic'}
-      //   );
-      //   sprite.anchor.set(0, 0.5);
-      //   sprite.x = x + 5;
-      //   sprite.y = y + 20 / 2;
-      //   break;
-    }
-  }
-
-  return sprite;
-}
 
 /***/ }),
 /* 25 */
@@ -9574,7 +9574,7 @@ exports.nextCombination = function(v) {
 exports.__esModule = true;
 exports.Ticker = exports.shared = undefined;
 
-var _Ticker = __webpack_require__(133);
+var _Ticker = __webpack_require__(135);
 
 var _Ticker2 = _interopRequireDefault(_Ticker);
 
@@ -12156,7 +12156,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _buttonBGDrawer = __webpack_require__(233);
+var _buttonBGDrawer = __webpack_require__(104);
 
 Object.defineProperty(exports, 'buttonBGDrawer', {
   enumerable: true,
@@ -12165,7 +12165,7 @@ Object.defineProperty(exports, 'buttonBGDrawer', {
   }
 });
 
-var _cellLineDrawer = __webpack_require__(104);
+var _cellLineDrawer = __webpack_require__(106);
 
 Object.defineProperty(exports, 'cellLineDrawer', {
   enumerable: true,
@@ -12210,7 +12210,7 @@ Object.defineProperty(exports, 'ioLineDrawer', {
   }
 });
 
-var _ioCrossPointDrawer = __webpack_require__(105);
+var _ioCrossPointDrawer = __webpack_require__(107);
 
 Object.defineProperty(exports, 'ioCrossPointDrawer', {
   enumerable: true,
@@ -12219,7 +12219,7 @@ Object.defineProperty(exports, 'ioCrossPointDrawer', {
   }
 });
 
-var _textDrawer = __webpack_require__(24);
+var _textDrawer = __webpack_require__(20);
 
 Object.defineProperty(exports, 'textDrawer', {
   enumerable: true,
@@ -12299,11 +12299,11 @@ var _pixi = __webpack_require__(3);
 
 var PIXI = _interopRequireWildcard(_pixi);
 
-var _store = __webpack_require__(206);
+var _store = __webpack_require__(208);
 
 var store = _interopRequireWildcard(_store);
 
-var _view = __webpack_require__(222);
+var _view = __webpack_require__(103);
 
 var view = _interopRequireWildcard(_view);
 
@@ -12324,12 +12324,12 @@ var rendererSize = exports.rendererSize = { width: app.renderer.width, height: a
 
 app.stage.addChild(view.builders.bgBuilder());
 
-console.log("We are in app.js");
-console.log(store.dynamicView);
+// console.log("We are in app.js");
+// console.log(store.dynamicView);
 
 app.stage.addChild(store.dynamicView);
 
-console.log("about to render");
+// console.log("about to render");
 store.render();
 
 // ======== END INITIAL STATE ========
@@ -14650,8 +14650,8 @@ exports.default = Transform;
 
 
 
-var punycode = __webpack_require__(128);
-var util = __webpack_require__(129);
+var punycode = __webpack_require__(130);
+var util = __webpack_require__(131);
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;
@@ -14726,7 +14726,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
       'gopher:': true,
       'file:': true
     },
-    querystring = __webpack_require__(130);
+    querystring = __webpack_require__(132);
 
 function urlParse(url, parseQueryString, slashesDenoteHost) {
   if (url && util.isObject(url) && url instanceof Url) return url;
@@ -16644,7 +16644,7 @@ exports.__esModule = true;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _extractUniformsFromSrc = __webpack_require__(140);
+var _extractUniformsFromSrc = __webpack_require__(142);
 
 var _extractUniformsFromSrc2 = _interopRequireDefault(_extractUniformsFromSrc);
 
@@ -19140,7 +19140,7 @@ var _CanvasRenderer = __webpack_require__(15);
 
 var _CanvasRenderer2 = _interopRequireDefault(_CanvasRenderer);
 
-var _WebGLRenderer = __webpack_require__(21);
+var _WebGLRenderer = __webpack_require__(22);
 
 var _WebGLRenderer2 = _interopRequireDefault(_WebGLRenderer);
 
@@ -19269,7 +19269,7 @@ exports.default = {
 exports.__esModule = true;
 exports.BitmapText = exports.TilingSpriteRenderer = exports.TilingSprite = exports.TextureTransform = exports.AnimatedSprite = undefined;
 
-var _AnimatedSprite = __webpack_require__(172);
+var _AnimatedSprite = __webpack_require__(174);
 
 Object.defineProperty(exports, 'AnimatedSprite', {
   enumerable: true,
@@ -19287,7 +19287,7 @@ Object.defineProperty(exports, 'TextureTransform', {
   }
 });
 
-var _TilingSprite = __webpack_require__(173);
+var _TilingSprite = __webpack_require__(175);
 
 Object.defineProperty(exports, 'TilingSprite', {
   enumerable: true,
@@ -19296,7 +19296,7 @@ Object.defineProperty(exports, 'TilingSprite', {
   }
 });
 
-var _TilingSpriteRenderer = __webpack_require__(174);
+var _TilingSpriteRenderer = __webpack_require__(176);
 
 Object.defineProperty(exports, 'TilingSpriteRenderer', {
   enumerable: true,
@@ -19305,7 +19305,7 @@ Object.defineProperty(exports, 'TilingSpriteRenderer', {
   }
 });
 
-var _BitmapText = __webpack_require__(175);
+var _BitmapText = __webpack_require__(177);
 
 Object.defineProperty(exports, 'BitmapText', {
   enumerable: true,
@@ -19314,11 +19314,11 @@ Object.defineProperty(exports, 'BitmapText', {
   }
 });
 
-__webpack_require__(176);
-
-__webpack_require__(177);
-
 __webpack_require__(178);
+
+__webpack_require__(179);
+
+__webpack_require__(180);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21310,7 +21310,7 @@ exports.default = CountLimiter;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionTypes; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = createStore;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_symbol_observable__);
 
 
@@ -21566,9 +21566,9 @@ var ActionTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(217);
 
 
 
@@ -21638,7 +21638,7 @@ function isPlainObject(value) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(211);
 
 
 /** Built-in value references. */
@@ -21767,6 +21767,83 @@ function reducer() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.organizers = exports.drawers = exports.builders = undefined;
+
+var _builders = __webpack_require__(12);
+
+var builders = _interopRequireWildcard(_builders);
+
+var _drawers = __webpack_require__(43);
+
+var drawers = _interopRequireWildcard(_drawers);
+
+var _organizers = __webpack_require__(239);
+
+var organizers = _interopRequireWildcard(_organizers);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+exports.builders = builders;
+exports.drawers = drawers;
+exports.organizers = organizers;
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = buttonBGDrawer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(4);
+
+var h = _interopRequireWildcard(_helpers);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function buttonBGDrawer() {
+  var x = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+  var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  var width = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+  var status = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
+
+  // not strictly a sprite in PIXI though
+  var sprite = new PIXI.Graphics();
+
+  switch (status) {
+    case 0:
+      sprite.beginFill(h.colorCode.DEFAULT_BG);
+      break;
+    case 1:
+      sprite.lineStyle(2, h.colorCode.SELECT_ALT_BG, 0.75);
+      sprite.beginFill(h.colorCode.DEFAULT_BG);
+      break;
+    case 2:
+      sprite.beginFill(h.colorCode.SELECT_ALT_BG);
+  }
+  sprite.drawRoundedRect(x, y, width, 20, 8);
+
+  return sprite;
+}
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.default = bottomDescriptionBuilder;
 
 var _pixi = __webpack_require__(3);
@@ -21777,7 +21854,7 @@ var _helpers = __webpack_require__(4);
 
 var h = _interopRequireWildcard(_helpers);
 
-var _textDrawer = __webpack_require__(24);
+var _textDrawer = __webpack_require__(20);
 
 var _textDrawer2 = _interopRequireDefault(_textDrawer);
 
@@ -21793,7 +21870,7 @@ function bottomDescriptionBuilder() {
 }
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21853,7 +21930,7 @@ function cellLineDrawer() {
 }
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21890,17 +21967,17 @@ function ioCrossPointDrawer() {
 }
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(107);
-
 __webpack_require__(109);
 
-__webpack_require__(110);
+__webpack_require__(111);
+
+__webpack_require__(112);
 
 if (!window.ArrayBuffer) {
     window.ArrayBuffer = Array;
@@ -21920,13 +21997,13 @@ if (!window.Uint16Array) {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _objectAssign = __webpack_require__(108);
+var _objectAssign = __webpack_require__(110);
 
 var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -21940,7 +22017,7 @@ if (!Object.assign) {
 //# sourceMappingURL=Object.assign.js.map
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22037,7 +22114,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22118,7 +22195,7 @@ if (!global.cancelAnimationFrame) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)))
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22141,7 +22218,7 @@ if (!Math.sign) {
 //# sourceMappingURL=Math.sign.js.map
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22260,7 +22337,7 @@ exports.default = Circle;
 //# sourceMappingURL=Circle.js.map
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22387,7 +22464,7 @@ exports.default = Ellipse;
 //# sourceMappingURL=Ellipse.js.map
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22523,7 +22600,7 @@ exports.default = Polygon;
 //# sourceMappingURL=Polygon.js.map
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22661,7 +22738,7 @@ exports.default = RoundedRectangle;
 //# sourceMappingURL=RoundedRectangle.js.map
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports) {
 
 
@@ -22693,7 +22770,7 @@ module.exports = createContext;
 
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, exports) {
 
 var EMPTY_ARRAY_BUFFER = new ArrayBuffer(0);
@@ -22818,7 +22895,7 @@ module.exports = Buffer;
 
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -23049,7 +23126,7 @@ module.exports = Framebuffer;
 
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -23146,7 +23223,7 @@ module.exports = Shader;
 
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -23414,7 +23491,7 @@ VertexArrayObject.prototype.getSize = function()
 
 
 /***/ }),
-/* 120 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
@@ -23429,7 +23506,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 121 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23456,7 +23533,7 @@ function maxRecommendedTextures(max) {
 //# sourceMappingURL=maxRecommendedTextures.js.map
 
 /***/ }),
-/* 122 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23475,7 +23552,7 @@ function canUploadSameBuffer() {
 //# sourceMappingURL=canUploadSameBuffer.js.map
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23546,7 +23623,7 @@ exports.default = {
 //# sourceMappingURL=pluginTarget.js.map
 
 /***/ }),
-/* 124 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23613,7 +23690,7 @@ function performMixins() {
 //# sourceMappingURL=mixin.js.map
 
 /***/ }),
-/* 125 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23648,7 +23725,7 @@ module.exports = function removeItems(arr, startIdx, removeCount)
 
 
 /***/ }),
-/* 126 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23696,7 +23773,7 @@ function mapPremultipliedBlendModes() {
 //# sourceMappingURL=mapPremultipliedBlendModes.js.map
 
 /***/ }),
-/* 127 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23757,7 +23834,7 @@ function determineCrossOrigin(url) {
 //# sourceMappingURL=determineCrossOrigin.js.map
 
 /***/ }),
-/* 128 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -24296,7 +24373,7 @@ function determineCrossOrigin(url) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(61)(module), __webpack_require__(13)))
 
 /***/ }),
-/* 129 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24319,18 +24396,18 @@ module.exports = {
 
 
 /***/ }),
-/* 130 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(131);
-exports.encode = exports.stringify = __webpack_require__(132);
+exports.decode = exports.parse = __webpack_require__(133);
+exports.encode = exports.stringify = __webpack_require__(134);
 
 
 /***/ }),
-/* 131 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24421,7 +24498,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 132 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24513,7 +24590,7 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 133 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24529,7 +24606,7 @@ var _settings2 = _interopRequireDefault(_settings);
 
 var _const = __webpack_require__(1);
 
-var _TickerListener = __webpack_require__(134);
+var _TickerListener = __webpack_require__(136);
 
 var _TickerListener2 = _interopRequireDefault(_TickerListener);
 
@@ -24991,7 +25068,7 @@ exports.default = Ticker;
 //# sourceMappingURL=Ticker.js.map
 
 /***/ }),
-/* 134 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25170,7 +25247,7 @@ exports.default = TickerListener;
 //# sourceMappingURL=TickerListener.js.map
 
 /***/ }),
-/* 135 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25328,7 +25405,7 @@ _CanvasRenderer2.default.registerPlugin('sprite', CanvasSpriteRenderer);
 //# sourceMappingURL=CanvasSpriteRenderer.js.map
 
 /***/ }),
-/* 136 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25502,7 +25579,7 @@ exports.default = CanvasMaskManager;
 //# sourceMappingURL=CanvasMaskManager.js.map
 
 /***/ }),
-/* 137 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25579,7 +25656,7 @@ function mapCanvasBlendModesToPixi() {
 //# sourceMappingURL=mapCanvasBlendModesToPixi.js.map
 
 /***/ }),
-/* 138 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25587,11 +25664,11 @@ function mapCanvasBlendModesToPixi() {
 
 exports.__esModule = true;
 
-var _ObjectRenderer2 = __webpack_require__(20);
+var _ObjectRenderer2 = __webpack_require__(21);
 
 var _ObjectRenderer3 = _interopRequireDefault(_ObjectRenderer2);
 
-var _WebGLRenderer = __webpack_require__(21);
+var _WebGLRenderer = __webpack_require__(22);
 
 var _WebGLRenderer2 = _interopRequireDefault(_WebGLRenderer);
 
@@ -25599,15 +25676,15 @@ var _createIndicesForQuads = __webpack_require__(38);
 
 var _createIndicesForQuads2 = _interopRequireDefault(_createIndicesForQuads);
 
-var _generateMultiTextureShader = __webpack_require__(150);
+var _generateMultiTextureShader = __webpack_require__(152);
 
 var _generateMultiTextureShader2 = _interopRequireDefault(_generateMultiTextureShader);
 
-var _checkMaxIfStatmentsInShader = __webpack_require__(151);
+var _checkMaxIfStatmentsInShader = __webpack_require__(153);
 
 var _checkMaxIfStatmentsInShader2 = _interopRequireDefault(_checkMaxIfStatmentsInShader);
 
-var _BatchBuffer = __webpack_require__(152);
+var _BatchBuffer = __webpack_require__(154);
 
 var _BatchBuffer2 = _interopRequireDefault(_BatchBuffer);
 
@@ -26126,7 +26203,7 @@ _WebGLRenderer2.default.registerPlugin('sprite', SpriteRenderer);
 //# sourceMappingURL=SpriteRenderer.js.map
 
 /***/ }),
-/* 139 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26341,7 +26418,7 @@ exports.default = MaskManager;
 //# sourceMappingURL=MaskManager.js.map
 
 /***/ }),
-/* 140 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26408,7 +26485,7 @@ function extractUniformsFromString(string) {
 //# sourceMappingURL=extractUniformsFromSrc.js.map
 
 /***/ }),
-/* 141 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26566,7 +26643,7 @@ exports.default = StencilManager;
 //# sourceMappingURL=StencilManager.js.map
 
 /***/ }),
-/* 142 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26578,7 +26655,7 @@ var _WebGLManager2 = __webpack_require__(16);
 
 var _WebGLManager3 = _interopRequireDefault(_WebGLManager2);
 
-var _RenderTarget = __webpack_require__(22);
+var _RenderTarget = __webpack_require__(23);
 
 var _RenderTarget2 = _interopRequireDefault(_RenderTarget);
 
@@ -26592,7 +26669,7 @@ var _Shader = __webpack_require__(17);
 
 var _Shader2 = _interopRequireDefault(_Shader);
 
-var _filterTransforms = __webpack_require__(143);
+var _filterTransforms = __webpack_require__(145);
 
 var filterTransforms = _interopRequireWildcard(_filterTransforms);
 
@@ -27165,7 +27242,7 @@ exports.default = FilterManager;
 //# sourceMappingURL=FilterManager.js.map
 
 /***/ }),
-/* 143 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27229,7 +27306,7 @@ function calculateSpriteMatrix(outputMatrix, filterArea, textureSize, sprite) {
 //# sourceMappingURL=filterTransforms.js.map
 
 /***/ }),
-/* 144 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27241,7 +27318,7 @@ var _pixiGlCore = __webpack_require__(7);
 
 var _const = __webpack_require__(1);
 
-var _RenderTarget = __webpack_require__(22);
+var _RenderTarget = __webpack_require__(23);
 
 var _RenderTarget2 = _interopRequireDefault(_RenderTarget);
 
@@ -27490,7 +27567,7 @@ exports.default = TextureManager;
 //# sourceMappingURL=TextureManager.js.map
 
 /***/ }),
-/* 145 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27615,7 +27692,7 @@ exports.default = TextureGarbageCollector;
 //# sourceMappingURL=TextureGarbageCollector.js.map
 
 /***/ }),
-/* 146 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27623,7 +27700,7 @@ exports.default = TextureGarbageCollector;
 
 exports.__esModule = true;
 
-var _mapWebGLBlendModesToPixi = __webpack_require__(147);
+var _mapWebGLBlendModesToPixi = __webpack_require__(149);
 
 var _mapWebGLBlendModesToPixi2 = _interopRequireDefault(_mapWebGLBlendModesToPixi);
 
@@ -27900,7 +27977,7 @@ exports.default = WebGLState;
 //# sourceMappingURL=WebGLState.js.map
 
 /***/ }),
-/* 147 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27954,7 +28031,7 @@ function mapWebGLBlendModesToPixi(gl) {
 //# sourceMappingURL=mapWebGLBlendModesToPixi.js.map
 
 /***/ }),
-/* 148 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27991,7 +28068,7 @@ function mapWebGLDrawModesToPixi(gl) {
 //# sourceMappingURL=mapWebGLDrawModesToPixi.js.map
 
 /***/ }),
-/* 149 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28012,7 +28089,7 @@ function validateContext(gl) {
 //# sourceMappingURL=validateContext.js.map
 
 /***/ }),
-/* 150 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28080,7 +28157,7 @@ function generateSampleSrc(maxTextures) {
 //# sourceMappingURL=generateMultiTextureShader.js.map
 
 /***/ }),
-/* 151 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28160,7 +28237,7 @@ function generateIfTestSrc(maxIfs) {
 //# sourceMappingURL=checkMaxIfStatmentsInShader.js.map
 
 /***/ }),
-/* 152 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28218,7 +28295,7 @@ exports.default = Buffer;
 //# sourceMappingURL=BatchBuffer.js.map
 
 /***/ }),
-/* 153 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28254,7 +28331,7 @@ var _TextMetrics = __webpack_require__(72);
 
 var _TextMetrics2 = _interopRequireDefault(_TextMetrics);
 
-var _trimCanvas = __webpack_require__(154);
+var _trimCanvas = __webpack_require__(156);
 
 var _trimCanvas2 = _interopRequireDefault(_trimCanvas);
 
@@ -28878,7 +28955,7 @@ exports.default = Text;
 //# sourceMappingURL=Text.js.map
 
 /***/ }),
-/* 154 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28959,7 +29036,7 @@ function trimCanvas(canvas) {
 //# sourceMappingURL=trimCanvas.js.map
 
 /***/ }),
-/* 155 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28997,7 +29074,7 @@ var _Bounds = __webpack_require__(29);
 
 var _Bounds2 = _interopRequireDefault(_Bounds);
 
-var _bezierCurveTo2 = __webpack_require__(156);
+var _bezierCurveTo2 = __webpack_require__(158);
 
 var _bezierCurveTo3 = _interopRequireDefault(_bezierCurveTo2);
 
@@ -30136,7 +30213,7 @@ Graphics._SPRITE_TEXTURE = null;
 //# sourceMappingURL=Graphics.js.map
 
 /***/ }),
-/* 156 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30191,7 +30268,7 @@ function bezierCurveTo(fromX, fromY, cpX, cpY, cpX2, cpY2, toX, toY) {
 //# sourceMappingURL=bezierCurveTo.js.map
 
 /***/ }),
-/* 157 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30203,35 +30280,35 @@ var _utils = __webpack_require__(2);
 
 var _const = __webpack_require__(1);
 
-var _ObjectRenderer2 = __webpack_require__(20);
+var _ObjectRenderer2 = __webpack_require__(21);
 
 var _ObjectRenderer3 = _interopRequireDefault(_ObjectRenderer2);
 
-var _WebGLRenderer = __webpack_require__(21);
+var _WebGLRenderer = __webpack_require__(22);
 
 var _WebGLRenderer2 = _interopRequireDefault(_WebGLRenderer);
 
-var _WebGLGraphicsData = __webpack_require__(158);
+var _WebGLGraphicsData = __webpack_require__(160);
 
 var _WebGLGraphicsData2 = _interopRequireDefault(_WebGLGraphicsData);
 
-var _PrimitiveShader = __webpack_require__(159);
+var _PrimitiveShader = __webpack_require__(161);
 
 var _PrimitiveShader2 = _interopRequireDefault(_PrimitiveShader);
 
-var _buildPoly = __webpack_require__(160);
+var _buildPoly = __webpack_require__(162);
 
 var _buildPoly2 = _interopRequireDefault(_buildPoly);
 
-var _buildRectangle = __webpack_require__(161);
+var _buildRectangle = __webpack_require__(163);
 
 var _buildRectangle2 = _interopRequireDefault(_buildRectangle);
 
-var _buildRoundedRectangle = __webpack_require__(162);
+var _buildRoundedRectangle = __webpack_require__(164);
 
 var _buildRoundedRectangle2 = _interopRequireDefault(_buildRoundedRectangle);
 
-var _buildCircle = __webpack_require__(163);
+var _buildCircle = __webpack_require__(165);
 
 var _buildCircle2 = _interopRequireDefault(_buildCircle);
 
@@ -30461,7 +30538,7 @@ _WebGLRenderer2.default.registerPlugin('graphics', GraphicsRenderer);
 //# sourceMappingURL=GraphicsRenderer.js.map
 
 /***/ }),
-/* 158 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30609,7 +30686,7 @@ exports.default = WebGLGraphicsData;
 //# sourceMappingURL=WebGLGraphicsData.js.map
 
 /***/ }),
-/* 159 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30659,7 +30736,7 @@ exports.default = PrimitiveShader;
 //# sourceMappingURL=PrimitiveShader.js.map
 
 /***/ }),
-/* 160 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30668,7 +30745,7 @@ exports.default = PrimitiveShader;
 exports.__esModule = true;
 exports.default = buildPoly;
 
-var _buildLine = __webpack_require__(23);
+var _buildLine = __webpack_require__(24);
 
 var _buildLine2 = _interopRequireDefault(_buildLine);
 
@@ -30750,7 +30827,7 @@ function buildPoly(graphicsData, webGLData, webGLDataNativeLines) {
 //# sourceMappingURL=buildPoly.js.map
 
 /***/ }),
-/* 161 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30759,7 +30836,7 @@ function buildPoly(graphicsData, webGLData, webGLDataNativeLines) {
 exports.__esModule = true;
 exports.default = buildRectangle;
 
-var _buildLine = __webpack_require__(23);
+var _buildLine = __webpack_require__(24);
 
 var _buildLine2 = _interopRequireDefault(_buildLine);
 
@@ -30831,7 +30908,7 @@ function buildRectangle(graphicsData, webGLData, webGLDataNativeLines) {
 //# sourceMappingURL=buildRectangle.js.map
 
 /***/ }),
-/* 162 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30844,7 +30921,7 @@ var _earcut = __webpack_require__(74);
 
 var _earcut2 = _interopRequireDefault(_earcut);
 
-var _buildLine = __webpack_require__(23);
+var _buildLine = __webpack_require__(24);
 
 var _buildLine2 = _interopRequireDefault(_buildLine);
 
@@ -30992,7 +31069,7 @@ function quadraticBezierCurve(fromX, fromY, cpX, cpY, toX, toY) {
 //# sourceMappingURL=buildRoundedRectangle.js.map
 
 /***/ }),
-/* 163 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31001,7 +31078,7 @@ function quadraticBezierCurve(fromX, fromY, cpX, cpY, toX, toY) {
 exports.__esModule = true;
 exports.default = buildCircle;
 
-var _buildLine = __webpack_require__(23);
+var _buildLine = __webpack_require__(24);
 
 var _buildLine2 = _interopRequireDefault(_buildLine);
 
@@ -31090,7 +31167,7 @@ function buildCircle(graphicsData, webGLData, webGLDataNativeLines) {
 //# sourceMappingURL=buildCircle.js.map
 
 /***/ }),
-/* 164 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31364,7 +31441,7 @@ _CanvasRenderer2.default.registerPlugin('graphics', CanvasGraphicsRenderer);
 //# sourceMappingURL=CanvasGraphicsRenderer.js.map
 
 /***/ }),
-/* 165 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31631,7 +31708,7 @@ exports.default = Spritesheet;
 //# sourceMappingURL=Spritesheet.js.map
 
 /***/ }),
-/* 166 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32732,7 +32809,7 @@ function deprecation(core) {
 //# sourceMappingURL=deprecation.js.map
 
 /***/ }),
-/* 167 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32749,7 +32826,7 @@ Object.defineProperty(exports, 'accessibleTarget', {
   }
 });
 
-var _AccessibilityManager = __webpack_require__(168);
+var _AccessibilityManager = __webpack_require__(170);
 
 Object.defineProperty(exports, 'AccessibilityManager', {
   enumerable: true,
@@ -32762,7 +32839,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 168 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33261,7 +33338,7 @@ core.CanvasRenderer.registerPlugin('accessibility', AccessibilityManager);
 //# sourceMappingURL=AccessibilityManager.js.map
 
 /***/ }),
-/* 169 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33269,7 +33346,7 @@ core.CanvasRenderer.registerPlugin('accessibility', AccessibilityManager);
 
 exports.__esModule = true;
 
-var _WebGLExtract = __webpack_require__(170);
+var _WebGLExtract = __webpack_require__(172);
 
 Object.defineProperty(exports, 'webgl', {
   enumerable: true,
@@ -33278,7 +33355,7 @@ Object.defineProperty(exports, 'webgl', {
   }
 });
 
-var _CanvasExtract = __webpack_require__(171);
+var _CanvasExtract = __webpack_require__(173);
 
 Object.defineProperty(exports, 'canvas', {
   enumerable: true,
@@ -33291,7 +33368,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 170 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33519,7 +33596,7 @@ core.WebGLRenderer.registerPlugin('extract', WebGLExtract);
 //# sourceMappingURL=WebGLExtract.js.map
 
 /***/ }),
-/* 171 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33704,7 +33781,7 @@ core.CanvasRenderer.registerPlugin('extract', CanvasExtract);
 //# sourceMappingURL=CanvasExtract.js.map
 
 /***/ }),
-/* 172 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34118,7 +34195,7 @@ exports.default = AnimatedSprite;
 //# sourceMappingURL=AnimatedSprite.js.map
 
 /***/ }),
-/* 173 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34573,7 +34650,7 @@ exports.default = TilingSprite;
 //# sourceMappingURL=TilingSprite.js.map
 
 /***/ }),
-/* 174 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34740,7 +34817,7 @@ core.WebGLRenderer.registerPlugin('tilingSprite', TilingSpriteRenderer);
 //# sourceMappingURL=TilingSpriteRenderer.js.map
 
 /***/ }),
-/* 175 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35333,7 +35410,7 @@ BitmapText.fonts = {};
 //# sourceMappingURL=BitmapText.js.map
 
 /***/ }),
-/* 176 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35742,7 +35819,7 @@ DisplayObject.prototype._cacheAsBitmapDestroy = function _cacheAsBitmapDestroy(o
 //# sourceMappingURL=cacheAsBitmap.js.map
 
 /***/ }),
-/* 177 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35781,7 +35858,7 @@ core.Container.prototype.getChildByName = function getChildByName(name) {
 //# sourceMappingURL=getChildByName.js.map
 
 /***/ }),
-/* 178 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35819,7 +35896,7 @@ core.DisplayObject.prototype.getGlobalPosition = function getGlobalPosition() {
 //# sourceMappingURL=getGlobalPosition.js.map
 
 /***/ }),
-/* 179 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35827,7 +35904,7 @@ core.DisplayObject.prototype.getGlobalPosition = function getGlobalPosition() {
 
 exports.__esModule = true;
 
-var _FXAAFilter = __webpack_require__(180);
+var _FXAAFilter = __webpack_require__(182);
 
 Object.defineProperty(exports, 'FXAAFilter', {
   enumerable: true,
@@ -35836,7 +35913,7 @@ Object.defineProperty(exports, 'FXAAFilter', {
   }
 });
 
-var _NoiseFilter = __webpack_require__(181);
+var _NoiseFilter = __webpack_require__(183);
 
 Object.defineProperty(exports, 'NoiseFilter', {
   enumerable: true,
@@ -35845,7 +35922,7 @@ Object.defineProperty(exports, 'NoiseFilter', {
   }
 });
 
-var _DisplacementFilter = __webpack_require__(182);
+var _DisplacementFilter = __webpack_require__(184);
 
 Object.defineProperty(exports, 'DisplacementFilter', {
   enumerable: true,
@@ -35854,7 +35931,7 @@ Object.defineProperty(exports, 'DisplacementFilter', {
   }
 });
 
-var _BlurFilter = __webpack_require__(183);
+var _BlurFilter = __webpack_require__(185);
 
 Object.defineProperty(exports, 'BlurFilter', {
   enumerable: true,
@@ -35881,7 +35958,7 @@ Object.defineProperty(exports, 'BlurYFilter', {
   }
 });
 
-var _ColorMatrixFilter = __webpack_require__(184);
+var _ColorMatrixFilter = __webpack_require__(186);
 
 Object.defineProperty(exports, 'ColorMatrixFilter', {
   enumerable: true,
@@ -35890,7 +35967,7 @@ Object.defineProperty(exports, 'ColorMatrixFilter', {
   }
 });
 
-var _VoidFilter = __webpack_require__(185);
+var _VoidFilter = __webpack_require__(187);
 
 Object.defineProperty(exports, 'VoidFilter', {
   enumerable: true,
@@ -35903,7 +35980,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 180 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35962,7 +36039,7 @@ exports.default = FXAAFilter;
 //# sourceMappingURL=FXAAFilter.js.map
 
 /***/ }),
-/* 181 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36064,7 +36141,7 @@ exports.default = NoiseFilter;
 //# sourceMappingURL=NoiseFilter.js.map
 
 /***/ }),
-/* 182 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36179,7 +36256,7 @@ exports.default = DisplacementFilter;
 //# sourceMappingURL=DisplacementFilter.js.map
 
 /***/ }),
-/* 183 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36358,7 +36435,7 @@ exports.default = BlurFilter;
 //# sourceMappingURL=BlurFilter.js.map
 
 /***/ }),
-/* 184 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36914,7 +36991,7 @@ ColorMatrixFilter.prototype.grayscale = ColorMatrixFilter.prototype.greyscale;
 //# sourceMappingURL=ColorMatrixFilter.js.map
 
 /***/ }),
-/* 185 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36969,7 +37046,7 @@ exports.default = VoidFilter;
 //# sourceMappingURL=VoidFilter.js.map
 
 /***/ }),
-/* 186 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36986,7 +37063,7 @@ Object.defineProperty(exports, 'InteractionData', {
   }
 });
 
-var _InteractionManager = __webpack_require__(187);
+var _InteractionManager = __webpack_require__(189);
 
 Object.defineProperty(exports, 'InteractionManager', {
   enumerable: true,
@@ -37026,7 +37103,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 187 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38791,7 +38868,7 @@ core.CanvasRenderer.registerPlugin('interaction', InteractionManager);
 //# sourceMappingURL=InteractionManager.js.map
 
 /***/ }),
-/* 188 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38852,7 +38929,7 @@ var _Application = __webpack_require__(75);
 
 var _Application2 = _interopRequireDefault(_Application);
 
-var _loader = __webpack_require__(190);
+var _loader = __webpack_require__(192);
 
 var _loader2 = _interopRequireDefault(_loader);
 
@@ -38924,7 +39001,7 @@ AppPrototype.destroy = function destroy(removeView) {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 189 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39547,7 +39624,7 @@ exports.default = Loader;
 //# sourceMappingURL=Loader.js.map
 
 /***/ }),
-/* 190 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39559,7 +39636,7 @@ var _resourceLoader = __webpack_require__(18);
 
 var _resourceLoader2 = _interopRequireDefault(_resourceLoader);
 
-var _blob = __webpack_require__(191);
+var _blob = __webpack_require__(193);
 
 var _eventemitter = __webpack_require__(9);
 
@@ -39723,7 +39800,7 @@ Resource.setExtensionXhrType('fnt', Resource.XHR_RESPONSE_TYPE.DOCUMENT);
 //# sourceMappingURL=loader.js.map
 
 /***/ }),
-/* 191 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39816,7 +39893,7 @@ function blobMiddlewareFactory() {
 //# sourceMappingURL=blob.js.map
 
 /***/ }),
-/* 192 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39833,7 +39910,7 @@ Object.defineProperty(exports, 'Mesh', {
   }
 });
 
-var _MeshRenderer = __webpack_require__(193);
+var _MeshRenderer = __webpack_require__(195);
 
 Object.defineProperty(exports, 'MeshRenderer', {
   enumerable: true,
@@ -39842,7 +39919,7 @@ Object.defineProperty(exports, 'MeshRenderer', {
   }
 });
 
-var _CanvasMeshRenderer = __webpack_require__(194);
+var _CanvasMeshRenderer = __webpack_require__(196);
 
 Object.defineProperty(exports, 'CanvasMeshRenderer', {
   enumerable: true,
@@ -39860,7 +39937,7 @@ Object.defineProperty(exports, 'Plane', {
   }
 });
 
-var _NineSlicePlane = __webpack_require__(195);
+var _NineSlicePlane = __webpack_require__(197);
 
 Object.defineProperty(exports, 'NineSlicePlane', {
   enumerable: true,
@@ -39869,7 +39946,7 @@ Object.defineProperty(exports, 'NineSlicePlane', {
   }
 });
 
-var _Rope = __webpack_require__(196);
+var _Rope = __webpack_require__(198);
 
 Object.defineProperty(exports, 'Rope', {
   enumerable: true,
@@ -39882,7 +39959,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 193 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40038,7 +40115,7 @@ core.WebGLRenderer.registerPlugin('mesh', MeshRenderer);
 //# sourceMappingURL=MeshRenderer.js.map
 
 /***/ }),
-/* 194 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40326,7 +40403,7 @@ core.CanvasRenderer.registerPlugin('mesh', MeshSpriteRenderer);
 //# sourceMappingURL=CanvasMeshRenderer.js.map
 
 /***/ }),
-/* 195 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40717,7 +40794,7 @@ exports.default = NineSlicePlane;
 //# sourceMappingURL=NineSlicePlane.js.map
 
 /***/ }),
-/* 196 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40958,7 +41035,7 @@ exports.default = Rope;
 //# sourceMappingURL=Rope.js.map
 
 /***/ }),
-/* 197 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40966,7 +41043,7 @@ exports.default = Rope;
 
 exports.__esModule = true;
 
-var _ParticleContainer = __webpack_require__(198);
+var _ParticleContainer = __webpack_require__(200);
 
 Object.defineProperty(exports, 'ParticleContainer', {
   enumerable: true,
@@ -40975,7 +41052,7 @@ Object.defineProperty(exports, 'ParticleContainer', {
   }
 });
 
-var _ParticleRenderer = __webpack_require__(199);
+var _ParticleRenderer = __webpack_require__(201);
 
 Object.defineProperty(exports, 'ParticleRenderer', {
   enumerable: true,
@@ -40988,7 +41065,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 198 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41371,7 +41448,7 @@ exports.default = ParticleContainer;
 //# sourceMappingURL=ParticleContainer.js.map
 
 /***/ }),
-/* 199 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41383,11 +41460,11 @@ var _core = __webpack_require__(0);
 
 var core = _interopRequireWildcard(_core);
 
-var _ParticleShader = __webpack_require__(200);
+var _ParticleShader = __webpack_require__(202);
 
 var _ParticleShader2 = _interopRequireDefault(_ParticleShader);
 
-var _ParticleBuffer = __webpack_require__(201);
+var _ParticleBuffer = __webpack_require__(203);
 
 var _ParticleBuffer2 = _interopRequireDefault(_ParticleBuffer);
 
@@ -41852,7 +41929,7 @@ core.WebGLRenderer.registerPlugin('particle', ParticleRenderer);
 //# sourceMappingURL=ParticleRenderer.js.map
 
 /***/ }),
-/* 200 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41900,7 +41977,7 @@ exports.default = ParticleShader;
 //# sourceMappingURL=ParticleShader.js.map
 
 /***/ }),
-/* 201 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42148,7 +42225,7 @@ exports.default = ParticleBuffer;
 //# sourceMappingURL=ParticleBuffer.js.map
 
 /***/ }),
-/* 202 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42156,7 +42233,7 @@ exports.default = ParticleBuffer;
 
 exports.__esModule = true;
 
-var _WebGLPrepare = __webpack_require__(203);
+var _WebGLPrepare = __webpack_require__(205);
 
 Object.defineProperty(exports, 'webgl', {
   enumerable: true,
@@ -42165,7 +42242,7 @@ Object.defineProperty(exports, 'webgl', {
   }
 });
 
-var _CanvasPrepare = __webpack_require__(204);
+var _CanvasPrepare = __webpack_require__(206);
 
 Object.defineProperty(exports, 'canvas', {
   enumerable: true,
@@ -42192,7 +42269,7 @@ Object.defineProperty(exports, 'CountLimiter', {
   }
 });
 
-var _TimeLimiter = __webpack_require__(205);
+var _TimeLimiter = __webpack_require__(207);
 
 Object.defineProperty(exports, 'TimeLimiter', {
   enumerable: true,
@@ -42205,7 +42282,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 203 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42332,7 +42409,7 @@ core.WebGLRenderer.registerPlugin('prepare', WebGLPrepare);
 //# sourceMappingURL=WebGLPrepare.js.map
 
 /***/ }),
-/* 204 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42457,7 +42534,7 @@ core.CanvasRenderer.registerPlugin('prepare', CanvasPrepare);
 //# sourceMappingURL=CanvasPrepare.js.map
 
 /***/ }),
-/* 205 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42520,7 +42597,7 @@ exports.default = TimeLimiter;
 //# sourceMappingURL=TimeLimiter.js.map
 
 /***/ }),
-/* 206 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42536,13 +42613,13 @@ var _pixi = __webpack_require__(3);
 
 var PIXI = _interopRequireWildcard(_pixi);
 
-var _redux = __webpack_require__(207);
+var _redux = __webpack_require__(209);
 
 var _reducers = __webpack_require__(102);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
-var _view = __webpack_require__(222);
+var _view = __webpack_require__(103);
 
 var view = _interopRequireWildcard(_view);
 
@@ -42557,13 +42634,13 @@ var dynamicView = exports.dynamicView = new PIXI.Container();
 var store = exports.store = (0, _redux.createStore)(_reducers2.default, defaultState);
 
 function render() {
-  console.log("We are in render function");
-  console.log(dynamicView);
+  // console.log("We are in render function");
+  // console.log(dynamicView);
 
   dynamicView.removeChildren();
 
   var currentState = store.getState();
-  // const cellView = view.organizers.cellOrganizer(currentState);
+  var cellView = view.organizers.cellOrganizer(currentState);
   // const cuView = view.organizers.cuOrganizer(currentState);
   var descriptionView = view.organizers.descriptionOrganizer(currentState);
   // const ioPathView = view.organizers.ioPathOrganizer(currentState);
@@ -42572,19 +42649,19 @@ function render() {
 
   // dynamicView.addChild(cellView, cuView, descriptionView, ioPathView, lowerButtonsView, upperButtonsView);
 
-  dynamicView.addChild(descriptionView);
+  dynamicView.addChild(cellView, descriptionView);
 }
 
 /***/ }),
-/* 207 */
+/* 209 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(100);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["b"]; });
@@ -42613,13 +42690,13 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(37)))
 
 /***/ }),
-/* 208 */
+/* 210 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(214);
 
 
 
@@ -42651,11 +42728,11 @@ function baseGetTag(value) {
 
 
 /***/ }),
-/* 209 */
+/* 211 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(212);
 
 
 /** Detect free variable `self`. */
@@ -42668,7 +42745,7 @@ var root = __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__["a" /* default */] || fr
 
 
 /***/ }),
-/* 210 */
+/* 212 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42680,7 +42757,7 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(13)))
 
 /***/ }),
-/* 211 */
+/* 213 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42734,7 +42811,7 @@ function getRawTag(value) {
 
 
 /***/ }),
-/* 212 */
+/* 214 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42763,11 +42840,11 @@ function objectToString(value) {
 
 
 /***/ }),
-/* 213 */
+/* 215 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(216);
 
 
 /** Built-in value references. */
@@ -42777,7 +42854,7 @@ var getPrototype = Object(__WEBPACK_IMPORTED_MODULE_0__overArg_js__["a" /* defau
 
 
 /***/ }),
-/* 214 */
+/* 216 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42799,7 +42876,7 @@ function overArg(func, transform) {
 
 
 /***/ }),
-/* 215 */
+/* 217 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42835,14 +42912,14 @@ function isObjectLike(value) {
 
 
 /***/ }),
-/* 216 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(217);
+module.exports = __webpack_require__(219);
 
 
 /***/ }),
-/* 217 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42852,7 +42929,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ponyfill = __webpack_require__(218);
+var _ponyfill = __webpack_require__(220);
 
 var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -42878,7 +42955,7 @@ exports['default'] = result;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13), __webpack_require__(61)(module)))
 
 /***/ }),
-/* 218 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42907,7 +42984,7 @@ function symbolObservablePonyfill(root) {
 };
 
 /***/ }),
-/* 219 */
+/* 221 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43048,7 +43125,7 @@ function combineReducers(reducers) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(37)))
 
 /***/ }),
-/* 220 */
+/* 222 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43102,7 +43179,7 @@ function bindActionCreators(actionCreators, dispatch) {
 }
 
 /***/ }),
-/* 221 */
+/* 223 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43158,37 +43235,7 @@ function applyMiddleware() {
 }
 
 /***/ }),
-/* 222 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.organizers = exports.drawers = exports.builders = undefined;
-
-var _builders = __webpack_require__(12);
-
-var builders = _interopRequireWildcard(_builders);
-
-var _drawers = __webpack_require__(43);
-
-var drawers = _interopRequireWildcard(_drawers);
-
-var _organizers = __webpack_require__(239);
-
-var organizers = _interopRequireWildcard(_organizers);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-exports.builders = builders;
-exports.drawers = drawers;
-exports.organizers = organizers;
-
-/***/ }),
-/* 223 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43303,7 +43350,7 @@ function makeCellsBG() {
 }
 
 /***/ }),
-/* 224 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43313,15 +43360,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _processDetails = __webpack_require__(225);
+var _processDetails = __webpack_require__(226);
 
 var pd = _interopRequireWildcard(_processDetails);
 
-var _descriptions = __webpack_require__(226);
+var _descriptions = __webpack_require__(227);
 
 var d = _interopRequireWildcard(_descriptions);
 
-var _cuDisplayDetails = __webpack_require__(227);
+var _cuDisplayDetails = __webpack_require__(228);
 
 var cu = _interopRequireWildcard(_cuDisplayDetails);
 
@@ -43364,25 +43411,25 @@ function totalStepCount() {
 exports.default = { processInterpreter: processInterpreter, descriptionInterpreter: descriptionInterpreter, cuDisplayInterpreter: cuDisplayInterpreter, totalStepCount: totalStepCount };
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports) {
 
 module.exports = {"IDLE":{"step":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}}]},"ADD":{"step":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"1","W":"0"}},{"path":[{"from":"Akku","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"000001","SDR":"3--a--","R":"2","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"000001","SDR":"<  a >","R":"3","W":"0"}},{"path":[{"from":"SDR","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"AX+<a>","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}},{"path":[{"from":"Z","to":"Akku"}],"values":{"Akku":"AX+<a>","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"AX+<a>","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}}]},"LDC":{"step":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[{"from":"IR","to":"Akku"}],"values":{"Akku":"0const","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}}]},"LDV":{"step":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"1","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"2","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"< a  >","R":"3","W":"0"}},{"path":[{"from":"SDR","to":"Akku"}],"values":{"Akku":"< a  >","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"< a  >","R":"0","W":"0"}}]},"NOT":{"step":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"Akku","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"NOT AX","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"Z","to":"Akku"}],"values":{"Akku":"NOT AX","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"NOT AX","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}}]},"STV":{"step":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[{"from":"Akku","to":"SDR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"1"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"2"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"3"}}]}}
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports) {
 
 module.exports = {"IDLE":{"step":[{"bottomDescription":"Dieses Programm wurde entwickelt, um zukünftigen Generationen von Studenten das Funktionsprinzip der MIMA (Minimalautomat) anschaulich zu erklären. Ausgangsbasis für das Programm war das bereits vorhandene Programm zur Visualisierung der Festkomma-Arithmetik. Für Kritik und Verbesserungsvorschläge bin ich jederzeit offen. Der Autor.","cuDescription":"Willkommen bei MIMAviz!"}]},"ADD":{"step":[{"bottomDescription":"","cuDescription":"ADD ADD"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein ADD Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte yP für ADD Befehl"},{"bottomDescription":"Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!","cuDescription":"Adressiere a von <a>"},{"bottomDescription":"Der ADD Befehl soll ja den Akku mit der Speicherzelle <a> durch eine Addition verknüpfen. Diese Addition wird vorbereitet, indem schonmal der Inhalt des Akku ins X Register transferiert wird, während wir auf den Speicher warten, der uns den Inhalt von a, also <a> geben soll.","cuDescription":"Akku + <a> vorbereiten"},{"bottomDescription":"Jo, sodele, nun warten wir eben noch kurz auf den Speicher, denn dieser benötigt immer drei Takte, bis er das verlangte Datum abliefern kann.","cuDescription":"Der Speicher ist lahm!! ;-)"},{"bottomDescription":"Jetzt haben wir unseren langersehnten Wert <a> am SDR (Speicherdatenregister) anliegen. Da in X schon der Inhalt des Akku steht schreiben wir in Y unseren Inhalt von Speicherzelle a hin.","cuDescription":"Speicher ist fertig mit lesen!"},{"bottomDescription":"Schnell noch die beiden Werte addieren und das gewünschte Ergebnis steht im Z Register. Damit die ALU weiß, das sie eine Addition durchzuführen hat, gibt das Steuerwerk an die Eingänge der ALU C2C1C0 die Werte (001).","cuDescription":"Addition Z:=X+Y"},{"bottomDescription":"Wie in der Aufgabenstellung für unseren ADD a Befehl zu entnehmen ist, soll das Ergebnis zurück in den Akku geschrieben werden.","cuDescription":"Ergebnis Z in den Akku"}]},"LDC":{"step":[{"bottomDescription":"","cuDescription":"LDC LDC"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein LDC Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte yP für LDC Befehl"},{"bottomDescription":"Das Praktische an dem OpCode des LDC Befehls ist, daß er Null ist. Somit brauchen wir das Instruktionsregister IR nicht mehr weiter filtern und können dieses direkt in den Akku laden.","cuDescription":"Lade Konstante in Akku"}]},"LDV":{"step":[{"bottomDescription":"","cuDescription":"LDV LDV"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein LDV Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte yP für LDV Befehl"},{"bottomDescription":"Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!","cuDescription":"Adressiere a von <a>"},{"bottomDescription":"Wir müssen bei dieser MiMa Technologie 3 Takte lang auf eine Antwort vom Speicher warten!","cuDescription":"Warten auf den Speicher!"},{"bottomDescription":"Wir müssen bei dieser MiMa Technologie 3 Takte lang auf eine Antwort vom Speicher warten!","cuDescription":"Warten auf den Speicher!"},{"bottomDescription":"Wie man es nun von diesem Befehl erwartet, wird die Antwort aus dem Speicher an den Akkumulator (Akku) übergeben.","cuDescription":"Antwort in Akku schreiben."}]},"NOT":{"step":[{"bottomDescription":"","cuDescription":"NOT NOT"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein NOT Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte yP für NOT Befehl"},{"bottomDescription":"Der Akkumulator (Akku) wird zur Komplementbildung durch die ALU in das X Register geladen.","cuDescription":"Akku ins X register laden."},{"bottomDescription":"Die ALU übernimmt für uns die Aufgabe der Komplementbildung (siehe Technische Informatik I). Dazu wird vom Steuerwerk an die ALU das Signal C2C1C0=110 angelegt.","cuDescription":"ALU berechnet Komplement."},{"bottomDescription":"Das Ergebnis der Komplementberechnung wird zurück in den Akkumulator geschrieben.","cuDescription":"Ergebnis in Akku speichern."}]},"STV":{"step":[{"bottomDescription":"","cuDescription":"STV STV"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein STV Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte yP für STV Befehl"},{"bottomDescription":"Der Inhalt des Akkumulators (Akku) soll in den Speicher geschrieben werden. Also laden wir den Akku in das Speicherdatenregister (SDR).","cuDescription":"Daten auf Datenbus legen."},{"bottomDescription":"Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!","cuDescription":"Adressiere a von <a>"},{"bottomDescription":"Wir müssen bei dieser MiMa Technologie 3 Takte lang auf den Speicher warten!","cuDescription":"Warten auf den Speicher!"},{"bottomDescription":"Wir müssen bei dieser MiMa Technologie 3 Takte lang auf den Speicher warten!","cuDescription":"Warten auf den Speicher!"}]}}
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports) {
 
 module.exports = {"//0":"LOL TIL this is a way you do comments in JSON","//1":"The instructions to be displayed in the CU step-visualizer.","//2":"IMPORTANT!!! pro[0] ~= step[1]","//3":"This JSON is meant for CU display data, not that we are really parsing for instructions","IDLE":{"cuUpperHeader":"So funktionierts:","proc":["","1. Befehl aussuchen","2. START drücken!"]},"ADD":{"cuUpperHeader":"Fetch Phase","cuLowerHeader":"Execute Phase","proc":[" 1: IAR->SAR; IAR->X; R=1"," 2: Eins->Y;          R=1"," 3: ALU auf addieren; R=1"," 4: Z->IAR"," 5: SDR->IR"," 6: D=1"," 7: IR->SAR;  R=1"," 8: Akku->X;  R=1"," 9:           R=1","10: SDR->Y","11: ALU auf Addieren","12: Z->Akku"]},"LDC":{"cuUpperHeader":"Fetch Phase","cuLowerHeader":"Execute Phase","proc":[" 1: IAR->SAR; IAR->X; R=1"," 2: Eins->Y;          R=1"," 3: ALU auf addieren; R=1"," 4: Z->IAR"," 5: SDR->IR"," 6: D=1"," 7: IR->Akku"]},"LDV":{"cuUpperHeader":"Fetch Phase","cuLowerHeader":"Execute Phase","proc":[" 1: IAR->SAR; IAR->X; R=1"," 2: Eins->Y;          R=1"," 3: ALU auf addieren; R=1"," 4: Z->IAR"," 5: SDR->IR"," 6: D=1"," 7: IR->SAR;  R=1"," 8:           R=1"," 9:           R=1"]},"NOT":{"cuUpperHeader":"Fetch Phase","cuLowerHeader":"Execute Phase","proc":[" 1: IAR->SAR; IAR->X; R=1"," 2: Eins->Y;          R=1"," 3: ALU auf addieren; R=1"," 4: Z->IAR"," 5: SDR->IR"," 6: D=1"," 7: Akku->X"," 8: ALU auf Komplement"," 9: Z->Akku"]},"STV":{"cuUpperHeader":"Fetch Phase","cuLowerHeader":"Execute Phase","proc":[" 1: IAR->SAR; IAR->X; R=1"," 2: Eins->Y;          R=1"," 3: ALU auf addieren; R=1"," 4: Z->IAR"," 5: SDR->IR"," 6: D=1"," 7: Akku->SDR"," 8: IR->SAR;  W=1"," 9:           W=1","10:           W=1"]}}
 
 /***/ }),
-/* 228 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43545,7 +43592,7 @@ function ioCrossPointSpec() {
 exports.default = { cellSpec: cellSpec, ioHArrowHeadSpec: ioHArrowHeadSpec, ioHLineSpec: ioHLineSpec, ioMainLineSpec: ioMainLineSpec, ioCrossPointSpec: ioCrossPointSpec };
 
 /***/ }),
-/* 229 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43566,7 +43613,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 230 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43585,11 +43632,11 @@ var _helpers = __webpack_require__(4);
 
 var h = _interopRequireWildcard(_helpers);
 
-var _buttonBGDrawer = __webpack_require__(233);
+var _buttonBGDrawer = __webpack_require__(104);
 
 var _buttonBGDrawer2 = _interopRequireDefault(_buttonBGDrawer);
 
-var _textDrawer = __webpack_require__(24);
+var _textDrawer = __webpack_require__(20);
 
 var _textDrawer2 = _interopRequireDefault(_textDrawer);
 
@@ -43712,7 +43759,7 @@ function pointerDown() {
 }
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43734,11 +43781,11 @@ var _helpers = __webpack_require__(4);
 
 var h = _interopRequireWildcard(_helpers);
 
-var _textDrawer = __webpack_require__(24);
+var _textDrawer = __webpack_require__(20);
 
 var _textDrawer2 = _interopRequireDefault(_textDrawer);
 
-var _cellLineDrawer = __webpack_require__(104);
+var _cellLineDrawer = __webpack_require__(106);
 
 var _cellLineDrawer2 = _interopRequireDefault(_cellLineDrawer);
 
@@ -43753,8 +43800,9 @@ function cellBuilder() {
 
   var sprite = new PIXI.Container();
   if (name === "ALU") {
-    var ALULabel = (0, _textDrawer2.default)(name, alt);
+    var ALULabel = (0, _textDrawer2.default)(name, alt, "ALULabel");
     var ALULines = (0, _cellLineDrawer2.default)(name, alt);
+    console.log(ALULabel);
     sprite.addChild(ALULabel, ALULines);
   } else {
     var _h$positionSpecs$cell = h.positionSpecs.cellSpec(name),
@@ -43773,7 +43821,7 @@ function cellBuilder() {
 }
 
 /***/ }),
-/* 232 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43826,53 +43874,6 @@ function cuExecBuilder() {
     var stepText = (0, _drawers.textDrawer)(allInfo["proc"][i], alt, "cuStep", 540, 260 + 20 * (i - 6));
     sprite.addChild(stepText);
   }
-
-  return sprite;
-}
-
-/***/ }),
-/* 233 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = buttonBGDrawer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(4);
-
-var h = _interopRequireWildcard(_helpers);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function buttonBGDrawer() {
-  var x = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-  var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-  var width = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-  var status = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
-
-  // not strictly a sprite in PIXI though
-  var sprite = new PIXI.Graphics();
-
-  switch (status) {
-    case 0:
-      sprite.beginFill(h.colorCode.DEFAULT_BG);
-      break;
-    case 1:
-      sprite.lineStyle(2, h.colorCode.SELECT_ALT_BG, 0.75);
-      sprite.beginFill(h.colorCode.DEFAULT_BG);
-      break;
-    case 2:
-      sprite.beginFill(h.colorCode.SELECT_ALT_BG);
-  }
-  sprite.drawRoundedRect(x, y, width, 20, 8);
 
   return sprite;
 }
@@ -44038,7 +44039,7 @@ var _ioLineDrawer = __webpack_require__(44);
 
 var _ioLineDrawer2 = _interopRequireDefault(_ioLineDrawer);
 
-var _ioCrossPointDrawer = __webpack_require__(105);
+var _ioCrossPointDrawer = __webpack_require__(107);
 
 var _ioCrossPointDrawer2 = _interopRequireDefault(_ioCrossPointDrawer);
 
@@ -44512,7 +44513,7 @@ var _helpers = __webpack_require__(4);
 
 var h = _interopRequireWildcard(_helpers);
 
-var _bottomDescriptionBuilder = __webpack_require__(103);
+var _bottomDescriptionBuilder = __webpack_require__(105);
 
 var _bottomDescriptionBuilder2 = _interopRequireDefault(_bottomDescriptionBuilder);
 
@@ -44556,7 +44557,7 @@ var _helpers = __webpack_require__(4);
 
 var h = _interopRequireWildcard(_helpers);
 
-var _textDrawer = __webpack_require__(24);
+var _textDrawer = __webpack_require__(20);
 
 var _textDrawer2 = _interopRequireDefault(_textDrawer);
 

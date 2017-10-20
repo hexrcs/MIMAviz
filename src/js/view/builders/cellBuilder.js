@@ -6,8 +6,9 @@ import {default as cellLineDrawer} from "../drawers/cellLineDrawer";
 export default function cellBuilder(name="", value="", alt=false) {
   let sprite = new PIXI.Container();
   if(name === "ALU") {
-    const ALULabel = textDrawer(name, alt);
+    const ALULabel = textDrawer(name, alt, "ALULabel");
     const ALULines = cellLineDrawer(name, alt);
+    console.log(ALULabel);
     sprite.addChild(ALULabel, ALULines);
   } else {
     const [x, y, cellSize] = h.positionSpecs.cellSpec(name);

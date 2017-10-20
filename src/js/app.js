@@ -13,12 +13,12 @@ export const rendererSize = {width: app.renderer.width, height: app.renderer.wid
 app.stage.addChild(view.builders.bgBuilder());
 
 
-console.log("We are in app.js");
-console.log(store.dynamicView);
+// console.log("We are in app.js");
+// console.log(store.dynamicView);
 
 app.stage.addChild(store.dynamicView);
 
-console.log("about to render");
+// console.log("about to render");
 store.render();
 
 // ======== END INITIAL STATE ========
