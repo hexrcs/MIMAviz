@@ -2,9 +2,9 @@ import * as PIXI from 'pixi.js';
 import { jsonParser } from '../../helpers';
 import { textDrawer, cuPhaseBGDrawer, cuStepBGDrawer } from '../drawers';
 
-export default function cuExecBuilder (state = {global: {mode: 'IDLE', step: 0}}) {
+export default function cuExecBuilder (state = {mode: 'IDLE', step: 0}) {
   let sprite = new PIXI.Container();
-  if (state.global.mode === 'IDLE') {
+  if (state.mode === 'IDLE') {
     return sprite;
   }
 
@@ -16,15 +16,15 @@ export default function cuExecBuilder (state = {global: {mode: 'IDLE', step: 0}}
   sprite.addChild(phaseText);
 
   // if in exec phase, make a blue background for that step
-  if (state.global.step > 6 && state.global.step < allInfo['proc'].length + 1) {
-    const stepBG = cuStepBGDrawer(state.global.step);
+  if (state.step > 6 && state.step < allInfo['proc'].length + 1) {
+    const stepBG = cuStepBGDrawer(state.step);
     sprite.addChild(stepBG);
   }
 
   // write text onto the display, the alt one in blue
   for (let i = 6; i < allInfo["proc"].length; ++i) {
     let alt = false;
-    if (i === state.global.step - 1) {
+    if (i === state.step - 1) {
       alt = true;
     }
     const stepText = textDrawer(allInfo['proc'][i], alt, 'cuStep', 540, 260 + 20 * (i - 6));

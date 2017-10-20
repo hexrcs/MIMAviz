@@ -2,7 +2,7 @@ import * as PIXI from 'pixi.js';
 import { jsonParser } from '../../helpers';
 import { cellBuilder } from '../builders';
 
-export default function cellOrganizer (state = {global: {mode: 'IDLE', step: 0}}) {
+export default function cellOrganizer (state = {mode: 'IDLE', step: 0}) {
   let container = new PIXI.Container();
   const path = jsonParser.processInterpreter(state)['path'];
   const values = jsonParser.processInterpreter(state)['values'];

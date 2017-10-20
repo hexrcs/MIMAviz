@@ -2,7 +2,7 @@ import * as PIXI from 'pixi.js';
 import { jsonParser } from '../../helpers';
 import { buttonBuilder } from '../builders';
 
-export default function lowerButtonsOrganizer (state = {global: {mode: 'IDLE', step: 0}}, store) {
+export default function lowerButtonsOrganizer (state = {mode: 'IDLE', step: 0}, store) {
   const container = new PIXI.Container();
 
   for (let b of visibleButtons(state)) {
@@ -13,9 +13,9 @@ export default function lowerButtonsOrganizer (state = {global: {mode: 'IDLE', s
   return container;
 }
 
-function visibleButtons (state = {global: {mode: 'IDLE', step: 0}}) {
-  const mode = state.global.mode;
-  const step = state.global.step;
+function visibleButtons (state = {mode: 'IDLE', step: 0}) {
+  const mode = state.mode;
+  const step = state.step;
 
   if (mode === 'IDLE') {
     return new Set();

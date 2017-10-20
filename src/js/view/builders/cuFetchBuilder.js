@@ -2,7 +2,7 @@ import * as PIXI from 'pixi.js';
 import { jsonParser } from '../../helpers';
 import { textDrawer, cuPhaseBGDrawer, cuStepBGDrawer } from '../drawers';
 
-export default function cuFetchBuilder (state = {global: {mode: 'IDLE', step: 0}}) {
+export default function cuFetchBuilder (state = {mode: 'IDLE', step: 0}) {
   let sprite = new PIXI.Container();
   const allInfo = jsonParser.cuDisplayInterpreter(state);
   const phaseLabel = allInfo['cuUpperHeader'];
@@ -11,7 +11,7 @@ export default function cuFetchBuilder (state = {global: {mode: 'IDLE', step: 0}
   const phaseText = textDrawer(phaseLabel, false, 'phaseLabel', 540, 90);
   sprite.addChild(phaseText);
 
-  if (state.global.mode === 'IDLE') {
+  if (state.mode === 'IDLE') {
     for (let i = 0; i < 3; ++i) {
       const stepText = textDrawer(allInfo['proc'][i], false, 'cuStep', 540, 110 + 20 * i);
       sprite.addChild(stepText);
@@ -20,15 +20,15 @@ export default function cuFetchBuilder (state = {global: {mode: 'IDLE', step: 0}
   }
 
   // if in fetch phase, make a blue background for that step
-  if (state.global.step < 7 && state.global.step > 0) {
-    const stepBG = cuStepBGDrawer(state.global.step);
+  if (state.step < 7 && state.step > 0) {
+    const stepBG = cuStepBGDrawer(state.step);
     sprite.addChild(stepBG);
   }
 
   // write text onto the display, the alt one in blue
   for (let i = 0; i < 6; ++i) {
     let alt = false;
-    if (i === state.global.step - 1) {
+    if (i === state.step - 1) {
       alt = true;
     }
     const stepText = textDrawer(allInfo['proc'][i], alt, 'cuStep', 540, 110 + 20 * i);

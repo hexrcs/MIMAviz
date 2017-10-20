@@ -60,7 +60,7 @@ function pointerDown (name = '', store) {
     case 'LDV':
     case 'NOT':
     case 'STV':
-      if (name !== store.getState().global.mode) {
+      if (name !== store.getState().mode) {
         store.dispatch({type: 'MODE_CHANGE', payload: name});
       }
       break;

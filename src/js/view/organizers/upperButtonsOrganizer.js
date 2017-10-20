@@ -1,11 +1,11 @@
 import * as PIXI from 'pixi.js';
 import { buttonBuilder } from '../builders';
 
-export default function upperButtonsOrganizer (state = {global: {mode: 'IDLE', step: 0}}, store) {
+export default function upperButtonsOrganizer (state = {mode: 'IDLE', step: 0}, store) {
   const container = new PIXI.Container();
 
   for (let b of ['ADD', 'LDC', 'LDV', 'NOT', 'STV']) {
-    if (b === state.global.mode) {
+    if (b === state.mode) {
       const button = buttonBuilder(b, 2, store);
       container.addChild(button);
     } else {

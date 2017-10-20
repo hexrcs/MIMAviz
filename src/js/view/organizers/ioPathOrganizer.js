@@ -2,7 +2,7 @@ import * as PIXI from 'pixi.js';
 import { jsonParser } from '../../helpers';
 import { ioCellArrowBuilder, ioBusBuilder } from '../builders';
 
-export default function ioPathOrganizer (state = {global: {mode: 'IDLE', step: 0}}) {
+export default function ioPathOrganizer (state = {mode: 'IDLE', step: 0}) {
   let container = new PIXI.Container();
   const path = jsonParser.processInterpreter(state)['path'];
   const cellsFrom = new Set();
