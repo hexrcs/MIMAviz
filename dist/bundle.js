@@ -43726,16 +43726,21 @@ function buttonBuilder() {
   sprite.hitArea = new PIXI.RoundedRectangle(x, y, width, 20, 8);
   sprite.addChild(buttonBG, buttonText);
 
-  if (status !== 2) {
-    sprite.on("pointerover", function () {
-      buttonBG = (0, _buttonBGDrawer2.default)(x, y, width, 1);
-    });
-    sprite.on("pointerout", function () {
-      buttonBG = (0, _buttonBGDrawer2.default)(x, y, width, status);
-    });
-  }
+  // if(status !== 2) {
+  //   console.log(name, status);  
+  //   sprite.on("pointerover", () => {
+  //     buttonBG = buttonBGDrawer(x,y, width, 1);
+  //   });
+  //   sprite.on("pointerout", () => {
+  //     buttonBG = buttonBGDrawer(x,y, width, status);
+  //   });
+  // }
 
-  sprite.on("pointerdown", pointerDown(name, store));
+
+  // sprite.on('pointerdown', () => console.log(name));
+  sprite.on('pointerdown', function () {
+    return pointerDown(name, store);
+  });
   return sprite;
 }
 
@@ -43750,7 +43755,9 @@ function pointerDown() {
     case "LDV":
     case "NOT":
     case "STV":
-      store.dispatch({ type: "MODE_CHANGE", payload: name });
+      if (name !== store.getState().global.mode) {
+        store.dispatch({ type: "MODE_CHANGE", payload: name });
+      }
       break;
     case "BACK":
     case "START":
