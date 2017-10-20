@@ -6,7 +6,7 @@ MIMAviz is a rewrite of the original [MIMA Simulation](http://ti.ira.uka.de/Visu
 using [Pixi.js](https://github.com/pixijs/pixi.js). The original MIMA simulation/visualization app was a Java Applet
 (written in more than 10 years ago) which doesn't run in most modern browsers any more.
 
-**This project is currently WIP, check back in a few days or click the *Watch* button to subscribe for updates!**
+**This project is currently in Alpha. However, you could grab the latest version for a spin right now.**
 
 ## Features
 
