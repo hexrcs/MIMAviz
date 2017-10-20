@@ -44705,10 +44705,10 @@ function whichArrows() {
     case "IAR":
     case "IR":
     case "SDR":
-      if (to) {
+      if (from) {
         return "l";
       }
-      if (from) {
+      if (to) {
         return "r";
       }
       if (!(from || to)) {
