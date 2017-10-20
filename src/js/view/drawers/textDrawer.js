@@ -65,7 +65,7 @@ export default function textDrawer(text="", alt=false, type="", x=0, y=0, cellSi
         break;
       case "cuStep":
         sprite = new PIXI.Text(text, 
-          {fontFamily: "Courier", fontSize: '12pt'}
+          {fontFamily: "Courier", fontSize: '11pt'}
         );
         sprite.anchor.set(0, 0.5);
         sprite.x = x + 5;
