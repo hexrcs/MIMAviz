@@ -26,9 +26,9 @@ Canvas!) for the first time. ;)
 
 ## Project Status
 
-You can [download](https://github.com/hexrcs/MIMAviz/releases) or visit the hosted [latest version]
-(https://hexrcs.github.io/MIMAviz/) right now! At the same time I'm still doing some polishing though as the code 
-is quite ugly and convoluted right now. 
+You can [download](https://github.com/hexrcs/MIMAviz/releases) or visit the hosted 
+[latest version](https://hexrcs.github.io/MIMAviz/) right now! At the same time I'm still doing some polishing 
+though as the code is quite ugly and convoluted right now. 
 
 A TODO list of some planned add-on features:
 
