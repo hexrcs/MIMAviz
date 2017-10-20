@@ -69,7 +69,7 @@ function ioHLineSpec(cellName="", alt=0) {
       lX = 202;
       lY = cy + 20;
       rX = cx;
-      ry = lY;
+      rY = lY;
   }
 
   switch(alt) {

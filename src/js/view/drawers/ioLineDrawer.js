@@ -12,10 +12,10 @@ export default function ioLineDrawer(dir="h", x=0, y=0, length=0, alt=false) {
   let [dx, dy] = [x,y];
   switch(dir) {
     case "h":
-      dy += length;
+      dx += length;
       break;
     case "v":
-      dx += length;
+      dy += length;
       break;
   }
   sprite.moveTo(x, y);

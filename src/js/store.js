@@ -19,11 +19,11 @@ export function render() {
   const cellView = view.organizers.cellOrganizer(currentState);
   const cuView = view.organizers.cuOrganizer(currentState);
   const descriptionView = view.organizers.descriptionOrganizer(currentState);
-  // const ioPathView = view.organizers.ioPathOrganizer(currentState);
+  const ioPathView = view.organizers.ioPathOrganizer(currentState);
   // const lowerButtonsView = view.organizers.lowerButtonsOrganizer(currentState);
   // const upperButtonsView = view.organizers.upperButtonsOrganizer(currentState);
 
   // dynamicView.addChild(cellView, cuView, descriptionView, ioPathView, lowerButtonsView, upperButtonsView);
 
-  dynamicView.addChild(cellView, cuView, descriptionView);
+  dynamicView.addChild(cellView, cuView, descriptionView, ioPathView);
 }

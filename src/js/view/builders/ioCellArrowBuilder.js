@@ -5,8 +5,8 @@ import {default as ioArrowHeadDrawer} from "../drawers/ioArrowHeadDrawer";
 
 export default function ioCellArrowBuilder(name="", alt_arrows="lr", alt_hl=false) {
   let sprite = new PIXI.Graphics();
-  const [lX,lY, rX,rY] = ioHLineSpec(name, alt_arrows);
-  const line = ioLineDrawer("h", lX,lY, rY-rL, alt_hl);
+  const [lX,lY, rX,rY] = h.positionSpecs.ioHLineSpec(name, alt_arrows);
+  const line = ioLineDrawer("h", lX,lY, rX-lX, alt_hl);
   sprite.addChild(line);
 
   const arrowHeads =[];

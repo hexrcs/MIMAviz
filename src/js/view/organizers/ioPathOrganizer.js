@@ -25,6 +25,9 @@ export default function ioPathOrganizer(
     }
   }
 
+  // BG main bus
+  container.addChild(ioBusBuilder());
+
   // main bus
   for(let p of path) {
     container.addChild(ioBusBuilder(p["from"], p["to"]));
@@ -34,7 +37,7 @@ export default function ioPathOrganizer(
 }
 
 function whichArrows(name="", from=false, to=false) {
-  switch(cellName) {
+  switch(name) {
     case "Akku":
       if(to) {
         return "l";

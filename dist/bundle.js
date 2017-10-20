@@ -12271,10 +12271,10 @@ function ioLineDrawer() {
 
   switch (dir) {
     case "h":
-      dy += length;
+      dx += length;
       break;
     case "v":
-      dx += length;
+      dy += length;
       break;
   }
   sprite.moveTo(x, y);
@@ -42643,13 +42643,13 @@ function render() {
   var cellView = view.organizers.cellOrganizer(currentState);
   var cuView = view.organizers.cuOrganizer(currentState);
   var descriptionView = view.organizers.descriptionOrganizer(currentState);
-  // const ioPathView = view.organizers.ioPathOrganizer(currentState);
+  var ioPathView = view.organizers.ioPathOrganizer(currentState);
   // const lowerButtonsView = view.organizers.lowerButtonsOrganizer(currentState);
   // const upperButtonsView = view.organizers.upperButtonsOrganizer(currentState);
 
   // dynamicView.addChild(cellView, cuView, descriptionView, ioPathView, lowerButtonsView, upperButtonsView);
 
-  dynamicView.addChild(cellView, cuView, descriptionView);
+  dynamicView.addChild(cellView, cuView, descriptionView, ioPathView);
 }
 
 /***/ }),
@@ -43534,7 +43534,7 @@ function ioHLineSpec() {
       lX = 202;
       lY = cy + 20;
       rX = cx;
-      ry = lY;
+      rY = lY;
   }
 
   switch (alt) {
@@ -44190,14 +44190,14 @@ function ioCellArrowBuilder() {
 
   var sprite = new PIXI.Graphics();
 
-  var _ioHLineSpec = ioHLineSpec(name, alt_arrows),
-      _ioHLineSpec2 = _slicedToArray(_ioHLineSpec, 4),
-      lX = _ioHLineSpec2[0],
-      lY = _ioHLineSpec2[1],
-      rX = _ioHLineSpec2[2],
-      rY = _ioHLineSpec2[3];
+  var _h$positionSpecs$ioHL = h.positionSpecs.ioHLineSpec(name, alt_arrows),
+      _h$positionSpecs$ioHL2 = _slicedToArray(_h$positionSpecs$ioHL, 4),
+      lX = _h$positionSpecs$ioHL2[0],
+      lY = _h$positionSpecs$ioHL2[1],
+      rX = _h$positionSpecs$ioHL2[2],
+      rY = _h$positionSpecs$ioHL2[3];
 
-  var line = (0, _ioLineDrawer2.default)("h", lX, lY, rY - rL, alt_hl);
+  var line = (0, _ioLineDrawer2.default)("h", lX, lY, rX - lX, alt_hl);
   sprite.addChild(line);
 
   var arrowHeads = [];
@@ -44643,6 +44643,9 @@ function ioPathOrganizer() {
     }
   }
 
+  // BG main bus
+  container.addChild((0, _builders.ioBusBuilder)());
+
   // main bus
   var _iteratorNormalCompletion2 = true;
   var _didIteratorError2 = false;
@@ -44677,7 +44680,7 @@ function whichArrows() {
   var from = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
   var to = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 
-  switch (cellName) {
+  switch (name) {
     case "Akku":
       if (to) {
         return "l";
