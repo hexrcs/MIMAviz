@@ -1,25 +1,26 @@
-// Startup house keeping
-const PIXI = require('pixi.js');
+import * as PIXI from "pixi.js";
+import * as store from "./store";
 
-const inside = require('./containers/inside');
-const right = require('./containers/right');
-const bottom = require('./containers/bottom');
+import * as view from "./view";
+import * as reducers from "./reducers";
+import * as helpers from "./helpers";
 
-const log = console.log;
-const app = new PIXI.Application({antialias: true, transparent: true});
+export const app = new PIXI.Application({antialias: true, transparent: true});
 document.body.appendChild(app.view);
 
-// ======== INITIAL STATE ========
-// Create light grey background
-const backgound = new PIXI.Graphics();
-app.stage.addChild(backgound);
-backgound.beginFill(0xD8D8D8);
-backgound.drawRoundedRect(0, 0, app.renderer.width, app.renderer.height, 8);
+export const rendererSize = {width: app.renderer.width, height: app.renderer.width};
 
-// add all section containers
-backgound.addChild(inside);
-backgound.addChild(right);
-backgound.addChild(bottom);
+app.stage.addChild(view.builders.bgBuilder());
+
+
+// console.log("We are in app.js");
+// console.log(store.dynamicView);
+
+app.stage.addChild(store.dynamicView);
+
+// console.log("about to render");
+store.render();
+store.store.subscribe(store.render);
 
 // ======== END INITIAL STATE ========
 
