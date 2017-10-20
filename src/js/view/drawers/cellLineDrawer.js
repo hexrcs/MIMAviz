@@ -19,7 +19,6 @@ export default function cellLineDrawer(name="", alt=false) {
     sprite.lineTo(x + cellSize * 20, y + 20);
     // vertical
     for (let i = 1; i < cellSize; ++i) {
-      sprite.lineStyle(1, 0x979797);
       sprite.moveTo(x + i * 20, y + 20);
       sprite.lineTo(x + i * 20, y + 40);
     }
