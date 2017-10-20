@@ -6,7 +6,7 @@ export default function cuFetchBuilder(
   state={global: {mode: "IDLE", step: 0}}
 ) {
   let sprite = new PIXI.Container();
-  const allInfo = h.jsonParser(state);
+  const allInfo = h.jsonParser.cuDisplayInterpreter(state);
   const phaseLabel = allInfo["cuUpperHeader"];
   const phaseBG = cuPhaseBGDrawer("fetch");
   sprite.addChild(phaseBG);
@@ -15,7 +15,7 @@ export default function cuFetchBuilder(
 
   if(state.global.mode === "IDLE") {
     for (let i = 0; i < 3; ++i) {
-      const stepText = textDrawer(allInfo["proc"][i], alt, "cuStep", 540, 110 + 20 * i);
+      const stepText = textDrawer(allInfo["proc"][i], false, "cuStep", 540, 110 + 20 * i);
       sprite.addChild(stepText);
     }
     return sprite;

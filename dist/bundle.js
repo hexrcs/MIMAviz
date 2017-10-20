@@ -42641,7 +42641,7 @@ function render() {
 
   var currentState = store.getState();
   var cellView = view.organizers.cellOrganizer(currentState);
-  // const cuView = view.organizers.cuOrganizer(currentState);
+  var cuView = view.organizers.cuOrganizer(currentState);
   var descriptionView = view.organizers.descriptionOrganizer(currentState);
   // const ioPathView = view.organizers.ioPathOrganizer(currentState);
   // const lowerButtonsView = view.organizers.lowerButtonsOrganizer(currentState);
@@ -42649,7 +42649,7 @@ function render() {
 
   // dynamicView.addChild(cellView, cuView, descriptionView, ioPathView, lowerButtonsView, upperButtonsView);
 
-  dynamicView.addChild(cellView, descriptionView);
+  dynamicView.addChild(cellView, cuView, descriptionView);
 }
 
 /***/ }),
@@ -43848,16 +43848,16 @@ function cuExecBuilder() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { global: { mode: "IDLE", step: 0 } };
 
   var sprite = new PIXI.Container();
-  var allInfo = h.jsonParser(state);
+  if (state.global.mode === "IDLE") {
+    return sprite;
+  }
+
+  var allInfo = h.jsonParser.cuDisplayInterpreter(state);
   var phaseLabel = allInfo["cuLowerHeader"];
   var phaseBG = (0, _drawers.cuPhaseBGDrawer)("exec");
   sprite.addChild(phaseBG);
   var phaseText = (0, _drawers.textDrawer)(phaseLabel, false, "phaseLabel", 540, 240);
   sprite.addChild(phaseText);
-
-  if (state.global.mode === "IDLE") {
-    return sprite;
-  }
 
   // if in exec phase, make a blue background for that step
   if (state.global.step > 6 && state.global.step < allInfo["proc"].length + 1) {
@@ -43981,7 +43981,7 @@ function cuFetchBuilder() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { global: { mode: "IDLE", step: 0 } };
 
   var sprite = new PIXI.Container();
-  var allInfo = h.jsonParser(state);
+  var allInfo = h.jsonParser.cuDisplayInterpreter(state);
   var phaseLabel = allInfo["cuUpperHeader"];
   var phaseBG = (0, _drawers.cuPhaseBGDrawer)("fetch");
   sprite.addChild(phaseBG);
@@ -43990,7 +43990,7 @@ function cuFetchBuilder() {
 
   if (state.global.mode === "IDLE") {
     for (var i = 0; i < 3; ++i) {
-      var stepText = (0, _drawers.textDrawer)(allInfo["proc"][i], alt, "cuStep", 540, 110 + 20 * i);
+      var stepText = (0, _drawers.textDrawer)(allInfo["proc"][i], false, "cuStep", 540, 110 + 20 * i);
       sprite.addChild(stepText);
     }
     return sprite;
@@ -44004,11 +44004,11 @@ function cuFetchBuilder() {
 
   // write text onto the display, the alt one in blue
   for (var _i = 0; _i < 6; ++_i) {
-    var _alt = false;
+    var alt = false;
     if (_i === state.global.step - 1) {
-      _alt = true;
+      alt = true;
     }
-    var _stepText = (0, _drawers.textDrawer)(allInfo["proc"][_i], _alt, "cuStep", 540, 110 + 20 * _i);
+    var _stepText = (0, _drawers.textDrawer)(allInfo["proc"][_i], alt, "cuStep", 540, 110 + 20 * _i);
     sprite.addChild(_stepText);
   }
 

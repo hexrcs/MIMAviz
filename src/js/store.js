@@ -17,7 +17,7 @@ export function render() {
 
   const currentState = store.getState();
   const cellView = view.organizers.cellOrganizer(currentState);
-  // const cuView = view.organizers.cuOrganizer(currentState);
+  const cuView = view.organizers.cuOrganizer(currentState);
   const descriptionView = view.organizers.descriptionOrganizer(currentState);
   // const ioPathView = view.organizers.ioPathOrganizer(currentState);
   // const lowerButtonsView = view.organizers.lowerButtonsOrganizer(currentState);
@@ -25,5 +25,5 @@ export function render() {
 
   // dynamicView.addChild(cellView, cuView, descriptionView, ioPathView, lowerButtonsView, upperButtonsView);
 
-  dynamicView.addChild(cellView, descriptionView);
+  dynamicView.addChild(cellView, cuView, descriptionView);
 }

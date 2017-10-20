@@ -6,16 +6,16 @@ export default function cuExecBuilder(
   state={global: {mode: "IDLE", step: 0}}
 ) {
   let sprite = new PIXI.Container();
-  const allInfo = h.jsonParser(state);
+  if(state.global.mode === "IDLE") {
+    return sprite;
+  }
+
+  const allInfo = h.jsonParser.cuDisplayInterpreter(state);
   const phaseLabel = allInfo["cuLowerHeader"];
   const phaseBG = cuPhaseBGDrawer("exec");
   sprite.addChild(phaseBG);
   const phaseText = textDrawer(phaseLabel, false, "phaseLabel", 540, 240);
   sprite.addChild(phaseText);
-
-  if(state.global.mode === "IDLE") {
-    return sprite;
-  }
 
   // if in exec phase, make a blue background for that step
   if(state.global.step > 6 && state.global.step < allInfo["proc"].length + 1) {
