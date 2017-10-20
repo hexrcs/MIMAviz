@@ -12331,6 +12331,7 @@ app.stage.addChild(store.dynamicView);
 
 // console.log("about to render");
 store.render();
+store.store.subscribe(store.render);
 
 // ======== END INITIAL STATE ========
 
@@ -42626,7 +42627,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-var defaultState = { global: { mode: "ADD", step: 4 } };
+var defaultState = { global: { mode: "IDLE", step: 0 } };
 
 var dynamicView = exports.dynamicView = new PIXI.Container();
 

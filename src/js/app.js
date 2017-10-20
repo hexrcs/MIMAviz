@@ -20,6 +20,7 @@ app.stage.addChild(store.dynamicView);
 
 // console.log("about to render");
 store.render();
+store.store.subscribe(store.render);
 
 // ======== END INITIAL STATE ========
 
