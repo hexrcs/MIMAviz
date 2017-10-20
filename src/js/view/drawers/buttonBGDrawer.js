@@ -1,11 +1,11 @@
-import * as PIXI from "pixi.js";
-import * as h from "../../helpers";
+import * as PIXI from 'pixi.js';
+import * as h from '../../helpers';
 
-export default function buttonBGDrawer(x=0, y=0, width=0, status=0) {
+export default function buttonBGDrawer (x = 0, y = 0, width = 0, status = 0) {
   // not strictly a sprite in PIXI though
   let sprite = new PIXI.Graphics();
 
-  switch(status) {
+  switch (status) {
     case 0:
       sprite.beginFill(h.colorCode.DEFAULT_ALT);
       break;
@@ -16,7 +16,7 @@ export default function buttonBGDrawer(x=0, y=0, width=0, status=0) {
     case 2:
       sprite.beginFill(h.colorCode.SELECT_ALT_BG);
   }
-  sprite.drawRoundedRect(x,y, width, 20, 8);
+  sprite.drawRoundedRect(x, y, width, 20, 8);
 
   return sprite;
 }
