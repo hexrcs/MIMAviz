@@ -41,19 +41,13 @@ function ioHArrowHeadSpec (lineSpec = [], dir = '') {
     case 'r':
       arrowHead = [rX, rY - 4, rX, rY + 4, rX + 8, rY];
       break;
-    // case "u":
-    //   arrowHead = [4,0, 0,8, 8,8];
-    //   break;
-    // case "d":
-    //   arrowHead = [0,0, 4,8, 8,0];
-    //   break;
   }
 
   return arrowHead;
 }
 
-// put arrows on alt = 0: both ends, 1: left, 2: right
-function ioHLineSpec (cellName = '', alt = 'lr') {
+// horizontal line
+function ioHLineSpec (cellName = '', dir = 'lr') {
   let [cx, cy, cs] = cellSpec(cellName);
   let [lX, rX, lY, rY] = [0, 0, 0, 0];
   switch (cellName) {
@@ -72,7 +66,7 @@ function ioHLineSpec (cellName = '', alt = 'lr') {
       rY = lY;
   }
 
-  switch (alt) {
+  switch (dir) {
     case 'l':
       lX += 8;
       break;
@@ -85,7 +79,7 @@ function ioHLineSpec (cellName = '', alt = 'lr') {
       break;
   }
 
-  return [lX, lY, rX, rY, alt];
+  return [lX, lY, rX, rY, dir];
 }
 
 function ioMainLineSpec (id = 0) {

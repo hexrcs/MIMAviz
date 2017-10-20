@@ -6,7 +6,7 @@ export default function lowerButtonsOrganizer (state = {mode: 'IDLE', step: 0}, 
   const container = new PIXI.Container();
 
   for (let b of visibleButtons(state)) {
-    const button = buttonBuilder(b, 0, store);
+    const button = buttonBuilder(b, false, store);
     container.addChild(button);
   }
 

@@ -43117,7 +43117,7 @@ exports.default = { processInterpreter: processInterpreter, descriptionInterpret
 /* 220 */
 /***/ (function(module, exports) {
 
-module.exports = {"IDLE":{"step":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}}]},"ADD":{"step":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"1","W":"0"}},{"path":[{"from":"Akku","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"000001","SDR":"3--a--","R":"2","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"000001","SDR":"<  a >","R":"3","W":"0"}},{"path":[{"from":"SDR","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"AX+<a>","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}},{"path":[{"from":"Z","to":"Akku"}],"values":{"Akku":"AX+<a>","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"AX+<a>","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}}]},"LDC":{"step":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[{"from":"IR","to":"Akku"}],"values":{"Akku":"0const","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}}]},"LDV":{"step":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"1","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"2","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"< a  >","R":"3","W":"0"}},{"path":[{"from":"SDR","to":"Akku"}],"values":{"Akku":"< a  >","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"< a  >","R":"0","W":"0"}}]},"NOT":{"step":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"Akku","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"NOT AX","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"Z","to":"Akku"}],"values":{"Akku":"NOT AX","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"NOT AX","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}}]},"STV":{"step":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[{"from":"Akku","to":"SDR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"1"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"2"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"3"}}]}}
+module.exports = {"IDLE":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}}],"ADD":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"1","W":"0"}},{"path":[{"from":"Akku","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"000001","SDR":"3--a--","R":"2","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"000001","SDR":"<  a >","R":"3","W":"0"}},{"path":[{"from":"SDR","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"AX+<a>","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}},{"path":[{"from":"Z","to":"Akku"}],"values":{"Akku":"AX+<a>","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"AX+<a>","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}}],"LDC":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[{"from":"IR","to":"Akku"}],"values":{"Akku":"0const","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}}],"LDV":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"1","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"2","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"< a  >","R":"3","W":"0"}},{"path":[{"from":"SDR","to":"Akku"}],"values":{"Akku":"< a  >","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"< a  >","R":"0","W":"0"}}],"NOT":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"Akku","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"NOT AX","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"Z","to":"Akku"}],"values":{"Akku":"NOT AX","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"NOT AX","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}}],"STV":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[{"from":"Akku","to":"SDR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"1"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"2"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"3"}}]}
 
 /***/ }),
 /* 221 */
@@ -43197,21 +43197,15 @@ function ioHArrowHeadSpec() {
     case 'r':
       arrowHead = [rX, rY - 4, rX, rY + 4, rX + 8, rY];
       break;
-    // case "u":
-    //   arrowHead = [4,0, 0,8, 8,8];
-    //   break;
-    // case "d":
-    //   arrowHead = [0,0, 4,8, 8,0];
-    //   break;
   }
 
   return arrowHead;
 }
 
-// put arrows on alt = 0: both ends, 1: left, 2: right
+// horizontal line
 function ioHLineSpec() {
   var cellName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'lr';
+  var dir = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'lr';
 
   var _cellSpec = cellSpec(cellName),
       _cellSpec2 = _slicedToArray(_cellSpec, 3),
@@ -43240,7 +43234,7 @@ function ioHLineSpec() {
       rY = lY;
   }
 
-  switch (alt) {
+  switch (dir) {
     case 'l':
       lX += 8;
       break;
@@ -43253,7 +43247,7 @@ function ioHLineSpec() {
       break;
   }
 
-  return [lX, lY, rX, rY, alt];
+  return [lX, lY, rX, rY, dir];
 }
 
 function ioMainLineSpec() {
@@ -43337,7 +43331,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function buttonBuilder() {
   var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var status = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  var isPressed = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
   var store = arguments[2];
 
   var sprite = new PIXI.Graphics();
@@ -43400,16 +43394,13 @@ function buttonBuilder() {
       break;
   }
 
-  var buttonBG = (0, _drawers.buttonBGDrawer)(x, y, width, status);
-  var alt = false;
-  if (status === 2) {
-    alt = true;
-  }
+  var buttonBG = (0, _drawers.buttonBGDrawer)(x, y, width, isPressed);
+
   var type = 'upperButtonLabel';
   if (width === 60) {
     type = 'lowerButtonLabel';
   }
-  var buttonText = (0, _drawers.textDrawer)(name, alt, type, x, y);
+  var buttonText = (0, _drawers.textDrawer)(name, isPressed, type, x, y);
   sprite.hitArea = new PIXI.RoundedRectangle(x, y, width, 20, 8);
   sprite.addChild(buttonBG, buttonText);
 
@@ -43468,20 +43459,16 @@ function buttonBGDrawer() {
   var x = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
   var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
   var width = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-  var status = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
+  var isPressed = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
 
   // not strictly a sprite in PIXI though
   var sprite = new PIXI.Graphics();
 
-  switch (status) {
-    case 0:
+  switch (isPressed) {
+    case false:
       sprite.beginFill(_helpers.colorCode.DEFAULT_ALT);
       break;
-    case 1:
-      sprite.lineStyle(2, _helpers.colorCode.SELECT_ALT_BG, 0.75);
-      sprite.beginFill(_helpers.colorCode.DEFAULT_ALT);
-      break;
-    case 2:
+    case true:
       sprite.beginFill(_helpers.colorCode.SELECT_ALT_BG);
   }
   sprite.drawRoundedRect(x, y, width, 20, 8);
@@ -44615,7 +44602,7 @@ function lowerButtonsOrganizer() {
     for (var _iterator = visibleButtons(state)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
       var b = _step.value;
 
-      var button = (0, _builders.buttonBuilder)(b, 0, store);
+      var button = (0, _builders.buttonBuilder)(b, false, store);
       container.addChild(button);
     }
   } catch (err) {
@@ -44701,10 +44688,10 @@ function upperButtonsOrganizer() {
   for (var _i = 0; _i < _arr.length; _i++) {
     var b = _arr[_i];
     if (b === state.mode) {
-      var button = (0, _builders.buttonBuilder)(b, 2, store);
+      var button = (0, _builders.buttonBuilder)(b, true, store);
       container.addChild(button);
     } else {
-      var _button = (0, _builders.buttonBuilder)(b, 0, store);
+      var _button = (0, _builders.buttonBuilder)(b, false, store);
       container.addChild(_button);
     }
   }

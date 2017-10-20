@@ -1,7 +1,7 @@
 import * as PIXI from 'pixi.js';
 import { buttonBGDrawer, textDrawer } from '../drawers';
 
-export default function buttonBuilder (name = '', status = 0, store) {
+export default function buttonBuilder (name = '', isPressed = false, store) {
   let sprite = new PIXI.Graphics();
   sprite.interactive = true;
   sprite.buttonMode = true;
@@ -35,16 +35,13 @@ export default function buttonBuilder (name = '', status = 0, store) {
       break;
   }
 
-  let buttonBG = buttonBGDrawer(x, y, width, status);
-  let alt = false;
-  if (status === 2) {
-    alt = true;
-  }
+  let buttonBG = buttonBGDrawer(x, y, width, isPressed);
+
   let type = 'upperButtonLabel';
   if (width === 60) {
     type = 'lowerButtonLabel';
   }
-  const buttonText = textDrawer(name, alt, type, x, y);
+  const buttonText = textDrawer(name, isPressed, type, x, y);
   sprite.hitArea = new PIXI.RoundedRectangle(x, y, width, 20, 8);
   sprite.addChild(buttonBG, buttonText);
 

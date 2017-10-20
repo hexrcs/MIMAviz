@@ -6,10 +6,10 @@ export default function upperButtonsOrganizer (state = {mode: 'IDLE', step: 0}, 
 
   for (let b of ['ADD', 'LDC', 'LDV', 'NOT', 'STV']) {
     if (b === state.mode) {
-      const button = buttonBuilder(b, 2, store);
+      const button = buttonBuilder(b, true, store);
       container.addChild(button);
     } else {
-      const button = buttonBuilder(b, 0, store);
+      const button = buttonBuilder(b, false, store);
       container.addChild(button);
     }
   }
