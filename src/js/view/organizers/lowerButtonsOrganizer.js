@@ -50,7 +50,7 @@ function visibleButtons(
     return new Set().add("BACK").add("NEXT").add("END");
   }
 
-  if(step === h.jsonParser.totalStepCount(state)) {
+  if(step === h.jsonParser.totalStepCount(state) - 1) {
     return new Set().add("BACK").add("END");
   }
 }
