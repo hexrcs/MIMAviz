@@ -53,7 +53,7 @@ function ioHArrowHeadSpec(lineSpec=[], dir="") {
 }
 
 // put arrows on alt = 0: both ends, 1: left, 2: right
-function ioHLineSpec(cellName="", alt=0) {
+function ioHLineSpec(cellName="", alt="lr") {
   let [cx, cy, cs] = cellSpec(cellName);
   let [lX, rX, lY, rY] = [0,0,0,0];
   switch(cellName) {
@@ -73,10 +73,10 @@ function ioHLineSpec(cellName="", alt=0) {
   }
 
   switch(alt) {
-    case 1:
+    case "l":
       lX += 8;
       break;
-    case 2:
+    case "r":
       rX -= 8;
       break;
     default:

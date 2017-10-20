@@ -43512,7 +43512,7 @@ function ioHArrowHeadSpec() {
 // put arrows on alt = 0: both ends, 1: left, 2: right
 function ioHLineSpec() {
   var cellName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "lr";
 
   var _cellSpec = cellSpec(cellName),
       _cellSpec2 = _slicedToArray(_cellSpec, 3),
@@ -43542,10 +43542,10 @@ function ioHLineSpec() {
   }
 
   switch (alt) {
-    case 1:
+    case "l":
       lX += 8;
       break;
-    case 2:
+    case "r":
       rX -= 8;
       break;
     default:
