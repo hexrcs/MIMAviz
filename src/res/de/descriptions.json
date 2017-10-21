@@ -7,8 +7,8 @@
   ],
   "ADD": [
     {
-      "bottomDescription": "",
-      "cuDescription": "ADD ADD"
+      "bottomDescription": "ADD - Der Akkumulator wird überschrieben durch das Ergebnis der Addition von Akku und dem Inhalt von <a>.",
+      "cuDescription": "Jetzt START drücken!"
     },
     {
       "bottomDescription": "Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.",
@@ -61,8 +61,8 @@
   ],
   "LDC": [
     {
-      "bottomDescription": "",
-      "cuDescription": "LDC LDC"
+      "bottomDescription": "LDC - Lade den Akkumulator mit einer 20-bit Konstante.",
+      "cuDescription": "Jetzt START drücken!"
     },
     {
       "bottomDescription": "Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.",
@@ -95,8 +95,8 @@
   ],
   "LDV": [
     {
-      "bottomDescription": "",
-      "cuDescription": "LDV LDV"
+      "bottomDescription": "LDV - Lade den Akkumulator mit dem Inhalt von <a>.",
+      "cuDescription": "Jetzt START drücken!"
     },
     {
       "bottomDescription": "Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.",
@@ -141,8 +141,8 @@
   ],
   "NOT": [
     {
-      "bottomDescription": "",
-      "cuDescription": "NOT NOT"
+      "bottomDescription": "NOT - Der Akkumulator wird überschrieben durch das Einerkomplement seines Inhalts.",
+      "cuDescription": "Jetzt START drücken!"
     },
     {
       "bottomDescription": "Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.",
@@ -183,8 +183,8 @@
   ],
   "STV": [
     {
-      "bottomDescription": "",
-      "cuDescription": "STV STV"
+      "bottomDescription": "STV - Lade die adressierende Speicherzelle an <a> mit dem Inhalt des Akkumulators.",
+      "cuDescription": "Jetzt START drücken!"
     },
     {
       "bottomDescription": "Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.",
