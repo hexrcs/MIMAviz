@@ -139,4 +139,11 @@ function rwCrossPointSpec (id = 0) {
   }
 }
 
-export default {unitSpec, rwHArrowHeadSpec, rwHLineSpec, rwMainLineSpec, rwCrossPointSpec, bitWidthSpec};
+export default {
+  unitSpec,
+  rwHArrowHeadSpec,
+  rwHLineSpec,
+  rwMainLineSpec,
+  rwCrossPointSpec,
+  bitWidthSpec
+};

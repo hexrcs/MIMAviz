@@ -1,5 +1,5 @@
 import * as PIXI from 'pixi.js';
-import {colorCode, positionSpecs} from '../../helpers';
+import { colorCode, positionSpecs } from '../../helpers';
 
 import { rendererSize } from '../../app';
 

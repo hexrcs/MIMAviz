@@ -1,5 +1,5 @@
 import * as PIXI from 'pixi.js';
-import {colorCode, positionSpecs} from '../../helpers';
+import { colorCode, positionSpecs } from '../../helpers';
 
 export default function unitLineDrawer (name = '', isHighlighted = false) {
   let sprite = new PIXI.Graphics();
