@@ -3,7 +3,7 @@ import { colorCode } from '../../helpers';
 
 // This function handles drawing every text element on the view, 
 // the input x,y should be the upper left corner of the block
-export default function textDrawer (text = '', alt = false, type = '', x = 0, y = 0, cellSize = 0) {
+export default function textDrawer (text = '', alt = false, type = '', x = 0, y = 0, unitSize = 0) {
   let sprite = {};
 
   if (!alt) {
@@ -15,12 +15,12 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
         sprite.x = 30;
         sprite.y = 495;
         break;
-      case 'cellLabel':
+      case 'unitLabel':
         sprite = new PIXI.Text(text,
           {fontFamily: 'Courier', fontSize: '12pt'}
         );
         sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + cellSize * 20 / 2;
+        sprite.x = x + unitSize * 20 / 2;
         sprite.y = y + 20 / 2;
         break;
       case 'ALULabel':
@@ -31,12 +31,12 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
         sprite.x = 370;
         sprite.y = 275;
         break;
-      case 'cellValue':
+      case 'unitValue':
         sprite = new PIXI.Text(text,
           {fontFamily: 'Courier', fontSize: '12pt', letterSpacing: 10}
         );
         sprite.anchor.set(1, 0.5);
-        sprite.x = x + cellSize * 20 - 5;
+        sprite.x = x + unitSize * 20 - 5;
         sprite.y = y + 20 + 20 / 2;
         break;
       case 'upperButtonLabel':
@@ -89,7 +89,7 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
     }
   } else {
     switch (type) {
-      case 'cellLabel':
+      case 'unitLabel':
         sprite = new PIXI.Text(text,
           {
             fontFamily: 'Courier',
@@ -99,7 +99,7 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
           }
         );
         sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + cellSize * 20 / 2;
+        sprite.x = x + unitSize * 20 / 2;
         sprite.y = y + 20 / 2;
         break;
       case 'ALULabel':
@@ -115,7 +115,7 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
         sprite.x = 370;
         sprite.y = 275;
         break;
-      case 'cellValue':
+      case 'unitValue':
         sprite = new PIXI.Text(text,
           {
             fontFamily: 'Courier',
@@ -126,7 +126,7 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
           }
         );
         sprite.anchor.set(1, 0.5);
-        sprite.x = x + cellSize * 20 - 5;
+        sprite.x = x + unitSize * 20 - 5;
         sprite.y = y + 20 + 20 / 2;
         break;
       case 'upperButtonLabel':

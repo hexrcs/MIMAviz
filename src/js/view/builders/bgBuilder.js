@@ -13,7 +13,7 @@ export default function bgBuilder () {
   makeArrowTipsBG(sprite);
   makeALUioArrows(sprite);
   makeCUArrowAndBitWidth(sprite);
-  makeCellsBG(sprite);
+  makeUnitsBG(sprite);
 
   return sprite;
 }
@@ -77,14 +77,14 @@ function makeALUioArrows (sprite = new PIXI.Graphics()) {
   sprite.drawPolygon([400, 300, 396, 308, 398, 308, 398, 360, 402, 360, 402, 308, 404, 308]);
 }
 
-function makeCellsBG (sprite = new PIXI.Graphics()) {
+function makeUnitsBG (sprite = new PIXI.Graphics()) {
   sprite.beginFill(colorCode.LIGHT_BG);
   // my first reducer in this life time LOL
   // but it's just like a foreach loop :-/
   ['Akku', 'Eins', 'SAR', 'IAR', 'IR', 'Z', 'X', 'Y', 'SDR', 'R', 'W'].reduce(
     (result, item) => {
-      const [x, y, cellSize] = positionSpecs.cellSpec(item);
-      sprite.drawRect(x, y, cellSize * 20, 40);
+      const [x, y, unitSize] = positionSpecs.unitSpec(item);
+      sprite.drawRect(x, y, unitSize * 20, 40);
     }, sprite
   );
 

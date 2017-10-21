@@ -13,12 +13,12 @@ export function render () {
   dynamicView.removeChildren();
 
   const currentState = store.getState();
-  const cellView = view.organizers.cellOrganizer(currentState);
+  const unitView = view.organizers.unitOrganizer(currentState);
   const cuView = view.organizers.cuOrganizer(currentState);
   const descriptionView = view.organizers.descriptionOrganizer(currentState);
-  const ioPathView = view.organizers.ioPathOrganizer(currentState);
+  const rwPathView = view.organizers.rwPathOrganizer(currentState);
   const lowerButtonsView = view.organizers.lowerButtonsOrganizer(currentState, store);
   const upperButtonsView = view.organizers.upperButtonsOrganizer(currentState, store);
 
-  dynamicView.addChild(cellView, cuView, descriptionView, ioPathView, lowerButtonsView, upperButtonsView);
+  dynamicView.addChild(unitView, cuView, descriptionView, rwPathView, lowerButtonsView, upperButtonsView);
 }

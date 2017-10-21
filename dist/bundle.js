@@ -2045,12 +2045,12 @@ Object.defineProperty(exports, 'buttonBGDrawer', {
   }
 });
 
-var _cellLineDrawer = __webpack_require__(227);
+var _unitLineDrawer = __webpack_require__(260);
 
-Object.defineProperty(exports, 'cellLineDrawer', {
+Object.defineProperty(exports, 'unitLineDrawer', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_cellLineDrawer).default;
+    return _interopRequireDefault(_unitLineDrawer).default;
   }
 });
 
@@ -2072,30 +2072,30 @@ Object.defineProperty(exports, 'cuStepBGDrawer', {
   }
 });
 
-var _ioArrowHeadDrawer = __webpack_require__(230);
+var _rwArrowHeadDrawer = __webpack_require__(251);
 
-Object.defineProperty(exports, 'ioArrowHeadDrawer', {
+Object.defineProperty(exports, 'rwArrowHeadDrawer', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_ioArrowHeadDrawer).default;
+    return _interopRequireDefault(_rwArrowHeadDrawer).default;
   }
 });
 
-var _ioLineDrawer = __webpack_require__(231);
+var _rwLineDrawer = __webpack_require__(252);
 
-Object.defineProperty(exports, 'ioLineDrawer', {
+Object.defineProperty(exports, 'rwLineDrawer', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_ioLineDrawer).default;
+    return _interopRequireDefault(_rwLineDrawer).default;
   }
 });
 
-var _ioCrossPointDrawer = __webpack_require__(232);
+var _rwCrossPointDrawer = __webpack_require__(253);
 
-Object.defineProperty(exports, 'ioCrossPointDrawer', {
+Object.defineProperty(exports, 'rwCrossPointDrawer', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_ioCrossPointDrawer).default;
+    return _interopRequireDefault(_rwCrossPointDrawer).default;
   }
 });
 
@@ -3161,12 +3161,12 @@ Object.defineProperty(exports, 'bottomDescriptionBuilder', {
   }
 });
 
-var _cellBuilder = __webpack_require__(234);
+var _unitBuilder = __webpack_require__(261);
 
-Object.defineProperty(exports, 'cellBuilder', {
+Object.defineProperty(exports, 'unitBuilder', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_cellBuilder).default;
+    return _interopRequireDefault(_unitBuilder).default;
   }
 });
 
@@ -3188,21 +3188,21 @@ Object.defineProperty(exports, 'cuFetchBuilder', {
   }
 });
 
-var _ioBusBuilder = __webpack_require__(237);
+var _rwBusBuilder = __webpack_require__(248);
 
-Object.defineProperty(exports, 'ioBusBuilder', {
+Object.defineProperty(exports, 'rwBusBuilder', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_ioBusBuilder).default;
+    return _interopRequireDefault(_rwBusBuilder).default;
   }
 });
 
-var _ioCellArrowBuilder = __webpack_require__(238);
+var _rwUnitArrowBuilder = __webpack_require__(262);
 
-Object.defineProperty(exports, 'ioCellArrowBuilder', {
+Object.defineProperty(exports, 'rwUnitArrowBuilder', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_ioCellArrowBuilder).default;
+    return _interopRequireDefault(_rwUnitArrowBuilder).default;
   }
 });
 
@@ -21517,7 +21517,7 @@ function textDrawer() {
   var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
   var x = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
   var y = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 0;
-  var cellSize = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
+  var unitSize = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
 
   var sprite = {};
 
@@ -21528,10 +21528,10 @@ function textDrawer() {
         sprite.x = 30;
         sprite.y = 495;
         break;
-      case 'cellLabel':
+      case 'unitLabel':
         sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '12pt' });
         sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + cellSize * 20 / 2;
+        sprite.x = x + unitSize * 20 / 2;
         sprite.y = y + 20 / 2;
         break;
       case 'ALULabel':
@@ -21540,10 +21540,10 @@ function textDrawer() {
         sprite.x = 370;
         sprite.y = 275;
         break;
-      case 'cellValue':
+      case 'unitValue':
         sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '12pt', letterSpacing: 10 });
         sprite.anchor.set(1, 0.5);
-        sprite.x = x + cellSize * 20 - 5;
+        sprite.x = x + unitSize * 20 - 5;
         sprite.y = y + 20 + 20 / 2;
         break;
       case 'upperButtonLabel':
@@ -21584,7 +21584,7 @@ function textDrawer() {
     }
   } else {
     switch (type) {
-      case 'cellLabel':
+      case 'unitLabel':
         sprite = new PIXI.Text(text, {
           fontFamily: 'Courier',
           fontSize: '12pt',
@@ -21592,7 +21592,7 @@ function textDrawer() {
           fill: _helpers.colorCode.INSIDE_ALT
         });
         sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + cellSize * 20 / 2;
+        sprite.x = x + unitSize * 20 / 2;
         sprite.y = y + 20 / 2;
         break;
       case 'ALULabel':
@@ -21606,7 +21606,7 @@ function textDrawer() {
         sprite.x = 370;
         sprite.y = 275;
         break;
-      case 'cellValue':
+      case 'unitValue':
         sprite = new PIXI.Text(text, {
           fontFamily: 'Courier',
           fontSize: '12pt',
@@ -21615,7 +21615,7 @@ function textDrawer() {
           fill: _helpers.colorCode.INSIDE_ALT
         });
         sprite.anchor.set(1, 0.5);
-        sprite.x = x + cellSize * 20 - 5;
+        sprite.x = x + unitSize * 20 - 5;
         sprite.y = y + 20 + 20 / 2;
         break;
       case 'upperButtonLabel':
@@ -42318,14 +42318,14 @@ function render() {
   dynamicView.removeChildren();
 
   var currentState = store.getState();
-  var cellView = view.organizers.cellOrganizer(currentState);
+  var unitView = view.organizers.unitOrganizer(currentState);
   var cuView = view.organizers.cuOrganizer(currentState);
   var descriptionView = view.organizers.descriptionOrganizer(currentState);
-  var ioPathView = view.organizers.ioPathOrganizer(currentState);
+  var rwPathView = view.organizers.rwPathOrganizer(currentState);
   var lowerButtonsView = view.organizers.lowerButtonsOrganizer(currentState, store);
   var upperButtonsView = view.organizers.upperButtonsOrganizer(currentState, store);
 
-  dynamicView.addChild(cellView, cuView, descriptionView, ioPathView, lowerButtonsView, upperButtonsView);
+  dynamicView.addChild(unitView, cuView, descriptionView, rwPathView, lowerButtonsView, upperButtonsView);
 }
 
 /***/ }),
@@ -42986,7 +42986,7 @@ function bgBuilder() {
   makeArrowTipsBG(sprite);
   makeALUioArrows(sprite);
   makeCUArrowAndBitWidth(sprite);
-  makeCellsBG(sprite);
+  makeUnitsBG(sprite);
 
   return sprite;
 }
@@ -43054,20 +43054,20 @@ function makeALUioArrows() {
   sprite.drawPolygon([400, 300, 396, 308, 398, 308, 398, 360, 402, 360, 402, 308, 404, 308]);
 }
 
-function makeCellsBG() {
+function makeUnitsBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
   sprite.beginFill(_helpers.colorCode.LIGHT_BG);
   // my first reducer in this life time LOL
   // but it's just like a foreach loop :-/
   ['Akku', 'Eins', 'SAR', 'IAR', 'IR', 'Z', 'X', 'Y', 'SDR', 'R', 'W'].reduce(function (result, item) {
-    var _positionSpecs$cellSp = _helpers.positionSpecs.cellSpec(item),
-        _positionSpecs$cellSp2 = _slicedToArray(_positionSpecs$cellSp, 3),
-        x = _positionSpecs$cellSp2[0],
-        y = _positionSpecs$cellSp2[1],
-        cellSize = _positionSpecs$cellSp2[2];
+    var _positionSpecs$unitSp = _helpers.positionSpecs.unitSpec(item),
+        _positionSpecs$unitSp2 = _slicedToArray(_positionSpecs$unitSp, 3),
+        x = _positionSpecs$unitSp2[0],
+        y = _positionSpecs$unitSp2[1],
+        unitSize = _positionSpecs$unitSp2[2];
 
-    sprite.drawRect(x, y, cellSize * 20, 40);
+    sprite.drawRect(x, y, unitSize * 20, 40);
   }, sprite);
 
   // ALU ahhhhhhh
@@ -43166,12 +43166,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
-// returns cell position (upper left corner) and size
+// returns unit position (upper left corner) and size
 // [x, y, size]
-function cellSpec() {
-  var cellName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+function unitSpec() {
+  var unitName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
 
-  switch (cellName) {
+  switch (unitName) {
     case 'Akku':
       return [30, 40, 6];
     case 'Eins':
@@ -43200,9 +43200,9 @@ function cellSpec() {
 }
 
 function bitWidthSpec() {
-  var cellName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var unitName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
 
-  switch (cellName) {
+  switch (unitName) {
     case 'Akku':
       return [165, 65, 24];
     case 'Eins':
@@ -43226,9 +43226,9 @@ function bitWidthSpec() {
   }
 }
 
-// returns ioArrowHead polygon points (fills 8x8 grid)
+// returns rwArrowHead polygon points (fills 8x8 grid)
 // [x1,y1, x2,y2, x3,y3]
-function ioHArrowHeadSpec() {
+function rwHArrowHeadSpec() {
   var lineSpec = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
   var dir = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
 
@@ -43252,22 +43252,22 @@ function ioHArrowHeadSpec() {
 }
 
 // horizontal line
-function ioHLineSpec() {
-  var cellName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+function rwHLineSpec() {
+  var unitName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
   var dir = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'lr';
 
-  var _cellSpec = cellSpec(cellName),
-      _cellSpec2 = _slicedToArray(_cellSpec, 3),
-      cx = _cellSpec2[0],
-      cy = _cellSpec2[1],
-      cs = _cellSpec2[2];
+  var _unitSpec = unitSpec(unitName),
+      _unitSpec2 = _slicedToArray(_unitSpec, 3),
+      cx = _unitSpec2[0],
+      cy = _unitSpec2[1],
+      cs = _unitSpec2[2];
 
   var lX = 0,
       rX = 0,
       lY = 0,
       rY = 0;
 
-  switch (cellName) {
+  switch (unitName) {
     case 'Akku':
     case 'Eins':
     case 'SAR':
@@ -43299,7 +43299,7 @@ function ioHLineSpec() {
   return [lX, lY, rX, rY, dir];
 }
 
-function ioMainLineSpec() {
+function rwMainLineSpec() {
   var id = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
   switch (id) {
@@ -43316,7 +43316,7 @@ function ioMainLineSpec() {
   }
 }
 
-function ioCrossPointSpec() {
+function rwCrossPointSpec() {
   var id = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
   switch (id) {
@@ -43335,7 +43335,7 @@ function ioCrossPointSpec() {
   }
 }
 
-exports.default = { cellSpec: cellSpec, ioHArrowHeadSpec: ioHArrowHeadSpec, ioHLineSpec: ioHLineSpec, ioMainLineSpec: ioMainLineSpec, ioCrossPointSpec: ioCrossPointSpec, bitWidthSpec: bitWidthSpec };
+exports.default = { unitSpec: unitSpec, rwHArrowHeadSpec: rwHArrowHeadSpec, rwHLineSpec: rwHLineSpec, rwMainLineSpec: rwMainLineSpec, rwCrossPointSpec: rwCrossPointSpec, bitWidthSpec: bitWidthSpec };
 
 /***/ }),
 /* 224 */
@@ -43526,63 +43526,7 @@ function buttonBGDrawer() {
 }
 
 /***/ }),
-/* 227 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-exports.default = cellLineDrawer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function cellLineDrawer() {
-  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-  var sprite = new PIXI.Graphics();
-  if (!alt) {
-    sprite.lineStyle(1, _helpers.colorCode.BORDER);
-  } else {
-    sprite.lineStyle(2, _helpers.colorCode.INSIDE_ALT);
-  }
-
-  if (name === 'ALU') {
-    sprite.drawPolygon([340, 260, 300, 300, 360, 300, 370, 290, 380, 300, 440, 300, 400, 260, 340, 260]);
-  } else {
-    var _positionSpecs$cellSp = _helpers.positionSpecs.cellSpec(name),
-        _positionSpecs$cellSp2 = _slicedToArray(_positionSpecs$cellSp, 3),
-        x = _positionSpecs$cellSp2[0],
-        y = _positionSpecs$cellSp2[1],
-        cellSize = _positionSpecs$cellSp2[2];
-
-    sprite.drawRect(x, y, cellSize * 20, 40);
-    // horizontal
-    sprite.moveTo(x, y + 20);
-    sprite.lineTo(x + cellSize * 20, y + 20);
-    // vertical
-    for (var i = 1; i < cellSize; ++i) {
-      sprite.moveTo(x + i * 20, y + 20);
-      sprite.lineTo(x + i * 20, y + 40);
-    }
-  }
-
-  return sprite;
-}
-
-/***/ }),
+/* 227 */,
 /* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -43654,127 +43598,9 @@ function cuStepBGDrawer() {
 }
 
 /***/ }),
-/* 230 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = ioArrowHeadDrawer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function ioArrowHeadDrawer() {
-  var arrowHead = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-  var sprite = new PIXI.Graphics();
-  if (!alt) {
-    sprite.beginFill(_helpers.colorCode.BORDER);
-  } else {
-    sprite.beginFill(_helpers.colorCode.INSIDE_ALT);
-  }
-  sprite.drawPolygon(arrowHead);
-
-  return sprite;
-}
-
-/***/ }),
-/* 231 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = ioLineDrawer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function ioLineDrawer() {
-  var dir = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'h';
-  var x = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-  var y = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-  var length = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
-  var alt = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
-
-  var sprite = new PIXI.Graphics();
-  if (!alt) {
-    sprite.lineStyle(4, _helpers.colorCode.BORDER);
-  } else {
-    sprite.lineStyle(4, _helpers.colorCode.INSIDE_ALT);
-  }
-
-  var dx = x,
-      dy = y;
-
-  switch (dir) {
-    case 'h':
-      dx += length;
-      break;
-    case 'v':
-      dy += length;
-      break;
-  }
-  sprite.moveTo(x, y);
-  sprite.lineTo(dx, dy);
-
-  return sprite;
-}
-
-/***/ }),
-/* 232 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = ioCrossPointDrawer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function ioCrossPointDrawer() {
-  var points = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-  var sprite = new PIXI.Graphics();
-  if (!alt) {
-    sprite.beginFill(_helpers.colorCode.BORDER);
-  } else {
-    sprite.beginFill(_helpers.colorCode.INSIDE_ALT);
-  }
-  sprite.drawPolygon(points);
-
-  return sprite;
-}
-
-/***/ }),
+/* 230 */,
+/* 231 */,
+/* 232 */,
 /* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -43796,57 +43622,7 @@ function bottomDescriptionBuilder() {
 }
 
 /***/ }),
-/* 234 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-exports.default = cellBuilder;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-var _drawers = __webpack_require__(9);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function cellBuilder() {
-  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var value = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
-  var alt = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-
-  var sprite = new PIXI.Container();
-  if (name === 'ALU') {
-    var ALULabel = (0, _drawers.textDrawer)(name, alt, 'ALULabel');
-    var ALULines = (0, _drawers.cellLineDrawer)(name, alt);
-    sprite.addChild(ALULabel, ALULines);
-  } else {
-    var _positionSpecs$cellSp = _helpers.positionSpecs.cellSpec(name),
-        _positionSpecs$cellSp2 = _slicedToArray(_positionSpecs$cellSp, 3),
-        x = _positionSpecs$cellSp2[0],
-        y = _positionSpecs$cellSp2[1],
-        cellSize = _positionSpecs$cellSp2[2];
-
-    var cellLabel = (0, _drawers.textDrawer)(name, alt, 'cellLabel', x, y, cellSize);
-    var cellValue = (0, _drawers.textDrawer)(value, alt, 'cellValue', x, y, cellSize);
-    var cellLines = (0, _drawers.cellLineDrawer)(name, alt);
-    sprite.addChild(cellLabel, cellValue, cellLines);
-  }
-
-  return sprite;
-}
-
-/***/ }),
+/* 234 */,
 /* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -43963,225 +43739,8 @@ function cuFetchBuilder() {
 }
 
 /***/ }),
-/* 237 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = ioBusBuilder;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-var _drawers = __webpack_require__(9);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function ioBusBuilder() {
-  var from = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var to = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
-
-  var sprite = new PIXI.Graphics();
-
-  // background layer
-  var bgLayer = (0, _drawers.ioLineDrawer)('v', 200, 60, 370);
-  sprite.addChild(bgLayer);
-
-  // colorful highlighted top
-  var y1 = 0,
-      y2 = 0,
-      p1 = 0,
-      p2 = 0;
-
-  switch (from) {
-    case 'Akku':
-    case 'IAR':
-      y1 = 60;
-      p1 = 1;
-      break;
-    case 'Eins':
-    case 'IR':
-      p1 = 2;
-      y1 = 140;
-      break;
-    case 'Z':
-      p1 = 3;
-      y1 = 220;
-      break;
-    case 'X':
-      p1 = 4;
-      y1 = 350;
-      break;
-    case 'Y':
-      p1 = 5;
-      y1 = 380;
-      break;
-    case 'SAR':
-    case 'SDR':
-      p1 = 6;
-      y1 = 430;
-      break;
-  }
-  switch (to) {
-    case 'Akku':
-    case 'IAR':
-      p2 = 1;
-      y2 = 60;
-      break;
-    case 'Eins':
-    case 'IR':
-      p2 = 2;
-      y2 = 140;
-      break;
-    case 'Z':
-      p2 = 3;
-      y2 = 220;
-      break;
-    case 'X':
-      p2 = 4;
-      y2 = 350;
-      break;
-    case 'Y':
-      p2 = 5;
-      y2 = 380;
-      break;
-    case 'SAR':
-    case 'SDR':
-      p2 = 6;
-      y2 = 430;
-      break;
-  }
-
-  if (y1 > y2) {
-    var _ref = [y2, y1];
-    y1 = _ref[0];
-    y2 = _ref[1];
-  }
-
-  var length = y2 - y1;
-  var hlLayer = (0, _drawers.ioLineDrawer)('v', 200, y1, length, true);
-  sprite.addChild(hlLayer);
-
-  if (p1 > p2) {
-    var _ref2 = [p2, p1];
-    p1 = _ref2[0];
-    p2 = _ref2[1];
-  }
-
-  for (var i = 1; i <= 6; ++i) {
-    if (p1 <= i && i <= p2) {
-      var xPoint = (0, _drawers.ioCrossPointDrawer)(_helpers.positionSpecs.ioCrossPointSpec(i), true);
-      sprite.addChild(xPoint);
-    } else {
-      var _xPoint = (0, _drawers.ioCrossPointDrawer)(_helpers.positionSpecs.ioCrossPointSpec(i), false);
-      sprite.addChild(_xPoint);
-    }
-  }
-
-  return sprite;
-}
-
-/***/ }),
-/* 238 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-exports.default = ioCellArrowBuilder;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-var _drawers = __webpack_require__(9);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function ioCellArrowBuilder() {
-  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var alt_arrows = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'lr';
-  var alt_hl = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-
-  var sprite = new PIXI.Graphics();
-
-  var _positionSpecs$ioHLin = _helpers.positionSpecs.ioHLineSpec(name, alt_arrows),
-      _positionSpecs$ioHLin2 = _slicedToArray(_positionSpecs$ioHLin, 4),
-      lX = _positionSpecs$ioHLin2[0],
-      lY = _positionSpecs$ioHLin2[1],
-      rX = _positionSpecs$ioHLin2[2],
-      rY = _positionSpecs$ioHLin2[3];
-
-  var line = (0, _drawers.ioLineDrawer)('h', lX, lY, rX - lX, alt_hl);
-  sprite.addChild(line);
-
-  var _positionSpecs$bitWid = _helpers.positionSpecs.bitWidthSpec(name),
-      _positionSpecs$bitWid2 = _slicedToArray(_positionSpecs$bitWid, 3),
-      tX = _positionSpecs$bitWid2[0],
-      tY = _positionSpecs$bitWid2[1],
-      bw = _positionSpecs$bitWid2[2];
-
-  var bwText = (0, _drawers.textDrawer)(bw, alt_hl, 'bitWidthText', tX, tY);
-  sprite.addChild(bwText);
-
-  var arrowHeads = [];
-  switch (alt_arrows) {
-    case 'lr':
-      arrowHeads.push(_helpers.positionSpecs.ioHArrowHeadSpec([lX, lY, rX, rY], 'l'));
-      arrowHeads.push(_helpers.positionSpecs.ioHArrowHeadSpec([lX, lY, rX, rY], 'r'));
-      break;
-    case 'l':
-      arrowHeads.push(_helpers.positionSpecs.ioHArrowHeadSpec([lX, lY, rX, rY], 'l'));
-      break;
-    case 'r':
-      arrowHeads.push(_helpers.positionSpecs.ioHArrowHeadSpec([lX, lY, rX, rY], 'r'));
-      break;
-  }
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
-
-  try {
-    for (var _iterator = arrowHeads[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var e = _step.value;
-
-      var arrowHeadSprite = (0, _drawers.ioArrowHeadDrawer)(e, alt_hl);
-      sprite.addChild(arrowHeadSprite);
-    }
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator.return) {
-        _iterator.return();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
-    }
-  }
-
-  return sprite;
-}
-
-/***/ }),
+/* 237 */,
+/* 238 */,
 /* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44217,12 +43776,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _cellOrganizer = __webpack_require__(241);
+var _unitOrganizer = __webpack_require__(263);
 
-Object.defineProperty(exports, 'cellOrganizer', {
+Object.defineProperty(exports, 'unitOrganizer', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_cellOrganizer).default;
+    return _interopRequireDefault(_unitOrganizer).default;
   }
 });
 
@@ -44244,12 +43803,12 @@ Object.defineProperty(exports, 'descriptionOrganizer', {
   }
 });
 
-var _ioPathOrganizer = __webpack_require__(244);
+var _rwPathOrganizer = __webpack_require__(255);
 
-Object.defineProperty(exports, 'ioPathOrganizer', {
+Object.defineProperty(exports, 'rwPathOrganizer', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_ioPathOrganizer).default;
+    return _interopRequireDefault(_rwPathOrganizer).default;
   }
 });
 
@@ -44274,156 +43833,7 @@ Object.defineProperty(exports, 'upperButtonsOrganizer', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 241 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = cellOrganizer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-var _builders = __webpack_require__(12);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function cellOrganizer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
-
-  var container = new PIXI.Container();
-  var path = _helpers.jsonParser.processInterpreter(state)['path'];
-  var values = _helpers.jsonParser.processInterpreter(state)['values'];
-  var cellsWithValues = Object.keys(values);
-  var cellsHighLighted = new Set();
-  var cellsNotHighLighted = new Set();
-
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
-
-  try {
-    for (var _iterator = path[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var p = _step.value;
-
-      cellsHighLighted.add(p['from']);
-      cellsHighLighted.add(p['to']);
-    }
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator.return) {
-        _iterator.return();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
-    }
-  }
-
-  var _iteratorNormalCompletion2 = true;
-  var _didIteratorError2 = false;
-  var _iteratorError2 = undefined;
-
-  try {
-    for (var _iterator2 = cellsWithValues[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-      var e = _step2.value;
-
-      if (!cellsHighLighted.has(e)) {
-        cellsNotHighLighted.add(e);
-      }
-    }
-
-    // make a default ALU first. if it's in the highlighted, will be overridden, literally
-  } catch (err) {
-    _didIteratorError2 = true;
-    _iteratorError2 = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion2 && _iterator2.return) {
-        _iterator2.return();
-      }
-    } finally {
-      if (_didIteratorError2) {
-        throw _iteratorError2;
-      }
-    }
-  }
-
-  container.addChild((0, _builders.cellBuilder)('ALU'));
-
-  // make highlighted cells
-  var _iteratorNormalCompletion3 = true;
-  var _didIteratorError3 = false;
-  var _iteratorError3 = undefined;
-
-  try {
-    for (var _iterator3 = cellsHighLighted[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-      var hl = _step3.value;
-
-      var cellSprite = void 0;
-      if (hl === 'ALU') {
-        cellSprite = (0, _builders.cellBuilder)(hl, '', true);
-      } else {
-        cellSprite = (0, _builders.cellBuilder)(hl, values[hl], true);
-      }
-      container.addChild(cellSprite);
-    }
-  } catch (err) {
-    _didIteratorError3 = true;
-    _iteratorError3 = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion3 && _iterator3.return) {
-        _iterator3.return();
-      }
-    } finally {
-      if (_didIteratorError3) {
-        throw _iteratorError3;
-      }
-    }
-  }
-
-  var _iteratorNormalCompletion4 = true;
-  var _didIteratorError4 = false;
-  var _iteratorError4 = undefined;
-
-  try {
-    for (var _iterator4 = cellsNotHighLighted[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
-      var nhl = _step4.value;
-
-      var cellSprite = (0, _builders.cellBuilder)(nhl, values[nhl], false);
-      container.addChild(cellSprite);
-    }
-  } catch (err) {
-    _didIteratorError4 = true;
-    _iteratorError4 = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion4 && _iterator4.return) {
-        _iterator4.return();
-      }
-    } finally {
-      if (_didIteratorError4) {
-        throw _iteratorError4;
-      }
-    }
-  }
-
-  return container;
-}
-
-/***/ }),
+/* 241 */,
 /* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44486,145 +43896,7 @@ function descriptionOrganizer() {
 }
 
 /***/ }),
-/* 244 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = ioPathOrganizer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-var _builders = __webpack_require__(12);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function ioPathOrganizer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
-
-  var container = new PIXI.Container();
-  var path = _helpers.jsonParser.processInterpreter(state)['path'];
-  var cellsFrom = new Set();
-  var cellsTo = new Set();
-
-  // cell arrows
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
-
-  try {
-    for (var _iterator = path[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var p = _step.value;
-
-      cellsFrom.add(p['from']);
-      cellsTo.add(p['to']);
-    }
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator.return) {
-        _iterator.return();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
-    }
-  }
-
-  var _arr = ['Akku', 'Eins', 'X', 'Y', 'Z', 'SAR', 'IAR', 'IR', 'SDR'];
-  for (var _i = 0; _i < _arr.length; _i++) {
-    var c = _arr[_i];
-    if (cellsFrom.has(c)) {
-      container.addChild((0, _builders.ioCellArrowBuilder)(c, whichArrows(c, true), true));
-    } else if (cellsTo.has(c)) {
-      container.addChild((0, _builders.ioCellArrowBuilder)(c, whichArrows(c, false, true), true));
-    } else {
-      container.addChild((0, _builders.ioCellArrowBuilder)(c, whichArrows(c)));
-    }
-  }
-
-  // BG main bus
-  container.addChild((0, _builders.ioBusBuilder)());
-
-  // main bus
-  var _iteratorNormalCompletion2 = true;
-  var _didIteratorError2 = false;
-  var _iteratorError2 = undefined;
-
-  try {
-    for (var _iterator2 = path[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-      var _p = _step2.value;
-
-      container.addChild((0, _builders.ioBusBuilder)(_p['from'], _p['to']));
-    }
-  } catch (err) {
-    _didIteratorError2 = true;
-    _iteratorError2 = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion2 && _iterator2.return) {
-        _iterator2.return();
-      }
-    } finally {
-      if (_didIteratorError2) {
-        throw _iteratorError2;
-      }
-    }
-  }
-
-  return container;
-}
-
-function whichArrows() {
-  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var from = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-  var to = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-
-  switch (name) {
-    case 'Akku':
-      if (to) {
-        return 'l';
-      }
-      if (from) {
-        return 'r';
-      }
-      if (!(from || to)) {
-        return 'lr';
-      }
-    case 'Eins':
-    case 'X':
-    case 'Y':
-      return 'r';
-    case 'Z':
-    case 'SAR':
-      return 'l';
-    case 'IAR':
-    case 'IR':
-    case 'SDR':
-      if (from) {
-        return 'l';
-      }
-      if (to) {
-        return 'r';
-      }
-      if (!(from || to)) {
-        return 'lr';
-      }
-  }
-}
-
-/***/ }),
+/* 244 */,
 /* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44751,6 +44023,751 @@ function upperButtonsOrganizer() {
     } else {
       var _button = (0, _builders.buttonBuilder)(b, false, store);
       container.addChild(_button);
+    }
+  }
+
+  return container;
+}
+
+/***/ }),
+/* 247 */,
+/* 248 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = rwBusBuilder;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+var _drawers = __webpack_require__(9);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function rwBusBuilder() {
+  var from = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var to = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+
+  var sprite = new PIXI.Graphics();
+
+  // background layer
+  var bgLayer = (0, _drawers.rwLineDrawer)('v', 200, 60, 370);
+  sprite.addChild(bgLayer);
+
+  // colorful highlighted top
+  var y1 = 0,
+      y2 = 0,
+      p1 = 0,
+      p2 = 0;
+
+  switch (from) {
+    case 'Akku':
+    case 'IAR':
+      y1 = 60;
+      p1 = 1;
+      break;
+    case 'Eins':
+    case 'IR':
+      p1 = 2;
+      y1 = 140;
+      break;
+    case 'Z':
+      p1 = 3;
+      y1 = 220;
+      break;
+    case 'X':
+      p1 = 4;
+      y1 = 350;
+      break;
+    case 'Y':
+      p1 = 5;
+      y1 = 380;
+      break;
+    case 'SAR':
+    case 'SDR':
+      p1 = 6;
+      y1 = 430;
+      break;
+  }
+  switch (to) {
+    case 'Akku':
+    case 'IAR':
+      p2 = 1;
+      y2 = 60;
+      break;
+    case 'Eins':
+    case 'IR':
+      p2 = 2;
+      y2 = 140;
+      break;
+    case 'Z':
+      p2 = 3;
+      y2 = 220;
+      break;
+    case 'X':
+      p2 = 4;
+      y2 = 350;
+      break;
+    case 'Y':
+      p2 = 5;
+      y2 = 380;
+      break;
+    case 'SAR':
+    case 'SDR':
+      p2 = 6;
+      y2 = 430;
+      break;
+  }
+
+  if (y1 > y2) {
+    var _ref = [y2, y1];
+    y1 = _ref[0];
+    y2 = _ref[1];
+  }
+
+  var length = y2 - y1;
+  var hlLayer = (0, _drawers.rwLineDrawer)('v', 200, y1, length, true);
+  sprite.addChild(hlLayer);
+
+  if (p1 > p2) {
+    var _ref2 = [p2, p1];
+    p1 = _ref2[0];
+    p2 = _ref2[1];
+  }
+
+  for (var i = 1; i <= 6; ++i) {
+    if (p1 <= i && i <= p2) {
+      var xPoint = (0, _drawers.rwCrossPointDrawer)(_helpers.positionSpecs.rwCrossPointSpec(i), true);
+      sprite.addChild(xPoint);
+    } else {
+      var _xPoint = (0, _drawers.rwCrossPointDrawer)(_helpers.positionSpecs.rwCrossPointSpec(i), false);
+      sprite.addChild(_xPoint);
+    }
+  }
+
+  return sprite;
+}
+
+/***/ }),
+/* 249 */,
+/* 250 */,
+/* 251 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = rwArrowHeadDrawer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function rwArrowHeadDrawer() {
+  var arrowHead = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  var sprite = new PIXI.Graphics();
+  if (!alt) {
+    sprite.beginFill(_helpers.colorCode.BORDER);
+  } else {
+    sprite.beginFill(_helpers.colorCode.INSIDE_ALT);
+  }
+  sprite.drawPolygon(arrowHead);
+
+  return sprite;
+}
+
+/***/ }),
+/* 252 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = rwLineDrawer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function rwLineDrawer() {
+  var dir = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'h';
+  var x = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  var y = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+  var length = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
+  var alt = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+
+  var sprite = new PIXI.Graphics();
+  if (!alt) {
+    sprite.lineStyle(4, _helpers.colorCode.BORDER);
+  } else {
+    sprite.lineStyle(4, _helpers.colorCode.INSIDE_ALT);
+  }
+
+  var dx = x,
+      dy = y;
+
+  switch (dir) {
+    case 'h':
+      dx += length;
+      break;
+    case 'v':
+      dy += length;
+      break;
+  }
+  sprite.moveTo(x, y);
+  sprite.lineTo(dx, dy);
+
+  return sprite;
+}
+
+/***/ }),
+/* 253 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = rwCrossPointDrawer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function rwCrossPointDrawer() {
+  var points = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  var sprite = new PIXI.Graphics();
+  if (!alt) {
+    sprite.beginFill(_helpers.colorCode.BORDER);
+  } else {
+    sprite.beginFill(_helpers.colorCode.INSIDE_ALT);
+  }
+  sprite.drawPolygon(points);
+
+  return sprite;
+}
+
+/***/ }),
+/* 254 */,
+/* 255 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = rwPathOrganizer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+var _builders = __webpack_require__(12);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function rwPathOrganizer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
+
+  var container = new PIXI.Container();
+  var path = _helpers.jsonParser.processInterpreter(state)['path'];
+  var unitsFrom = new Set();
+  var unitsTo = new Set();
+
+  // unit arrows
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = path[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var p = _step.value;
+
+      unitsFrom.add(p['from']);
+      unitsTo.add(p['to']);
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+
+  var _arr = ['Akku', 'Eins', 'X', 'Y', 'Z', 'SAR', 'IAR', 'IR', 'SDR'];
+  for (var _i = 0; _i < _arr.length; _i++) {
+    var c = _arr[_i];
+    if (unitsFrom.has(c)) {
+      container.addChild((0, _builders.rwUnitArrowBuilder)(c, whichArrows(c, true), true));
+    } else if (unitsTo.has(c)) {
+      container.addChild((0, _builders.rwUnitArrowBuilder)(c, whichArrows(c, false, true), true));
+    } else {
+      container.addChild((0, _builders.rwUnitArrowBuilder)(c, whichArrows(c)));
+    }
+  }
+
+  // BG main bus
+  container.addChild((0, _builders.rwBusBuilder)());
+
+  // main bus
+  var _iteratorNormalCompletion2 = true;
+  var _didIteratorError2 = false;
+  var _iteratorError2 = undefined;
+
+  try {
+    for (var _iterator2 = path[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+      var _p = _step2.value;
+
+      container.addChild((0, _builders.rwBusBuilder)(_p['from'], _p['to']));
+    }
+  } catch (err) {
+    _didIteratorError2 = true;
+    _iteratorError2 = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion2 && _iterator2.return) {
+        _iterator2.return();
+      }
+    } finally {
+      if (_didIteratorError2) {
+        throw _iteratorError2;
+      }
+    }
+  }
+
+  return container;
+}
+
+function whichArrows() {
+  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var from = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  var to = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+  switch (name) {
+    case 'Akku':
+      if (to) {
+        return 'l';
+      }
+      if (from) {
+        return 'r';
+      }
+      if (!(from || to)) {
+        return 'lr';
+      }
+    case 'Eins':
+    case 'X':
+    case 'Y':
+      return 'r';
+    case 'Z':
+    case 'SAR':
+      return 'l';
+    case 'IAR':
+    case 'IR':
+    case 'SDR':
+      if (from) {
+        return 'l';
+      }
+      if (to) {
+        return 'r';
+      }
+      if (!(from || to)) {
+        return 'lr';
+      }
+  }
+}
+
+/***/ }),
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+exports.default = unitLineDrawer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function unitLineDrawer() {
+  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  var sprite = new PIXI.Graphics();
+  if (!alt) {
+    sprite.lineStyle(1, _helpers.colorCode.BORDER);
+  } else {
+    sprite.lineStyle(2, _helpers.colorCode.INSIDE_ALT);
+  }
+
+  if (name === 'ALU') {
+    sprite.drawPolygon([340, 260, 300, 300, 360, 300, 370, 290, 380, 300, 440, 300, 400, 260, 340, 260]);
+  } else {
+    var _positionSpecs$unitSp = _helpers.positionSpecs.unitSpec(name),
+        _positionSpecs$unitSp2 = _slicedToArray(_positionSpecs$unitSp, 3),
+        x = _positionSpecs$unitSp2[0],
+        y = _positionSpecs$unitSp2[1],
+        unitSize = _positionSpecs$unitSp2[2];
+
+    sprite.drawRect(x, y, unitSize * 20, 40);
+    // horizontal
+    sprite.moveTo(x, y + 20);
+    sprite.lineTo(x + unitSize * 20, y + 20);
+    // vertical
+    for (var i = 1; i < unitSize; ++i) {
+      sprite.moveTo(x + i * 20, y + 20);
+      sprite.lineTo(x + i * 20, y + 40);
+    }
+  }
+
+  return sprite;
+}
+
+/***/ }),
+/* 261 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+exports.default = unitBuilder;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+var _drawers = __webpack_require__(9);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function unitBuilder() {
+  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var value = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+  var alt = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+  var sprite = new PIXI.Container();
+  if (name === 'ALU') {
+    var ALULabel = (0, _drawers.textDrawer)(name, alt, 'ALULabel');
+    var ALULines = (0, _drawers.unitLineDrawer)(name, alt);
+    sprite.addChild(ALULabel, ALULines);
+  } else {
+    var _positionSpecs$unitSp = _helpers.positionSpecs.unitSpec(name),
+        _positionSpecs$unitSp2 = _slicedToArray(_positionSpecs$unitSp, 3),
+        x = _positionSpecs$unitSp2[0],
+        y = _positionSpecs$unitSp2[1],
+        unitSize = _positionSpecs$unitSp2[2];
+
+    var unitLabel = (0, _drawers.textDrawer)(name, alt, 'unitLabel', x, y, unitSize);
+    var unitValue = (0, _drawers.textDrawer)(value, alt, 'unitValue', x, y, unitSize);
+    var unitLines = (0, _drawers.unitLineDrawer)(name, alt);
+    sprite.addChild(unitLabel, unitValue, unitLines);
+  }
+
+  return sprite;
+}
+
+/***/ }),
+/* 262 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+exports.default = rwUnitArrowBuilder;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+var _drawers = __webpack_require__(9);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function rwUnitArrowBuilder() {
+  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var alt_arrows = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'lr';
+  var alt_hl = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+  var sprite = new PIXI.Graphics();
+
+  var _positionSpecs$rwHLin = _helpers.positionSpecs.rwHLineSpec(name, alt_arrows),
+      _positionSpecs$rwHLin2 = _slicedToArray(_positionSpecs$rwHLin, 4),
+      lX = _positionSpecs$rwHLin2[0],
+      lY = _positionSpecs$rwHLin2[1],
+      rX = _positionSpecs$rwHLin2[2],
+      rY = _positionSpecs$rwHLin2[3];
+
+  var line = (0, _drawers.rwLineDrawer)('h', lX, lY, rX - lX, alt_hl);
+  sprite.addChild(line);
+
+  var _positionSpecs$bitWid = _helpers.positionSpecs.bitWidthSpec(name),
+      _positionSpecs$bitWid2 = _slicedToArray(_positionSpecs$bitWid, 3),
+      tX = _positionSpecs$bitWid2[0],
+      tY = _positionSpecs$bitWid2[1],
+      bw = _positionSpecs$bitWid2[2];
+
+  var bwText = (0, _drawers.textDrawer)(bw, alt_hl, 'bitWidthText', tX, tY);
+  sprite.addChild(bwText);
+
+  var arrowHeads = [];
+  switch (alt_arrows) {
+    case 'lr':
+      arrowHeads.push(_helpers.positionSpecs.rwHArrowHeadSpec([lX, lY, rX, rY], 'l'));
+      arrowHeads.push(_helpers.positionSpecs.rwHArrowHeadSpec([lX, lY, rX, rY], 'r'));
+      break;
+    case 'l':
+      arrowHeads.push(_helpers.positionSpecs.rwHArrowHeadSpec([lX, lY, rX, rY], 'l'));
+      break;
+    case 'r':
+      arrowHeads.push(_helpers.positionSpecs.rwHArrowHeadSpec([lX, lY, rX, rY], 'r'));
+      break;
+  }
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = arrowHeads[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var e = _step.value;
+
+      var arrowHeadSprite = (0, _drawers.rwArrowHeadDrawer)(e, alt_hl);
+      sprite.addChild(arrowHeadSprite);
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+
+  return sprite;
+}
+
+/***/ }),
+/* 263 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = unitOrganizer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+var _builders = __webpack_require__(12);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function unitOrganizer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
+
+  var container = new PIXI.Container();
+  var path = _helpers.jsonParser.processInterpreter(state)['path'];
+  var values = _helpers.jsonParser.processInterpreter(state)['values'];
+  var unitsWithValues = Object.keys(values);
+  var unitsHighLighted = new Set();
+  var unitsNotHighLighted = new Set();
+
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = path[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var p = _step.value;
+
+      unitsHighLighted.add(p['from']);
+      unitsHighLighted.add(p['to']);
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+
+  var _iteratorNormalCompletion2 = true;
+  var _didIteratorError2 = false;
+  var _iteratorError2 = undefined;
+
+  try {
+    for (var _iterator2 = unitsWithValues[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+      var e = _step2.value;
+
+      if (!unitsHighLighted.has(e)) {
+        unitsNotHighLighted.add(e);
+      }
+    }
+
+    // make a default ALU first. if it's in the highlighted, will be overridden, literally
+  } catch (err) {
+    _didIteratorError2 = true;
+    _iteratorError2 = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion2 && _iterator2.return) {
+        _iterator2.return();
+      }
+    } finally {
+      if (_didIteratorError2) {
+        throw _iteratorError2;
+      }
+    }
+  }
+
+  container.addChild((0, _builders.unitBuilder)('ALU'));
+
+  // make highlighted units
+  var _iteratorNormalCompletion3 = true;
+  var _didIteratorError3 = false;
+  var _iteratorError3 = undefined;
+
+  try {
+    for (var _iterator3 = unitsHighLighted[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+      var hl = _step3.value;
+
+      var unitSprite = void 0;
+      if (hl === 'ALU') {
+        unitSprite = (0, _builders.unitBuilder)(hl, '', true);
+      } else {
+        unitSprite = (0, _builders.unitBuilder)(hl, values[hl], true);
+      }
+      container.addChild(unitSprite);
+    }
+  } catch (err) {
+    _didIteratorError3 = true;
+    _iteratorError3 = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion3 && _iterator3.return) {
+        _iterator3.return();
+      }
+    } finally {
+      if (_didIteratorError3) {
+        throw _iteratorError3;
+      }
+    }
+  }
+
+  var _iteratorNormalCompletion4 = true;
+  var _didIteratorError4 = false;
+  var _iteratorError4 = undefined;
+
+  try {
+    for (var _iterator4 = unitsNotHighLighted[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+      var nhl = _step4.value;
+
+      var unitSprite = (0, _builders.unitBuilder)(nhl, values[nhl], false);
+      container.addChild(unitSprite);
+    }
+  } catch (err) {
+    _didIteratorError4 = true;
+    _iteratorError4 = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion4 && _iterator4.return) {
+        _iterator4.return();
+      }
+    } finally {
+      if (_didIteratorError4) {
+        throw _iteratorError4;
+      }
     }
   }
 

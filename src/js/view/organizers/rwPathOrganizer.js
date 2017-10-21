@@ -1,34 +1,34 @@
 import * as PIXI from 'pixi.js';
 import { jsonParser } from '../../helpers';
-import { ioCellArrowBuilder, ioBusBuilder } from '../builders';
+import { rwUnitArrowBuilder, rwBusBuilder } from '../builders';
 
-export default function ioPathOrganizer (state = {mode: 'IDLE', step: 0}) {
+export default function rwPathOrganizer (state = {mode: 'IDLE', step: 0}) {
   let container = new PIXI.Container();
   const path = jsonParser.processInterpreter(state)['path'];
-  const cellsFrom = new Set();
-  const cellsTo = new Set();
+  const unitsFrom = new Set();
+  const unitsTo = new Set();
 
-  // cell arrows
+  // unit arrows
   for (let p of path) {
-    cellsFrom.add(p['from']);
-    cellsTo.add(p['to']);
+    unitsFrom.add(p['from']);
+    unitsTo.add(p['to']);
   }
   for (let c of ['Akku', 'Eins', 'X', 'Y', 'Z', 'SAR', 'IAR', 'IR', 'SDR']) {
-    if (cellsFrom.has(c)) {
-      container.addChild(ioCellArrowBuilder(c, whichArrows(c, true), true));
-    } else if (cellsTo.has(c)) {
-      container.addChild(ioCellArrowBuilder(c, whichArrows(c, false, true), true));
+    if (unitsFrom.has(c)) {
+      container.addChild(rwUnitArrowBuilder(c, whichArrows(c, true), true));
+    } else if (unitsTo.has(c)) {
+      container.addChild(rwUnitArrowBuilder(c, whichArrows(c, false, true), true));
     } else {
-      container.addChild(ioCellArrowBuilder(c, whichArrows(c)));
+      container.addChild(rwUnitArrowBuilder(c, whichArrows(c)));
     }
   }
 
   // BG main bus
-  container.addChild(ioBusBuilder());
+  container.addChild(rwBusBuilder());
 
   // main bus
   for (let p of path) {
-    container.addChild(ioBusBuilder(p['from'], p['to']));
+    container.addChild(rwBusBuilder(p['from'], p['to']));
   }
 
   return container;

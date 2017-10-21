@@ -1,12 +1,12 @@
 import * as PIXI from 'pixi.js';
 import { positionSpecs } from '../../helpers';
-import { ioLineDrawer, ioCrossPointDrawer } from '../drawers';
+import { rwLineDrawer, rwCrossPointDrawer } from '../drawers';
 
-export default function ioBusBuilder (from = '', to = '') {
+export default function rwBusBuilder (from = '', to = '') {
   let sprite = new PIXI.Graphics();
 
   // background layer
-  const bgLayer = ioLineDrawer('v', 200, 60, 370);
+  const bgLayer = rwLineDrawer('v', 200, 60, 370);
   sprite.addChild(bgLayer);
 
   // colorful highlighted top
@@ -75,7 +75,7 @@ export default function ioBusBuilder (from = '', to = '') {
   }
 
   const length = y2 - y1;
-  const hlLayer = ioLineDrawer('v', 200, y1, length, true);
+  const hlLayer = rwLineDrawer('v', 200, y1, length, true);
   sprite.addChild(hlLayer);
 
   if (p1 > p2) {
@@ -84,10 +84,10 @@ export default function ioBusBuilder (from = '', to = '') {
 
   for (let i = 1; i <= 6; ++i) {
     if (p1 <= i && i <= p2) {
-      const xPoint = ioCrossPointDrawer(positionSpecs.ioCrossPointSpec(i), true);
+      const xPoint = rwCrossPointDrawer(positionSpecs.rwCrossPointSpec(i), true);
       sprite.addChild(xPoint);
     } else {
-      const xPoint = ioCrossPointDrawer(positionSpecs.ioCrossPointSpec(i), false);
+      const xPoint = rwCrossPointDrawer(positionSpecs.rwCrossPointSpec(i), false);
       sprite.addChild(xPoint);
     }
   }

@@ -1,7 +1,7 @@
-// returns cell position (upper left corner) and size
+// returns unit position (upper left corner) and size
 // [x, y, size]
-function cellSpec (cellName = '') {
-  switch (cellName) {
+function unitSpec (unitName = '') {
+  switch (unitName) {
     case 'Akku':
       return [30, 40, 6];
     case 'Eins':
@@ -29,8 +29,8 @@ function cellSpec (cellName = '') {
   }
 }
 
-function bitWidthSpec (cellName = '') {
-  switch (cellName) {
+function bitWidthSpec (unitName = '') {
+  switch (unitName) {
     case 'Akku':
       return [165, 65, 24];
     case 'Eins':
@@ -54,9 +54,9 @@ function bitWidthSpec (cellName = '') {
   }
 }
 
-// returns ioArrowHead polygon points (fills 8x8 grid)
+// returns rwArrowHead polygon points (fills 8x8 grid)
 // [x1,y1, x2,y2, x3,y3]
-function ioHArrowHeadSpec (lineSpec = [], dir = '') {
+function rwHArrowHeadSpec (lineSpec = [], dir = '') {
   let [lX, lY, rX, rY] = lineSpec;
   let arrowHead = [];
   switch (dir) {
@@ -72,10 +72,10 @@ function ioHArrowHeadSpec (lineSpec = [], dir = '') {
 }
 
 // horizontal line
-function ioHLineSpec (cellName = '', dir = 'lr') {
-  let [cx, cy, cs] = cellSpec(cellName);
+function rwHLineSpec (unitName = '', dir = 'lr') {
+  let [cx, cy, cs] = unitSpec(unitName);
   let [lX, rX, lY, rY] = [0, 0, 0, 0];
-  switch (cellName) {
+  switch (unitName) {
     case 'Akku':
     case 'Eins':
     case 'SAR':
@@ -107,7 +107,7 @@ function ioHLineSpec (cellName = '', dir = 'lr') {
   return [lX, lY, rX, rY, dir];
 }
 
-function ioMainLineSpec (id = 0) {
+function rwMainLineSpec (id = 0) {
   switch (id) {
     case 1:
       return [200, 62, 200, 138];
@@ -122,7 +122,7 @@ function ioMainLineSpec (id = 0) {
   }
 }
 
-function ioCrossPointSpec (id = 0) {
+function rwCrossPointSpec (id = 0) {
   switch (id) {
     case 1:
       return [198, 58, 202, 58, 202, 62, 198, 62];
@@ -139,4 +139,4 @@ function ioCrossPointSpec (id = 0) {
   }
 }
 
-export default {cellSpec, ioHArrowHeadSpec, ioHLineSpec, ioMainLineSpec, ioCrossPointSpec, bitWidthSpec};
+export default {unitSpec, rwHArrowHeadSpec, rwHLineSpec, rwMainLineSpec, rwCrossPointSpec, bitWidthSpec};
