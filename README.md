@@ -32,7 +32,7 @@ though as the code is quite ugly and convoluted right now.
 
 A TODO list of some planned add-on features:
 
-- [ ] Additional description for what each MIMA instruction does
+- [x] Additional description for what each MIMA instruction does
 - [ ] English localization (currently only in German)
 - [ ] Pointer over button animation
 
