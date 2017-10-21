@@ -27,11 +27,11 @@ export default function cuFetchBuilder (state = {mode: 'IDLE', step: 0}) {
 
   // write text onto the display, the highlighted one in blue
   for (let i = 0; i < 6; ++i) {
-    let isHilighted = false;
+    let isHighlighted = false;
     if (i === state.step - 1) {
-      isHilighted = true;
+      isHighlighted = true;
     }
-    const stepText = textDrawer(allInfo['proc'][i], isHilighted, 'cuStep', 540, 110 + 20 * i);
+    const stepText = textDrawer(allInfo['proc'][i], isHighlighted, 'cuStep', 540, 110 + 20 * i);
     sprite.addChild(stepText);
   }
 

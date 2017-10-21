@@ -43335,7 +43335,14 @@ function rwCrossPointSpec() {
   }
 }
 
-exports.default = { unitSpec: unitSpec, rwHArrowHeadSpec: rwHArrowHeadSpec, rwHLineSpec: rwHLineSpec, rwMainLineSpec: rwMainLineSpec, rwCrossPointSpec: rwCrossPointSpec, bitWidthSpec: bitWidthSpec };
+exports.default = {
+  unitSpec: unitSpec,
+  rwHArrowHeadSpec: rwHArrowHeadSpec,
+  rwHLineSpec: rwHLineSpec,
+  rwMainLineSpec: rwMainLineSpec,
+  rwCrossPointSpec: rwCrossPointSpec,
+  bitWidthSpec: bitWidthSpec
+};
 
 /***/ }),
 /* 224 */
@@ -43726,11 +43733,11 @@ function cuFetchBuilder() {
 
   // write text onto the display, the highlighted one in blue
   for (var _i = 0; _i < 6; ++_i) {
-    var isHilighted = false;
+    var isHighlighted = false;
     if (_i === state.step - 1) {
-      isHilighted = true;
+      isHighlighted = true;
     }
-    var _stepText = (0, _drawers.textDrawer)(allInfo['proc'][_i], isHilighted, 'cuStep', 540, 110 + 20 * _i);
+    var _stepText = (0, _drawers.textDrawer)(allInfo['proc'][_i], isHighlighted, 'cuStep', 540, 110 + 20 * _i);
     sprite.addChild(_stepText);
   }
 
