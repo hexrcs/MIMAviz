@@ -44660,7 +44660,7 @@ function unitOrganizer() {
   var container = new PIXI.Container();
   var path = _helpers.jsonParser.processInterpreter(state)['path'];
   var values = _helpers.jsonParser.processInterpreter(state)['values'];
-  var unitsWithValues = Object.keys(values);
+  var registerUnits = Object.keys(values);
   var unitsHighLighted = new Set();
   var unitsNotHighLighted = new Set();
 
@@ -44695,7 +44695,7 @@ function unitOrganizer() {
   var _iteratorError2 = undefined;
 
   try {
-    for (var _iterator2 = unitsWithValues[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+    for (var _iterator2 = registerUnits[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
       var e = _step2.value;
 
       if (!unitsHighLighted.has(e)) {
@@ -44703,7 +44703,7 @@ function unitOrganizer() {
       }
     }
 
-    // make a default ALU first. if it's in the highlighted, will be overridden, literally
+    // make highlighted units
   } catch (err) {
     _didIteratorError2 = true;
     _iteratorError2 = err;
@@ -44719,9 +44719,6 @@ function unitOrganizer() {
     }
   }
 
-  container.addChild((0, _builders.unitBuilder)('ALU'));
-
-  // make highlighted units
   var _iteratorNormalCompletion3 = true;
   var _didIteratorError3 = false;
   var _iteratorError3 = undefined;
@@ -44753,6 +44750,10 @@ function unitOrganizer() {
     }
   }
 
+  if (!unitsHighLighted.has('ALU')) {
+    unitsNotHighLighted.add('ALU');
+  }
+
   var _iteratorNormalCompletion4 = true;
   var _didIteratorError4 = false;
   var _iteratorError4 = undefined;
@@ -44761,7 +44762,12 @@ function unitOrganizer() {
     for (var _iterator4 = unitsNotHighLighted[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
       var nhl = _step4.value;
 
-      var unitSprite = (0, _builders.unitBuilder)(nhl, values[nhl], false);
+      var unitSprite = void 0;
+      if (nhl === 'ALU') {
+        unitSprite = (0, _builders.unitBuilder)(nhl);
+      } else {
+        unitSprite = (0, _builders.unitBuilder)(nhl, values[nhl], false);
+      }
       container.addChild(unitSprite);
     }
   } catch (err) {

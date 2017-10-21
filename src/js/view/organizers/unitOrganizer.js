@@ -6,7 +6,7 @@ export default function unitOrganizer (state = {mode: 'IDLE', step: 0}) {
   let container = new PIXI.Container();
   const path = jsonParser.processInterpreter(state)['path'];
   const values = jsonParser.processInterpreter(state)['values'];
-  const unitsWithValues = Object.keys(values);
+  const registerUnits = Object.keys(values);
   const unitsHighLighted = new Set();
   const unitsNotHighLighted = new Set();
 
@@ -15,14 +15,11 @@ export default function unitOrganizer (state = {mode: 'IDLE', step: 0}) {
     unitsHighLighted.add(p['to']);
   }
 
-  for (let e of unitsWithValues) {
+  for (let e of registerUnits) {
     if (!unitsHighLighted.has(e)) {
       unitsNotHighLighted.add(e);
     }
   }
-
-  // make a default ALU first. if it's in the highlighted, will be overridden, literally
-  container.addChild(unitBuilder('ALU'));
 
   // make highlighted units
   for (let hl of unitsHighLighted) {
@@ -35,8 +32,17 @@ export default function unitOrganizer (state = {mode: 'IDLE', step: 0}) {
     container.addChild(unitSprite);
   }
 
+  if (!unitsHighLighted.has('ALU')) {
+    unitsNotHighLighted.add('ALU');
+  }
+
   for (let nhl of unitsNotHighLighted) {
-    const unitSprite = unitBuilder(nhl, values[nhl], false);
+    let unitSprite;
+    if (nhl === 'ALU') {
+      unitSprite = unitBuilder(nhl);
+    } else {
+      unitSprite = unitBuilder(nhl, values[nhl], false);
+    }
     container.addChild(unitSprite);
   }
 
