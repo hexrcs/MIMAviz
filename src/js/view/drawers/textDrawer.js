@@ -155,7 +155,7 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
         break;
       case 'bitWidthText':
         sprite = new PIXI.Text(text,
-          {fontFamily: 'Courier', fontSize: '9pt', fill: colorCode.DEFAULT_ALT}
+          {fontFamily: 'Courier', fontSize: '9pt', fill: colorCode.INSIDE_ALT}
         );
         sprite.x = x;
         sprite.y = y;

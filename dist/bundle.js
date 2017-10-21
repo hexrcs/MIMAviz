@@ -21637,7 +21637,7 @@ function textDrawer() {
         sprite.y = y + 20 / 2;
         break;
       case 'bitWidthText':
-        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '9pt', fill: _helpers.colorCode.DEFAULT_ALT });
+        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '9pt', fill: _helpers.colorCode.INSIDE_ALT });
         sprite.x = x;
         sprite.y = y;
         break;
