@@ -4,7 +4,7 @@
 
 MIMAviz is a rewrite of the original [MIMA Simulation](http://ti.ira.uka.de/Visualisierungen/Mima/) in Javascript
 using [Pixi.js](https://github.com/pixijs/pixi.js). The original visualization app was a Java Applet (written in 
-more than 10 years ago) which doesn't run in most modern browsers any more.
+more than 10 years ago) which doesn't work in most modern browsers any more.
 
 You may visit the hosted [latest version](https://hexrcs.github.io/MIMAviz/) and give it a spin right now!
 
@@ -65,20 +65,20 @@ by Tamim Asfour). I have made minor adjustments to fit them in the new context o
 
 ## Check out these other awesome projects!
 
-- [MIMA Toolchain](https://github.com/cbdevnet/mima) by [cbdev](https://github.com/cbdevnet) - This is the 
+- *[MIMA Toolchain](https://github.com/cbdevnet/mima) by [cbdev](https://github.com/cbdevnet)* - This is the 
 project which first inspired me to learn more about MIMA
-- [mimaFPGA](https://github.com/mkiesinger/mimaFPGA) by [Manuel Killinger](https://github.com/mkiesinger) - A 
+- *[mimaFPGA](https://github.com/mkiesinger/mimaFPGA) by [Manuel Killinger](https://github.com/mkiesinger)* - A 
 VHDL implementation of MIMA
-- [BitFriendly](https://github.com/hexrcs/BitFriendly) - Shameless self promotion. ;) A tiny library which helps
-doing bitwise stuff in JS, meant to be utilized by my other MIMA compiler/interpreter project (which is 
-still under development). 
-- [phiresky/mima](https://github.com/phiresky/mima) by [phiresky](https://github.com/phiresky) - I didn't realize 
+- *[BitFriendly](https://github.com/hexrcs/BitFriendly) by [me](https://github.com/hexrcs)* - Shameless self 
+promotion. ;) A tiny library which helps doing bitwise stuff in JS, meant to be utilized by my other MIMA 
+compiler/interpreter project (which is still under development)
+- *[phiresky/mima](https://github.com/phiresky/mima) by [phiresky](https://github.com/phiresky)* - I didn't realize 
 that there's already a super cool MIMA compiler/interpreter project written in Javascript until recently. It looks 
-awesome and can transpile MIMA programs to C.
-- [MiMaSimu](https://github.com/Indidev/MiMaSimu) by [Indidev](https://github.com/Indidev) - A MIMA simulator 
+awesome and can transpile MIMA programs to C
+- *[MiMaSimu](https://github.com/Indidev/MiMaSimu) by [Indidev](https://github.com/Indidev)* - A MIMA simulator 
 written in Java, but with GUI and visualization!
-- [timhabermaas/Mima](https://github.com/timhabermaas/Mima) by [Tim Habermaas](https://github.com/timhabermaas) - A
-MIMA simulator written in Ruby.
+- *[timhabermaas/Mima](https://github.com/timhabermaas/Mima) by [Tim Habermaas](https://github.com/timhabermaas)* - A
+MIMA simulator written in Ruby
 
 ## License
 
