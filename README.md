@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+![MIMAviz Screenshot](MIMAviz.png)
+
 MIMAviz is a rewrite of the original [MIMA Simulation](http://ti.ira.uka.de/Visualisierungen/Mima/) in Javascript
 using [Pixi.js](https://github.com/pixijs/pixi.js). The original visualization app was a Java Applet which doesn't 
 work in most modern browsers any more.
