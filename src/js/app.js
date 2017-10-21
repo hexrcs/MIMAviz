@@ -3,7 +3,7 @@ import * as store from './store';
 import * as view from './view';
 
 export const app = new PIXI.Application({antialias: true, transparent: true});
-document.body.appendChild(app.view);
+document.getElementById('mimaviz').appendChild(app.view);
 
 export const rendererSize = {width: app.renderer.width, height: app.renderer.height};
 
