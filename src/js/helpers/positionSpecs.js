@@ -29,6 +29,31 @@ function cellSpec (cellName = '') {
   }
 }
 
+function bitWidthSpec (cellName = '') {
+  switch (cellName) {
+    case 'Akku':
+      return [165, 65, 24];
+    case 'Eins':
+      return [165, 145, 24];
+    case 'SAR':
+      return [165, 435, 20];
+    case 'IAR':
+      return [245, 65, 20];
+    case 'IR':
+      return [245, 145, 24];
+    case 'Z':
+      return [245, 225, 24];
+    case 'X':
+      return [215, 355, 24];
+    case 'Y':
+      return [285, 385, 24];
+    case 'SDR':
+      return [220, 435, 24];
+    default:
+      return [];
+  }
+}
+
 // returns ioArrowHead polygon points (fills 8x8 grid)
 // [x1,y1, x2,y2, x3,y3]
 function ioHArrowHeadSpec (lineSpec = [], dir = '') {
@@ -114,4 +139,4 @@ function ioCrossPointSpec (id = 0) {
   }
 }
 
-export default {cellSpec, ioHArrowHeadSpec, ioHLineSpec, ioMainLineSpec, ioCrossPointSpec};
+export default {cellSpec, ioHArrowHeadSpec, ioHLineSpec, ioMainLineSpec, ioCrossPointSpec, bitWidthSpec};

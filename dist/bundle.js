@@ -21576,6 +21576,11 @@ function textDrawer() {
         sprite.x = 540 + 5;
         sprite.y = 410 + 20 / 2;
         break;
+      case 'bitWidthText':
+        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '9pt' });
+        sprite.x = x;
+        sprite.y = y;
+        break;
     }
   } else {
     switch (type) {
@@ -21630,6 +21635,11 @@ function textDrawer() {
         sprite.anchor.set(0, 0.5);
         sprite.x = x + 5;
         sprite.y = y + 20 / 2;
+        break;
+      case 'bitWidthText':
+        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '9pt', fill: _helpers.colorCode.DEFAULT_ALT });
+        sprite.x = x;
+        sprite.y = y;
         break;
     }
   }
@@ -42975,6 +42985,7 @@ function bgBuilder() {
   makeInsideBG(sprite);
   makeArrowTipsBG(sprite);
   makeALUioArrows(sprite);
+  makeCUArrowAndBitWidth(sprite);
   makeCellsBG(sprite);
 
   return sprite;
@@ -43021,6 +43032,17 @@ function makeArrowTipsBG() {
   sprite.beginFill(_helpers.colorCode.BORDER);
   sprite.drawPolygon([200, 30, 196, 38, 198, 38, 198, 58, 202, 58, 202, 38, 204, 38]);
   sprite.drawPolygon([198, 432, 202, 432, 202, 458, 204, 458, 200, 466, 196, 458, 198, 458]);
+}
+
+function makeCUArrowAndBitWidth() {
+  var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
+
+  sprite.beginFill(_helpers.colorCode.BORDER);
+  sprite.drawPolygon([398, 160, 398, 172, 511, 172, 511, 174, 519, 170, 511, 166, 511, 168, 402, 168, 402, 160]);
+  var textSprite = new PIXI.Text('8', { fontFamily: 'Courier', fontSize: '9pt' });
+  textSprite.x = 455;
+  textSprite.y = 175;
+  sprite.addChild(textSprite);
 }
 
 function makeALUioArrows() {
@@ -43177,6 +43199,33 @@ function cellSpec() {
   }
 }
 
+function bitWidthSpec() {
+  var cellName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+
+  switch (cellName) {
+    case 'Akku':
+      return [165, 65, 24];
+    case 'Eins':
+      return [165, 145, 24];
+    case 'SAR':
+      return [165, 435, 20];
+    case 'IAR':
+      return [245, 65, 20];
+    case 'IR':
+      return [245, 145, 24];
+    case 'Z':
+      return [245, 225, 24];
+    case 'X':
+      return [215, 355, 24];
+    case 'Y':
+      return [285, 385, 24];
+    case 'SDR':
+      return [220, 435, 24];
+    default:
+      return [];
+  }
+}
+
 // returns ioArrowHead polygon points (fills 8x8 grid)
 // [x1,y1, x2,y2, x3,y3]
 function ioHArrowHeadSpec() {
@@ -43286,7 +43335,7 @@ function ioCrossPointSpec() {
   }
 }
 
-exports.default = { cellSpec: cellSpec, ioHArrowHeadSpec: ioHArrowHeadSpec, ioHLineSpec: ioHLineSpec, ioMainLineSpec: ioMainLineSpec, ioCrossPointSpec: ioCrossPointSpec };
+exports.default = { cellSpec: cellSpec, ioHArrowHeadSpec: ioHArrowHeadSpec, ioHLineSpec: ioHLineSpec, ioMainLineSpec: ioMainLineSpec, ioCrossPointSpec: ioCrossPointSpec, bitWidthSpec: bitWidthSpec };
 
 /***/ }),
 /* 224 */
@@ -44080,6 +44129,15 @@ function ioCellArrowBuilder() {
 
   var line = (0, _drawers.ioLineDrawer)('h', lX, lY, rX - lX, alt_hl);
   sprite.addChild(line);
+
+  var _positionSpecs$bitWid = _helpers.positionSpecs.bitWidthSpec(name),
+      _positionSpecs$bitWid2 = _slicedToArray(_positionSpecs$bitWid, 3),
+      tX = _positionSpecs$bitWid2[0],
+      tY = _positionSpecs$bitWid2[1],
+      bw = _positionSpecs$bitWid2[2];
+
+  var bwText = (0, _drawers.textDrawer)(bw, alt_hl, 'bitWidthText', tX, tY);
+  sprite.addChild(bwText);
 
   var arrowHeads = [];
   switch (alt_arrows) {

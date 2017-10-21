@@ -1,12 +1,15 @@
 import * as PIXI from 'pixi.js';
 import { positionSpecs } from '../../helpers';
-import { ioLineDrawer, ioArrowHeadDrawer } from '../drawers';
+import { ioLineDrawer, ioArrowHeadDrawer, textDrawer } from '../drawers';
 
 export default function ioCellArrowBuilder (name = '', alt_arrows = 'lr', alt_hl = false) {
   let sprite = new PIXI.Graphics();
   const [lX, lY, rX, rY] = positionSpecs.ioHLineSpec(name, alt_arrows);
   const line = ioLineDrawer('h', lX, lY, rX - lX, alt_hl);
   sprite.addChild(line);
+  const [tX, tY, bw] = positionSpecs.bitWidthSpec(name);
+  const bwText = textDrawer(bw, alt_hl, 'bitWidthText', tX, tY);
+  sprite.addChild(bwText);
 
   const arrowHeads = [];
   switch (alt_arrows) {

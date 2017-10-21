@@ -12,6 +12,7 @@ export default function bgBuilder () {
   makeInsideBG(sprite);
   makeArrowTipsBG(sprite);
   makeALUioArrows(sprite);
+  makeCUArrowAndBitWidth(sprite);
   makeCellsBG(sprite);
 
   return sprite;
@@ -54,6 +55,19 @@ function makeArrowTipsBG (sprite = new PIXI.Graphics()) {
   sprite.drawPolygon(
     [198, 432, 202, 432, 202, 458, 204, 458, 200, 466, 196, 458, 198, 458]
   );
+}
+
+function makeCUArrowAndBitWidth (sprite = new PIXI.Graphics()) {
+  sprite.beginFill(colorCode.BORDER);
+  sprite.drawPolygon(
+    [398, 160, 398, 172, 511, 172, 511, 174, 519, 170, 511, 166, 511, 168, 402, 168, 402, 160]
+  );
+  const textSprite = new PIXI.Text('8',
+    {fontFamily: 'Courier', fontSize: '9pt'}
+  );
+  textSprite.x = 455;
+  textSprite.y = 175;
+  sprite.addChild(textSprite);
 }
 
 function makeALUioArrows (sprite = new PIXI.Graphics()) {

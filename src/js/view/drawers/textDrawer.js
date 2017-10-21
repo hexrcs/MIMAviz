@@ -79,6 +79,13 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
         sprite.x = 540 + 5;
         sprite.y = 410 + 20 / 2;
         break;
+      case 'bitWidthText':
+        sprite = new PIXI.Text(text,
+          {fontFamily: 'Courier', fontSize: '9pt'}
+        );
+        sprite.x = x;
+        sprite.y = y;
+        break;
     }
   } else {
     switch (type) {
@@ -145,6 +152,13 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
         sprite.anchor.set(0, 0.5);
         sprite.x = x + 5;
         sprite.y = y + 20 / 2;
+        break;
+      case 'bitWidthText':
+        sprite = new PIXI.Text(text,
+          {fontFamily: 'Courier', fontSize: '9pt', fill: colorCode.DEFAULT_ALT}
+        );
+        sprite.x = x;
+        sprite.y = y;
         break;
     }
   }
