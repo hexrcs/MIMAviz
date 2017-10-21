@@ -59,6 +59,8 @@ function pointerDown (name = '', store) {
     case 'STV':
       if (name !== store.getState().mode) {
         store.dispatch({type: 'MODE_CHANGE', payload: name});
+      } else {
+        store.dispatch({type: 'MODE_CHANGE', payload: 'IDLE'})
       }
       break;
     case 'BACK':
