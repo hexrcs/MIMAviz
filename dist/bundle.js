@@ -2045,7 +2045,7 @@ Object.defineProperty(exports, 'buttonBGDrawer', {
   }
 });
 
-var _unitLineDrawer = __webpack_require__(260);
+var _unitLineDrawer = __webpack_require__(227);
 
 Object.defineProperty(exports, 'unitLineDrawer', {
   enumerable: true,
@@ -2072,7 +2072,7 @@ Object.defineProperty(exports, 'cuStepBGDrawer', {
   }
 });
 
-var _rwArrowHeadDrawer = __webpack_require__(251);
+var _rwArrowHeadDrawer = __webpack_require__(230);
 
 Object.defineProperty(exports, 'rwArrowHeadDrawer', {
   enumerable: true,
@@ -2081,7 +2081,7 @@ Object.defineProperty(exports, 'rwArrowHeadDrawer', {
   }
 });
 
-var _rwLineDrawer = __webpack_require__(252);
+var _rwLineDrawer = __webpack_require__(231);
 
 Object.defineProperty(exports, 'rwLineDrawer', {
   enumerable: true,
@@ -2090,7 +2090,7 @@ Object.defineProperty(exports, 'rwLineDrawer', {
   }
 });
 
-var _rwCrossPointDrawer = __webpack_require__(253);
+var _rwCrossPointDrawer = __webpack_require__(232);
 
 Object.defineProperty(exports, 'rwCrossPointDrawer', {
   enumerable: true,
@@ -3161,7 +3161,7 @@ Object.defineProperty(exports, 'bottomDescriptionBuilder', {
   }
 });
 
-var _unitBuilder = __webpack_require__(261);
+var _unitBuilder = __webpack_require__(234);
 
 Object.defineProperty(exports, 'unitBuilder', {
   enumerable: true,
@@ -3188,7 +3188,7 @@ Object.defineProperty(exports, 'cuFetchBuilder', {
   }
 });
 
-var _rwBusBuilder = __webpack_require__(248);
+var _rwBusBuilder = __webpack_require__(237);
 
 Object.defineProperty(exports, 'rwBusBuilder', {
   enumerable: true,
@@ -3197,7 +3197,7 @@ Object.defineProperty(exports, 'rwBusBuilder', {
   }
 });
 
-var _rwUnitArrowBuilder = __webpack_require__(262);
+var _rwUnitArrowBuilder = __webpack_require__(238);
 
 Object.defineProperty(exports, 'rwUnitArrowBuilder', {
   enumerable: true,
@@ -43145,7 +43145,7 @@ module.exports = {"IDLE":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","
 /* 221 */
 /***/ (function(module, exports) {
 
-module.exports = {"IDLE":[{"bottomDescription":"Dieses Programm wurde entwickelt, um zukünftigen Generationen von Studenten das Funktionsprinzip der MIMA (Minimalautomat) anschaulich zu erklären. Ausgangsbasis für das Programm war das bereits vorhandene Programm zur Visualisierung der Festkomma-Arithmetik. Für Kritik und Verbesserungsvorschläge bin ich jederzeit offen. Der Autor.","cuDescription":"Willkommen bei MIMAviz!"}],"ADD":[{"bottomDescription":"ADD - Der Akkumulator wird überschrieben durch das Ergebnis der Addition von Akku und dem Inhalt von <a>.","cuDescription":"Jetzt START drücken!"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein ADD Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte yP für ADD Befehl"},{"bottomDescription":"Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!","cuDescription":"Adressiere a von <a>"},{"bottomDescription":"Der ADD Befehl soll ja den Akku mit der Speicherzelle <a> durch eine Addition verknüpfen. Diese Addition wird vorbereitet, indem schonmal der Inhalt des Akku ins X Register transferiert wird, während wir auf den Speicher warten, der uns den Inhalt von a, also <a> geben soll.","cuDescription":"Akku + <a> vorbereiten"},{"bottomDescription":"Jo, sodele, nun warten wir eben noch kurz auf den Speicher, denn dieser benötigt immer drei Takte, bis er das verlangte Datum abliefern kann.","cuDescription":"Der Speicher ist lahm!! ;-)"},{"bottomDescription":"Jetzt haben wir unseren langersehnten Wert <a> am SDR (Speicherdatenregister) anliegen. Da in X schon der Inhalt des Akku steht schreiben wir in Y unseren Inhalt von Speicherzelle a hin.","cuDescription":"Speicher ist fertig mit lesen!"},{"bottomDescription":"Schnell noch die beiden Werte addieren und das gewünschte Ergebnis steht im Z Register. Damit die ALU weiß, das sie eine Addition durchzuführen hat, gibt das Steuerwerk an die Eingänge der ALU C2C1C0 die Werte (001).","cuDescription":"Addition Z:=X+Y"},{"bottomDescription":"Wie in der Aufgabenstellung für unseren ADD a Befehl zu entnehmen ist, soll das Ergebnis zurück in den Akku geschrieben werden.","cuDescription":"Ergebnis Z in den Akku"}],"LDC":[{"bottomDescription":"LDC - Lade den Akkumulator mit einer 20-bit Konstante.","cuDescription":"Jetzt START drücken!"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein LDC Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte yP für LDC Befehl"},{"bottomDescription":"Das Praktische an dem OpCode des LDC Befehls ist, daß er Null ist. Somit brauchen wir das Instruktionsregister IR nicht mehr weiter filtern und können dieses direkt in den Akku laden.","cuDescription":"Lade Konstante in Akku"}],"LDV":[{"bottomDescription":"LDV - Lade den Akkumulator mit dem Inhalt von <a>.","cuDescription":"Jetzt START drücken!"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein LDV Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte yP für LDV Befehl"},{"bottomDescription":"Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!","cuDescription":"Adressiere a von <a>"},{"bottomDescription":"Wir müssen bei dieser MiMa Technologie 3 Takte lang auf eine Antwort vom Speicher warten!","cuDescription":"Warten auf den Speicher!"},{"bottomDescription":"Wir müssen bei dieser MiMa Technologie 3 Takte lang auf eine Antwort vom Speicher warten!","cuDescription":"Warten auf den Speicher!"},{"bottomDescription":"Wie man es nun von diesem Befehl erwartet, wird die Antwort aus dem Speicher an den Akkumulator (Akku) übergeben.","cuDescription":"Antwort in Akku schreiben."}],"NOT":[{"bottomDescription":"NOT - Der Akkumulator wird überschrieben durch das Einerkomplement seines Inhalts.","cuDescription":"Jetzt START drücken!"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein NOT Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte yP für NOT Befehl"},{"bottomDescription":"Der Akkumulator (Akku) wird zur Komplementbildung durch die ALU in das X Register geladen.","cuDescription":"Akku ins X register laden."},{"bottomDescription":"Die ALU übernimmt für uns die Aufgabe der Komplementbildung (siehe Technische Informatik I). Dazu wird vom Steuerwerk an die ALU das Signal C2C1C0=110 angelegt.","cuDescription":"ALU berechnet Komplement."},{"bottomDescription":"Das Ergebnis der Komplementberechnung wird zurück in den Akkumulator geschrieben.","cuDescription":"Ergebnis in Akku speichern."}],"STV":[{"bottomDescription":"STV - Lade die adressierende Speicherzelle an <a> mit dem Inhalt des Akkumulators.","cuDescription":"Jetzt START drücken!"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein STV Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte yP für STV Befehl"},{"bottomDescription":"Der Inhalt des Akkumulators (Akku) soll in den Speicher geschrieben werden. Also laden wir den Akku in das Speicherdatenregister (SDR).","cuDescription":"Daten auf Datenbus legen."},{"bottomDescription":"Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!","cuDescription":"Adressiere a von <a>"},{"bottomDescription":"Wir müssen bei dieser MiMa Technologie 3 Takte lang auf den Speicher warten!","cuDescription":"Warten auf den Speicher!"},{"bottomDescription":"Wir müssen bei dieser MiMa Technologie 3 Takte lang auf den Speicher warten!","cuDescription":"Warten auf den Speicher!"}]}
+module.exports = {"IDLE":[{"bottomDescription":"Dieses Programm dient dazu, das Funktionsprinzip der MIMA zukünftigen Generationen von Studenten anschaulich zu erklären. Da die originale Visualisierung (Java Applet) leider in meisten modernen Browsern nicht mehr läuft, wurde MIMAviz als eine Neuerstellung der originalen MIMA Simulation in Javascript entwickelt. \n\nMehr Info unter https://github.com/hexrcs/MIMAviz","cuDescription":"Willkommen bei MIMAviz!"}],"ADD":[{"bottomDescription":"ADD - Der Akkumulator wird überschrieben durch das Ergebnis der Addition von Akku und dem Inhalt von <a>.","cuDescription":"Jetzt START drücken!"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein ADD Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte Exec-Phase für ADD Befehl"},{"bottomDescription":"Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!","cuDescription":"Adressiere a von <a>"},{"bottomDescription":"Der ADD Befehl soll ja den Akku mit der Speicherzelle <a> durch eine Addition verknüpfen. Diese Addition wird vorbereitet, indem schonmal der Inhalt des Akku ins X Register transferiert wird, während wir auf den Speicher warten, der uns den Inhalt von a, also <a> geben soll.","cuDescription":"Akku + <a> vorbereiten"},{"bottomDescription":"Jo, sodele, nun warten wir eben noch kurz auf den Speicher, denn dieser benötigt immer drei Takte, bis er das verlangte Datum abliefern kann.","cuDescription":"Der Speicher ist lahm!! ;-)"},{"bottomDescription":"Jetzt haben wir unseren langersehnten Wert <a> am SDR (Speicherdatenregister) anliegen. Da in X schon der Inhalt des Akku steht schreiben wir in Y unseren Inhalt von Speicherzelle a hin.","cuDescription":"Speicher ist fertig mit lesen!"},{"bottomDescription":"Schnell noch die beiden Werte addieren und das gewünschte Ergebnis steht im Z Register. Damit die ALU weiß, das sie eine Addition durchzuführen hat, gibt das Steuerwerk an die Eingänge der ALU C2C1C0 die Werte (001).","cuDescription":"Addition Z:=X+Y"},{"bottomDescription":"Wie in der Aufgabenstellung für unseren ADD a Befehl zu entnehmen ist, soll das Ergebnis zurück in den Akku geschrieben werden.","cuDescription":"Ergebnis Z in den Akku"}],"LDC":[{"bottomDescription":"LDC - Lade den Akkumulator mit einer 20-bit Konstante.","cuDescription":"Jetzt START drücken!"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein LDC Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte Exec-Phase für LDC Befehl"},{"bottomDescription":"Das Praktische an dem OpCode des LDC Befehls ist, daß er Null ist. Somit brauchen wir das Instruktionsregister IR nicht mehr weiter filtern und können dieses direkt in den Akku laden.","cuDescription":"Lade Konstante in Akku"}],"LDV":[{"bottomDescription":"LDV - Lade den Akkumulator mit dem Inhalt von <a>.","cuDescription":"Jetzt START drücken!"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein LDV Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte Exec-Phase für LDV Befehl"},{"bottomDescription":"Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!","cuDescription":"Adressiere a von <a>"},{"bottomDescription":"Wir müssen bei dieser MiMa Technologie 3 Takte lang auf eine Antwort vom Speicher warten!","cuDescription":"Warten auf den Speicher!"},{"bottomDescription":"Wir müssen bei dieser MiMa Technologie 3 Takte lang auf eine Antwort vom Speicher warten!","cuDescription":"Warten auf den Speicher!"},{"bottomDescription":"Wie man es nun von diesem Befehl erwartet, wird die Antwort aus dem Speicher an den Akkumulator (Akku) übergeben.","cuDescription":"Antwort in Akku schreiben."}],"NOT":[{"bottomDescription":"NOT - Der Akkumulator wird überschrieben durch das Einerkomplement seines Inhalts.","cuDescription":"Jetzt START drücken!"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein NOT Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte Exec-Phase für NOT Befehl"},{"bottomDescription":"Der Akkumulator (Akku) wird zur Komplementbildung durch die ALU in das X Register geladen.","cuDescription":"Akku ins X register laden."},{"bottomDescription":"Die ALU übernimmt für uns die Aufgabe der Komplementbildung (siehe Technische Informatik I). Dazu wird vom Steuerwerk an die ALU das Signal C2C1C0=110 angelegt.","cuDescription":"ALU berechnet Komplement."},{"bottomDescription":"Das Ergebnis der Komplementberechnung wird zurück in den Akkumulator geschrieben.","cuDescription":"Ergebnis in Akku speichern."}],"STV":[{"bottomDescription":"STV - Lade die adressierende Speicherzelle an <a> mit dem Inhalt des Akkumulators.","cuDescription":"Jetzt START drücken!"},{"bottomDescription":"Im IAR, dem Instruktionsadreßregister steht die Adresse des auszuführenden Befehls. IAR könnte man auch als Befehlszähler bezeichnen. Damit wir nun an die Speicherzelle und deren Inhalt kommen, müssen wir diese an das SAR (Speicheradreßregister) weitergeben. Nach 3x R=1 Lesezyklen bekommen wir unser gewünschtes Datum. Außerdem laden wir gleichzeitig (um Zeit zu sparen) die gleiche Adresse auch in das X Register der ALU. Später soll die ALU den Wert um eins erhöhen, damit unsere MiMa beim nächsten mal den nachfolgenden Befehl liest.","cuDescription":"IAR zeige auf ein STV Befehl"},{"bottomDescription":"Wie schon erwähnt, soll das IAR (Instruktionsadreßregister) um EINS erhöht werden. Wie besser könnte das geschehen, als durch eine Addition mit Eins? Der erste Operand (die gegebene Speicheradresse im IAR) ist bereits vorhin schon ins Register X geladen worden. Die Konstante EINS wird nun sinnvollerweise ins Y Register transferiert. Sei nun gespannt auf den dritten Takt!!","cuDescription":"Lade 1 nach Y für IAR++"},{"bottomDescription":"Unsere ALU soll nun die bereits erwähnten X und Y Register addieren. Für die Addition gibt unser Steuerwerk an den Leitungen C2C1C0 die Werte 001. Am besten du schaust dir die Tabelle auf dem Blatt \"Architektur der MIMA\" genauer an. Die ALU kann nämlich ziemlich viel!","cuDescription":"ALU addiert: Z:=X+Y"},{"bottomDescription":"Das langersehnte Ergebnis unserer Addition ist nun abholfertig im Z Register verfügbar. Wohin nun mit dem Ergebnis? Hast du gut aufgepaßt? Ja, richtig, es war Ziel das IAR um eins zu erhöhen. Also tun wir das in dem wir das Ergebnis IAR+1 von Z nach IAR zurückschreiben.","cuDescription":"IAR++ von Z ins IAR schreiben."},{"bottomDescription":"Nun haben wir auch den Inhalt der Speicherzelle [IAR] im SDR (Speicherdatenregister) vorliegen. Hat ein bißchen gedauert, aber der Speicher ist halt nicht so schnell. Diesen Wert speichern wir zur Interpretation und Ausführung durch das Steuerwerk in das IR (Instruktionsregister).","cuDescription":"Befehl aus Speicher ins IR schreiben"},{"bottomDescription":"D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!","cuDescription":"Starte Exec-Phase für STV Befehl"},{"bottomDescription":"Der Inhalt des Akkumulators (Akku) soll in den Speicher geschrieben werden. Also laden wir den Akku in das Speicherdatenregister (SDR).","cuDescription":"Daten auf Datenbus legen."},{"bottomDescription":"Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!","cuDescription":"Adressiere a von <a>"},{"bottomDescription":"Wir müssen bei dieser MiMa Technologie 3 Takte lang auf den Speicher warten!","cuDescription":"Warten auf den Speicher!"},{"bottomDescription":"Wir müssen bei dieser MiMa Technologie 3 Takte lang auf den Speicher warten!","cuDescription":"Warten auf den Speicher!"}]}
 
 /***/ }),
 /* 222 */
@@ -43534,7 +43534,63 @@ function buttonBGDrawer() {
 }
 
 /***/ }),
-/* 227 */,
+/* 227 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+exports.default = unitLineDrawer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function unitLineDrawer() {
+  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var isHighlighted = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  var sprite = new PIXI.Graphics();
+  if (!isHighlighted) {
+    sprite.lineStyle(1, _helpers.colorCode.DARK_GRAY);
+  } else {
+    sprite.lineStyle(2, _helpers.colorCode.RED);
+  }
+
+  if (name === 'ALU') {
+    sprite.drawPolygon([340, 260, 300, 300, 360, 300, 370, 290, 380, 300, 440, 300, 400, 260, 340, 260]);
+  } else {
+    var _positionSpecs$unitSp = _helpers.positionSpecs.unitSpec(name),
+        _positionSpecs$unitSp2 = _slicedToArray(_positionSpecs$unitSp, 3),
+        x = _positionSpecs$unitSp2[0],
+        y = _positionSpecs$unitSp2[1],
+        unitSize = _positionSpecs$unitSp2[2];
+
+    sprite.drawRect(x, y, unitSize * 20, 40);
+    // horizontal
+    sprite.moveTo(x, y + 20);
+    sprite.lineTo(x + unitSize * 20, y + 20);
+    // vertical
+    for (var i = 1; i < unitSize; ++i) {
+      sprite.moveTo(x + i * 20, y + 20);
+      sprite.lineTo(x + i * 20, y + 40);
+    }
+  }
+
+  return sprite;
+}
+
+/***/ }),
 /* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -43606,9 +43662,127 @@ function cuStepBGDrawer() {
 }
 
 /***/ }),
-/* 230 */,
-/* 231 */,
-/* 232 */,
+/* 230 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = rwArrowHeadDrawer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function rwArrowHeadDrawer() {
+  var arrowHead = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var isHighlighted = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  var sprite = new PIXI.Graphics();
+  if (!isHighlighted) {
+    sprite.beginFill(_helpers.colorCode.DARK_GRAY);
+  } else {
+    sprite.beginFill(_helpers.colorCode.RED);
+  }
+  sprite.drawPolygon(arrowHead);
+
+  return sprite;
+}
+
+/***/ }),
+/* 231 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = rwLineDrawer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function rwLineDrawer() {
+  var dir = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'h';
+  var x = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  var y = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+  var length = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
+  var isHighlighted = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+
+  var sprite = new PIXI.Graphics();
+  if (!isHighlighted) {
+    sprite.lineStyle(4, _helpers.colorCode.DARK_GRAY);
+  } else {
+    sprite.lineStyle(4, _helpers.colorCode.RED);
+  }
+
+  var dx = x,
+      dy = y;
+
+  switch (dir) {
+    case 'h':
+      dx += length;
+      break;
+    case 'v':
+      dy += length;
+      break;
+  }
+  sprite.moveTo(x, y);
+  sprite.lineTo(dx, dy);
+
+  return sprite;
+}
+
+/***/ }),
+/* 232 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = rwCrossPointDrawer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function rwCrossPointDrawer() {
+  var points = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var isHighlighted = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  var sprite = new PIXI.Graphics();
+  if (!isHighlighted) {
+    sprite.beginFill(_helpers.colorCode.DARK_GRAY);
+  } else {
+    sprite.beginFill(_helpers.colorCode.RED);
+  }
+  sprite.drawPolygon(points);
+
+  return sprite;
+}
+
+/***/ }),
 /* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -43630,7 +43804,57 @@ function bottomDescriptionBuilder() {
 }
 
 /***/ }),
-/* 234 */,
+/* 234 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+exports.default = unitBuilder;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+var _drawers = __webpack_require__(9);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function unitBuilder() {
+  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var value = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+  var isHighlighted = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+  var sprite = new PIXI.Container();
+  if (name === 'ALU') {
+    var ALULabel = (0, _drawers.textDrawer)(name, isHighlighted, 'ALULabel');
+    var ALULines = (0, _drawers.unitLineDrawer)(name, isHighlighted);
+    sprite.addChild(ALULabel, ALULines);
+  } else {
+    var _positionSpecs$unitSp = _helpers.positionSpecs.unitSpec(name),
+        _positionSpecs$unitSp2 = _slicedToArray(_positionSpecs$unitSp, 3),
+        x = _positionSpecs$unitSp2[0],
+        y = _positionSpecs$unitSp2[1],
+        unitSize = _positionSpecs$unitSp2[2];
+
+    var unitLabel = (0, _drawers.textDrawer)(name, isHighlighted, 'unitLabel', x, y, unitSize);
+    var unitValue = (0, _drawers.textDrawer)(value, isHighlighted, 'unitValue', x, y, unitSize);
+    var unitLines = (0, _drawers.unitLineDrawer)(name, isHighlighted);
+    sprite.addChild(unitLabel, unitValue, unitLines);
+  }
+
+  return sprite;
+}
+
+/***/ }),
 /* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -43747,299 +43971,7 @@ function cuFetchBuilder() {
 }
 
 /***/ }),
-/* 237 */,
-/* 238 */,
-/* 239 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = cuDescriptionBuilder;
-
-var _textDrawer = __webpack_require__(100);
-
-var _textDrawer2 = _interopRequireDefault(_textDrawer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function cuDescriptionBuilder() {
-  var text = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-
-  var sprite = (0, _textDrawer2.default)(text, false, 'cuDescription');
-  return sprite;
-}
-
-/***/ }),
-/* 240 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _unitOrganizer = __webpack_require__(263);
-
-Object.defineProperty(exports, 'unitOrganizer', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_unitOrganizer).default;
-  }
-});
-
-var _cuOrganizer = __webpack_require__(242);
-
-Object.defineProperty(exports, 'cuOrganizer', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_cuOrganizer).default;
-  }
-});
-
-var _descriptionOrganizer = __webpack_require__(243);
-
-Object.defineProperty(exports, 'descriptionOrganizer', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_descriptionOrganizer).default;
-  }
-});
-
-var _rwPathOrganizer = __webpack_require__(255);
-
-Object.defineProperty(exports, 'rwPathOrganizer', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_rwPathOrganizer).default;
-  }
-});
-
-var _lowerButtonsOrganizer = __webpack_require__(245);
-
-Object.defineProperty(exports, 'lowerButtonsOrganizer', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_lowerButtonsOrganizer).default;
-  }
-});
-
-var _upperButtonsOrganizer = __webpack_require__(246);
-
-Object.defineProperty(exports, 'upperButtonsOrganizer', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_upperButtonsOrganizer).default;
-  }
-});
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/***/ }),
-/* 241 */,
-/* 242 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = cuOrganizer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _builders = __webpack_require__(12);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function cuOrganizer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
-
-  var container = new PIXI.Container();
-  container.addChild((0, _builders.cuFetchBuilder)(state), (0, _builders.cuExecBuilder)(state));
-  return container;
-}
-
-/***/ }),
-/* 243 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = descriptionOrganizer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-var _builders = __webpack_require__(12);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function descriptionOrganizer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
-
-  var container = new PIXI.Container();
-  var text = _helpers.jsonParser.descriptionInterpreter(state);
-  var bottomSprite = (0, _builders.bottomDescriptionBuilder)(text.bottomDescription);
-  var cuSprite = (0, _builders.cuDescriptionBuilder)(text.cuDescription);
-
-  container.addChild(bottomSprite, cuSprite);
-  return container;
-}
-
-/***/ }),
-/* 244 */,
-/* 245 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = lowerButtonsOrganizer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-var _builders = __webpack_require__(12);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function lowerButtonsOrganizer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
-  var store = arguments[1];
-
-  var container = new PIXI.Container();
-
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
-
-  try {
-    for (var _iterator = visibleButtons(state)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var b = _step.value;
-
-      var button = (0, _builders.buttonBuilder)(b, false, store);
-      container.addChild(button);
-    }
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator.return) {
-        _iterator.return();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
-    }
-  }
-
-  return container;
-}
-
-function visibleButtons() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
-
-  var mode = state.mode;
-  var step = state.step;
-
-  if (mode === 'IDLE') {
-    return new Set();
-  }
-
-  if (step === 0) {
-    return new Set().add('START');
-  }
-
-  if (step === 1) {
-    return new Set().add('NEXT').add('SKIP');
-  }
-
-  if (step > 1 && step < 6) {
-    return new Set().add('BACK').add('NEXT').add('SKIP');
-  }
-
-  if (step === 6) {
-    return new Set().add('BACK').add('NEXT');
-  }
-
-  if (step > 6 && step < _helpers.jsonParser.totalStepCount(state) - 1) {
-    return new Set().add('BACK').add('NEXT').add('END');
-  }
-
-  if (step === _helpers.jsonParser.totalStepCount(state) - 1) {
-    return new Set().add('BACK').add('END');
-  }
-}
-
-/***/ }),
-/* 246 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = upperButtonsOrganizer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _builders = __webpack_require__(12);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function upperButtonsOrganizer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
-  var store = arguments[1];
-
-  var container = new PIXI.Container();
-
-  var _arr = ['ADD', 'LDC', 'LDV', 'NOT', 'STV'];
-  for (var _i = 0; _i < _arr.length; _i++) {
-    var b = _arr[_i];
-    if (b === state.mode) {
-      var button = (0, _builders.buttonBuilder)(b, true, store);
-      container.addChild(button);
-    } else {
-      var _button = (0, _builders.buttonBuilder)(b, false, store);
-      container.addChild(_button);
-    }
-  }
-
-  return container;
-}
-
-/***/ }),
-/* 247 */,
-/* 248 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44165,382 +44097,7 @@ function rwBusBuilder() {
 }
 
 /***/ }),
-/* 249 */,
-/* 250 */,
-/* 251 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = rwArrowHeadDrawer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function rwArrowHeadDrawer() {
-  var arrowHead = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  var isHighlighted = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-  var sprite = new PIXI.Graphics();
-  if (!isHighlighted) {
-    sprite.beginFill(_helpers.colorCode.DARK_GRAY);
-  } else {
-    sprite.beginFill(_helpers.colorCode.RED);
-  }
-  sprite.drawPolygon(arrowHead);
-
-  return sprite;
-}
-
-/***/ }),
-/* 252 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = rwLineDrawer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function rwLineDrawer() {
-  var dir = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'h';
-  var x = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-  var y = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-  var length = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
-  var isHighlighted = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
-
-  var sprite = new PIXI.Graphics();
-  if (!isHighlighted) {
-    sprite.lineStyle(4, _helpers.colorCode.DARK_GRAY);
-  } else {
-    sprite.lineStyle(4, _helpers.colorCode.RED);
-  }
-
-  var dx = x,
-      dy = y;
-
-  switch (dir) {
-    case 'h':
-      dx += length;
-      break;
-    case 'v':
-      dy += length;
-      break;
-  }
-  sprite.moveTo(x, y);
-  sprite.lineTo(dx, dy);
-
-  return sprite;
-}
-
-/***/ }),
-/* 253 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = rwCrossPointDrawer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function rwCrossPointDrawer() {
-  var points = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  var isHighlighted = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-  var sprite = new PIXI.Graphics();
-  if (!isHighlighted) {
-    sprite.beginFill(_helpers.colorCode.DARK_GRAY);
-  } else {
-    sprite.beginFill(_helpers.colorCode.RED);
-  }
-  sprite.drawPolygon(points);
-
-  return sprite;
-}
-
-/***/ }),
-/* 254 */,
-/* 255 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = rwPathOrganizer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-var _builders = __webpack_require__(12);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function rwPathOrganizer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
-
-  var container = new PIXI.Container();
-  var path = _helpers.jsonParser.processInterpreter(state)['path'];
-  var unitsFrom = new Set();
-  var unitsTo = new Set();
-
-  // unit arrows
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
-
-  try {
-    for (var _iterator = path[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var p = _step.value;
-
-      unitsFrom.add(p['from']);
-      unitsTo.add(p['to']);
-    }
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator.return) {
-        _iterator.return();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
-    }
-  }
-
-  var _arr = ['Akku', 'Eins', 'X', 'Y', 'Z', 'SAR', 'IAR', 'IR', 'SDR'];
-  for (var _i = 0; _i < _arr.length; _i++) {
-    var c = _arr[_i];
-    if (unitsFrom.has(c)) {
-      container.addChild((0, _builders.rwUnitArrowBuilder)(c, whichArrows(c, true), true));
-    } else if (unitsTo.has(c)) {
-      container.addChild((0, _builders.rwUnitArrowBuilder)(c, whichArrows(c, false, true), true));
-    } else {
-      container.addChild((0, _builders.rwUnitArrowBuilder)(c, whichArrows(c)));
-    }
-  }
-
-  // BG main bus
-  container.addChild((0, _builders.rwBusBuilder)());
-
-  // main bus
-  var _iteratorNormalCompletion2 = true;
-  var _didIteratorError2 = false;
-  var _iteratorError2 = undefined;
-
-  try {
-    for (var _iterator2 = path[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-      var _p = _step2.value;
-
-      container.addChild((0, _builders.rwBusBuilder)(_p['from'], _p['to']));
-    }
-  } catch (err) {
-    _didIteratorError2 = true;
-    _iteratorError2 = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion2 && _iterator2.return) {
-        _iterator2.return();
-      }
-    } finally {
-      if (_didIteratorError2) {
-        throw _iteratorError2;
-      }
-    }
-  }
-
-  return container;
-}
-
-function whichArrows() {
-  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var from = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-  var to = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-
-  switch (name) {
-    case 'Akku':
-      if (to) {
-        return 'l';
-      }
-      if (from) {
-        return 'r';
-      }
-      if (!(from || to)) {
-        return 'lr';
-      }
-    case 'Eins':
-    case 'X':
-    case 'Y':
-      return 'r';
-    case 'Z':
-    case 'SAR':
-      return 'l';
-    case 'IAR':
-    case 'IR':
-    case 'SDR':
-      if (from) {
-        return 'l';
-      }
-      if (to) {
-        return 'r';
-      }
-      if (!(from || to)) {
-        return 'lr';
-      }
-  }
-}
-
-/***/ }),
-/* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-exports.default = unitLineDrawer;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function unitLineDrawer() {
-  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var isHighlighted = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-  var sprite = new PIXI.Graphics();
-  if (!isHighlighted) {
-    sprite.lineStyle(1, _helpers.colorCode.DARK_GRAY);
-  } else {
-    sprite.lineStyle(2, _helpers.colorCode.RED);
-  }
-
-  if (name === 'ALU') {
-    sprite.drawPolygon([340, 260, 300, 300, 360, 300, 370, 290, 380, 300, 440, 300, 400, 260, 340, 260]);
-  } else {
-    var _positionSpecs$unitSp = _helpers.positionSpecs.unitSpec(name),
-        _positionSpecs$unitSp2 = _slicedToArray(_positionSpecs$unitSp, 3),
-        x = _positionSpecs$unitSp2[0],
-        y = _positionSpecs$unitSp2[1],
-        unitSize = _positionSpecs$unitSp2[2];
-
-    sprite.drawRect(x, y, unitSize * 20, 40);
-    // horizontal
-    sprite.moveTo(x, y + 20);
-    sprite.lineTo(x + unitSize * 20, y + 20);
-    // vertical
-    for (var i = 1; i < unitSize; ++i) {
-      sprite.moveTo(x + i * 20, y + 20);
-      sprite.lineTo(x + i * 20, y + 40);
-    }
-  }
-
-  return sprite;
-}
-
-/***/ }),
-/* 261 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-exports.default = unitBuilder;
-
-var _pixi = __webpack_require__(3);
-
-var PIXI = _interopRequireWildcard(_pixi);
-
-var _helpers = __webpack_require__(5);
-
-var _drawers = __webpack_require__(9);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function unitBuilder() {
-  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var value = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
-  var isHighlighted = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-
-  var sprite = new PIXI.Container();
-  if (name === 'ALU') {
-    var ALULabel = (0, _drawers.textDrawer)(name, isHighlighted, 'ALULabel');
-    var ALULines = (0, _drawers.unitLineDrawer)(name, isHighlighted);
-    sprite.addChild(ALULabel, ALULines);
-  } else {
-    var _positionSpecs$unitSp = _helpers.positionSpecs.unitSpec(name),
-        _positionSpecs$unitSp2 = _slicedToArray(_positionSpecs$unitSp, 3),
-        x = _positionSpecs$unitSp2[0],
-        y = _positionSpecs$unitSp2[1],
-        unitSize = _positionSpecs$unitSp2[2];
-
-    var unitLabel = (0, _drawers.textDrawer)(name, isHighlighted, 'unitLabel', x, y, unitSize);
-    var unitValue = (0, _drawers.textDrawer)(value, isHighlighted, 'unitValue', x, y, unitSize);
-    var unitLines = (0, _drawers.unitLineDrawer)(name, isHighlighted);
-    sprite.addChild(unitLabel, unitValue, unitLines);
-  }
-
-  return sprite;
-}
-
-/***/ }),
-/* 262 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44633,7 +44190,99 @@ function rwUnitArrowBuilder() {
 }
 
 /***/ }),
-/* 263 */
+/* 239 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = cuDescriptionBuilder;
+
+var _textDrawer = __webpack_require__(100);
+
+var _textDrawer2 = _interopRequireDefault(_textDrawer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function cuDescriptionBuilder() {
+  var text = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+
+  var sprite = (0, _textDrawer2.default)(text, false, 'cuDescription');
+  return sprite;
+}
+
+/***/ }),
+/* 240 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _unitOrganizer = __webpack_require__(241);
+
+Object.defineProperty(exports, 'unitOrganizer', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_unitOrganizer).default;
+  }
+});
+
+var _cuOrganizer = __webpack_require__(242);
+
+Object.defineProperty(exports, 'cuOrganizer', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_cuOrganizer).default;
+  }
+});
+
+var _descriptionOrganizer = __webpack_require__(243);
+
+Object.defineProperty(exports, 'descriptionOrganizer', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_descriptionOrganizer).default;
+  }
+});
+
+var _rwPathOrganizer = __webpack_require__(244);
+
+Object.defineProperty(exports, 'rwPathOrganizer', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_rwPathOrganizer).default;
+  }
+});
+
+var _lowerButtonsOrganizer = __webpack_require__(245);
+
+Object.defineProperty(exports, 'lowerButtonsOrganizer', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_lowerButtonsOrganizer).default;
+  }
+});
+
+var _upperButtonsOrganizer = __webpack_require__(246);
+
+Object.defineProperty(exports, 'upperButtonsOrganizer', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_upperButtonsOrganizer).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/***/ }),
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44782,6 +44431,340 @@ function unitOrganizer() {
       if (_didIteratorError4) {
         throw _iteratorError4;
       }
+    }
+  }
+
+  return container;
+}
+
+/***/ }),
+/* 242 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = cuOrganizer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _builders = __webpack_require__(12);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function cuOrganizer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
+
+  var container = new PIXI.Container();
+  container.addChild((0, _builders.cuFetchBuilder)(state), (0, _builders.cuExecBuilder)(state));
+  return container;
+}
+
+/***/ }),
+/* 243 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = descriptionOrganizer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+var _builders = __webpack_require__(12);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function descriptionOrganizer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
+
+  var container = new PIXI.Container();
+  var text = _helpers.jsonParser.descriptionInterpreter(state);
+  var bottomSprite = (0, _builders.bottomDescriptionBuilder)(text.bottomDescription);
+  var cuSprite = (0, _builders.cuDescriptionBuilder)(text.cuDescription);
+
+  container.addChild(bottomSprite, cuSprite);
+  return container;
+}
+
+/***/ }),
+/* 244 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = rwPathOrganizer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+var _builders = __webpack_require__(12);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function rwPathOrganizer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
+
+  var container = new PIXI.Container();
+  var path = _helpers.jsonParser.processInterpreter(state)['path'];
+  var unitsFrom = new Set();
+  var unitsTo = new Set();
+
+  // unit arrows
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = path[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var p = _step.value;
+
+      unitsFrom.add(p['from']);
+      unitsTo.add(p['to']);
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+
+  var _arr = ['Akku', 'Eins', 'X', 'Y', 'Z', 'SAR', 'IAR', 'IR', 'SDR'];
+  for (var _i = 0; _i < _arr.length; _i++) {
+    var c = _arr[_i];
+    if (unitsFrom.has(c)) {
+      container.addChild((0, _builders.rwUnitArrowBuilder)(c, whichArrows(c, true), true));
+    } else if (unitsTo.has(c)) {
+      container.addChild((0, _builders.rwUnitArrowBuilder)(c, whichArrows(c, false, true), true));
+    } else {
+      container.addChild((0, _builders.rwUnitArrowBuilder)(c, whichArrows(c)));
+    }
+  }
+
+  // BG main bus
+  container.addChild((0, _builders.rwBusBuilder)());
+
+  // main bus
+  var _iteratorNormalCompletion2 = true;
+  var _didIteratorError2 = false;
+  var _iteratorError2 = undefined;
+
+  try {
+    for (var _iterator2 = path[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+      var _p = _step2.value;
+
+      container.addChild((0, _builders.rwBusBuilder)(_p['from'], _p['to']));
+    }
+  } catch (err) {
+    _didIteratorError2 = true;
+    _iteratorError2 = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion2 && _iterator2.return) {
+        _iterator2.return();
+      }
+    } finally {
+      if (_didIteratorError2) {
+        throw _iteratorError2;
+      }
+    }
+  }
+
+  return container;
+}
+
+function whichArrows() {
+  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var from = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  var to = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+  switch (name) {
+    case 'Akku':
+      if (to) {
+        return 'l';
+      }
+      if (from) {
+        return 'r';
+      }
+      if (!(from || to)) {
+        return 'lr';
+      }
+    case 'Eins':
+    case 'X':
+    case 'Y':
+      return 'r';
+    case 'Z':
+    case 'SAR':
+      return 'l';
+    case 'IAR':
+    case 'IR':
+    case 'SDR':
+      if (from) {
+        return 'l';
+      }
+      if (to) {
+        return 'r';
+      }
+      if (!(from || to)) {
+        return 'lr';
+      }
+  }
+}
+
+/***/ }),
+/* 245 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = lowerButtonsOrganizer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _helpers = __webpack_require__(5);
+
+var _builders = __webpack_require__(12);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function lowerButtonsOrganizer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
+  var store = arguments[1];
+
+  var container = new PIXI.Container();
+
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = visibleButtons(state)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var b = _step.value;
+
+      var button = (0, _builders.buttonBuilder)(b, false, store);
+      container.addChild(button);
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+
+  return container;
+}
+
+function visibleButtons() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
+
+  var mode = state.mode;
+  var step = state.step;
+
+  if (mode === 'IDLE') {
+    return new Set();
+  }
+
+  if (step === 0) {
+    return new Set().add('START');
+  }
+
+  if (step === 1) {
+    return new Set().add('NEXT').add('SKIP');
+  }
+
+  if (step > 1 && step < 6) {
+    return new Set().add('BACK').add('NEXT').add('SKIP');
+  }
+
+  if (step === 6) {
+    return new Set().add('BACK').add('NEXT');
+  }
+
+  if (step > 6 && step < _helpers.jsonParser.totalStepCount(state) - 1) {
+    return new Set().add('BACK').add('NEXT').add('END');
+  }
+
+  if (step === _helpers.jsonParser.totalStepCount(state) - 1) {
+    return new Set().add('BACK').add('END');
+  }
+}
+
+/***/ }),
+/* 246 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = upperButtonsOrganizer;
+
+var _pixi = __webpack_require__(3);
+
+var PIXI = _interopRequireWildcard(_pixi);
+
+var _builders = __webpack_require__(12);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function upperButtonsOrganizer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { mode: 'IDLE', step: 0 };
+  var store = arguments[1];
+
+  var container = new PIXI.Container();
+
+  var _arr = ['ADD', 'LDC', 'LDV', 'NOT', 'STV'];
+  for (var _i = 0; _i < _arr.length; _i++) {
+    var b = _arr[_i];
+    if (b === state.mode) {
+      var button = (0, _builders.buttonBuilder)(b, true, store);
+      container.addChild(button);
+    } else {
+      var _button = (0, _builders.buttonBuilder)(b, false, store);
+      container.addChild(_button);
     }
   }
 
