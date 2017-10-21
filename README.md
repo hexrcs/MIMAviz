@@ -27,7 +27,7 @@ folder of the project. This is the bundled script for use in production. After b
 append a 800x600 canvas to an existing DOM element with ID `mimaviz`. You may then use CSS to customize either the 
 parent element or the canvas itself.
 
-If you wish to customize this behaviour, you may modify the `src\js\app.js` file found in the project, then 
+If you wish to customize this behaviour, you may modify the `/src/js/app.js` file found in the project, then 
 recompile the project.
   
 ## Motivation
