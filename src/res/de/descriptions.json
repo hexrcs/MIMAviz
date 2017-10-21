@@ -1,7 +1,7 @@
 {
   "IDLE": [
     {
-      "bottomDescription": "Dieses Programm wurde entwickelt, um zukünftigen Generationen von Studenten das Funktionsprinzip der MIMA (Minimalautomat) anschaulich zu erklären. Ausgangsbasis für das Programm war das bereits vorhandene Programm zur Visualisierung der Festkomma-Arithmetik. Für Kritik und Verbesserungsvorschläge bin ich jederzeit offen. Der Autor.",
+      "bottomDescription": "Dieses Programm dient dazu, das Funktionsprinzip der MIMA zukünftigen Generationen von Studenten anschaulich zu erklären. Da die originale Visualisierung (Java Applet) leider in meisten modernen Browsern nicht mehr läuft, wurde MIMAviz als eine Neuerstellung der originalen MIMA Simulation in Javascript entwickelt. \n\nMehr Info unter https://github.com/hexrcs/MIMAviz",
       "cuDescription": "Willkommen bei MIMAviz!"
     }
   ],
@@ -32,7 +32,7 @@
     },
     {
       "bottomDescription": "D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!",
-      "cuDescription": "Starte yP für ADD Befehl"
+      "cuDescription": "Starte Exec-Phase für ADD Befehl"
     },
     {
       "bottomDescription": "Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!",
@@ -86,7 +86,7 @@
     },
     {
       "bottomDescription": "D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!",
-      "cuDescription": "Starte yP für LDC Befehl"
+      "cuDescription": "Starte Exec-Phase für LDC Befehl"
     },
     {
       "bottomDescription": "Das Praktische an dem OpCode des LDC Befehls ist, daß er Null ist. Somit brauchen wir das Instruktionsregister IR nicht mehr weiter filtern und können dieses direkt in den Akku laden.",
@@ -120,7 +120,7 @@
     },
     {
       "bottomDescription": "D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!",
-      "cuDescription": "Starte yP für LDV Befehl"
+      "cuDescription": "Starte Exec-Phase für LDV Befehl"
     },
     {
       "bottomDescription": "Im IR (Instruktionsregister) stehen nicht nur die Befehle sondern auch die Variablen und Konstanten, die mit dem Befehl aus dem Speicher gelesen werden. Das Praktische ist, daß der SAR nur 20 Bit lang ist und somit die ersten 4 Bit der 24 Bit langen Instruktion bei dem Transfer IR -> SAR wegfallen. Somit wird nämlich der BefehlsOpcode abgeschnitten und die gewünschte zu adressierende Speicheradresse <a> wird ordnungsgemäß ins SAR geschrieben!",
@@ -166,7 +166,7 @@
     },
     {
       "bottomDescription": "D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!",
-      "cuDescription": "Starte yP für NOT Befehl"
+      "cuDescription": "Starte Exec-Phase für NOT Befehl"
     },
     {
       "bottomDescription": "Der Akkumulator (Akku) wird zur Komplementbildung durch die ALU in das X Register geladen.",
@@ -208,7 +208,7 @@
     },
     {
       "bottomDescription": "D=1 bedeutet, daß das Steuerwerk das IR Register liest und je nach Inhalt (Befehl) das entsprechende Mikroprogramm aus dem internen Speicher des Steuerwerks anspringt und ausführt. Du kannst nun den eigentlichen Befehl verfolgen und das nächste Mal diese FETCH Phase mittels der SKIP-Taste überspringen, falls du sie schon auswendig können solltest. Viel Spaß!",
-      "cuDescription": "Starte yP für STV Befehl"
+      "cuDescription": "Starte Exec-Phase für STV Befehl"
     },
     {
       "bottomDescription": "Der Inhalt des Akkumulators (Akku) soll in den Speicher geschrieben werden. Also laden wir den Akku in das Speicherdatenregister (SDR).",
