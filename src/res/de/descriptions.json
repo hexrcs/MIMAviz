@@ -1,7 +1,7 @@
 {
   "IDLE": [
     {
-      "bottomDescription": "Dieses Programm dient dazu, das Funktionsprinzip der MIMA zukünftigen Generationen von Studenten anschaulich zu erklären. Da die originale Visualisierung (Java Applet) leider in meisten modernen Browsern nicht mehr läuft, wurde MIMAviz als eine Neuerstellung der originalen MIMA Simulation in Javascript entwickelt. \n\nMehr Info unter https://github.com/hexrcs/MIMAviz",
+      "bottomDescription": "Dieses Programm dient dazu, das Funktionsprinzip der MIMA zukünftigen Generationen von Studenten anschaulich zu erklären. Da die originale Visualisierung (Java Applet) leider in meisten modernen Browsern nicht mehr läuft, wurde MIMAviz als eine Neuerstellung der originalen MIMA Simulation in Javascript entwickelt. \n\nMehr Info unter github.com/hexrcs/MIMAviz und ti.ira.uka.de/Visualisierungen/Mima/",
       "cuDescription": "Willkommen bei MIMAviz!"
     }
   ],
