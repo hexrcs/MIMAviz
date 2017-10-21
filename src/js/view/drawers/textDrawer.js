@@ -3,10 +3,10 @@ import { colorCode } from '../../helpers';
 
 // This function handles drawing every text element on the view, 
 // the input x,y should be the upper left corner of the block
-export default function textDrawer (text = '', alt = false, type = '', x = 0, y = 0, unitSize = 0) {
+export default function textDrawer (text = '', isHighlighted = false, type = '', x = 0, y = 0, unitSize = 0) {
   let sprite = {};
 
-  if (!alt) {
+  if (!isHighlighted) {
     switch (type) {
       case 'bottomDescription':
         sprite = new PIXI.Text(text,
@@ -95,7 +95,7 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
             fontFamily: 'Courier',
             fontSize: '12pt',
             fontWeight: 'bold',
-            fill: colorCode.INSIDE_ALT
+            fill: colorCode.RED
           }
         );
         sprite.anchor.set(0.5, 0.5);
@@ -108,7 +108,7 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
             fontFamily: 'Courier',
             fontSize: '12pt',
             fontWeight: 'bold',
-            fill: colorCode.INSIDE_ALT
+            fill: colorCode.RED
           }
         );
         sprite.anchor.set(0.5, 0.5);
@@ -122,7 +122,7 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
             fontSize: '12pt',
             letterSpacing: 10,
             fontWeight: 'bold',
-            fill: colorCode.INSIDE_ALT
+            fill: colorCode.RED
           }
         );
         sprite.anchor.set(1, 0.5);
@@ -131,7 +131,7 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
         break;
       case 'upperButtonLabel':
         sprite = new PIXI.Text(text,
-          {fontFamily: 'Courier', fontSize: '12pt', fill: colorCode.DEFAULT_ALT}
+          {fontFamily: 'Courier', fontSize: '12pt', fill: colorCode.WHITE}
         );
         sprite.anchor.set(0.5, 0.5);
         sprite.x = x + 20;
@@ -139,7 +139,7 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
         break;
       case 'lowerButtonLabel':
         sprite = new PIXI.Text(text,
-          {fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold', fill: colorCode.DEFAULT_ALT}
+          {fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold', fill: colorCode.WHITE}
         );
         sprite.anchor.set(0.5, 0.5);
         sprite.x = x + 30;
@@ -147,7 +147,7 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
         break;
       case 'cuStep':
         sprite = new PIXI.Text(text,
-          {fontFamily: 'Courier', fontSize: '11pt', fill: colorCode.DEFAULT_ALT}
+          {fontFamily: 'Courier', fontSize: '11pt', fill: colorCode.WHITE}
         );
         sprite.anchor.set(0, 0.5);
         sprite.x = x + 5;
@@ -155,7 +155,7 @@ export default function textDrawer (text = '', alt = false, type = '', x = 0, y 
         break;
       case 'bitWidthText':
         sprite = new PIXI.Text(text,
-          {fontFamily: 'Courier', fontSize: '9pt', fill: colorCode.INSIDE_ALT}
+          {fontFamily: 'Courier', fontSize: '9pt', fill: colorCode.RED}
         );
         sprite.x = x;
         sprite.y = y;

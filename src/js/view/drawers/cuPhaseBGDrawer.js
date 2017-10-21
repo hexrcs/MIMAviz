@@ -3,7 +3,7 @@ import { colorCode } from '../../helpers';
 
 export default function cuPhaseBGDrawer (name = '') {
   let sprite = new PIXI.Graphics();
-  sprite.beginFill(colorCode.LIGHT_BG);
+  sprite.beginFill(colorCode.EVEN_LIGHTER_GRAY);
   switch (name) {
     case 'fetch':
       sprite.drawRect(540, 90, 240, 20);

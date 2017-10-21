@@ -21513,7 +21513,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 // the input x,y should be the upper left corner of the block
 function textDrawer() {
   var text = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  var isHighlighted = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
   var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
   var x = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
   var y = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 0;
@@ -21521,7 +21521,7 @@ function textDrawer() {
 
   var sprite = {};
 
-  if (!alt) {
+  if (!isHighlighted) {
     switch (type) {
       case 'bottomDescription':
         sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '10pt', wordWrap: true, wordWrapWidth: 750 });
@@ -21589,7 +21589,7 @@ function textDrawer() {
           fontFamily: 'Courier',
           fontSize: '12pt',
           fontWeight: 'bold',
-          fill: _helpers.colorCode.INSIDE_ALT
+          fill: _helpers.colorCode.RED
         });
         sprite.anchor.set(0.5, 0.5);
         sprite.x = x + unitSize * 20 / 2;
@@ -21600,7 +21600,7 @@ function textDrawer() {
           fontFamily: 'Courier',
           fontSize: '12pt',
           fontWeight: 'bold',
-          fill: _helpers.colorCode.INSIDE_ALT
+          fill: _helpers.colorCode.RED
         });
         sprite.anchor.set(0.5, 0.5);
         sprite.x = 370;
@@ -21612,32 +21612,32 @@ function textDrawer() {
           fontSize: '12pt',
           letterSpacing: 10,
           fontWeight: 'bold',
-          fill: _helpers.colorCode.INSIDE_ALT
+          fill: _helpers.colorCode.RED
         });
         sprite.anchor.set(1, 0.5);
         sprite.x = x + unitSize * 20 - 5;
         sprite.y = y + 20 + 20 / 2;
         break;
       case 'upperButtonLabel':
-        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '12pt', fill: _helpers.colorCode.DEFAULT_ALT });
+        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '12pt', fill: _helpers.colorCode.WHITE });
         sprite.anchor.set(0.5, 0.5);
         sprite.x = x + 20;
         sprite.y = y + 20 / 2;
         break;
       case 'lowerButtonLabel':
-        sprite = new PIXI.Text(text, { fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold', fill: _helpers.colorCode.DEFAULT_ALT });
+        sprite = new PIXI.Text(text, { fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold', fill: _helpers.colorCode.WHITE });
         sprite.anchor.set(0.5, 0.5);
         sprite.x = x + 30;
         sprite.y = y + 20 / 2;
         break;
       case 'cuStep':
-        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '11pt', fill: _helpers.colorCode.DEFAULT_ALT });
+        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '11pt', fill: _helpers.colorCode.WHITE });
         sprite.anchor.set(0, 0.5);
         sprite.x = x + 5;
         sprite.y = y + 20 / 2;
         break;
       case 'bitWidthText':
-        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '9pt', fill: _helpers.colorCode.INSIDE_ALT });
+        sprite = new PIXI.Text(text, { fontFamily: 'Courier', fontSize: '9pt', fill: _helpers.colorCode.RED });
         sprite.x = x;
         sprite.y = y;
         break;
@@ -42994,23 +42994,23 @@ function bgBuilder() {
 function makeBigBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(_helpers.colorCode.DARK_BG);
+  sprite.beginFill(_helpers.colorCode.GAINSBORO);
   sprite.drawRoundedRect(0, 0, _app.rendererSize.width, _app.rendererSize.height, 8);
 }
 
 function makeButtomDescriptionBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(_helpers.colorCode.DEFAULT_ALT);
+  sprite.beginFill(_helpers.colorCode.WHITE);
   sprite.drawRoundedRect(20, 490, 760, 100, 8);
 }
 
 function makeCUDisplayBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(_helpers.colorCode.DARKER_BG);
+  sprite.beginFill(_helpers.colorCode.LIGHT_GRAY);
   sprite.drawRoundedRect(540, 70, 240, 360, 8);
-  sprite.beginFill(_helpers.colorCode.DEFAULT_ALT);
+  sprite.beginFill(_helpers.colorCode.WHITE);
   sprite.drawRect(540, 90, 240, 320);
   var textSprite = new PIXI.Text('STEUERWERK', { fontFamily: 'Courier', fontSize: '12pt', fontWeight: 'bold' });
   textSprite.anchor.set(0.5, 0.5);
@@ -43022,14 +43022,14 @@ function makeCUDisplayBG() {
 function makeInsideBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(_helpers.colorCode.DEFAULT_ALT);
+  sprite.beginFill(_helpers.colorCode.WHITE);
   sprite.drawRoundedRect(20, 20, 500, 460, 8);
 }
 
 function makeArrowTipsBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(_helpers.colorCode.BORDER);
+  sprite.beginFill(_helpers.colorCode.DARK_GRAY);
   sprite.drawPolygon([200, 30, 196, 38, 198, 38, 198, 58, 202, 58, 202, 38, 204, 38]);
   sprite.drawPolygon([198, 432, 202, 432, 202, 458, 204, 458, 200, 466, 196, 458, 198, 458]);
 }
@@ -43037,7 +43037,7 @@ function makeArrowTipsBG() {
 function makeCUArrowAndBitWidth() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(_helpers.colorCode.BORDER);
+  sprite.beginFill(_helpers.colorCode.DARK_GRAY);
   sprite.drawPolygon([398, 160, 398, 172, 511, 172, 511, 174, 519, 170, 511, 166, 511, 168, 402, 168, 402, 160]);
   var textSprite = new PIXI.Text('8', { fontFamily: 'Courier', fontSize: '9pt' });
   textSprite.x = 455;
@@ -43048,7 +43048,7 @@ function makeCUArrowAndBitWidth() {
 function makeALUioArrows() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(_helpers.colorCode.BORDER);
+  sprite.beginFill(_helpers.colorCode.DARK_GRAY);
   sprite.drawPolygon([370, 240, 366, 248, 368, 248, 368, 260, 372, 260, 372, 248, 374, 248]);
   sprite.drawPolygon([340, 300, 336, 308, 338, 308, 338, 330, 342, 330, 342, 308, 344, 308]);
   sprite.drawPolygon([400, 300, 396, 308, 398, 308, 398, 360, 402, 360, 402, 308, 404, 308]);
@@ -43057,7 +43057,7 @@ function makeALUioArrows() {
 function makeUnitsBG() {
   var sprite = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : new PIXI.Graphics();
 
-  sprite.beginFill(_helpers.colorCode.LIGHT_BG);
+  sprite.beginFill(_helpers.colorCode.EVEN_LIGHTER_GRAY);
   // my first reducer in this life time LOL
   // but it's just like a foreach loop :-/
   ['Akku', 'Eins', 'SAR', 'IAR', 'IR', 'Z', 'X', 'Y', 'SDR', 'R', 'W'].reduce(function (result, item) {
@@ -43348,14 +43348,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  INSIDE_ALT: 0xFF0000,
-  BORDER: 0x979797,
-  LIGHT_BG: 0xEBEBEB,
-  DARK_BG: 0xD8D8D8,
-  DARKER_BG: 0xC8C8C8,
-  SELECT_ALT_BG: 0x6B9CE4,
-  DEFAULT: 0x000000,
-  DEFAULT_ALT: 0xFFFFFF
+  RED: 0xFF0000,
+  DARK_GRAY: 0x999999,
+  EVEN_LIGHTER_GRAY: 0xEBEBEB,
+  GAINSBORO: 0xDCDCDC,
+  LIGHT_GRAY: 0xCCCCCC,
+  BLUE: 0x6699CC,
+  WHITE: 0xFFFFFF
 };
 
 /***/ }),
@@ -43515,10 +43514,10 @@ function buttonBGDrawer() {
 
   switch (isPressed) {
     case false:
-      sprite.beginFill(_helpers.colorCode.DEFAULT_ALT);
+      sprite.beginFill(_helpers.colorCode.WHITE);
       break;
     case true:
-      sprite.beginFill(_helpers.colorCode.SELECT_ALT_BG);
+      sprite.beginFill(_helpers.colorCode.BLUE);
   }
   sprite.drawRoundedRect(x, y, width, 20, 8);
 
@@ -43550,7 +43549,7 @@ function cuPhaseBGDrawer() {
   var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
 
   var sprite = new PIXI.Graphics();
-  sprite.beginFill(_helpers.colorCode.LIGHT_BG);
+  sprite.beginFill(_helpers.colorCode.EVEN_LIGHTER_GRAY);
   switch (name) {
     case 'fetch':
       sprite.drawRect(540, 90, 240, 20);
@@ -43587,7 +43586,7 @@ function cuStepBGDrawer() {
   var step = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
 
   var sprite = new PIXI.Graphics();
-  sprite.beginFill(_helpers.colorCode.SELECT_ALT_BG);
+  sprite.beginFill(_helpers.colorCode.BLUE);
   if (step < 7 && step > 0) {
     sprite.drawRect(540, 90 + step * 20, 240, 20);
   } else if (step > 6) {
@@ -43665,13 +43664,13 @@ function cuExecBuilder() {
     sprite.addChild(stepBG);
   }
 
-  // write text onto the display, the alt one in blue
+  // write text onto the display, the highlighted one in blue
   for (var i = 6; i < allInfo["proc"].length; ++i) {
-    var alt = false;
+    var isHighlighted = false;
     if (i === state.step - 1) {
-      alt = true;
+      isHighlighted = true;
     }
-    var stepText = (0, _drawers.textDrawer)(allInfo['proc'][i], alt, 'cuStep', 540, 260 + 20 * (i - 6));
+    var stepText = (0, _drawers.textDrawer)(allInfo['proc'][i], isHighlighted, 'cuStep', 540, 260 + 20 * (i - 6));
     sprite.addChild(stepText);
   }
 
@@ -43725,13 +43724,13 @@ function cuFetchBuilder() {
     sprite.addChild(stepBG);
   }
 
-  // write text onto the display, the alt one in blue
+  // write text onto the display, the highlighted one in blue
   for (var _i = 0; _i < 6; ++_i) {
-    var alt = false;
+    var isHilighted = false;
     if (_i === state.step - 1) {
-      alt = true;
+      isHilighted = true;
     }
-    var _stepText = (0, _drawers.textDrawer)(allInfo['proc'][_i], alt, 'cuStep', 540, 110 + 20 * _i);
+    var _stepText = (0, _drawers.textDrawer)(allInfo['proc'][_i], isHilighted, 'cuStep', 540, 110 + 20 * _i);
     sprite.addChild(_stepText);
   }
 
@@ -44180,13 +44179,13 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function rwArrowHeadDrawer() {
   var arrowHead = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  var isHighlighted = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
 
   var sprite = new PIXI.Graphics();
-  if (!alt) {
-    sprite.beginFill(_helpers.colorCode.BORDER);
+  if (!isHighlighted) {
+    sprite.beginFill(_helpers.colorCode.DARK_GRAY);
   } else {
-    sprite.beginFill(_helpers.colorCode.INSIDE_ALT);
+    sprite.beginFill(_helpers.colorCode.RED);
   }
   sprite.drawPolygon(arrowHead);
 
@@ -44218,13 +44217,13 @@ function rwLineDrawer() {
   var x = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
   var y = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
   var length = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
-  var alt = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+  var isHighlighted = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
 
   var sprite = new PIXI.Graphics();
-  if (!alt) {
-    sprite.lineStyle(4, _helpers.colorCode.BORDER);
+  if (!isHighlighted) {
+    sprite.lineStyle(4, _helpers.colorCode.DARK_GRAY);
   } else {
-    sprite.lineStyle(4, _helpers.colorCode.INSIDE_ALT);
+    sprite.lineStyle(4, _helpers.colorCode.RED);
   }
 
   var dx = x,
@@ -44266,13 +44265,13 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function rwCrossPointDrawer() {
   var points = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  var isHighlighted = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
 
   var sprite = new PIXI.Graphics();
-  if (!alt) {
-    sprite.beginFill(_helpers.colorCode.BORDER);
+  if (!isHighlighted) {
+    sprite.beginFill(_helpers.colorCode.DARK_GRAY);
   } else {
-    sprite.beginFill(_helpers.colorCode.INSIDE_ALT);
+    sprite.beginFill(_helpers.colorCode.RED);
   }
   sprite.drawPolygon(points);
 
@@ -44448,13 +44447,13 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function unitLineDrawer() {
   var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var alt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  var isHighlighted = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
 
   var sprite = new PIXI.Graphics();
-  if (!alt) {
-    sprite.lineStyle(1, _helpers.colorCode.BORDER);
+  if (!isHighlighted) {
+    sprite.lineStyle(1, _helpers.colorCode.DARK_GRAY);
   } else {
-    sprite.lineStyle(2, _helpers.colorCode.INSIDE_ALT);
+    sprite.lineStyle(2, _helpers.colorCode.RED);
   }
 
   if (name === 'ALU') {
@@ -44508,12 +44507,12 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function unitBuilder() {
   var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
   var value = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
-  var alt = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+  var isHighlighted = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 
   var sprite = new PIXI.Container();
   if (name === 'ALU') {
-    var ALULabel = (0, _drawers.textDrawer)(name, alt, 'ALULabel');
-    var ALULines = (0, _drawers.unitLineDrawer)(name, alt);
+    var ALULabel = (0, _drawers.textDrawer)(name, isHighlighted, 'ALULabel');
+    var ALULines = (0, _drawers.unitLineDrawer)(name, isHighlighted);
     sprite.addChild(ALULabel, ALULines);
   } else {
     var _positionSpecs$unitSp = _helpers.positionSpecs.unitSpec(name),
@@ -44522,9 +44521,9 @@ function unitBuilder() {
         y = _positionSpecs$unitSp2[1],
         unitSize = _positionSpecs$unitSp2[2];
 
-    var unitLabel = (0, _drawers.textDrawer)(name, alt, 'unitLabel', x, y, unitSize);
-    var unitValue = (0, _drawers.textDrawer)(value, alt, 'unitValue', x, y, unitSize);
-    var unitLines = (0, _drawers.unitLineDrawer)(name, alt);
+    var unitLabel = (0, _drawers.textDrawer)(name, isHighlighted, 'unitLabel', x, y, unitSize);
+    var unitValue = (0, _drawers.textDrawer)(value, isHighlighted, 'unitValue', x, y, unitSize);
+    var unitLines = (0, _drawers.unitLineDrawer)(name, isHighlighted);
     sprite.addChild(unitLabel, unitValue, unitLines);
   }
 
@@ -44558,19 +44557,19 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function rwUnitArrowBuilder() {
   var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var alt_arrows = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'lr';
-  var alt_hl = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+  var dir = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'lr';
+  var isHighlighted = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 
   var sprite = new PIXI.Graphics();
 
-  var _positionSpecs$rwHLin = _helpers.positionSpecs.rwHLineSpec(name, alt_arrows),
+  var _positionSpecs$rwHLin = _helpers.positionSpecs.rwHLineSpec(name, dir),
       _positionSpecs$rwHLin2 = _slicedToArray(_positionSpecs$rwHLin, 4),
       lX = _positionSpecs$rwHLin2[0],
       lY = _positionSpecs$rwHLin2[1],
       rX = _positionSpecs$rwHLin2[2],
       rY = _positionSpecs$rwHLin2[3];
 
-  var line = (0, _drawers.rwLineDrawer)('h', lX, lY, rX - lX, alt_hl);
+  var line = (0, _drawers.rwLineDrawer)('h', lX, lY, rX - lX, isHighlighted);
   sprite.addChild(line);
 
   var _positionSpecs$bitWid = _helpers.positionSpecs.bitWidthSpec(name),
@@ -44579,11 +44578,11 @@ function rwUnitArrowBuilder() {
       tY = _positionSpecs$bitWid2[1],
       bw = _positionSpecs$bitWid2[2];
 
-  var bwText = (0, _drawers.textDrawer)(bw, alt_hl, 'bitWidthText', tX, tY);
+  var bwText = (0, _drawers.textDrawer)(bw, isHighlighted, 'bitWidthText', tX, tY);
   sprite.addChild(bwText);
 
   var arrowHeads = [];
-  switch (alt_arrows) {
+  switch (dir) {
     case 'lr':
       arrowHeads.push(_helpers.positionSpecs.rwHArrowHeadSpec([lX, lY, rX, rY], 'l'));
       arrowHeads.push(_helpers.positionSpecs.rwHArrowHeadSpec([lX, lY, rX, rY], 'r'));
@@ -44603,7 +44602,7 @@ function rwUnitArrowBuilder() {
     for (var _iterator = arrowHeads[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
       var e = _step.value;
 
-      var arrowHeadSprite = (0, _drawers.rwArrowHeadDrawer)(e, alt_hl);
+      var arrowHeadSprite = (0, _drawers.rwArrowHeadDrawer)(e, isHighlighted);
       sprite.addChild(arrowHeadSprite);
     }
   } catch (err) {

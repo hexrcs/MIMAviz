@@ -1,12 +1,12 @@
 import * as PIXI from 'pixi.js';
 import { colorCode } from '../../helpers';
 
-export default function rwCrossPointDrawer (points = [], alt = false) {
+export default function rwCrossPointDrawer (points = [], isHighlighted = false) {
   let sprite = new PIXI.Graphics();
-  if (!alt) {
-    sprite.beginFill(colorCode.BORDER);
+  if (!isHighlighted) {
+    sprite.beginFill(colorCode.DARK_GRAY);
   } else {
-    sprite.beginFill(colorCode.INSIDE_ALT);
+    sprite.beginFill(colorCode.RED);
   }
   sprite.drawPolygon(points);
 

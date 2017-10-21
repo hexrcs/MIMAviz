@@ -7,10 +7,10 @@ export default function buttonBGDrawer (x = 0, y = 0, width = 0, isPressed = fal
 
   switch (isPressed) {
     case false:
-      sprite.beginFill(colorCode.DEFAULT_ALT);
+      sprite.beginFill(colorCode.WHITE);
       break;
     case true:
-      sprite.beginFill(colorCode.SELECT_ALT_BG);
+      sprite.beginFill(colorCode.BLUE);
   }
   sprite.drawRoundedRect(x, y, width, 20, 8);
 

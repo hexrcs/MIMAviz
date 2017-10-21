@@ -1,12 +1,12 @@
 import * as PIXI from 'pixi.js';
 import {colorCode, positionSpecs} from '../../helpers';
 
-export default function unitLineDrawer (name = '', alt = false) {
+export default function unitLineDrawer (name = '', isHighlighted = false) {
   let sprite = new PIXI.Graphics();
-  if (!alt) {
-    sprite.lineStyle(1, colorCode.BORDER);
+  if (!isHighlighted) {
+    sprite.lineStyle(1, colorCode.DARK_GRAY);
   } else {
-    sprite.lineStyle(2, colorCode.INSIDE_ALT);
+    sprite.lineStyle(2, colorCode.RED);
   }
 
   if (name === 'ALU') {

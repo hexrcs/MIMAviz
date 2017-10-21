@@ -19,19 +19,19 @@ export default function bgBuilder () {
 }
 
 function makeBigBG (sprite = new PIXI.Graphics()) {
-  sprite.beginFill(colorCode.DARK_BG);
+  sprite.beginFill(colorCode.GAINSBORO);
   sprite.drawRoundedRect(0, 0, rendererSize.width, rendererSize.height, 8);
 }
 
 function makeButtomDescriptionBG (sprite = new PIXI.Graphics()) {
-  sprite.beginFill(colorCode.DEFAULT_ALT);
+  sprite.beginFill(colorCode.WHITE);
   sprite.drawRoundedRect(20, 490, 760, 100, 8);
 }
 
 function makeCUDisplayBG (sprite = new PIXI.Graphics()) {
-  sprite.beginFill(colorCode.DARKER_BG);
+  sprite.beginFill(colorCode.LIGHT_GRAY);
   sprite.drawRoundedRect(540, 70, 240, 360, 8);
-  sprite.beginFill(colorCode.DEFAULT_ALT);
+  sprite.beginFill(colorCode.WHITE);
   sprite.drawRect(540, 90, 240, 320);
   const textSprite = new PIXI.Text('STEUERWERK',
     {fontFamily: 'Courier', fontSize: '12pt', fontWeight: 'bold'}
@@ -43,12 +43,12 @@ function makeCUDisplayBG (sprite = new PIXI.Graphics()) {
 }
 
 function makeInsideBG (sprite = new PIXI.Graphics()) {
-  sprite.beginFill(colorCode.DEFAULT_ALT);
+  sprite.beginFill(colorCode.WHITE);
   sprite.drawRoundedRect(20, 20, 500, 460, 8);
 }
 
 function makeArrowTipsBG (sprite = new PIXI.Graphics()) {
-  sprite.beginFill(colorCode.BORDER);
+  sprite.beginFill(colorCode.DARK_GRAY);
   sprite.drawPolygon(
     [200, 30, 196, 38, 198, 38, 198, 58, 202, 58, 202, 38, 204, 38]
   );
@@ -58,7 +58,7 @@ function makeArrowTipsBG (sprite = new PIXI.Graphics()) {
 }
 
 function makeCUArrowAndBitWidth (sprite = new PIXI.Graphics()) {
-  sprite.beginFill(colorCode.BORDER);
+  sprite.beginFill(colorCode.DARK_GRAY);
   sprite.drawPolygon(
     [398, 160, 398, 172, 511, 172, 511, 174, 519, 170, 511, 166, 511, 168, 402, 168, 402, 160]
   );
@@ -71,14 +71,14 @@ function makeCUArrowAndBitWidth (sprite = new PIXI.Graphics()) {
 }
 
 function makeALUioArrows (sprite = new PIXI.Graphics()) {
-  sprite.beginFill(colorCode.BORDER);
+  sprite.beginFill(colorCode.DARK_GRAY);
   sprite.drawPolygon([370, 240, 366, 248, 368, 248, 368, 260, 372, 260, 372, 248, 374, 248]);
   sprite.drawPolygon([340, 300, 336, 308, 338, 308, 338, 330, 342, 330, 342, 308, 344, 308]);
   sprite.drawPolygon([400, 300, 396, 308, 398, 308, 398, 360, 402, 360, 402, 308, 404, 308]);
 }
 
 function makeUnitsBG (sprite = new PIXI.Graphics()) {
-  sprite.beginFill(colorCode.LIGHT_BG);
+  sprite.beginFill(colorCode.EVEN_LIGHTER_GRAY);
   // my first reducer in this life time LOL
   // but it's just like a foreach loop :-/
   ['Akku', 'Eins', 'SAR', 'IAR', 'IR', 'Z', 'X', 'Y', 'SDR', 'R', 'W'].reduce(

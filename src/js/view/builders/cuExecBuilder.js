@@ -21,13 +21,13 @@ export default function cuExecBuilder (state = {mode: 'IDLE', step: 0}) {
     sprite.addChild(stepBG);
   }
 
-  // write text onto the display, the alt one in blue
+  // write text onto the display, the highlighted one in blue
   for (let i = 6; i < allInfo["proc"].length; ++i) {
-    let alt = false;
+    let isHighlighted = false;
     if (i === state.step - 1) {
-      alt = true;
+      isHighlighted = true;
     }
-    const stepText = textDrawer(allInfo['proc'][i], alt, 'cuStep', 540, 260 + 20 * (i - 6));
+    const stepText = textDrawer(allInfo['proc'][i], isHighlighted, 'cuStep', 540, 260 + 20 * (i - 6));
     sprite.addChild(stepText);
   }
 
