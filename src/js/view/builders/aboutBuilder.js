@@ -10,10 +10,10 @@ export default function aboutBuilder (type = 'STARTUP', store) {
   makeLogo(sprite);
   makeTitleDescription(sprite);
   makeCreditDescription(sprite);
-  makeClickableTexts(sprite);
   let button = buildLeaveButton(type, store);
-
   sprite.addChild(button);
+
+  makeClickableTexts(sprite);
   return sprite;
 }
 
@@ -63,7 +63,7 @@ function makeCreditDescription (sprite = new PIXI.Graphics()) {
 
 function makeClickableTexts (sprite = new PIXI.Graphics()) {
   let kitText = 'Mehr über MIMA-Architektur und Technische Informatik am KIT - ' +
-    'http://ti.ira.uka.de/';
+    'http://ti.ira.uka.de';
   let githubText = 'Mehr über MIMAviz - https://github.com/hexrcs/MIMAviz';
 
   let kitLink = new PIXI.Text(kitText,
@@ -76,20 +76,26 @@ function makeClickableTexts (sprite = new PIXI.Graphics()) {
   kitLink.anchor.set(1, 0.5);
   kitLink.x = 760;
   kitLink.y = 560;
-  kitLink.interactive = true;
-  kitLink.buttonMode = true;
-  kitLink.hitArea = kitLink.getBounds();
-  kitLink.on('pointerdown', () => window.open('http://ti.ira.uka.de/'));
+  let kitButton = new PIXI.Container();
+
+  kitButton.interactive = true;
+  kitButton.buttonMode = true;
+  kitButton.hitArea = kitLink.getBounds();
+  kitButton.addChild(kitLink);
+  kitButton.on('pointerdown', () => window.open('http://ti.ira.uka.de/'));
 
   githubLink.anchor.set(1, 0.5);
   githubLink.x = 760;
   githubLink.y = 580;
-  githubLink.interactive = true;
-  githubLink.buttonMode = true;
-  githubLink.hitArea = kitLink.getBounds();
-  githubLink.on('pointerdown', () => window.open('https://github.com/hexrcs/MIMAviz'));
+  let githubButton = new PIXI.Container();
 
-  sprite.addChild(kitLink, githubLink);
+  githubButton.interactive = true;
+  githubButton.buttonMode = true;
+  githubButton.hitArea = githubLink.getBounds();
+  githubButton.addChild(githubLink);
+  githubButton.on('pointerdown', () => window.open('https://github.com/hexrcs/MIMAviz'));
+
+  sprite.addChild(kitButton, githubButton);
 }
 
 function buildLeaveButton (type = 'STARTUP', store) {
