@@ -5,5 +5,6 @@ export default {
   GAINSBORO: 0xDCDCDC,
   LIGHT_GRAY: 0xCCCCCC,
   BLUE: 0x6699CC,
+  BLUE_LINK: 0x0645AD,
   WHITE: 0xFFFFFF
 };

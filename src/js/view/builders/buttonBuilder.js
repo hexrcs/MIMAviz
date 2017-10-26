@@ -8,19 +8,19 @@ export default function buttonBuilder (name = '', isPressed = false, store) {
   let [x, y, width] = [0, 0, 0];
   switch (name) {
     case 'ADD':
-      [x, y, width] = [540, 30, 40];
+      [x, y, width] = [540, 35, 40];
       break;
     case 'LDC':
-      [x, y, width] = [590, 30, 40];
+      [x, y, width] = [590, 35, 40];
       break;
     case 'LDV':
-      [x, y, width] = [640, 30, 40];
+      [x, y, width] = [640, 35, 40];
       break;
     case 'NOT':
-      [x, y, width] = [690, 30, 40];
+      [x, y, width] = [690, 35, 40];
       break;
     case 'STV':
-      [x, y, width] = [740, 30, 40];
+      [x, y, width] = [740, 35, 40];
       break;
     case 'BACK':
       [x, y, width] = [540, 450, 60];

@@ -3,17 +3,18 @@ import { colorCode, positionSpecs } from '../../helpers';
 
 import { rendererSize } from '../../app';
 
-export default function bgBuilder () {
+export default function bgBuilder (store) {
   let sprite = new PIXI.Graphics();
 
   makeBigBG(sprite);
   makeCUDisplayBG(sprite);
-  makeButtomDescriptionBG(sprite);
+  makeBottomDescriptionBG(sprite);
   makeInsideBG(sprite);
   makeArrowTipsBG(sprite);
   makeALUioArrows(sprite);
   makeCUArrowAndBitWidth(sprite);
   makeUnitsBG(sprite);
+  makeQuestionMark(sprite, store);
 
   return sprite;
 }
@@ -23,7 +24,7 @@ function makeBigBG (sprite = new PIXI.Graphics()) {
   sprite.drawRoundedRect(0, 0, rendererSize.width, rendererSize.height, 8);
 }
 
-function makeButtomDescriptionBG (sprite = new PIXI.Graphics()) {
+function makeBottomDescriptionBG (sprite = new PIXI.Graphics()) {
   sprite.beginFill(colorCode.WHITE);
   sprite.drawRoundedRect(20, 490, 760, 100, 8);
 }
@@ -90,4 +91,25 @@ function makeUnitsBG (sprite = new PIXI.Graphics()) {
 
   // ALU ahhhhhhh
   sprite.drawPolygon([340, 260, 300, 300, 360, 300, 370, 290, 380, 300, 440, 300, 400, 260, 340, 260]);
+}
+
+function makeQuestionMark (sprite = new PIXI.Graphics(), store) {
+  let button = new PIXI.Graphics();
+  button.beginFill(colorCode.WHITE);
+  button.drawCircle(780, 20, 10);
+  button.interactive = true;
+  button.buttonMode = true;
+  button.hitArea = new PIXI.Circle(780, 20, 10);
+
+  let textSprite = new PIXI.Text('?',
+    {fontFamily: 'Courier', fontSize: '12pt', fontWeight: 'bold', fill: colorCode.BLUE_LINK}
+  );
+  textSprite.anchor.set(0.5, 0.5);
+  textSprite.x = 780;
+  textSprite.y = 20;
+
+  button.addChild(textSprite);
+  button.on('pointerdown', () => store.dispatch({type: 'MODE_CHANGE', payload: 'ABOUT'}));
+
+  sprite.addChild(button);
 }
