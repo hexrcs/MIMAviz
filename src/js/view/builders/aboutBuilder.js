@@ -7,7 +7,13 @@ export default function aboutBuilder (type = 'STARTUP', store) {
   let sprite = new PIXI.Graphics();
 
   makeBigBG(sprite);
+  makeLogo(sprite);
+  makeTitleDescription(sprite);
+  makeCreditDescription(sprite);
+  makeClickableTexts(sprite);
+  let button = buildLeaveButton(type, store);
 
+  sprite.addChild(button);
   return sprite;
 }
 
@@ -16,10 +22,80 @@ function makeBigBG (sprite = new PIXI.Graphics()) {
   sprite.drawRoundedRect(0, 0, rendererSize.width, rendererSize.height, 8);
 }
 
-function makeLeaveButton (type = 'STARTUP', store) {
+function makeLogo (sprite = new PIXI.Graphics()) {
+  let logo = new PIXI.Text('MIMAviz',
+    {fontFamily: 'Arial', fontSize: '36pt', fontWeight: 'bold'}
+  );
+  sprite.addChild(logo);
+}
+
+function makeTitleDescription (sprite = new PIXI.Graphics()) {
+  let text =
+    'Eine Visualisierung für die Minimalmaschine, basierend auf dem originalen SimMIMA Design.';
+
+  let textSprite = new PIXI.Text(text,
+    {fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold', wordWrap: true, wordWrapWidth: 400}
+  );
+  textSprite.x = 200;
+  textSprite.y = 160;
+
+  sprite.addChild(textSprite);
+}
+
+function makeCreditDescription (sprite = new PIXI.Graphics()) {
+  let text =
+    'Die ursprüngliche Arbeit bei der Entwicklung der MIMA-Architektur und deren Instruktionen ' +
+    'wurde von Prof. Tamim Asfour geleistet.';
+
+  let textSprite = new PIXI.Text(text,
+    {
+      fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold',
+      align: 'center', wordWrap: true, wordWrapWidth: 490
+    }
+  );
+  textSprite.x = 160;
+  textSprite.y = 480;
+
+  sprite.addChild(textSprite);
+}
+
+function makeClickableTexts (sprite = new PIXI.Graphics()) {
+  let kitText = 'Mehr über MIMA-Architektur und Technische Informatik am KIT - ' +
+    'http://ti.ira.uka.de/';
+  let githubText = 'Mehr über MIMAviz - https://github.com/hexrcs/MIMAviz';
+
+  let kitLink = new PIXI.Text(kitText,
+    {fontFamily: 'Arial', fontSize: '9pt', fontStyle: 'italic'}
+  );
+  let githubLink = new PIXI.Text(githubText,
+    {fontFamily: 'Arial', fontSize: '9pt', fontStyle: 'italic'}
+  );
+
+  kitLink.anchor.set(1, 0.5);
+  kitLink.x = 760;
+  kitLink.y = 560;
+  kitLink.interactive = true;
+  kitLink.buttonMode = true;
+  kitLink.hitArea = kitLink.getBounds();
+  kitLink.on('pointerdown', () => window.open('http://ti.ira.uka.de/'));
+
+  githubLink.anchor.set(1, 0.5);
+  githubLink.x = 760;
+  githubLink.y = 580;
+  githubLink.interactive = true;
+  githubLink.buttonMode = true;
+  githubLink.hitArea = kitLink.getBounds();
+  githubLink.on('pointerdown', () => window.open('https://github.com/hexrcs/MIMAviz'));
+
+  sprite.addChild(kitLink, githubLink);
+}
+
+function buildLeaveButton (type = 'STARTUP', store) {
   let button = new PIXI.Graphics();
   button.beginFill(colorCode.WHITE);
   button.drawRoundedRect(560, 230, 80, 30, 8);
+  button.interactive = true;
+  button.buttonMode = true;
   button.hitArea = new PIXI.RoundedRectangle(560, 230, 80, 30, 8);
 
   let text = '';
@@ -38,9 +114,6 @@ function makeLeaveButton (type = 'STARTUP', store) {
   textSprite.y = 230 + 30 / 2;
 
   button.addChild(textSprite);
-  button.on('pointerdown', () => pointerDown(name, store));
-}
-
-function pointerDown (store) {
-  store.dispatch({type: 'MODE_CHANGE', payload: 'IDLE'});
+  button.on('pointerdown', () => store.dispatch({type: 'MODE_CHANGE', payload: 'IDLE'}));
+  return button;
 }
