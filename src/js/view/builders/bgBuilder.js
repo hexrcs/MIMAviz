@@ -102,7 +102,7 @@ function makeQuestionMark (sprite = new PIXI.Graphics(), store) {
   button.hitArea = new PIXI.Circle(780, 20, 10);
 
   let textSprite = new PIXI.Text('?',
-    {fontFamily: 'Courier', fontSize: '12pt', fontWeight: 'bold'}
+    {fontFamily: 'Courier', fontSize: '12pt', fontWeight: 'bold', fill: colorCode.BLUE_LINK}
   );
   textSprite.anchor.set(0.5, 0.5);
   textSprite.x = 780;

@@ -26,19 +26,20 @@ function makeLogo (sprite = new PIXI.Graphics()) {
   let logo = new PIXI.Text('MIMAviz',
     {fontFamily: 'Arial', fontSize: '36pt', fontWeight: 'bold'}
   );
-  logo.x = 200;
+  logo.x = 180;
   logo.y = 95;
   sprite.addChild(logo);
 }
 
 function makeTitleDescription (sprite = new PIXI.Graphics()) {
   let text =
-    'Eine Visualisierung für die Minimalmaschine, basierend auf dem originalen SimMIMA Design.';
+    'Eine Visualisierung für die Minimalmaschine, ' +
+    'ein vereinfachtes CPU Modell basierend auf dem von-Neumann-Prinzip';
 
   let textSprite = new PIXI.Text(text,
-    {fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold', wordWrap: true, wordWrapWidth: 400}
+    {fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold', wordWrap: true, wordWrapWidth: 450}
   );
-  textSprite.x = 200;
+  textSprite.x = 180;
   textSprite.y = 160;
 
   sprite.addChild(textSprite);
@@ -46,7 +47,7 @@ function makeTitleDescription (sprite = new PIXI.Graphics()) {
 
 function makeCreditDescription (sprite = new PIXI.Graphics()) {
   let text =
-    'Die ursprüngliche Arbeit bei der Entwicklung der MIMA-Architektur und deren Instruktionen ' +
+    'Die ursprüngliche Arbeit bei der Entwicklung der MIMA-Architektur und deren Befehlssatz ' +
     'wurde von Prof. Tamim Asfour geleistet.';
 
   let textSprite = new PIXI.Text(text,
@@ -67,10 +68,10 @@ function makeClickableTexts (sprite = new PIXI.Graphics()) {
   let githubText = 'Mehr über MIMAviz - https://github.com/hexrcs/MIMAviz';
 
   let kitLink = new PIXI.Text(kitText,
-    {fontFamily: 'Arial', fontSize: '9pt', fontStyle: 'italic'}
+    {fontFamily: 'Arial', fontSize: '9pt', fontStyle: 'italic', fill: colorCode.BLUE_LINK}
   );
   let githubLink = new PIXI.Text(githubText,
-    {fontFamily: 'Arial', fontSize: '9pt', fontStyle: 'italic'}
+    {fontFamily: 'Arial', fontSize: '9pt', fontStyle: 'italic', fill: colorCode.BLUE_LINK}
   );
 
   kitLink.anchor.set(1, 0.5);
