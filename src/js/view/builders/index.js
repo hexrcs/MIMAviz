@@ -7,3 +7,4 @@ export { default as cuFetchBuilder } from './cuFetchBuilder';
 export { default as rwBusBuilder } from './rwBusBuilder';
 export { default as rwUnitArrowBuilder } from './rwUnitArrowBuilder';
 export { default as cuDescriptionBuilder } from './cuDescriptionBuilder';
+export { default as aboutBuilder } from './aboutBuilder';

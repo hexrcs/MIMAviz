@@ -7,8 +7,7 @@ document.getElementById('mimaviz').appendChild(app.view);
 
 export const rendererSize = {width: app.renderer.width, height: app.renderer.height};
 
-app.stage.addChild(view.builders.bgBuilder());
-app.stage.addChild(store.dynamicView);
+app.stage.addChild(store.canvasView);
 
 store.render();
 store.store.subscribe(store.render);

@@ -26,6 +26,8 @@ function makeLogo (sprite = new PIXI.Graphics()) {
   let logo = new PIXI.Text('MIMAviz',
     {fontFamily: 'Arial', fontSize: '36pt', fontWeight: 'bold'}
   );
+  logo.x = 200;
+  logo.y = 95;
   sprite.addChild(logo);
 }
 
