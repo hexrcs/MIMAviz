@@ -42813,17 +42813,18 @@ function reducer (state = {mode: 'IDLE', step: 0},
 
 
 
-function bgBuilder () {
+function bgBuilder (store) {
   let sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]();
 
   makeBigBG(sprite);
   makeCUDisplayBG(sprite);
-  makeButtomDescriptionBG(sprite);
+  makeBottomDescriptionBG(sprite);
   makeInsideBG(sprite);
   makeArrowTipsBG(sprite);
   makeALUioArrows(sprite);
   makeCUArrowAndBitWidth(sprite);
   makeUnitsBG(sprite);
+  makeQuestionMark(sprite, store);
 
   return sprite;
 }
@@ -42833,7 +42834,7 @@ function makeBigBG (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics
   sprite.drawRoundedRect(0, 0, __WEBPACK_IMPORTED_MODULE_2__app__["rendererSize"].width, __WEBPACK_IMPORTED_MODULE_2__app__["rendererSize"].height, 8);
 }
 
-function makeButtomDescriptionBG (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
+function makeBottomDescriptionBG (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
   sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE);
   sprite.drawRoundedRect(20, 490, 760, 100, 8);
 }
@@ -42900,6 +42901,27 @@ function makeUnitsBG (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphi
 
   // ALU ahhhhhhh
   sprite.drawPolygon([340, 260, 300, 300, 360, 300, 370, 290, 380, 300, 440, 300, 400, 260, 340, 260]);
+}
+
+function makeQuestionMark (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"](), store) {
+  let button = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]();
+  button.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE);
+  button.drawCircle(780, 20, 10);
+  button.interactive = true;
+  button.buttonMode = true;
+  button.hitArea = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Circle"](780, 20, 10);
+
+  let textSprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"]('?',
+    {fontFamily: 'Courier', fontSize: '12pt', fontWeight: 'bold'}
+  );
+  textSprite.anchor.set(0.5, 0.5);
+  textSprite.x = 780;
+  textSprite.y = 20;
+
+  button.addChild(textSprite);
+  button.on('pointerdown', () => store.dispatch({type: 'MODE_CHANGE', payload: 'ABOUT'}));
+
+  sprite.addChild(button);
 }
 
 
