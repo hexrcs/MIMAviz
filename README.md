@@ -14,7 +14,7 @@ You may visit the hosted [latest version](https://hexrcs.github.io/MIMAviz/) and
 
   * Full functionality of the original [MIMA Simulation](http://ti.ira.uka.de/Visualisierungen/Mima/)
   * A handy *BACK* button to go back to the last step
-  * Only needs a modern web browser - No Java required!
+  * Only needs a modern web browser - **No Java required**!
   
 ## Usage
 
@@ -46,16 +46,14 @@ is quite ugly and convoluted. Some other refinments and add-on features are on m
 
   - [x] Additional description for what each MIMA instruction does
   - [ ] English localization (currently only in German)
-  - [ ] Pointer over button animation
-  - [ ] Better support for older browsers
   - [ ] Misc. interface fine-tuning, better fonts on Windows
 
-I'm also considering to abandon Pixi.js, which is a Canvas based rendering engine, and migrate to normal 
-web-technologies for a responsive interface. A lot more to learn. ;)
+I'm also considering to abandon Pixi.js, which is a Canvas based rendering engine, and migrate to DOM based 
+technologies for a responsive interface. ;)
 
 ## Known Issues
 
-Although built with backward compatibility in mind, this app runs best on latest web browsers. In my testings, 
+Although Pixi.js allows pretty good backward compatibility, this app runs best on latest web browsers. In my testings, 
 the app will not run properly in Internet Explorer 11 (I don't have access to Edge). The font rendering also looks 
 a bit weird in Windows with Firefox and Chrome. However, if you are on a Linux or macOS machine, you shouldn't 
 notice an issue.
