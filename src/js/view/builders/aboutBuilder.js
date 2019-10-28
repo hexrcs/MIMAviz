@@ -101,7 +101,7 @@ function makeClickableTexts (sprite = new PIXI.Graphics()) {
 
 function buildLeaveButton (type = 'STARTUP', store) {
   let button = new PIXI.Graphics();
-  button.beginFill(colorCode.RED);
+  button.beginFill(colorCode.BLUE);
   button.drawRoundedRect(560, 230, 80, 30, 8);
   button.interactive = true;
   button.buttonMode = true;
@@ -112,7 +112,7 @@ function buildLeaveButton (type = 'STARTUP', store) {
   if (type === 'STARTUP') {
     text = 'ENTER';
   } else {
-    text = 'Read';
+    text = 'back';
   }
 
   let textSprite = new PIXI.Text(text,
