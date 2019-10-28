@@ -1,6 +1,6 @@
 {
     "IDLE": {
-      "cuUpperHeader": "So funktionierts:",
+      "cuUpperHeader": "Thats how it works!:",
       "proc": [
         "",
         "1. Select command",
@@ -12,17 +12,17 @@
       "cuLowerHeader": "Execute Phase",
       "proc": [
         " 1: IAR->SAR; IAR->X; R=1",
-        " 2: Eins->Y;          R=1",
+        " 2: ONE->Y;          R=1",
         " 3: add in ALU; R=1",
         " 4: Z->IAR",
         " 5: SDR->IR",
         " 6: D=1",
         " 1: IR->SAR;  R=1",
-        " 2: Akku->X;  R=1",
+        " 2: Accu->X;  R=1",
         " 3:           R=1",
         " 4: SDR->Y",
         " 5: add in ALU",
-        " 6: Z->Akku"
+        " 6: Z->Accu"
       ]
     },
     "LDC": {
@@ -30,12 +30,12 @@
       "cuLowerHeader": "Execute Phase",
       "proc": [
         " 1: IAR->SAR; IAR->X; R=1",
-        " 2: Eins->Y;          R=1",
+        " 2: ONE->Y;          R=1",
         " 3: add in ALU; R=1",
         " 4: Z->IAR",
         " 5: SDR->IR",
         " 6: D=1",
-        " 1: IR->Akku"
+        " 1: IR->Accu"
       ]
     },
     "LDV": {
@@ -43,7 +43,7 @@
       "cuLowerHeader": "Execute Phase",
       "proc": [
         " 1: IAR->SAR; IAR->X; R=1",
-        " 2: Eins->Y;          R=1",
+        " 2: ONE->Y;          R=1",
         " 3: add in ALU; R=1",
         " 4: Z->IAR",
         " 5: SDR->IR",
@@ -51,7 +51,7 @@
         " 1: IR->SAR;  R=1",
         " 2:           R=1",
         " 3:           R=1",
-        " 4: SDR->Akku"
+        " 4: SDR->Accu"
       ]
     },
     "NOT": {
@@ -59,14 +59,14 @@
       "cuLowerHeader": "Execute Phase",
       "proc": [
         " 1: IAR->SAR; IAR->X; R=1",
-        " 2: Eins->Y;          R=1",
+        " 2: ONE->Y;          R=1",
         " 3: add in ALU; R=1",
         " 4: Z->IAR",
         " 5: SDR->IR",
         " 6: D=1",
-        " 1: Akku->X",
+        " 1: Accu->X",
         " 2: Complement in ALU",
-        " 3: Z->Akku"
+        " 3: Z->Accu"
       ]
     },
     "STV": {
@@ -74,12 +74,12 @@
       "cuLowerHeader": "Execute Phase",
       "proc": [
         " 1: IAR->SAR; IAR->X; R=1",
-        " 2: Eins->Y;          R=1",
+        " 2: ONE->Y;          R=1",
         " 3: add in ALU; R=1",
         " 4: Z->IAR",
         " 5: SDR->IR",
         " 6: D=1",
-        " 1: Akku->SDR",
+        " 1: Accu->SDR",
         " 2: IR->SAR;  W=1",
         " 3:           W=1",
         " 4:           W=1"
