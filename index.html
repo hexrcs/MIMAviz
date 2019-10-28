@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>MIMAviz</title>
   <style>
     canvas {
       padding: 0;
-      margin: auto;
+      margin: 4rem auto;
       display: block;
+    }
+
+    #credits {
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
     }
   </style>
 </head>
+
 <body>
   <div id="mimaviz"></div>
   <script src="dist/bundle.js"></script>
+  <div id="credits">
+    A project by
+    <a href='https://i.am.xiaoru.li'>Xiaoru Li</a>
+  </div>
 </body>
+
 </html>

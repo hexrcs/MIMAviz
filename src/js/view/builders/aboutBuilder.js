@@ -65,7 +65,7 @@ function makeCreditDescription (sprite = new PIXI.Graphics()) {
 function makeClickableTexts (sprite = new PIXI.Graphics()) {
   let kitText = 'Mehr über MIMA-Architektur und Technische Informatik am KIT - ' +
     'http://ti.ira.uka.de';
-  let githubText = 'Mehr über MIMAviz - https://github.com/hexrcs/MIMAviz';
+  let githubText = 'Mehr über das MIMAviz Project von Xiaoru Li - https://github.com/hexrcs/MIMAviz';
 
   let kitLink = new PIXI.Text(kitText,
     {fontFamily: 'Arial', fontSize: '9pt', fontStyle: 'italic', fill: colorCode.BLUE_LINK}

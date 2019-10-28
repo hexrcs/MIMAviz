@@ -169,7 +169,7 @@ Object.defineProperty(exports, 'Sprite', {
   }
 });
 
-var _CanvasSpriteRenderer = __webpack_require__(130);
+var _CanvasSpriteRenderer = __webpack_require__(129);
 
 Object.defineProperty(exports, 'CanvasSpriteRenderer', {
   enumerable: true,
@@ -187,7 +187,7 @@ Object.defineProperty(exports, 'CanvasTinter', {
   }
 });
 
-var _SpriteRenderer = __webpack_require__(133);
+var _SpriteRenderer = __webpack_require__(132);
 
 Object.defineProperty(exports, 'SpriteRenderer', {
   enumerable: true,
@@ -196,7 +196,7 @@ Object.defineProperty(exports, 'SpriteRenderer', {
   }
 });
 
-var _Text = __webpack_require__(148);
+var _Text = __webpack_require__(147);
 
 Object.defineProperty(exports, 'Text', {
   enumerable: true,
@@ -223,7 +223,7 @@ Object.defineProperty(exports, 'TextMetrics', {
   }
 });
 
-var _Graphics = __webpack_require__(150);
+var _Graphics = __webpack_require__(149);
 
 Object.defineProperty(exports, 'Graphics', {
   enumerable: true,
@@ -241,7 +241,7 @@ Object.defineProperty(exports, 'GraphicsData', {
   }
 });
 
-var _GraphicsRenderer = __webpack_require__(152);
+var _GraphicsRenderer = __webpack_require__(151);
 
 Object.defineProperty(exports, 'GraphicsRenderer', {
   enumerable: true,
@@ -250,7 +250,7 @@ Object.defineProperty(exports, 'GraphicsRenderer', {
   }
 });
 
-var _CanvasGraphicsRenderer = __webpack_require__(159);
+var _CanvasGraphicsRenderer = __webpack_require__(158);
 
 Object.defineProperty(exports, 'CanvasGraphicsRenderer', {
   enumerable: true,
@@ -259,7 +259,7 @@ Object.defineProperty(exports, 'CanvasGraphicsRenderer', {
   }
 });
 
-var _Spritesheet = __webpack_require__(160);
+var _Spritesheet = __webpack_require__(159);
 
 Object.defineProperty(exports, 'Spritesheet', {
   enumerable: true,
@@ -831,11 +831,11 @@ var _eventemitter = __webpack_require__(10);
 
 var _eventemitter2 = _interopRequireDefault(_eventemitter);
 
-var _pluginTarget = __webpack_require__(118);
+var _pluginTarget = __webpack_require__(117);
 
 var _pluginTarget2 = _interopRequireDefault(_pluginTarget);
 
-var _mixin = __webpack_require__(119);
+var _mixin = __webpack_require__(118);
 
 var mixins = _interopRequireWildcard(_mixin);
 
@@ -843,11 +843,11 @@ var _ismobilejs = __webpack_require__(31);
 
 var isMobile = _interopRequireWildcard(_ismobilejs);
 
-var _removeArrayItems = __webpack_require__(120);
+var _removeArrayItems = __webpack_require__(119);
 
 var _removeArrayItems2 = _interopRequireDefault(_removeArrayItems);
 
-var _mapPremultipliedBlendModes = __webpack_require__(121);
+var _mapPremultipliedBlendModes = __webpack_require__(120);
 
 var _mapPremultipliedBlendModes2 = _interopRequireDefault(_mapPremultipliedBlendModes);
 
@@ -1282,7 +1282,7 @@ function premultiplyTintToRgba(tint, alpha, out, premultiply) {
 exports.__esModule = true;
 exports.loader = exports.prepare = exports.particles = exports.mesh = exports.loaders = exports.interaction = exports.filters = exports.extras = exports.extract = exports.accessibility = undefined;
 
-var _polyfill = __webpack_require__(101);
+var _polyfill = __webpack_require__(100);
 
 Object.keys(_polyfill).forEach(function (key) {
     if (key === "default" || key === "__esModule") return;
@@ -1306,15 +1306,15 @@ Object.keys(_core).forEach(function (key) {
     });
 });
 
-var _deprecation = __webpack_require__(161);
+var _deprecation = __webpack_require__(160);
 
 var _deprecation2 = _interopRequireDefault(_deprecation);
 
-var _accessibility = __webpack_require__(162);
+var _accessibility = __webpack_require__(161);
 
 var accessibility = _interopRequireWildcard(_accessibility);
 
-var _extract = __webpack_require__(164);
+var _extract = __webpack_require__(163);
 
 var extract = _interopRequireWildcard(_extract);
 
@@ -1322,27 +1322,27 @@ var _extras = __webpack_require__(75);
 
 var extras = _interopRequireWildcard(_extras);
 
-var _filters = __webpack_require__(174);
+var _filters = __webpack_require__(173);
 
 var filters = _interopRequireWildcard(_filters);
 
-var _interaction = __webpack_require__(181);
+var _interaction = __webpack_require__(180);
 
 var interaction = _interopRequireWildcard(_interaction);
 
-var _loaders = __webpack_require__(183);
+var _loaders = __webpack_require__(182);
 
 var loaders = _interopRequireWildcard(_loaders);
 
-var _mesh = __webpack_require__(187);
+var _mesh = __webpack_require__(186);
 
 var mesh = _interopRequireWildcard(_mesh);
 
-var _particles = __webpack_require__(192);
+var _particles = __webpack_require__(191);
 
 var particles = _interopRequireWildcard(_particles);
 
-var _prepare = __webpack_require__(197);
+var _prepare = __webpack_require__(196);
 
 var prepare = _interopRequireWildcard(_prepare);
 
@@ -1415,11 +1415,11 @@ global.PIXI = exports; // eslint-disable-line
 
 exports.__esModule = true;
 
-var _maxRecommendedTextures = __webpack_require__(116);
+var _maxRecommendedTextures = __webpack_require__(115);
 
 var _maxRecommendedTextures2 = _interopRequireDefault(_maxRecommendedTextures);
 
-var _canUploadSameBuffer = __webpack_require__(117);
+var _canUploadSameBuffer = __webpack_require__(116);
 
 var _canUploadSameBuffer2 = _interopRequireDefault(_canUploadSameBuffer);
 
@@ -1691,7 +1691,7 @@ Object.defineProperty(exports, 'GroupD8', {
   }
 });
 
-var _Circle = __webpack_require__(106);
+var _Circle = __webpack_require__(105);
 
 Object.defineProperty(exports, 'Circle', {
   enumerable: true,
@@ -1700,7 +1700,7 @@ Object.defineProperty(exports, 'Circle', {
   }
 });
 
-var _Ellipse = __webpack_require__(107);
+var _Ellipse = __webpack_require__(106);
 
 Object.defineProperty(exports, 'Ellipse', {
   enumerable: true,
@@ -1709,7 +1709,7 @@ Object.defineProperty(exports, 'Ellipse', {
   }
 });
 
-var _Polygon = __webpack_require__(108);
+var _Polygon = __webpack_require__(107);
 
 Object.defineProperty(exports, 'Polygon', {
   enumerable: true,
@@ -1727,7 +1727,7 @@ Object.defineProperty(exports, 'Rectangle', {
   }
 });
 
-var _RoundedRectangle = __webpack_require__(109);
+var _RoundedRectangle = __webpack_require__(108);
 
 Object.defineProperty(exports, 'RoundedRectangle', {
   enumerable: true,
@@ -1744,14 +1744,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /***/ (function(module, exports, __webpack_require__) {
 
 var gl = {
-    createContext:          __webpack_require__(110),
+    createContext:          __webpack_require__(109),
     setVertexAttribArrays:  __webpack_require__(45),
-    GLBuffer:               __webpack_require__(111),
-    GLFramebuffer:          __webpack_require__(112),
-    GLShader:               __webpack_require__(113),
+    GLBuffer:               __webpack_require__(110),
+    GLFramebuffer:          __webpack_require__(111),
+    GLShader:               __webpack_require__(112),
     GLTexture:              __webpack_require__(46),
-    VertexArrayObject:      __webpack_require__(114),
-    shader:                 __webpack_require__(115)
+    VertexArrayObject:      __webpack_require__(113),
+    shader:                 __webpack_require__(114)
 };
 
 // Export for Node-compatible environments
@@ -2020,7 +2020,7 @@ var substr = 'ab'.substr(-1) === 'b'
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__rwLineDrawer__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__rwCrossPointDrawer__ = __webpack_require__(232);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_6__rwCrossPointDrawer__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__textDrawer__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__textDrawer__ = __webpack_require__(99);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_7__textDrawer__["a"]; });
 
 
@@ -3102,7 +3102,7 @@ var _eventemitter = __webpack_require__(10);
 
 var _eventemitter2 = _interopRequireDefault(_eventemitter);
 
-var _determineCrossOrigin = __webpack_require__(122);
+var _determineCrossOrigin = __webpack_require__(121);
 
 var _determineCrossOrigin2 = _interopRequireDefault(_determineCrossOrigin);
 
@@ -4595,7 +4595,7 @@ var _SystemRenderer2 = __webpack_require__(61);
 
 var _SystemRenderer3 = _interopRequireDefault(_SystemRenderer2);
 
-var _CanvasMaskManager = __webpack_require__(131);
+var _CanvasMaskManager = __webpack_require__(130);
 
 var _CanvasMaskManager2 = _interopRequireDefault(_CanvasMaskManager);
 
@@ -4603,7 +4603,7 @@ var _CanvasRenderTarget = __webpack_require__(63);
 
 var _CanvasRenderTarget2 = _interopRequireDefault(_CanvasRenderTarget);
 
-var _mapCanvasBlendModesToPixi = __webpack_require__(132);
+var _mapCanvasBlendModesToPixi = __webpack_require__(131);
 
 var _mapCanvasBlendModesToPixi2 = _interopRequireDefault(_mapCanvasBlendModesToPixi);
 
@@ -5092,7 +5092,7 @@ exports.default = Shader;
 
 /* eslint-disable no-undef */
 
-var Loader = __webpack_require__(184).default;
+var Loader = __webpack_require__(183).default;
 var Resource = __webpack_require__(41).default;
 var async = __webpack_require__(88);
 var b64 = __webpack_require__(89);
@@ -5576,15 +5576,15 @@ var _SystemRenderer2 = __webpack_require__(61);
 
 var _SystemRenderer3 = _interopRequireDefault(_SystemRenderer2);
 
-var _MaskManager = __webpack_require__(134);
+var _MaskManager = __webpack_require__(133);
 
 var _MaskManager2 = _interopRequireDefault(_MaskManager);
 
-var _StencilManager = __webpack_require__(136);
+var _StencilManager = __webpack_require__(135);
 
 var _StencilManager2 = _interopRequireDefault(_StencilManager);
 
-var _FilterManager = __webpack_require__(137);
+var _FilterManager = __webpack_require__(136);
 
 var _FilterManager2 = _interopRequireDefault(_FilterManager);
 
@@ -5596,7 +5596,7 @@ var _ObjectRenderer = __webpack_require__(21);
 
 var _ObjectRenderer2 = _interopRequireDefault(_ObjectRenderer);
 
-var _TextureManager = __webpack_require__(139);
+var _TextureManager = __webpack_require__(138);
 
 var _TextureManager2 = _interopRequireDefault(_TextureManager);
 
@@ -5604,19 +5604,19 @@ var _BaseTexture = __webpack_require__(13);
 
 var _BaseTexture2 = _interopRequireDefault(_BaseTexture);
 
-var _TextureGarbageCollector = __webpack_require__(140);
+var _TextureGarbageCollector = __webpack_require__(139);
 
 var _TextureGarbageCollector2 = _interopRequireDefault(_TextureGarbageCollector);
 
-var _WebGLState = __webpack_require__(141);
+var _WebGLState = __webpack_require__(140);
 
 var _WebGLState2 = _interopRequireDefault(_WebGLState);
 
-var _mapWebGLDrawModesToPixi = __webpack_require__(143);
+var _mapWebGLDrawModesToPixi = __webpack_require__(142);
 
 var _mapWebGLDrawModesToPixi2 = _interopRequireDefault(_mapWebGLDrawModesToPixi);
 
-var _validateContext = __webpack_require__(144);
+var _validateContext = __webpack_require__(143);
 
 var _validateContext2 = _interopRequireDefault(_validateContext);
 
@@ -6995,8 +6995,19 @@ function buildNativeLine(graphicsData, webGLData) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_pixi_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_pixi_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_pixi_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__store__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__view__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__store__ = __webpack_require__(200);
+/*
+ MIMAviz - A modern browser friendly MIMA visualization
+
+ MIMA (Minimalmachine) is a simple processor model based on von Neumann architecture, used for
+ educational purposes at the KIT. It is developed by Prof. Tamim Asfour.
+
+ This is a rewrite project of the MIMA simulation (http://ti.ira.uka.de/Visualisierungen/Mima)
+ in Javascript and friends, created by Xiaoru Li and distributed under MIT license (see LICENSE).
+
+ The German descriptions in this visualization were largely borrowed from the original MIMA
+ simulation, created by Thorsten Rapp and supervised by Prof. Tamim Asfour.
+ */
 
 
 
@@ -9403,7 +9414,7 @@ exports.nextCombination = function(v) {
 exports.__esModule = true;
 exports.Ticker = exports.shared = undefined;
 
-var _Ticker = __webpack_require__(128);
+var _Ticker = __webpack_require__(127);
 
 var _Ticker2 = _interopRequireDefault(_Ticker);
 
@@ -14253,8 +14264,8 @@ exports.default = Transform;
 
 
 
-var punycode = __webpack_require__(123);
-var util = __webpack_require__(124);
+var punycode = __webpack_require__(122);
+var util = __webpack_require__(123);
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;
@@ -14329,7 +14340,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
       'gopher:': true,
       'file:': true
     },
-    querystring = __webpack_require__(125);
+    querystring = __webpack_require__(124);
 
 function urlParse(url, parseQueryString, slashesDenoteHost) {
   if (url && util.isObject(url) && url instanceof Url) return url;
@@ -16247,7 +16258,7 @@ exports.__esModule = true;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _extractUniformsFromSrc = __webpack_require__(135);
+var _extractUniformsFromSrc = __webpack_require__(134);
 
 var _extractUniformsFromSrc2 = _interopRequireDefault(_extractUniformsFromSrc);
 
@@ -18872,7 +18883,7 @@ exports.default = {
 exports.__esModule = true;
 exports.BitmapText = exports.TilingSpriteRenderer = exports.TilingSprite = exports.TextureTransform = exports.AnimatedSprite = undefined;
 
-var _AnimatedSprite = __webpack_require__(167);
+var _AnimatedSprite = __webpack_require__(166);
 
 Object.defineProperty(exports, 'AnimatedSprite', {
   enumerable: true,
@@ -18890,7 +18901,7 @@ Object.defineProperty(exports, 'TextureTransform', {
   }
 });
 
-var _TilingSprite = __webpack_require__(168);
+var _TilingSprite = __webpack_require__(167);
 
 Object.defineProperty(exports, 'TilingSprite', {
   enumerable: true,
@@ -18899,7 +18910,7 @@ Object.defineProperty(exports, 'TilingSprite', {
   }
 });
 
-var _TilingSpriteRenderer = __webpack_require__(169);
+var _TilingSpriteRenderer = __webpack_require__(168);
 
 Object.defineProperty(exports, 'TilingSpriteRenderer', {
   enumerable: true,
@@ -18908,7 +18919,7 @@ Object.defineProperty(exports, 'TilingSpriteRenderer', {
   }
 });
 
-var _BitmapText = __webpack_require__(170);
+var _BitmapText = __webpack_require__(169);
 
 Object.defineProperty(exports, 'BitmapText', {
   enumerable: true,
@@ -18917,11 +18928,11 @@ Object.defineProperty(exports, 'BitmapText', {
   }
 });
 
+__webpack_require__(170);
+
 __webpack_require__(171);
 
 __webpack_require__(172);
-
-__webpack_require__(173);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20913,7 +20924,7 @@ exports.default = CountLimiter;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionTypes; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = createStore;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_symbol_observable__);
 
 
@@ -21169,9 +21180,9 @@ var ActionTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(209);
 
 
 
@@ -21241,7 +21252,7 @@ function isPlainObject(value) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(203);
 
 
 /** Built-in value references. */
@@ -21322,24 +21333,6 @@ function compose() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__builders__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__drawers__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__organizers__ = __webpack_require__(241);
-/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__builders__; });
-/* unused harmony reexport drawers */
-/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__organizers__; });
-
-
-
-
-
-
-
-/***/ }),
-/* 100 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = textDrawer;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_pixi_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_pixi_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_pixi_js__);
@@ -21347,184 +21340,202 @@ function compose() {
 
 
 
-// This function handles drawing every text element on the view, 
+// This function handles drawing every text element on the view,
 // the input x,y should be the upper left corner of the block
-function textDrawer (text = '', isHighlighted = false, type = '', x = 0, y = 0, unitSize = 0) {
-  let sprite = {};
+function textDrawer(
+  text = '',
+  isHighlighted = false,
+  type = '',
+  x = 0,
+  y = 0,
+  unitSize = 0
+) {
+  let sprite = {}
 
   if (!isHighlighted) {
     switch (type) {
       case 'bottomDescription':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Courier', fontSize: '10pt', wordWrap: true, wordWrapWidth: 750}
-        );
-        sprite.x = 30;
-        sprite.y = 495;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '10pt',
+          wordWrap: true,
+          wordWrapWidth: 750
+        })
+        sprite.x = 30
+        sprite.y = 495
+        break
       case 'unitLabel':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Courier', fontSize: '12pt'}
-        );
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + unitSize * 20 / 2;
-        sprite.y = y + 20 / 2;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '12pt'
+        })
+        sprite.anchor.set(0.5, 0.5)
+        sprite.x = x + (unitSize * 20) / 2
+        sprite.y = y + 20 / 2
+        break
       case 'ALULabel':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"]('ALU',
-          {fontFamily: 'Courier', fontSize: '12pt'}
-        );
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = 370;
-        sprite.y = 275;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"]('ALU', {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '12pt'
+        })
+        sprite.anchor.set(0.5, 0.5)
+        sprite.x = 370
+        sprite.y = 275
+        break
       case 'unitValue':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Courier', fontSize: '12pt', letterSpacing: 10}
-        );
-        sprite.anchor.set(1, 0.5);
-        sprite.x = x + unitSize * 20 - 5;
-        sprite.y = y + 20 + 20 / 2;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '12pt',
+          letterSpacing: 10
+        })
+        sprite.anchor.set(1, 0.5)
+        sprite.x = x + unitSize * 20 - 5
+        sprite.y = y + 20 + 20 / 2
+        break
       case 'upperButtonLabel':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Courier', fontSize: '12pt'}
-        );
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + 40 / 2;
-        sprite.y = y + 20 / 2;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '12pt'
+        })
+        sprite.anchor.set(0.5, 0.5)
+        sprite.x = x + 40 / 2
+        sprite.y = y + 20 / 2
+        break
       case 'lowerButtonLabel':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold'}
-        );
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + 60 / 2;
-        sprite.y = y + 20 / 2;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, { fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold' })
+        sprite.anchor.set(0.5, 0.5)
+        sprite.x = x + 60 / 2
+        sprite.y = y + 20 / 2
+        break
       case 'phaseLabel':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Courier', fontSize: '12pt', fontWeight: 'bold'}
-        );
-        sprite.anchor.set(0, 0.5);
-        sprite.x = x + 5;
-        sprite.y = y + 20 / 2;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '12pt',
+          fontWeight: 'bold'
+        })
+        sprite.anchor.set(0, 0.5)
+        sprite.x = x + 5
+        sprite.y = y + 20 / 2
+        break
       case 'cuStep':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Courier', fontSize: '11pt'}
-        );
-        sprite.anchor.set(0, 0.5);
-        sprite.x = x + 5;
-        sprite.y = y + 20 / 2;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '11pt'
+        })
+        sprite.anchor.set(0, 0.5)
+        sprite.x = x + 5
+        sprite.y = y + 20 / 2
+        break
       case 'cuDescription':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Arial', fontSize: '9pt', fontStyle: 'italic'}
-        );
-        sprite.anchor.set(0, 0.5);
-        sprite.x = 540 + 5;
-        sprite.y = 410 + 20 / 2;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, { fontFamily: 'Arial', fontSize: '9pt', fontStyle: 'italic' })
+        sprite.anchor.set(0, 0.5)
+        sprite.x = 540 + 5
+        sprite.y = 410 + 20 / 2
+        break
       case 'bitWidthText':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Courier', fontSize: '9pt'}
-        );
-        sprite.x = x;
-        sprite.y = y;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '9pt'
+        })
+        sprite.x = x
+        sprite.y = y
+        break
     }
   } else {
     switch (type) {
       case 'unitLabel':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {
-            fontFamily: 'Courier',
-            fontSize: '12pt',
-            fontWeight: 'bold',
-            fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].RED
-          }
-        );
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + unitSize * 20 / 2;
-        sprite.y = y + 20 / 2;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '12pt',
+          fontWeight: 'bold',
+          fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].RED
+        })
+        sprite.anchor.set(0.5, 0.5)
+        sprite.x = x + (unitSize * 20) / 2
+        sprite.y = y + 20 / 2
+        break
       case 'ALULabel':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"]('ALU',
-          {
-            fontFamily: 'Courier',
-            fontSize: '12pt',
-            fontWeight: 'bold',
-            fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].RED
-          }
-        );
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = 370;
-        sprite.y = 275;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"]('ALU', {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '12pt',
+          fontWeight: 'bold',
+          fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].RED
+        })
+        sprite.anchor.set(0.5, 0.5)
+        sprite.x = 370
+        sprite.y = 275
+        break
       case 'unitValue':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {
-            fontFamily: 'Courier',
-            fontSize: '12pt',
-            letterSpacing: 10,
-            fontWeight: 'bold',
-            fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].RED
-          }
-        );
-        sprite.anchor.set(1, 0.5);
-        sprite.x = x + unitSize * 20 - 5;
-        sprite.y = y + 20 + 20 / 2;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '12pt',
+          letterSpacing: 10,
+          fontWeight: 'bold',
+          fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].RED
+        })
+        sprite.anchor.set(1, 0.5)
+        sprite.x = x + unitSize * 20 - 5
+        sprite.y = y + 20 + 20 / 2
+        break
       case 'upperButtonLabel':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Courier', fontSize: '12pt', fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE}
-        );
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + 20;
-        sprite.y = y + 20 / 2;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '12pt',
+          fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE
+        })
+        sprite.anchor.set(0.5, 0.5)
+        sprite.x = x + 20
+        sprite.y = y + 20 / 2
+        break
       case 'lowerButtonLabel':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Arial', fontSize: '11pt', fontWeight: 'bold', fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE}
-        );
-        sprite.anchor.set(0.5, 0.5);
-        sprite.x = x + 30;
-        sprite.y = y + 20 / 2;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Arial',
+          fontSize: '11pt',
+          fontWeight: 'bold',
+          fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE
+        })
+        sprite.anchor.set(0.5, 0.5)
+        sprite.x = x + 30
+        sprite.y = y + 20 / 2
+        break
       case 'cuStep':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Courier', fontSize: '11pt', fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE}
-        );
-        sprite.anchor.set(0, 0.5);
-        sprite.x = x + 5;
-        sprite.y = y + 20 / 2;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '11pt',
+          fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE
+        })
+        sprite.anchor.set(0, 0.5)
+        sprite.x = x + 5
+        sprite.y = y + 20 / 2
+        break
       case 'bitWidthText':
-        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text,
-          {fontFamily: 'Courier', fontSize: '9pt', fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].RED}
-        );
-        sprite.x = x;
-        sprite.y = y;
-        break;
+        sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](text, {
+          fontFamily: 'Courier, "Courier New", monospace',
+          fontSize: '9pt',
+          fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].RED
+        })
+        sprite.x = x
+        sprite.y = y
+        break
     }
   }
 
-  return sprite;
+  return sprite
 }
 
 
 /***/ }),
-/* 101 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(102);
+__webpack_require__(101);
+
+__webpack_require__(103);
 
 __webpack_require__(104);
-
-__webpack_require__(105);
 
 if (!window.ArrayBuffer) {
     window.ArrayBuffer = Array;
@@ -21544,13 +21555,13 @@ if (!window.Uint16Array) {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 102 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _objectAssign = __webpack_require__(103);
+var _objectAssign = __webpack_require__(102);
 
 var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -21564,7 +21575,7 @@ if (!Object.assign) {
 //# sourceMappingURL=Object.assign.js.map
 
 /***/ }),
-/* 103 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21661,7 +21672,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 104 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21742,7 +21753,7 @@ if (!global.cancelAnimationFrame) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(14)))
 
 /***/ }),
-/* 105 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21765,7 +21776,7 @@ if (!Math.sign) {
 //# sourceMappingURL=Math.sign.js.map
 
 /***/ }),
-/* 106 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21884,7 +21895,7 @@ exports.default = Circle;
 //# sourceMappingURL=Circle.js.map
 
 /***/ }),
-/* 107 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22011,7 +22022,7 @@ exports.default = Ellipse;
 //# sourceMappingURL=Ellipse.js.map
 
 /***/ }),
-/* 108 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22147,7 +22158,7 @@ exports.default = Polygon;
 //# sourceMappingURL=Polygon.js.map
 
 /***/ }),
-/* 109 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22285,7 +22296,7 @@ exports.default = RoundedRectangle;
 //# sourceMappingURL=RoundedRectangle.js.map
 
 /***/ }),
-/* 110 */
+/* 109 */
 /***/ (function(module, exports) {
 
 
@@ -22317,7 +22328,7 @@ module.exports = createContext;
 
 
 /***/ }),
-/* 111 */
+/* 110 */
 /***/ (function(module, exports) {
 
 var EMPTY_ARRAY_BUFFER = new ArrayBuffer(0);
@@ -22442,7 +22453,7 @@ module.exports = Buffer;
 
 
 /***/ }),
-/* 112 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -22673,7 +22684,7 @@ module.exports = Framebuffer;
 
 
 /***/ }),
-/* 113 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -22770,7 +22781,7 @@ module.exports = Shader;
 
 
 /***/ }),
-/* 114 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -23038,7 +23049,7 @@ VertexArrayObject.prototype.getSize = function()
 
 
 /***/ }),
-/* 115 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
@@ -23053,7 +23064,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 116 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23080,7 +23091,7 @@ function maxRecommendedTextures(max) {
 //# sourceMappingURL=maxRecommendedTextures.js.map
 
 /***/ }),
-/* 117 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23099,7 +23110,7 @@ function canUploadSameBuffer() {
 //# sourceMappingURL=canUploadSameBuffer.js.map
 
 /***/ }),
-/* 118 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23170,7 +23181,7 @@ exports.default = {
 //# sourceMappingURL=pluginTarget.js.map
 
 /***/ }),
-/* 119 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23237,7 +23248,7 @@ function performMixins() {
 //# sourceMappingURL=mixin.js.map
 
 /***/ }),
-/* 120 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23272,7 +23283,7 @@ module.exports = function removeItems(arr, startIdx, removeCount)
 
 
 /***/ }),
-/* 121 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23320,7 +23331,7 @@ function mapPremultipliedBlendModes() {
 //# sourceMappingURL=mapPremultipliedBlendModes.js.map
 
 /***/ }),
-/* 122 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23381,7 +23392,7 @@ function determineCrossOrigin(url) {
 //# sourceMappingURL=determineCrossOrigin.js.map
 
 /***/ }),
-/* 123 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -23920,7 +23931,7 @@ function determineCrossOrigin(url) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(58)(module), __webpack_require__(14)))
 
 /***/ }),
-/* 124 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23943,18 +23954,18 @@ module.exports = {
 
 
 /***/ }),
-/* 125 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(126);
-exports.encode = exports.stringify = __webpack_require__(127);
+exports.decode = exports.parse = __webpack_require__(125);
+exports.encode = exports.stringify = __webpack_require__(126);
 
 
 /***/ }),
-/* 126 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24045,7 +24056,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 127 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24137,7 +24148,7 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 128 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24153,7 +24164,7 @@ var _settings2 = _interopRequireDefault(_settings);
 
 var _const = __webpack_require__(1);
 
-var _TickerListener = __webpack_require__(129);
+var _TickerListener = __webpack_require__(128);
 
 var _TickerListener2 = _interopRequireDefault(_TickerListener);
 
@@ -24615,7 +24626,7 @@ exports.default = Ticker;
 //# sourceMappingURL=Ticker.js.map
 
 /***/ }),
-/* 129 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24794,7 +24805,7 @@ exports.default = TickerListener;
 //# sourceMappingURL=TickerListener.js.map
 
 /***/ }),
-/* 130 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24952,7 +24963,7 @@ _CanvasRenderer2.default.registerPlugin('sprite', CanvasSpriteRenderer);
 //# sourceMappingURL=CanvasSpriteRenderer.js.map
 
 /***/ }),
-/* 131 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25126,7 +25137,7 @@ exports.default = CanvasMaskManager;
 //# sourceMappingURL=CanvasMaskManager.js.map
 
 /***/ }),
-/* 132 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25203,7 +25214,7 @@ function mapCanvasBlendModesToPixi() {
 //# sourceMappingURL=mapCanvasBlendModesToPixi.js.map
 
 /***/ }),
-/* 133 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25223,15 +25234,15 @@ var _createIndicesForQuads = __webpack_require__(39);
 
 var _createIndicesForQuads2 = _interopRequireDefault(_createIndicesForQuads);
 
-var _generateMultiTextureShader = __webpack_require__(145);
+var _generateMultiTextureShader = __webpack_require__(144);
 
 var _generateMultiTextureShader2 = _interopRequireDefault(_generateMultiTextureShader);
 
-var _checkMaxIfStatmentsInShader = __webpack_require__(146);
+var _checkMaxIfStatmentsInShader = __webpack_require__(145);
 
 var _checkMaxIfStatmentsInShader2 = _interopRequireDefault(_checkMaxIfStatmentsInShader);
 
-var _BatchBuffer = __webpack_require__(147);
+var _BatchBuffer = __webpack_require__(146);
 
 var _BatchBuffer2 = _interopRequireDefault(_BatchBuffer);
 
@@ -25750,7 +25761,7 @@ _WebGLRenderer2.default.registerPlugin('sprite', SpriteRenderer);
 //# sourceMappingURL=SpriteRenderer.js.map
 
 /***/ }),
-/* 134 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25965,7 +25976,7 @@ exports.default = MaskManager;
 //# sourceMappingURL=MaskManager.js.map
 
 /***/ }),
-/* 135 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26032,7 +26043,7 @@ function extractUniformsFromString(string) {
 //# sourceMappingURL=extractUniformsFromSrc.js.map
 
 /***/ }),
-/* 136 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26190,7 +26201,7 @@ exports.default = StencilManager;
 //# sourceMappingURL=StencilManager.js.map
 
 /***/ }),
-/* 137 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26216,7 +26227,7 @@ var _Shader = __webpack_require__(18);
 
 var _Shader2 = _interopRequireDefault(_Shader);
 
-var _filterTransforms = __webpack_require__(138);
+var _filterTransforms = __webpack_require__(137);
 
 var filterTransforms = _interopRequireWildcard(_filterTransforms);
 
@@ -26789,7 +26800,7 @@ exports.default = FilterManager;
 //# sourceMappingURL=FilterManager.js.map
 
 /***/ }),
-/* 138 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26853,7 +26864,7 @@ function calculateSpriteMatrix(outputMatrix, filterArea, textureSize, sprite) {
 //# sourceMappingURL=filterTransforms.js.map
 
 /***/ }),
-/* 139 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27114,7 +27125,7 @@ exports.default = TextureManager;
 //# sourceMappingURL=TextureManager.js.map
 
 /***/ }),
-/* 140 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27239,7 +27250,7 @@ exports.default = TextureGarbageCollector;
 //# sourceMappingURL=TextureGarbageCollector.js.map
 
 /***/ }),
-/* 141 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27247,7 +27258,7 @@ exports.default = TextureGarbageCollector;
 
 exports.__esModule = true;
 
-var _mapWebGLBlendModesToPixi = __webpack_require__(142);
+var _mapWebGLBlendModesToPixi = __webpack_require__(141);
 
 var _mapWebGLBlendModesToPixi2 = _interopRequireDefault(_mapWebGLBlendModesToPixi);
 
@@ -27524,7 +27535,7 @@ exports.default = WebGLState;
 //# sourceMappingURL=WebGLState.js.map
 
 /***/ }),
-/* 142 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27578,7 +27589,7 @@ function mapWebGLBlendModesToPixi(gl) {
 //# sourceMappingURL=mapWebGLBlendModesToPixi.js.map
 
 /***/ }),
-/* 143 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27615,7 +27626,7 @@ function mapWebGLDrawModesToPixi(gl) {
 //# sourceMappingURL=mapWebGLDrawModesToPixi.js.map
 
 /***/ }),
-/* 144 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27636,7 +27647,7 @@ function validateContext(gl) {
 //# sourceMappingURL=validateContext.js.map
 
 /***/ }),
-/* 145 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27704,7 +27715,7 @@ function generateSampleSrc(maxTextures) {
 //# sourceMappingURL=generateMultiTextureShader.js.map
 
 /***/ }),
-/* 146 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27784,7 +27795,7 @@ function generateIfTestSrc(maxIfs) {
 //# sourceMappingURL=checkMaxIfStatmentsInShader.js.map
 
 /***/ }),
-/* 147 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27842,7 +27853,7 @@ exports.default = Buffer;
 //# sourceMappingURL=BatchBuffer.js.map
 
 /***/ }),
-/* 148 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27878,7 +27889,7 @@ var _TextMetrics = __webpack_require__(69);
 
 var _TextMetrics2 = _interopRequireDefault(_TextMetrics);
 
-var _trimCanvas = __webpack_require__(149);
+var _trimCanvas = __webpack_require__(148);
 
 var _trimCanvas2 = _interopRequireDefault(_trimCanvas);
 
@@ -28502,7 +28513,7 @@ exports.default = Text;
 //# sourceMappingURL=Text.js.map
 
 /***/ }),
-/* 149 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28583,7 +28594,7 @@ function trimCanvas(canvas) {
 //# sourceMappingURL=trimCanvas.js.map
 
 /***/ }),
-/* 150 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28621,7 +28632,7 @@ var _Bounds = __webpack_require__(30);
 
 var _Bounds2 = _interopRequireDefault(_Bounds);
 
-var _bezierCurveTo2 = __webpack_require__(151);
+var _bezierCurveTo2 = __webpack_require__(150);
 
 var _bezierCurveTo3 = _interopRequireDefault(_bezierCurveTo2);
 
@@ -29760,7 +29771,7 @@ Graphics._SPRITE_TEXTURE = null;
 //# sourceMappingURL=Graphics.js.map
 
 /***/ }),
-/* 151 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29815,7 +29826,7 @@ function bezierCurveTo(fromX, fromY, cpX, cpY, cpX2, cpY2, toX, toY) {
 //# sourceMappingURL=bezierCurveTo.js.map
 
 /***/ }),
-/* 152 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29835,27 +29846,27 @@ var _WebGLRenderer = __webpack_require__(22);
 
 var _WebGLRenderer2 = _interopRequireDefault(_WebGLRenderer);
 
-var _WebGLGraphicsData = __webpack_require__(153);
+var _WebGLGraphicsData = __webpack_require__(152);
 
 var _WebGLGraphicsData2 = _interopRequireDefault(_WebGLGraphicsData);
 
-var _PrimitiveShader = __webpack_require__(154);
+var _PrimitiveShader = __webpack_require__(153);
 
 var _PrimitiveShader2 = _interopRequireDefault(_PrimitiveShader);
 
-var _buildPoly = __webpack_require__(155);
+var _buildPoly = __webpack_require__(154);
 
 var _buildPoly2 = _interopRequireDefault(_buildPoly);
 
-var _buildRectangle = __webpack_require__(156);
+var _buildRectangle = __webpack_require__(155);
 
 var _buildRectangle2 = _interopRequireDefault(_buildRectangle);
 
-var _buildRoundedRectangle = __webpack_require__(157);
+var _buildRoundedRectangle = __webpack_require__(156);
 
 var _buildRoundedRectangle2 = _interopRequireDefault(_buildRoundedRectangle);
 
-var _buildCircle = __webpack_require__(158);
+var _buildCircle = __webpack_require__(157);
 
 var _buildCircle2 = _interopRequireDefault(_buildCircle);
 
@@ -30085,7 +30096,7 @@ _WebGLRenderer2.default.registerPlugin('graphics', GraphicsRenderer);
 //# sourceMappingURL=GraphicsRenderer.js.map
 
 /***/ }),
-/* 153 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30233,7 +30244,7 @@ exports.default = WebGLGraphicsData;
 //# sourceMappingURL=WebGLGraphicsData.js.map
 
 /***/ }),
-/* 154 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30283,7 +30294,7 @@ exports.default = PrimitiveShader;
 //# sourceMappingURL=PrimitiveShader.js.map
 
 /***/ }),
-/* 155 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30374,7 +30385,7 @@ function buildPoly(graphicsData, webGLData, webGLDataNativeLines) {
 //# sourceMappingURL=buildPoly.js.map
 
 /***/ }),
-/* 156 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30455,7 +30466,7 @@ function buildRectangle(graphicsData, webGLData, webGLDataNativeLines) {
 //# sourceMappingURL=buildRectangle.js.map
 
 /***/ }),
-/* 157 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30616,7 +30627,7 @@ function quadraticBezierCurve(fromX, fromY, cpX, cpY, toX, toY) {
 //# sourceMappingURL=buildRoundedRectangle.js.map
 
 /***/ }),
-/* 158 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30714,7 +30725,7 @@ function buildCircle(graphicsData, webGLData, webGLDataNativeLines) {
 //# sourceMappingURL=buildCircle.js.map
 
 /***/ }),
-/* 159 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30988,7 +30999,7 @@ _CanvasRenderer2.default.registerPlugin('graphics', CanvasGraphicsRenderer);
 //# sourceMappingURL=CanvasGraphicsRenderer.js.map
 
 /***/ }),
-/* 160 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31255,7 +31266,7 @@ exports.default = Spritesheet;
 //# sourceMappingURL=Spritesheet.js.map
 
 /***/ }),
-/* 161 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32356,7 +32367,7 @@ function deprecation(core) {
 //# sourceMappingURL=deprecation.js.map
 
 /***/ }),
-/* 162 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32373,7 +32384,7 @@ Object.defineProperty(exports, 'accessibleTarget', {
   }
 });
 
-var _AccessibilityManager = __webpack_require__(163);
+var _AccessibilityManager = __webpack_require__(162);
 
 Object.defineProperty(exports, 'AccessibilityManager', {
   enumerable: true,
@@ -32386,7 +32397,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 163 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32885,7 +32896,7 @@ core.CanvasRenderer.registerPlugin('accessibility', AccessibilityManager);
 //# sourceMappingURL=AccessibilityManager.js.map
 
 /***/ }),
-/* 164 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32893,7 +32904,7 @@ core.CanvasRenderer.registerPlugin('accessibility', AccessibilityManager);
 
 exports.__esModule = true;
 
-var _WebGLExtract = __webpack_require__(165);
+var _WebGLExtract = __webpack_require__(164);
 
 Object.defineProperty(exports, 'webgl', {
   enumerable: true,
@@ -32902,7 +32913,7 @@ Object.defineProperty(exports, 'webgl', {
   }
 });
 
-var _CanvasExtract = __webpack_require__(166);
+var _CanvasExtract = __webpack_require__(165);
 
 Object.defineProperty(exports, 'canvas', {
   enumerable: true,
@@ -32915,7 +32926,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 165 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33143,7 +33154,7 @@ core.WebGLRenderer.registerPlugin('extract', WebGLExtract);
 //# sourceMappingURL=WebGLExtract.js.map
 
 /***/ }),
-/* 166 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33328,7 +33339,7 @@ core.CanvasRenderer.registerPlugin('extract', CanvasExtract);
 //# sourceMappingURL=CanvasExtract.js.map
 
 /***/ }),
-/* 167 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33742,7 +33753,7 @@ exports.default = AnimatedSprite;
 //# sourceMappingURL=AnimatedSprite.js.map
 
 /***/ }),
-/* 168 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34197,7 +34208,7 @@ exports.default = TilingSprite;
 //# sourceMappingURL=TilingSprite.js.map
 
 /***/ }),
-/* 169 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34364,7 +34375,7 @@ core.WebGLRenderer.registerPlugin('tilingSprite', TilingSpriteRenderer);
 //# sourceMappingURL=TilingSpriteRenderer.js.map
 
 /***/ }),
-/* 170 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34957,7 +34968,7 @@ BitmapText.fonts = {};
 //# sourceMappingURL=BitmapText.js.map
 
 /***/ }),
-/* 171 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35366,7 +35377,7 @@ DisplayObject.prototype._cacheAsBitmapDestroy = function _cacheAsBitmapDestroy(o
 //# sourceMappingURL=cacheAsBitmap.js.map
 
 /***/ }),
-/* 172 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35405,7 +35416,7 @@ core.Container.prototype.getChildByName = function getChildByName(name) {
 //# sourceMappingURL=getChildByName.js.map
 
 /***/ }),
-/* 173 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35443,7 +35454,7 @@ core.DisplayObject.prototype.getGlobalPosition = function getGlobalPosition() {
 //# sourceMappingURL=getGlobalPosition.js.map
 
 /***/ }),
-/* 174 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35451,7 +35462,7 @@ core.DisplayObject.prototype.getGlobalPosition = function getGlobalPosition() {
 
 exports.__esModule = true;
 
-var _FXAAFilter = __webpack_require__(175);
+var _FXAAFilter = __webpack_require__(174);
 
 Object.defineProperty(exports, 'FXAAFilter', {
   enumerable: true,
@@ -35460,7 +35471,7 @@ Object.defineProperty(exports, 'FXAAFilter', {
   }
 });
 
-var _NoiseFilter = __webpack_require__(176);
+var _NoiseFilter = __webpack_require__(175);
 
 Object.defineProperty(exports, 'NoiseFilter', {
   enumerable: true,
@@ -35469,7 +35480,7 @@ Object.defineProperty(exports, 'NoiseFilter', {
   }
 });
 
-var _DisplacementFilter = __webpack_require__(177);
+var _DisplacementFilter = __webpack_require__(176);
 
 Object.defineProperty(exports, 'DisplacementFilter', {
   enumerable: true,
@@ -35478,7 +35489,7 @@ Object.defineProperty(exports, 'DisplacementFilter', {
   }
 });
 
-var _BlurFilter = __webpack_require__(178);
+var _BlurFilter = __webpack_require__(177);
 
 Object.defineProperty(exports, 'BlurFilter', {
   enumerable: true,
@@ -35505,7 +35516,7 @@ Object.defineProperty(exports, 'BlurYFilter', {
   }
 });
 
-var _ColorMatrixFilter = __webpack_require__(179);
+var _ColorMatrixFilter = __webpack_require__(178);
 
 Object.defineProperty(exports, 'ColorMatrixFilter', {
   enumerable: true,
@@ -35514,7 +35525,7 @@ Object.defineProperty(exports, 'ColorMatrixFilter', {
   }
 });
 
-var _VoidFilter = __webpack_require__(180);
+var _VoidFilter = __webpack_require__(179);
 
 Object.defineProperty(exports, 'VoidFilter', {
   enumerable: true,
@@ -35527,7 +35538,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 175 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35586,7 +35597,7 @@ exports.default = FXAAFilter;
 //# sourceMappingURL=FXAAFilter.js.map
 
 /***/ }),
-/* 176 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35688,7 +35699,7 @@ exports.default = NoiseFilter;
 //# sourceMappingURL=NoiseFilter.js.map
 
 /***/ }),
-/* 177 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35803,7 +35814,7 @@ exports.default = DisplacementFilter;
 //# sourceMappingURL=DisplacementFilter.js.map
 
 /***/ }),
-/* 178 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35982,7 +35993,7 @@ exports.default = BlurFilter;
 //# sourceMappingURL=BlurFilter.js.map
 
 /***/ }),
-/* 179 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36538,7 +36549,7 @@ ColorMatrixFilter.prototype.grayscale = ColorMatrixFilter.prototype.greyscale;
 //# sourceMappingURL=ColorMatrixFilter.js.map
 
 /***/ }),
-/* 180 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36593,7 +36604,7 @@ exports.default = VoidFilter;
 //# sourceMappingURL=VoidFilter.js.map
 
 /***/ }),
-/* 181 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36610,7 +36621,7 @@ Object.defineProperty(exports, 'InteractionData', {
   }
 });
 
-var _InteractionManager = __webpack_require__(182);
+var _InteractionManager = __webpack_require__(181);
 
 Object.defineProperty(exports, 'InteractionManager', {
   enumerable: true,
@@ -36650,7 +36661,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 182 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38415,7 +38426,7 @@ core.CanvasRenderer.registerPlugin('interaction', InteractionManager);
 //# sourceMappingURL=InteractionManager.js.map
 
 /***/ }),
-/* 183 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38476,7 +38487,7 @@ var _Application = __webpack_require__(72);
 
 var _Application2 = _interopRequireDefault(_Application);
 
-var _loader = __webpack_require__(185);
+var _loader = __webpack_require__(184);
 
 var _loader2 = _interopRequireDefault(_loader);
 
@@ -38548,7 +38559,7 @@ AppPrototype.destroy = function destroy(removeView) {
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 184 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39171,7 +39182,7 @@ exports.default = Loader;
 //# sourceMappingURL=Loader.js.map
 
 /***/ }),
-/* 185 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39183,7 +39194,7 @@ var _resourceLoader = __webpack_require__(19);
 
 var _resourceLoader2 = _interopRequireDefault(_resourceLoader);
 
-var _blob = __webpack_require__(186);
+var _blob = __webpack_require__(185);
 
 var _eventemitter = __webpack_require__(10);
 
@@ -39347,7 +39358,7 @@ Resource.setExtensionXhrType('fnt', Resource.XHR_RESPONSE_TYPE.DOCUMENT);
 //# sourceMappingURL=loader.js.map
 
 /***/ }),
-/* 186 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39440,7 +39451,7 @@ function blobMiddlewareFactory() {
 //# sourceMappingURL=blob.js.map
 
 /***/ }),
-/* 187 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39457,7 +39468,7 @@ Object.defineProperty(exports, 'Mesh', {
   }
 });
 
-var _MeshRenderer = __webpack_require__(188);
+var _MeshRenderer = __webpack_require__(187);
 
 Object.defineProperty(exports, 'MeshRenderer', {
   enumerable: true,
@@ -39466,7 +39477,7 @@ Object.defineProperty(exports, 'MeshRenderer', {
   }
 });
 
-var _CanvasMeshRenderer = __webpack_require__(189);
+var _CanvasMeshRenderer = __webpack_require__(188);
 
 Object.defineProperty(exports, 'CanvasMeshRenderer', {
   enumerable: true,
@@ -39484,7 +39495,7 @@ Object.defineProperty(exports, 'Plane', {
   }
 });
 
-var _NineSlicePlane = __webpack_require__(190);
+var _NineSlicePlane = __webpack_require__(189);
 
 Object.defineProperty(exports, 'NineSlicePlane', {
   enumerable: true,
@@ -39493,7 +39504,7 @@ Object.defineProperty(exports, 'NineSlicePlane', {
   }
 });
 
-var _Rope = __webpack_require__(191);
+var _Rope = __webpack_require__(190);
 
 Object.defineProperty(exports, 'Rope', {
   enumerable: true,
@@ -39506,7 +39517,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 188 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39662,7 +39673,7 @@ core.WebGLRenderer.registerPlugin('mesh', MeshRenderer);
 //# sourceMappingURL=MeshRenderer.js.map
 
 /***/ }),
-/* 189 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39950,7 +39961,7 @@ core.CanvasRenderer.registerPlugin('mesh', MeshSpriteRenderer);
 //# sourceMappingURL=CanvasMeshRenderer.js.map
 
 /***/ }),
-/* 190 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40341,7 +40352,7 @@ exports.default = NineSlicePlane;
 //# sourceMappingURL=NineSlicePlane.js.map
 
 /***/ }),
-/* 191 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40582,7 +40593,7 @@ exports.default = Rope;
 //# sourceMappingURL=Rope.js.map
 
 /***/ }),
-/* 192 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40590,7 +40601,7 @@ exports.default = Rope;
 
 exports.__esModule = true;
 
-var _ParticleContainer = __webpack_require__(193);
+var _ParticleContainer = __webpack_require__(192);
 
 Object.defineProperty(exports, 'ParticleContainer', {
   enumerable: true,
@@ -40599,7 +40610,7 @@ Object.defineProperty(exports, 'ParticleContainer', {
   }
 });
 
-var _ParticleRenderer = __webpack_require__(194);
+var _ParticleRenderer = __webpack_require__(193);
 
 Object.defineProperty(exports, 'ParticleRenderer', {
   enumerable: true,
@@ -40612,7 +40623,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 193 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40995,7 +41006,7 @@ exports.default = ParticleContainer;
 //# sourceMappingURL=ParticleContainer.js.map
 
 /***/ }),
-/* 194 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41007,11 +41018,11 @@ var _core = __webpack_require__(0);
 
 var core = _interopRequireWildcard(_core);
 
-var _ParticleShader = __webpack_require__(195);
+var _ParticleShader = __webpack_require__(194);
 
 var _ParticleShader2 = _interopRequireDefault(_ParticleShader);
 
-var _ParticleBuffer = __webpack_require__(196);
+var _ParticleBuffer = __webpack_require__(195);
 
 var _ParticleBuffer2 = _interopRequireDefault(_ParticleBuffer);
 
@@ -41476,7 +41487,7 @@ core.WebGLRenderer.registerPlugin('particle', ParticleRenderer);
 //# sourceMappingURL=ParticleRenderer.js.map
 
 /***/ }),
-/* 195 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41524,7 +41535,7 @@ exports.default = ParticleShader;
 //# sourceMappingURL=ParticleShader.js.map
 
 /***/ }),
-/* 196 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41772,7 +41783,7 @@ exports.default = ParticleBuffer;
 //# sourceMappingURL=ParticleBuffer.js.map
 
 /***/ }),
-/* 197 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41780,7 +41791,7 @@ exports.default = ParticleBuffer;
 
 exports.__esModule = true;
 
-var _WebGLPrepare = __webpack_require__(198);
+var _WebGLPrepare = __webpack_require__(197);
 
 Object.defineProperty(exports, 'webgl', {
   enumerable: true,
@@ -41789,7 +41800,7 @@ Object.defineProperty(exports, 'webgl', {
   }
 });
 
-var _CanvasPrepare = __webpack_require__(199);
+var _CanvasPrepare = __webpack_require__(198);
 
 Object.defineProperty(exports, 'canvas', {
   enumerable: true,
@@ -41816,7 +41827,7 @@ Object.defineProperty(exports, 'CountLimiter', {
   }
 });
 
-var _TimeLimiter = __webpack_require__(200);
+var _TimeLimiter = __webpack_require__(199);
 
 Object.defineProperty(exports, 'TimeLimiter', {
   enumerable: true,
@@ -41829,7 +41840,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 198 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41956,7 +41967,7 @@ core.WebGLRenderer.registerPlugin('prepare', WebGLPrepare);
 //# sourceMappingURL=WebGLPrepare.js.map
 
 /***/ }),
-/* 199 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42081,7 +42092,7 @@ core.CanvasRenderer.registerPlugin('prepare', CanvasPrepare);
 //# sourceMappingURL=CanvasPrepare.js.map
 
 /***/ }),
-/* 200 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42144,16 +42155,16 @@ exports.default = TimeLimiter;
 //# sourceMappingURL=TimeLimiter.js.map
 
 /***/ }),
-/* 201 */
+/* 200 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["b"] = render;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_pixi_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_pixi_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_pixi_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__view__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__view__ = __webpack_require__(217);
 
 
 
@@ -42213,14 +42224,14 @@ function render () {
 
 
 /***/ }),
-/* 202 */
+/* 201 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(215);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(97);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["b"]; });
@@ -42249,13 +42260,13 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(38)))
 
 /***/ }),
-/* 203 */
+/* 202 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(206);
 
 
 
@@ -42287,11 +42298,11 @@ function baseGetTag(value) {
 
 
 /***/ }),
-/* 204 */
+/* 203 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(204);
 
 
 /** Detect free variable `self`. */
@@ -42304,7 +42315,7 @@ var root = __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__["a" /* default */] || fr
 
 
 /***/ }),
-/* 205 */
+/* 204 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42316,7 +42327,7 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(14)))
 
 /***/ }),
-/* 206 */
+/* 205 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42370,7 +42381,7 @@ function getRawTag(value) {
 
 
 /***/ }),
-/* 207 */
+/* 206 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42399,11 +42410,11 @@ function objectToString(value) {
 
 
 /***/ }),
-/* 208 */
+/* 207 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(208);
 
 
 /** Built-in value references. */
@@ -42413,7 +42424,7 @@ var getPrototype = Object(__WEBPACK_IMPORTED_MODULE_0__overArg_js__["a" /* defau
 
 
 /***/ }),
-/* 209 */
+/* 208 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42435,7 +42446,7 @@ function overArg(func, transform) {
 
 
 /***/ }),
-/* 210 */
+/* 209 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42471,14 +42482,14 @@ function isObjectLike(value) {
 
 
 /***/ }),
-/* 211 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(212);
+module.exports = __webpack_require__(211);
 
 
 /***/ }),
-/* 212 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42488,7 +42499,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ponyfill = __webpack_require__(213);
+var _ponyfill = __webpack_require__(212);
 
 var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -42514,7 +42525,7 @@ exports['default'] = result;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(14), __webpack_require__(58)(module)))
 
 /***/ }),
-/* 213 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42543,7 +42554,7 @@ function symbolObservablePonyfill(root) {
 };
 
 /***/ }),
-/* 214 */
+/* 213 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42684,7 +42695,7 @@ function combineReducers(reducers) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(38)))
 
 /***/ }),
-/* 215 */
+/* 214 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42738,7 +42749,7 @@ function bindActionCreators(actionCreators, dispatch) {
 }
 
 /***/ }),
-/* 216 */
+/* 215 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42794,7 +42805,7 @@ function applyMiddleware() {
 }
 
 /***/ }),
-/* 217 */
+/* 216 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42829,6 +42840,24 @@ function reducer (state = {mode: 'IDLE', step: 0},
 
 
 /***/ }),
+/* 217 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__builders__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__drawers__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__organizers__ = __webpack_require__(241);
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__builders__; });
+/* unused harmony reexport drawers */
+/* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__organizers__; });
+
+
+
+
+
+
+
+/***/ }),
 /* 218 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -42843,115 +42872,149 @@ function reducer (state = {mode: 'IDLE', step: 0},
 
 
 
-function bgBuilder (store) {
-  let sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]();
+function bgBuilder(store) {
+  let sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()
 
-  makeBigBG(sprite);
-  makeCUDisplayBG(sprite);
-  makeBottomDescriptionBG(sprite);
-  makeInsideBG(sprite);
-  makeArrowTipsBG(sprite);
-  makeALUioArrows(sprite);
-  makeCUArrowAndBitWidth(sprite);
-  makeUnitsBG(sprite);
-  makeQuestionMark(sprite, store);
+  makeBigBG(sprite)
+  makeCUDisplayBG(sprite)
+  makeBottomDescriptionBG(sprite)
+  makeInsideBG(sprite)
+  makeArrowTipsBG(sprite)
+  makeALUioArrows(sprite)
+  makeCUArrowAndBitWidth(sprite)
+  makeUnitsBG(sprite)
+  makeQuestionMark(sprite, store)
 
-  return sprite;
+  return sprite
 }
 
-function makeBigBG (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
-  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].GAINSBORO);
-  sprite.drawRoundedRect(0, 0, __WEBPACK_IMPORTED_MODULE_2__app__["rendererSize"].width, __WEBPACK_IMPORTED_MODULE_2__app__["rendererSize"].height, 8);
+function makeBigBG(sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
+  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].GAINSBORO)
+  sprite.drawRoundedRect(0, 0, __WEBPACK_IMPORTED_MODULE_2__app__["rendererSize"].width, __WEBPACK_IMPORTED_MODULE_2__app__["rendererSize"].height, 8)
 }
 
-function makeBottomDescriptionBG (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
-  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE);
-  sprite.drawRoundedRect(20, 490, 760, 100, 8);
+function makeBottomDescriptionBG(sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
+  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE)
+  sprite.drawRoundedRect(20, 490, 760, 100, 8)
 }
 
-function makeCUDisplayBG (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
-  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].LIGHT_GRAY);
-  sprite.drawRoundedRect(540, 70, 240, 360, 8);
-  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE);
-  sprite.drawRect(540, 90, 240, 320);
-  const textSprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"]('STEUERWERK',
-    {fontFamily: 'Courier', fontSize: '12pt', fontWeight: 'bold'}
-  );
-  textSprite.anchor.set(0.5, 0.5);
-  textSprite.x = 660;
-  textSprite.y = 80;
-  sprite.addChild(textSprite);
+function makeCUDisplayBG(sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
+  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].LIGHT_GRAY)
+  sprite.drawRoundedRect(540, 70, 240, 360, 8)
+  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE)
+  sprite.drawRect(540, 90, 240, 320)
+  const textSprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"]('STEUERWERK', {
+    fontFamily: 'Courier, "Courier New", monospace',
+    fontSize: '12pt',
+    fontWeight: 'bold'
+  })
+  textSprite.anchor.set(0.5, 0.5)
+  textSprite.x = 660
+  textSprite.y = 80
+  sprite.addChild(textSprite)
 }
 
-function makeInsideBG (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
-  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE);
-  sprite.drawRoundedRect(20, 20, 500, 460, 8);
+function makeInsideBG(sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
+  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE)
+  sprite.drawRoundedRect(20, 20, 500, 460, 8)
 }
 
-function makeArrowTipsBG (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
-  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].DARK_GRAY);
-  sprite.drawPolygon(
-    [200, 30, 196, 38, 198, 38, 198, 58, 202, 58, 202, 38, 204, 38]
-  );
-  sprite.drawPolygon(
-    [198, 432, 202, 432, 202, 458, 204, 458, 200, 466, 196, 458, 198, 458]
-  );
+function makeArrowTipsBG(sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
+  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].DARK_GRAY)
+  sprite.drawPolygon([200, 30, 196, 38, 198, 38, 198, 58, 202, 58, 202, 38, 204, 38])
+  sprite.drawPolygon([198, 432, 202, 432, 202, 458, 204, 458, 200, 466, 196, 458, 198, 458])
 }
 
-function makeCUArrowAndBitWidth (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
-  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].DARK_GRAY);
-  sprite.drawPolygon(
-    [398, 160, 398, 172, 511, 172, 511, 174, 519, 170, 511, 166, 511, 168, 402, 168, 402, 160]
-  );
-  const textSprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"]('8',
-    {fontFamily: 'Courier', fontSize: '9pt'}
-  );
-  textSprite.x = 455;
-  textSprite.y = 175;
-  sprite.addChild(textSprite);
+function makeCUArrowAndBitWidth(sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
+  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].DARK_GRAY)
+  sprite.drawPolygon([
+    398,
+    160,
+    398,
+    172,
+    511,
+    172,
+    511,
+    174,
+    519,
+    170,
+    511,
+    166,
+    511,
+    168,
+    402,
+    168,
+    402,
+    160
+  ])
+  const textSprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"]('8', {
+    fontFamily: 'Courier, "Courier New", monospace',
+    fontSize: '9pt'
+  })
+  textSprite.x = 455
+  textSprite.y = 175
+  sprite.addChild(textSprite)
 }
 
-function makeALUioArrows (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
-  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].DARK_GRAY);
-  sprite.drawPolygon([370, 240, 366, 248, 368, 248, 368, 260, 372, 260, 372, 248, 374, 248]);
-  sprite.drawPolygon([340, 300, 336, 308, 338, 308, 338, 330, 342, 330, 342, 308, 344, 308]);
-  sprite.drawPolygon([400, 300, 396, 308, 398, 308, 398, 360, 402, 360, 402, 308, 404, 308]);
+function makeALUioArrows(sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
+  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].DARK_GRAY)
+  sprite.drawPolygon([370, 240, 366, 248, 368, 248, 368, 260, 372, 260, 372, 248, 374, 248])
+  sprite.drawPolygon([340, 300, 336, 308, 338, 308, 338, 330, 342, 330, 342, 308, 344, 308])
+  sprite.drawPolygon([400, 300, 396, 308, 398, 308, 398, 360, 402, 360, 402, 308, 404, 308])
 }
 
-function makeUnitsBG (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
-  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].EVEN_LIGHTER_GRAY);
+function makeUnitsBG(sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
+  sprite.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].EVEN_LIGHTER_GRAY)
   // my first reducer in this life time LOL
   // but it's just like a foreach loop :-/
-  ['Akku', 'Eins', 'SAR', 'IAR', 'IR', 'Z', 'X', 'Y', 'SDR', 'R', 'W'].reduce(
-    (result, item) => {
-      const [x, y, unitSize] = __WEBPACK_IMPORTED_MODULE_1__helpers__["c" /* positionSpecs */].unitSpec(item);
-      sprite.drawRect(x, y, unitSize * 20, 40);
-    }, sprite
-  );
+  ;['Akku', 'Eins', 'SAR', 'IAR', 'IR', 'Z', 'X', 'Y', 'SDR', 'R', 'W'].reduce((result, item) => {
+    const [x, y, unitSize] = __WEBPACK_IMPORTED_MODULE_1__helpers__["c" /* positionSpecs */].unitSpec(item)
+    sprite.drawRect(x, y, unitSize * 20, 40)
+  }, sprite)
 
   // ALU ahhhhhhh
-  sprite.drawPolygon([340, 260, 300, 300, 360, 300, 370, 290, 380, 300, 440, 300, 400, 260, 340, 260]);
+  sprite.drawPolygon([
+    340,
+    260,
+    300,
+    300,
+    360,
+    300,
+    370,
+    290,
+    380,
+    300,
+    440,
+    300,
+    400,
+    260,
+    340,
+    260
+  ])
 }
 
-function makeQuestionMark (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"](), store) {
-  let button = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]();
-  button.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE);
-  button.drawCircle(780, 20, 10);
-  button.interactive = true;
-  button.buttonMode = true;
-  button.hitArea = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Circle"](780, 20, 10);
+function makeQuestionMark(sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"](), store) {
+  let button = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()
+  button.beginFill(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].WHITE)
+  button.drawCircle(780, 20, 10)
+  button.interactive = true
+  button.buttonMode = true
+  button.hitArea = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Circle"](780, 20, 10)
 
-  let textSprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"]('?',
-    {fontFamily: 'Courier', fontSize: '12pt', fontWeight: 'bold', fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].BLUE_LINK}
-  );
-  textSprite.anchor.set(0.5, 0.5);
-  textSprite.x = 780;
-  textSprite.y = 20;
+  let textSprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"]('?', {
+    fontFamily: 'Courier, "Courier New", monospace',
+    fontSize: '12pt',
+    fontWeight: 'bold',
+    fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].BLUE_LINK
+  })
+  textSprite.anchor.set(0.5, 0.5)
+  textSprite.x = 780
+  textSprite.y = 20
 
-  button.addChild(textSprite);
-  button.on('pointerdown', () => store.dispatch({type: 'MODE_CHANGE', payload: 'ABOUT'}));
+  button.addChild(textSprite)
+  button.on('pointerdown', () => store.dispatch({ type: 'MODE_CHANGE', payload: 'ABOUT' }))
 
-  sprite.addChild(button);
+  sprite.addChild(button)
 }
 
 
@@ -43003,7 +43066,7 @@ function totalStepCount (state = {mode: '', step: 0}) {
 /* 220 */
 /***/ (function(module, exports) {
 
-module.exports = {"IDLE":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}}],"ADD":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"1","W":"0"}},{"path":[{"from":"Akku","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"000001","SDR":"3--a--","R":"2","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"000001","SDR":"<  a >","R":"3","W":"0"}},{"path":[{"from":"SDR","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"AX+<a>","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}},{"path":[{"from":"Z","to":"Akku"}],"values":{"Akku":"AX+<a>","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"AX+<a>","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}}],"LDC":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[{"from":"IR","to":"Akku"}],"values":{"Akku":"0const","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}}],"LDV":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"1","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"2","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"< a  >","R":"3","W":"0"}},{"path":[{"from":"SDR","to":"Akku"}],"values":{"Akku":"< a  >","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"< a  >","R":"0","W":"0"}}],"NOT":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"Akku","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"NOT AX","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"Z","to":"Akku"}],"values":{"Akku":"NOT AX","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"NOT AX","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}}],"STV":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"SAR"},{"from":"IAR","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[{"from":"Akku","to":"SDR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"1"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"2"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"3"}}]}
+module.exports = {"IDLE":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}}],"ADD":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"X"},{"from":"IAR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"000100","Y":"000001","SDR":"3--a--","R":"1","W":"0"}},{"path":[{"from":"Akku","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"000001","SDR":"3--a--","R":"2","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"000001","SDR":"<  a >","R":"3","W":"0"}},{"path":[{"from":"SDR","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"000101","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"AX+<a>","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}},{"path":[{"from":"Z","to":"Akku"}],"values":{"Akku":"AX+<a>","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"3--a--","Z":"AX+<a>","X":"  AX  ","Y":"<  a >","SDR":"<  a >","R":"0","W":"0"}}],"LDC":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"X"},{"from":"IAR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}},{"path":[{"from":"IR","to":"Akku"}],"values":{"Akku":"0const","Eins":"000001","SAR":"00100","IAR":"00101","IR":"0const","Z":"000101","X":"000100","Y":"000001","SDR":"0const","R":"0","W":"0"}}],"LDV":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"X"},{"from":"IAR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"1","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"1--a--","R":"2","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"< a  >","R":"3","W":"0"}},{"path":[{"from":"SDR","to":"Akku"}],"values":{"Akku":"< a  >","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"1--a--","Z":"000101","X":"000100","Y":"000001","SDR":"< a  >","R":"0","W":"0"}}],"NOT":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"X"},{"from":"IAR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"000100","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"Akku","to":"X"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"000101","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"NOT AX","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}},{"path":[{"from":"Z","to":"Akku"}],"values":{"Akku":"NOT AX","Eins":"000001","SAR":"00100","IAR":"00101","IR":"F1xxxx","Z":"NOT AX","X":"  AX  ","Y":"000001","SDR":"F1xxxx","R":"0","W":"0"}}],"STV":[{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"unbek","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"unbek.","Y":"unbek.","SDR":"unbek.","R":"0","W":"0"}},{"path":[{"from":"IAR","to":"X"},{"from":"IAR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"unbek.","SDR":"unbek.","R":"1","W":"0"}},{"path":[{"from":"Eins","to":"Y"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"unbek.","X":"000100","Y":"000001","SDR":"unbek.","R":"2","W":"0"}},{"path":[{"from":"ALU","to":"ALU"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00100","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"3","W":"0"}},{"path":[{"from":"Z","to":"IAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"unbek.","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[{"from":"SDR","to":"IR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"2--a--","R":"0","W":"0"}},{"path":[{"from":"Akku","to":"SDR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"00100","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"0"}},{"path":[{"from":"IR","to":"SAR"}],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"1"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"2"}},{"path":[],"values":{"Akku":"  AX  ","Eins":"000001","SAR":"--a--","IAR":"00101","IR":"2--a--","Z":"000101","X":"000100","Y":"000001","SDR":"  AX  ","R":"0","W":"3"}}]}
 
 /***/ }),
 /* 221 */
@@ -43788,7 +43851,7 @@ function rwUnitArrowBuilder (name = '', dir = 'lr', isHighlighted = false) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = cuDescriptionBuilder;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__drawers_textDrawer__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__drawers_textDrawer__ = __webpack_require__(99);
 
 
 function cuDescriptionBuilder (text = '') {
@@ -43874,7 +43937,7 @@ function makeCreditDescription (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js
 function makeClickableTexts (sprite = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Graphics"]()) {
   let kitText = 'Mehr über MIMA-Architektur und Technische Informatik am KIT - ' +
     'http://ti.ira.uka.de';
-  let githubText = 'Mehr über MIMAviz - https://github.com/hexrcs/MIMAviz';
+  let githubText = 'Mehr über das MIMAviz Project von Xiaoru Li - https://github.com/hexrcs/MIMAviz';
 
   let kitLink = new __WEBPACK_IMPORTED_MODULE_0_pixi_js__["Text"](kitText,
     {fontFamily: 'Arial', fontSize: '9pt', fontStyle: 'italic', fill: __WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* colorCode */].BLUE_LINK}
