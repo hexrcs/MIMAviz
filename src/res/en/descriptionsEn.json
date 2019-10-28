@@ -1,0 +1,230 @@
+{
+    "IDLE": [
+        {
+            "bottomDescription": "This program is intended to illustrate the functional principle of MIMA to future generations of students. Since the original visualization (Java Applet) unfortunately doesn't work in most modern browsers anymore, MIMAviz was developed as a new creation of the original MIMA simulation in Javascript",
+            "cuDescription": "Welcome to MIMAviz!"
+        }
+    ],
+    "ADD": [
+        {
+            "bottomDescription": "ADD - The accumulator is overwritten by the result of the addition of battery and the content of <a>.",
+            "cuDescription": "Press START now!"
+        },
+        {
+            "bottomDescription": "The IAR, the instruction address register, contains the address of the command to be executed. IAR could also be called a command counter. In order to get to the memory cell and its contents, we have to pass it on to the SAR (memory address register). After 3x R=1 read cycles we get our desired date. In addition we load at the same time (to save time) the same address also into the X register of the ALU. Later the ALU should increase the value by one, so that our MiMa reads the following command next time",
+            "cuDescription": "IAR point to an ADD command"
+        },
+        {
+            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third bar!",
+            "cuDescription": "Load 1 to Y for IAR++"
+        },
+        {
+            "bottomDescription": "Our ALU should now add the already mentioned X and Y registers. For the addition, our control unit gives the values 001 on the C2C1C0 lines. It is best to take a closer look at the table on the \"Architecture of the MIMA\" sheet. The ALU can do quite a lot",
+            "cuDescription": "ALU added: Z:=X+Y"
+        },
+        {
+            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to now with the result? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
+            "cuDescription": "Write IAR++ from Z to IAR."
+        },
+        {
+            "bottomDescription": "Now we also have the contents of the memory cell [IAR] in the SDR (memory data register). It took a while, but the memory isn't that fast. We store this value in the IR (instruction register) for interpretation and execution by the control unit",
+            "cuDescription": "Write command from memory to IR"
+        },
+        {
+            "bottomDescription": "D=1 means that the control unit reads the IR register and, depending on the content (command), starts and executes the corresponding microprogram from the internal memory of the control unit. You can now follow the actual command and skip this FETCH phase next time by pressing the SKIP key, if you already know it by heart. Have fun!",
+            "cuDescription": "Start Exec phase for ADD command"
+        },
+        {
+            "bottomDescription": "The IR (instruction register) contains not only the commands but also the variables and constants that are read from memory with the command. The practical thing is that the SAR is only 20 bits long and therefore the first 4 bits of the 24 bits long instruction are omitted during the transfer IR -> SAR. Thus the commandOpcode is cut off and the desired memory address to be addressed <a> is written properly into the SAR",
+            "cuDescription": "Address a from <a>"
+        },
+        {
+            "bottomDescription": "The ADD command should link the battery with the memory cell <a> by an addition. This addition is prepared by transferring the contents of the battery to the X register while we wait for the memory to give us the contents of a, i.e. <a>",
+            "cuDescription": "Prepare battery + <a>"
+        },
+        {
+            "bottomDescription": "Jo, sodele, now we just wait for the memory, because it always needs three bars until it can deliver the requested date",
+            "cuDescription": "The memory is lame!! ;-)"
+        },
+        {
+            "bottomDescription": "Now we have our long-awaited value <a> applied to the SDR (stored data register). Since X already contains the contents of the battery, we write our contents of memory cell a in Y.",
+            "cuDescription": "Memory is ready with reading!"
+        },
+        {
+            "bottomDescription": "Quickly add the two values and the desired result is in the Z register. In order for the ALU to know that it has to perform an addition, the control unit sends the values (001) to the inputs of the ALU C2C1C0",
+            "cuDescription": "Addition Z:=X+Y"
+        },
+        {
+            "bottomDescription": "As stated in the task for our ADD a command, the result is to be written back into the battery",
+            "cuDescription": "Result Z in the battery"
+        }
+    ],
+    "LDC": [
+        {
+            "bottomDescription": "LDC - Load the accumulator with a 20-bit constant.",
+            "cuDescription": "Press START now!"
+        },
+        {
+            "bottomDescription": "The IAR, the instruction address register, contains the address of the command to be executed. IAR could also be called a command counter. In order to get to the memory cell and its contents, we have to pass it on to the SAR (memory address register). After 3x R=1 read cycles we get our desired date. In addition we load at the same time (to save time) the same address also into the X register of the ALU. Later the ALU should increase the value by one, so that our MiMa reads the following command next time",
+            "cuDescription": "IAR point to an LDC command"
+        },
+        {
+            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third bar!",
+            "cuDescription": "Load 1 to Y for IAR++"
+        },
+        {
+            "bottomDescription": "Our ALU should now add the already mentioned X and Y registers. For the addition, our control unit gives the values 001 on the C2C1C0 lines. It is best to take a closer look at the table on the \"Architecture of the MIMA\" sheet. The ALU can do quite a lot",
+            "cuDescription": "ALU added: Z:=X+Y"
+        },
+        {
+            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to now with the result? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
+            "cuDescription": "Write IAR++ from Z to IAR."
+        },
+        {
+            "bottomDescription": "Now we also have the contents of the memory cell [IAR] in the SDR (memory data register). It took a while, but the memory isn't that fast. We store this value in the IR (instruction register) for interpretation and execution by the control unit",
+            "cuDescription": "Write command from memory to IR"
+        },
+        {
+            "bottomDescription": "D=1 means that the control unit reads the IR register and, depending on the content (command), starts and executes the corresponding microprogram from the internal memory of the control unit. You can now follow the actual command and skip this FETCH phase next time by pressing the SKIP key, if you already know it by heart. Have fun!",
+            "cuDescription": "Start Exec phase for LDC command"
+        },
+        {
+            "bottomDescription": "The practical thing about the OpCode of the LDC command is that it is zero. So we don't need to filter the instruction register IR any more and can charge it directly into the battery",
+            "cuDescription": "Charge constant in battery"
+        }
+    ],
+    "LDV": [
+        {
+            "bottomDescription": "LDV - Load the accumulator with the contents of <a>.",
+            "cuDescription": "Press START now!"
+        },
+        {
+            "bottomDescription": "The IAR, the instruction address register, contains the address of the command to be executed. IAR could also be called a command counter. In order to get to the memory cell and its contents, we have to pass it on to the SAR (memory address register). After 3x R=1 read cycles we get our desired date. In addition we load at the same time (to save time) the same address also into the X register of the ALU. Later the ALU should increase the value by one, so that our MiMa reads the following command next time",
+            "cuDescription": "IAR points to an LDV command"
+        },
+        {
+            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third bar!",
+            "cuDescription": "Load 1 to Y for IAR++"
+        },
+        {
+            "bottomDescription": "Our ALU should now add the already mentioned X and Y registers. For the addition, our control unit gives the values 001 on the C2C1C0 lines. It is best to take a closer look at the table on the \"Architecture of the MIMA\" sheet. The ALU can do quite a lot",
+            "cuDescription": "ALU added: Z:=X+Y"
+        },
+        {
+            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to now with the result? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
+            "cuDescription": "Write IAR++ from Z to IAR."
+        },
+        {
+            "bottomDescription": "Now we also have the contents of the memory cell [IAR] in the SDR (memory data register). It took a while, but the memory isn't that fast. We store this value in the IR (instruction register) for interpretation and execution by the control unit",
+            "cuDescription": "Write command from memory to IR"
+        },
+        {
+            "bottomDescription": "D=1 means that the control unit reads the IR register and, depending on the content (command), starts and executes the corresponding microprogram from the internal memory of the control unit. You can now follow the actual command and skip this FETCH phase next time by pressing the SKIP key, if you already know it by heart. Have fun!",
+            "cuDescription": "Start Exec phase for LDV command"
+        },
+        {
+            "bottomDescription": "The IR (instruction register) contains not only the commands but also the variables and constants that are read from memory with the command. The practical thing is that the SAR is only 20 bits long and therefore the first 4 bits of the 24 bits long instruction are omitted during the transfer IR -> SAR. Thus the commandOpcode is cut off and the desired memory address to be addressed <a> is written properly into the SAR",
+            "cuDescription": "Address a from <a>"
+        },
+        {
+            "bottomDescription": "With this MiMa technology we have to wait 3 bars for an answer from the memory!",
+            "cuDescription": "Wait for the memory!"
+        },
+        {
+            "bottomDescription": "With this MiMa technology we have to wait 3 bars for an answer from the memory!",
+            "cuDescription": "Wait for the memory!"
+        },
+        {
+            "bottomDescription": "As you would expect from this command, the response is transferred from memory to the accumulator.",
+            "cuDescription": "Write answer to battery."
+        }
+    ],
+    "NOT": [
+        {
+            "bottomDescription": "NOT - The accumulator is overwritten by the one complement of its contents.",
+            "cuDescription": "Press START now!"
+        },
+        {
+            "bottomDescription": "The IAR, the instruction address register, contains the address of the command to be executed. IAR could also be called a command counter. In order to get to the memory cell and its contents, we have to pass it on to the SAR (memory address register). After 3x R=1 read cycles we get our desired date. In addition we load at the same time (to save time) the same address also into the X register of the ALU. Later the ALU should increase the value by one, so that our MiMa reads the following command next time",
+            "cuDescription": "IAR points to a NOT command"
+        },
+        {
+            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third bar!",
+            "cuDescription": "Load 1 to Y for IAR++"
+        },
+        {
+            "bottomDescription": "Our ALU should now add the already mentioned X and Y registers. For the addition, our control unit gives the values 001 on the C2C1C0 lines. It is best to take a closer look at the table on the \"Architecture of the MIMA\" sheet. The ALU can do quite a lot",
+            "cuDescription": "ALU added: Z:=X+Y"
+        },
+        {
+            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to now with the result? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
+            "cuDescription": "Write IAR++ from Z to IAR."
+        },
+        {
+            "bottomDescription": "Now we also have the contents of the memory cell [IAR] in the SDR (memory data register). It took a while, but the memory isn't that fast. We store this value in the IR (instruction register) for interpretation and execution by the control unit",
+            "cuDescription": "Write command from memory to IR"
+        },
+        {
+            "bottomDescription": "D=1 means that the control unit reads the IR register and, depending on the content (command), starts and executes the corresponding microprogram from the internal memory of the control unit. You can now follow the actual command and skip this FETCH phase next time by pressing the SKIP key, if you already know it by heart. Have fun!",
+            "cuDescription": "Start Exec phase for NOT command"
+        },
+        {
+            "bottomDescription": "The accumulator (battery) is loaded into the X register by the ALU to form a complement.",
+            "cuDescription": "Load battery into X register."
+        },
+        {
+            "bottomDescription": "The ALU takes over the task of complement formation for us (see Technical Informatics I). For this purpose, the ALU receives the signal C2C1C0=110 from the control unit",
+            "cuDescription": "ALU calculates complement."
+        },
+        {
+            "bottomDescription": "The result of the complement calculation is written back to the accumulator.",
+            "cuDescription": "Save result in battery."
+        }
+    ],
+    "STV": [
+        {
+            "bottomDescription": "STV - Load the addressing memory cell <a> with the contents of the accumulator.",
+            "cuDescription": "Press START now!"
+        },
+        {
+            "bottomDescription": "The IAR, the instruction address register, contains the address of the command to be executed. IAR could also be called a command counter. In order to get to the memory cell and its contents, we have to pass it on to the SAR (memory address register). After 3x R=1 read cycles we get our desired date. In addition we load at the same time (to save time) the same address also into the X register of the ALU. Later the ALU should increase the value by one, so that our MiMa reads the following command next time",
+            "cuDescription": "IAR point to a STV command"
+        },
+        {
+            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third bar!",
+            "cuDescription": "Load 1 to Y for IAR++"
+        },
+        {
+            "bottomDescription": "Our ALU should now add the already mentioned X and Y registers. For the addition, our control unit gives the values 001 on the C2C1C0 lines. It is best to take a closer look at the table on the \"Architecture of the MIMA\" sheet. The ALU can do quite a lot",
+            "cuDescription": "ALU added: Z:=X+Y"
+        },
+        {
+            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to now with the result? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
+            "cuDescription": "Write IAR++ from Z to IAR."
+        },
+        {
+            "bottomDescription": "Now we also have the contents of the memory cell [IAR] in the SDR (memory data register). It took a while, but the memory isn't that fast. We store this value in the IR (instruction register) for interpretation and execution by the control unit",
+            "cuDescription": "Write command from memory to IR"
+        },
+        {
+            "bottomDescription": "D=1 means that the control unit reads the IR register and, depending on the content (command), starts and executes the corresponding microprogram from the internal memory of the control unit. You can now follow the actual command and skip this FETCH phase next time by pressing the SKIP key, if you already know it by heart. Have fun!",
+            "cuDescription": "Start Exec phase for STV command"
+        },
+        {
+            "bottomDescription": "The contents of the accumulator (battery) are to be written into the memory. So we load the battery into the memory data register (SDR).",
+            "cuDescription": "Put data on data bus."
+        },
+        {
+            "bottomDescription": "The IR (instruction register) contains not only the commands but also the variables and constants that are read from memory with the command. The practical thing is that the SAR is only 20 bits long and therefore the first 4 bits of the 24 bits long instruction are omitted during the transfer IR -> SAR. Thus the commandOpcode is cut off and the desired memory address to be addressed <a> is written properly into the SAR",
+            "cuDescription": "Address a from <a>"
+        },
+        {
+            "bottomDescription": "With this MiMa technology we have to wait 3 bars for the memory!",
+            "cuDescription": "Waiting for the memory!"
+        },
+        {
+            "bottomDescription": "With this MiMa technology we have to wait 3 bars for the memory!",
+            "cuDescription": "Waiting for the memory!"
+        }
+    ]
+}
