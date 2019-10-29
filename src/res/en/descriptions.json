@@ -7,15 +7,15 @@
     ],
     "ADD": [
         {
-            "bottomDescription": "ADD - The accumulator is overwritten by the result of the addition of battery and the content of <a>.",
+            "bottomDescription": "ADD - The accumulator is overwritten by the result of the addition of accumulator and the content of <a>.",
             "cuDescription": "Press START now!"
         },
         {
-            "bottomDescription": "The IAR, the instruction address register, contains the address of the command to be executed. IAR could also be called a command counter. In order to get to the memory cell and its contents, we have to pass it on to the SAR (memory address register). After 3x R=1 read cycles we get our desired date. In addition we load at the same time (to save time) the same address also into the X register of the ALU. Later the ALU should increase the value by one, so that our MiMa reads the following command next time",
+            "bottomDescription": "The IAR, the instruction address register, contains the address of the command to be executed. IAR could also be called a command counter. In order to get to the memory cell and its contents, we have to pass it on to the SAR (memory address register). After 3x R=1 read cycles we get our desired data. In addition we load at the same time (to save time) the same address also into the X register of the ALU. Later the ALU should increase the value by one, so that our MiMa reads the following command next time",
             "cuDescription": "IAR point to an ADD command"
         },
         {
-            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third bar!",
+            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How could this be done better than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third tact!",
             "cuDescription": "Load 1 to Y for IAR++"
         },
         {
@@ -39,24 +39,24 @@
             "cuDescription": "Address a from <a>"
         },
         {
-            "bottomDescription": "The ADD command should link the battery with the memory cell <a> by an addition. This addition is prepared by transferring the contents of the battery to the X register while we wait for the memory to give us the contents of a, i.e. <a>",
-            "cuDescription": "Prepare battery + <a>"
+            "bottomDescription": "The ADD command should link the accumulator with the memory cell <a> by an addition. This addition is prepared by transferring the contents of the accumulator to the X register while we wait for the memory to give us the contents of a, i.e. <a>",
+            "cuDescription": "Prepare accumulator + <a>"
         },
         {
-            "bottomDescription": "Jo, sodele, now we just wait for the memory, because it always needs three bars until it can deliver the requested date",
-            "cuDescription": "The memory is lame!! ;-)"
+            "bottomDescription": "now we just wait for the memory, because it always needs three tacts until it can deliver the requested date",
+            "cuDescription": "The memory is halt!! ;-)"
         },
         {
-            "bottomDescription": "Now we have our long-awaited value <a> applied to the SDR (stored data register). Since X already contains the contents of the battery, we write our contents of memory cell a in Y.",
-            "cuDescription": "Memory is ready with reading!"
+            "bottomDescription": "Now we have our long-awaited value <a> applied to the SDR (stored data register). Since X already contains the contents of the accumulator, we write our contents of memory cell a in Y.",
+            "cuDescription": "Memory is done with reading!"
         },
         {
             "bottomDescription": "Quickly add the two values and the desired result is in the Z register. In order for the ALU to know that it has to perform an addition, the control unit sends the values (001) to the inputs of the ALU C2C1C0",
             "cuDescription": "Addition Z:=X+Y"
         },
         {
-            "bottomDescription": "As stated in the task for our ADD a command, the result is to be written back into the battery",
-            "cuDescription": "Result Z in the battery"
+            "bottomDescription": "As stated in the task for our ADD a command, the result is to be written back into the accumulator",
+            "cuDescription": "Result Z in the accumulator"
         }
     ],
     "LDC": [
@@ -69,7 +69,7 @@
             "cuDescription": "IAR point to an LDC command"
         },
         {
-            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third bar!",
+            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How could this be done better than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third tact!",
             "cuDescription": "Load 1 to Y for IAR++"
         },
         {
@@ -77,7 +77,7 @@
             "cuDescription": "ALU added: Z:=X+Y"
         },
         {
-            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to now with the result? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
+            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to write the result now? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
             "cuDescription": "Write IAR++ from Z to IAR."
         },
         {
@@ -89,8 +89,8 @@
             "cuDescription": "Start Exec phase for LDC command"
         },
         {
-            "bottomDescription": "The practical thing about the OpCode of the LDC command is that it is zero. So we don't need to filter the instruction register IR any more and can charge it directly into the battery",
-            "cuDescription": "Charge constant in battery"
+            "bottomDescription": "The practical thing about the OpCode of the LDC command is that it is zero. So we don't need to filter the instruction register IR any more and can charge it directly into the accumulator",
+            "cuDescription": "Charge constant in accumulator"
         }
     ],
     "LDV": [
@@ -103,7 +103,7 @@
             "cuDescription": "IAR points to an LDV command"
         },
         {
-            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third bar!",
+            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third tact!",
             "cuDescription": "Load 1 to Y for IAR++"
         },
         {
@@ -111,7 +111,7 @@
             "cuDescription": "ALU added: Z:=X+Y"
         },
         {
-            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to now with the result? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
+            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to write the results now? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
             "cuDescription": "Write IAR++ from Z to IAR."
         },
         {
@@ -127,16 +127,16 @@
             "cuDescription": "Address a from <a>"
         },
         {
-            "bottomDescription": "With this MiMa technology we have to wait 3 bars for an answer from the memory!",
+            "bottomDescription": "With this MiMa technology we have to wait 3 tacts for an answer from the memory!",
             "cuDescription": "Wait for the memory!"
         },
         {
-            "bottomDescription": "With this MiMa technology we have to wait 3 bars for an answer from the memory!",
+            "bottomDescription": "With this MiMa technology we have to wait 3 tacts for an answer from the memory!",
             "cuDescription": "Wait for the memory!"
         },
         {
             "bottomDescription": "As you would expect from this command, the response is transferred from memory to the accumulator.",
-            "cuDescription": "Write answer to battery."
+            "cuDescription": "Write answer to accumulator."
         }
     ],
     "NOT": [
@@ -149,7 +149,7 @@
             "cuDescription": "IAR points to a NOT command"
         },
         {
-            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third bar!",
+            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third tact!",
             "cuDescription": "Load 1 to Y for IAR++"
         },
         {
@@ -157,7 +157,7 @@
             "cuDescription": "ALU added: Z:=X+Y"
         },
         {
-            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to now with the result? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
+            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to write the results now? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
             "cuDescription": "Write IAR++ from Z to IAR."
         },
         {
@@ -169,8 +169,8 @@
             "cuDescription": "Start Exec phase for NOT command"
         },
         {
-            "bottomDescription": "The accumulator (battery) is loaded into the X register by the ALU to form a complement.",
-            "cuDescription": "Load battery into X register."
+            "bottomDescription": "The accumulator (accu) is loaded into the X register by the ALU to form a complement.",
+            "cuDescription": "Load accumulator into X register."
         },
         {
             "bottomDescription": "The ALU takes over the task of complement formation for us (see Technical Informatics I). For this purpose, the ALU receives the signal C2C1C0=110 from the control unit",
@@ -178,7 +178,7 @@
         },
         {
             "bottomDescription": "The result of the complement calculation is written back to the accumulator.",
-            "cuDescription": "Save result in battery."
+            "cuDescription": "Save result in accumulator."
         }
     ],
     "STV": [
@@ -191,7 +191,7 @@
             "cuDescription": "IAR point to a STV command"
         },
         {
-            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third bar!",
+            "bottomDescription": "As already mentioned, the IAR (instruction address register) is to be increased by ONE. How better could this be done than by adding one? The first operand (the given memory address in the IAR) was already loaded into register X earlier. The constant ONE is now transferred to the Y register. Now be curious about the third tact!",
             "cuDescription": "Load 1 to Y for IAR++"
         },
         {
@@ -199,7 +199,7 @@
             "cuDescription": "ALU added: Z:=X+Y"
         },
         {
-            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to now with the result? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
+            "bottomDescription": "The long-awaited result of our addition is now available in the Z register. Where to write the results now? Did you pay attention? Yes, right, it was our goal to increase the IAR by one. So we do this by writing the result IAR+1 from Z to IAR.",
             "cuDescription": "Write IAR++ from Z to IAR."
         },
         {
@@ -211,7 +211,7 @@
             "cuDescription": "Start Exec phase for STV command"
         },
         {
-            "bottomDescription": "The contents of the accumulator (battery) are to be written into the memory. So we load the battery into the memory data register (SDR).",
+            "bottomDescription": "The contents of the accumulator (accu) are to be written into the memory. So we load the accumulator into the memory data register (SDR).",
             "cuDescription": "Put data on data bus."
         },
         {
@@ -219,11 +219,11 @@
             "cuDescription": "Address a from <a>"
         },
         {
-            "bottomDescription": "With this MiMa technology we have to wait 3 bars for the memory!",
+            "bottomDescription": "With this MiMa technology we have to wait 3 tacts for the memory!",
             "cuDescription": "Waiting for the memory!"
         },
         {
-            "bottomDescription": "With this MiMa technology we have to wait 3 bars for the memory!",
+            "bottomDescription": "With this MiMa technology we have to wait 3 tacts for the memory!",
             "cuDescription": "Waiting for the memory!"
         }
     ]
